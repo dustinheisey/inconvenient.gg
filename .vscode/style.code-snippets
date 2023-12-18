@@ -1,0 +1,70 @@
+{
+  "Space With Margin": {
+    "prefix": "style-gap",
+    "body": ["    gap: true"]
+  },
+  "No Vertical Padding": {
+    "prefix": "style-no-inset",
+    "body": ["    inset: false"]
+  },
+  "Space With Padding + Margin": {
+    "prefix": "style-inset-gap",
+    "body": ["    inset: true,\ngap: true"]
+  },
+  "2 Columns": {
+    "prefix": "style-col2",
+    "body": ["    col: 2"]
+  },
+  "3 Columns": {
+    "prefix": "style-col3",
+    "body": ["    col: 3"]
+  },
+  "Cover": {
+    "prefix": "style-cover",
+    "body": ["    cover: true"]
+  },
+  "Dark Theme": {
+    "prefix": "style-theme-dark",
+    "body": ["dark"]
+  },
+  "Surface Theme": {
+    "prefix": "style-theme-surface",
+    "body": ["surface"]
+  },
+  "Surface Inverse Theme": {
+    "prefix": "style-theme-surface-inverse",
+    "body": ["surface-inverse"]
+  },
+  "Primary Theme": {
+    "prefix": "style-theme-primary",
+    "body": ["primary"]
+  },
+  "Secondary Theme": {
+    "prefix": "style-theme-secondary",
+    "body": ["secondary"]
+  },
+  "Tertiary Theme": {
+    "prefix": "style-theme-tertiary",
+    "body": ["tertiary"]
+  },
+  "Primary Container Theme": {
+    "prefix": "style-theme-primary-container",
+    "body": ["primary-container"]
+  },
+  "Secondary Container Theme": {
+    "prefix": "style-theme-secondary-container",
+    "body": ["secondary-container"]
+  },
+  "Tertiary Container Theme": {
+    "prefix": "style-theme-tertiary-container",
+    "body": ["tertiary-container"]
+  },
+  "Error Theme": {
+    "prefix": "style-theme-error",
+    "body": ["error"]
+  },
+  "Error Container Theme": {
+    "prefix": "style-theme-error-container",
+    "body": ["error-container"]
+  }
+}

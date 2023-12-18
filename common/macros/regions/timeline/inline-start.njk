@@ -1,0 +1,15 @@
+<div class="region stack theme-{{props.theme or 'background'}}">
+    <section class="prose">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+    </section>
+    <div class="sparkline sparkline-inline">
+        {% for step in props.content.steps %}
+        <div class="line" aria-hidden="true"></div>
+        <div class="prose">
+            <h3 class="title-headline">{{step.headline}}</h3>
+            <p>{{step.body}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>

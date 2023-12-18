@@ -1,0 +1,4 @@
+{% from "../components/component.njk" import component %}
+<header class="navbar {{class}} theme-{{props.config.header.theme}}" id="navbar">
+    {{ component({ component: 'navbar', config: props.config }) }}
+</header>

@@ -1,0 +1,19 @@
+<div class="region inset {{props.classes}} sidebar reverse sidebar-split gap-m theme-{{props.theme or 'background'}} {{props.classes}}">
+    <div class="frame square">
+        {% set src = './public/img/' + props.img.src %}
+        {% img src, props.img.alt %}
+    </div>
+    <section class="prose fixed">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2>{{props.content.headline}}</h2>
+        <p>{{props.content.body}}</p>
+        <ul>
+            {% for item in props.content.list %}
+            <li class="inline align-start gap-xs">
+                {% icon item.icon, "icon-secondary" %}
+                {{item.text}}
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>

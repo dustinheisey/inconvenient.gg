@@ -1,0 +1,20 @@
+<div class="theme-{{props.theme or 'background'}} {{props.classes}}">
+    <div class="stack region inset">
+        <section class="prose center center-intrinsic">
+            <h2 class="region-headline text-center">{{props.content.headline}}</h2>
+        </section>
+        <div class="grid grid-4 align-start gap-xl">
+            {% for item in props.content.grid %}
+            <div class="prose stack {% if props.center %}align-center text-center{% endif %} gap-2xs">
+                {% if item.icon %}
+                {% icon item.icon, "icon-xl" %}
+                {% endif %}
+                <h3 class="title-headline">{{item.headline}}</h3>
+                {% if item.body %}
+                <p>{{item.body}}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

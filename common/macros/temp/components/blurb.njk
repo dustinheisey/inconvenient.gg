@@ -1,0 +1,18 @@
+<div class="{{class}} prose">
+    {% if props.img %}
+        <div class="frame">
+            {% if props.img.variant === 'avatar' %}
+                <img src="https://i.pravatar.cc/300" alt="avatar">
+            {% else %}
+                {% set src = './public/img/' + props.img.src%}
+                {% img src, props.img.alt %}
+            {% endif %}
+        </div>
+    {% endif %}
+    <h3 class="title-headline">
+        {% if props.icon %}{% icon props.icon, "icon" %}{% endif %}{{props.headline}}
+    </h3>
+    <p>
+        {{props.body}}
+    </p>
+</div>

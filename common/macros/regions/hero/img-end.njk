@@ -1,0 +1,18 @@
+<div class="theme-{{props.theme or 'background'}}">
+    <div class="cover cover-nav region {{props.classes}}">
+        <div class="sidebar reverse sidebar-split gap-m">
+            <div class="frame">
+                {% set src = './public/img/' + props.img.src%}
+                {% img src, props.img.alt%}
+            </div>
+            <section class=" prose auto fixed">
+                <h1 class="hero-headline">
+                    <span class="color-primary">{{props.content.accent}}</span>
+                    {{props.content.headline}}
+                </h1>
+                <p>{{props.content.body}}</p>
+                <a href="{{props.content.btn.href}}" class="btn">{{props.content.btn.label}}</a>
+            </section>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="sidebar region align-center gap-m theme-{{props.theme or 'background'}} {{props.classes}}">
+    <div class="prose">
+        <h1>{{props.content.headline}}</h1>
+        {% if props.content.body %}
+        <p>{{props.content.body}}</p>
+        {% endif %}
+    </div>{% if props.input %}
+    <form class="input-group sidebar gap-0" name="newsletter" method="POST" data-netlify="true">
+        <label class="sr-only required" for="newsletter-email">Email Address</label>
+        <input type="email" id="newsletter-email" name="newsletter-email" class="input" placeholder="Email Address" required />
+        <button type="submit" class="fixed btn btn-primary">Subscribe</button>
+    </form>
+    {% endif %}
+    {% if props.btn %}
+    <a href="{{props.content.btn.href}}" class="btn fixed">{{props.content.btn.label}}</a>
+    {% endif %}
+</div>

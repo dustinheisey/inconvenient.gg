@@ -1,0 +1,5 @@
+{% from "../components/component.njk" import component %}
+<div class="region sidebar reverse sidebar-split gap-m {{props.class}}">
+    {{ component(props.end) }}
+    {{ component(props.start, 'fixed') }}
+</div>

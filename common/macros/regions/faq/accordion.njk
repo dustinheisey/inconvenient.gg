@@ -1,0 +1,17 @@
+<div class="region theme-{{props.theme or 'background'}} {{props.classes}}">
+    <section class="prose">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+    </section>
+    <div class="space-xl">
+        {% for item in props.content.faqs %}
+        <details>
+            <summary>
+                <h3 class="title-headline">{{item.question}}</h3>
+            </summary>
+            <p>{{item.answer}}</p>
+        </details>
+        <hr />
+        {% endfor %}
+    </div>
+</div>

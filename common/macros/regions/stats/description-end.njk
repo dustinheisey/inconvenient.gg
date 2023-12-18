@@ -1,0 +1,25 @@
+<div class="region reverse inset stack gap-m theme-{{props.theme or 'background'}}">
+    <div class="sidebar align-start gap-m">
+        <section class="prose">{% if props.content.overline %}
+            <p class="overline">{{props.content.overline}}</p>
+            {% endif %}
+            <h2 class="region-headline">{{props.content.headline}}</h2>
+            {% if props.content.lead %}
+            <p class="lead">
+                {{props.content.lead}}
+            </p>
+            {% endif %}
+            <p>
+                {{props.content.body}}
+            </p>
+        </section>
+        <div class="stack gap-l fixed">
+            {% for stat in props.content.stats %}
+            <div class="prose stack gap-3xs">
+                <h3 class="section-headline">{{stat.headline}}</h3>
+                <p>{{stat.body}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

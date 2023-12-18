@@ -1,0 +1,63 @@
+{%- macro action(props) -%}
+{% include "./regions/action/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro copy(props) -%}
+{% include "./regions/copy/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro faq(props) -%}
+{% include "./regions/faq/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro feature(props) -%}
+{% include "./regions/feature/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro footer(props) -%}
+{% include "./regions/footer/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro region(region, props) -%}
+{% include "./regions/" + region + "/" + props.variant + ".njk" ignore missing %}
+{%- endmacro -%}
+
+{%- macro form(props) -%}
+{% include "./regions/form/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro gallery(props) -%}
+{% include "./regions/gallery/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro header(props) -%}
+{% include "./regions/header/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro hero(props) -%}
+{% include "./regions/hero/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro intro(props) -%}
+{% include "./regions/intro/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro logos(props) -%}
+{% include "./regions/logos/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro pricing(props) -%}
+{% include "./regions/pricing/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro stats(props) -%}
+{% include "./regions/stats/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro testimonials(props) -%}
+{% include "./regions/testimonials/" + props.variant + ".njk" %}
+{%- endmacro -%}
+
+{%- macro timeline(props) -%}
+{% include "./regions/timeline/" + props.variant + ".njk" %}
+{%- endmacro -%}

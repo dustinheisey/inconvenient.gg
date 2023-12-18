@@ -1,0 +1,73 @@
+{
+  "name": "design-system",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Marketing website design system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dustinheisey/eleventy-design-system.git"
+  },
+  "scripts": {
+    "lint:js": "npx eslint **/*.js --fix",
+    "lint:css": "cd styles && npx stylelint \"**/*.css\" --fix",
+    "lint": "npm run lint:js && npm run lint:css",
+    "format": "prettier \"**/*.{cjs,html,js,json,md,njk,css}\" --ignore-path ./.eslintignore --write",
+    "sb": "storybook dev -c docs/.storybook",
+    "styles": "postcss styles/style.css -o styles/style.min.css --watch",
+    "build:js": "rollup -c rollup.config.js",
+    "start": "npm run build:js && cd site && rm -rf site/ && npx @11ty/eleventy --serve --incremental",
+    "build:site": "rollup -c rollup.config.js && npm run build:js && cd site && rm -rf sites/ && npx @11ty/eleventy"
+  },
+  "author": {
+    "name": "Dustin Heisey"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@etchteam/storybook-addon-status": "^4.2.4",
+    "@jackdbd/eleventy-plugin-content-security-policy": "^1.0.0",
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@storybook/addon-a11y": "^7.0.18",
+    "@storybook/addon-essentials": "^7.0.18",
+    "@storybook/blocks": "^7.0.18",
+    "@storybook/html-webpack5": "^7.0.18",
+    "a11y-sitechecker": "^6.0.1",
+    "cssnano": "^6.0.1",
+    "eleventy-multisite": "^0.0.5",
+    "eleventy-plugin-gen-favicons": "^1.1.2",
+    "eleventy-plugin-pwa-v2": "^1.0.0",
+    "eleventy-plugin-svg-sprite": "^2.4.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-storybook": "^0.6.12",
+    "html-minifier": "^4.0.0",
+    "luxon": "^3.3.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.7",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "postcss-easy-import": "^4.0.0",
+    "postcss-preset-env": "^8.4.2",
+    "prettier": "^2.8.8",
+    "purgecss": "^5.0.0",
+    "purgecss-from-html": "^6.0.0-alpha.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "simple-nunjucks-loader": "^3.2.0",
+    "storybook": "^7.0.18",
+    "storybook-dark-mode": "^3.0.0",
+    "stylelint-config-standard": "^33.0.0",
+    "util": "^0.12.5"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
+  }
+}

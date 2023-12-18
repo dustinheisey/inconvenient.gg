@@ -1,0 +1,12 @@
+<div class="region sidebar align-stretch sidebar-split gap-m theme-{{props.theme or 'background'}} {{props.classes}}">
+    <div class="frame">
+        {% set src = './public/img/' + props.img.src%}
+        {% img src, props.img.alt%}
+    </div>
+    <div class="prose fixed">
+        {% if props.content.lead %}
+        <p class="lead">{{props.content.lead}}</p>
+        {% endif %}
+        <p>{{props.content.body}}</p>
+    </div>
+</div>

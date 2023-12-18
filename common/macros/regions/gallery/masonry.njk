@@ -1,0 +1,53 @@
+<div class="region stack gap-l {{props.class}} theme-{{props.theme or 'background'}} {{props.classes}}">
+    {% if props.content.headline %}
+        <section class="prose center">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2 class="page-headline">
+            {{props.content.headline}}
+        </h2>
+    </section>
+    {% endif %}
+    <h2 class="region-headline text-center center-intrinsic">{{props.content.headline}}</h2>
+    {% if props.categories %}
+    <div class="reel justify-center no-bar">
+        {% if props.back %}
+        <a href="/blog" class="badge badge-l badge-primary">All Posts</a>
+        {% endif %}
+        {% for category in props.categories %} {% set categoryUrl
+        %}/categories/{{ category.data.label | slugify }}/{% endset %}
+        <a href="{{ categoryUrl | url }}" class="badge badge-l badge-{{category.data.theme}}">{{ category.data.label}}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <div class="masonry col-3 gap-m ">
+        {% if props.posts %}
+        {% for post in props.posts | reverse %} {% set postCategory =
+        props.categories | getCategory(post.data.tags) %}
+        <article class="prose card card-link theme-{{postCategory.data.theme}}-container">
+            <a href="{{ post.url | url }}">
+                <div class="cluster align-center gap-2xs">
+                    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+                    <div class="badge badge-primary">{{post.data.tags | tagsOnly}}</div>
+                </div>
+                <h2 class="section-headline">{{ post.data.title }}</h2>
+                <p>{{ post.data.description }}</p>
+            </a>
+        </article>
+        {% endfor %}
+        {% else %}
+        {% for item in props.content.grid %}
+        <article class="card theme-primary-container stack gap-xs">
+            <div class="cluster">
+                <time datetime="{{item.time.time}}">{{item.time.label}}</time>
+            </div>
+            <div class="prose">
+                <h2 class="title-section">{{item.headline}}</h2>
+                <p>
+                    {{item.body}}
+                </p>
+            </div>
+        </article>
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>

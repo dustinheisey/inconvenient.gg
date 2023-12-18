@@ -1,0 +1,67 @@
+<div class="cover inset region cover-nav theme-{{props.theme or 'background'}}">
+    <div class="sidebar reverse align-stretch sidebar-split gap-m">
+        <div class="frame vertical-s">
+            {% set src = './public/img/' + props.img.src%}
+            {% img src, props.img.alt%}
+        </div>
+        <div class="stack fixed center center-intrinsic">
+            <section class="prose">
+                <p class="overline">{{props.content.overline}}</p>
+                <h1 class="page-headline">{{props.content.headline}}</h1>
+                <p>{{props.content.body}}</p>
+            </section>
+            <form class="stack gap-s" name="contact" method="POST" data-netlify="true">
+                {% for input in props.content.inputs %}
+                {% if input.type === 'textarea' %}
+                <label>
+                    <span {% if input.required %}class="required" {% endif %}>{{input.label}}</span>
+                    <textarea id="{{input.id}}" name="{{input.id}}" {% if input.required %}required{% endif %}></textarea>
+                </label>
+                {% elif input.type === 'checkbox-cards' %}
+                <fieldset class="cards switcher switch-phone">
+                    <legend>
+                        <span {% if input.required %}class="required" {% endif %}>{{input.label}}</span>
+                    </legend>
+                    {% for card in input.cards %}
+                    <label class="input-card">
+                        <input type="checkbox" name="{{input.name}}" value="{{card.value}}" />
+                        <span>
+                            {% icon card.icon %}
+                            {{card.value}}
+                        </span>
+                    </label>
+                    {% endfor %}
+                </fieldset>
+                {% elif input.type === 'radio-cards' %}
+                <fieldset class="cards switcher switch-phone">
+                    <legend>
+                        <span {% if input.required %}class="required" {% endif %}>{{input.label}}</span>
+                    </legend>
+                    {% for card in input.cards %}
+                    <label class="input-card">
+                        <input type="radio" name="{{input.name}}" value="{{card.value}}" />
+                        <span>
+                            {% icon card.icon %}
+                            {{card.value}}
+                        </span>
+                    </label>
+                    {% endfor %}
+                </fieldset>
+                {% elif input.type === 'range' %}
+                <label for="{{input.id}}" {% if input.required %}class="required" {% endif %}>{{input.label}}</label>
+                <div class="inline gap-2xs">
+                    <input type="range" id="{{input.id}}" name="{{input.id}}" min="{{input.min}}" max="{{input.max}}" step="{{input.step}}" value="{{input.value}}" />
+                    <output id="budget-value">{{input.output}}{{input.value}}</output>
+                </div>
+                {% else %}
+                <label>
+                    <span {% if input.required %}class="required" {% endif %}>{{input.label}}</span>
+                    <input type="{{input.type}}" id="{{input.id}}" name="{{input.id}}" class="input" {% if input.required %}required{% endif %} />
+                </label>
+                {% endif %}
+                {% endfor %}
+                <button type="submit" class="btn">{{props.content.submit}}</button>
+            </form>
+        </div>
+    </div>
+</div>

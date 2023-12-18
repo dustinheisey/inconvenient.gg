@@ -1,0 +1,11 @@
+<div class="region inset sidebar sidebar-split gap-m theme-{{props.theme or 'background'}} {{props.classes}}">
+    <div class="frame square">
+        {% set src = './public/img/' + props.img.src%}
+        {% img src, props.img.alt%}
+    </div>
+    <section class="fixed prose">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+        <p>{{props.content.body}}</p>
+    </section>
+</div>

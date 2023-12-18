@@ -1,0 +1,21 @@
+{
+  "files.exclude": {
+    ".eslintrc": true,
+    ".prettierrc": true,
+    ".stylelintrc": true,
+    "postcss.config.js": true,
+    "package-lock.json": true,
+    ".eslintignore": true,
+    "eleventy-design-system.code-workspace": true,
+    "ally.config.json": true,
+    "sites/bee-leaf/sitemap.njk": true,
+    "node_modules": true,
+    "sites/city-roots/sitemap.njk": true,
+    "sites/desert-bloom/sitemap.njk": true,
+    "sites/oceans-voice/sitemap.njk": true,
+    "sites/bee-leaf/site": true,
+    "sites/test/sitemap.njk": true,
+    ".vscode": true,
+    "rollup.config.js": true
+  }
+}

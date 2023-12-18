@@ -1,0 +1,14 @@
+{% from "../components/component.njk" import component %}
+<div class="region bg-pattern pattern-{{props.pattern}} {{props.class}} inset-xl">
+    <section class="prose">
+        {% if props.headline %}
+        <h2 class="region-headline">{{props.headline}}</h2>
+        {% endif %}
+        {% if props.lead %}
+        <p class="lead {% if props.center %}auto{% endif %}">{{props.lead}}</p>
+        {% endif %}
+        {% if props.body %}
+        <p>{{props.body}}</p>
+        {% endif %}
+    </section>
+</div>

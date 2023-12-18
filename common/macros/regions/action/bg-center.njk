@@ -1,0 +1,16 @@
+<div class="bg-img theme-{{props.theme or 'background'}} {{props.classes}}">
+    {% set src = './public/img/' + props.img.src%}
+    {% img src, props.img.alt%}
+    <div class="cover region cover-nav">
+        <div class="principle prose stack align-center text-center gap-xs">
+            {% if props.content.badge %}
+            <a href="/" class="badge badge-primary">{{props.content.badge}}</a>
+            {% endif %}
+            <h1>{{props.content.headline}}</h1>
+            <p>
+                {{props.content.body}}
+            </p>
+            <a href="{{props.content.btn.href}}" class="btn {% if props.content.btn.variant %}{{props.content.btn.href}}{% endif %}">{{props.content.btn.label}}</a>
+        </div>
+    </div>
+</div>

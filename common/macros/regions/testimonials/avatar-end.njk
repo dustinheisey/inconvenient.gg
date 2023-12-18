@@ -1,0 +1,14 @@
+<div class="region reverse sidebar gap-m theme-{{props.theme or 'background'}} {{props.classes}}">
+    <div class="fixed frame avatar-img">
+        {% set src = './public/img/' + props.img.src%}
+        {% img src, props.img.alt%}
+    </div>
+    <figure>
+        <blockquote>
+            &OpenCurlyDoubleQuote;{{ props.content.quote }}&CloseCurlyDoubleQuote;
+        </blockquote>
+        <figcaption class="overline">
+            {{ props.content.author }}
+        </figcaption>
+    </figure>
+</div>

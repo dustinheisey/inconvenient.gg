@@ -1,0 +1,16 @@
+<div class="region inset bg-pattern pattern-{{props.pattern}} theme-{{props.theme or 'primary'}} inset-xl {{props.classes}}">
+    <section class="prose">
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+        <p class="{% if props.center %}auto{% endif %}">{{props.content.body}}</p>
+        {% if props.input %}
+        <form class="input-group sidebar gap-0" name="newsletter" method="POST" data-netlify="true">
+            <label class="sr-only required" for="newsletter-email">Email Address</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" class="input" placeholder="Email Address" required />
+            <button type="submit" class="fixed btn btn-primary">Subscribe</button>
+        </form>
+        {% endif %}
+        {% if props.content.btn %}
+        <a href="{{props.content.btn.href}}" class="btn fixed {% if props.content.btn.variant %}{{props.content.btn.href}}{% endif %}">{{props.content.btn.label}}</a>
+        {% endif %}
+    </section>
+</div>

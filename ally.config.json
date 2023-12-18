@@ -1,0 +1,10 @@
+{
+  "name": "Portfolio",
+  "urlsToAnalyze": ["www.dustinheisey.com"],
+  "crawl": true,
+  "analyzeClicks": true,
+  "analyzeClicksWithoutNavigation": true,
+  "debugMode": false,
+  "saveImages": false,
+  "json": true
+}

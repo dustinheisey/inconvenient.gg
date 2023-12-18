@@ -1,0 +1,16 @@
+<div class="cover sidebar reverse sidebar-split gap-m theme-{{props.theme or 'background'}} {{props.classes}}">
+    <div class="frame-cover">
+        {% set src = './public/img/' + props.img.src%}
+        {% img src, props.img.alt%}
+    </div>
+    <div class="stack fixed gap-xl">
+        <div class="prose auto">
+            <p class="overline">{{props.content.overline}}</p>
+            <h1 class="hero-headline">{{props.content.headline}}</h1>
+            <p>
+                {{props.content.body}}
+            </p>
+            <a href="{{props.content.btn.href}}" class="btn {% if props.content.btn.variant %}{{props.content.btn.href}}{% endif %}">{{props.content.btn.label}}</a>
+        </div>
+    </div>
+</div>

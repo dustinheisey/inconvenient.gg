@@ -1,0 +1,22 @@
+<div class="region inset stack gap-xl theme-{{props.theme or 'background'}}">
+    <section class="prose {% if props.center %}
+       stack align-center text-center
+    {% endif %}">{% if props.content.overline %}
+        <p class="overline">{{props.content.overline}}</p>
+        {% endif %}
+        <h2 class="region-headline">{{props.content.headline}}</h2>
+        {% if props.content.body %}
+        <p>{{props.content.body}}</p>
+        {% endif %}
+    </section>
+    <div class="switcher switch-phone align-start gap-xl theme-{{props.theme or 'background'}}">
+        {% for stat in props.content.stats %}
+        <div class="prose stack gap-3xs {% if props.center %}
+     align-center text-center
+    {% endif %}">
+            <h3 class="section-headline">{{stat.headline}}</h3>
+            <p>{{stat.body}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>

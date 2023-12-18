@@ -1,0 +1,39 @@
+<div class="region inset stack center theme-{{props.theme or 'background'}} {{props.classes}}">
+    <section class="prose text-center stack align-center">
+        <p class="overline">{{props.content.overline}}</p>
+        <h2 class="page-headline">
+            {{props.content.headline}}
+        </h2>
+    </section>
+    <div class="stack gap-xl">
+        {% for item in props.content.grid %}
+        {% set src = './public/img/' + item.img.src%}
+        <hr />
+        <article class="sidebar">
+            <div class="fixed frame avatar-img">{% img src, item.img.alt%}</div>
+            <div>
+                {% if item.time %}
+                <div class="cluster">
+                    <time datetime="{{item.time.time}}">{{item.time.label}}</time>
+                </div>
+                {% endif %}
+                <div class="prose">
+                    {% if item.btn %}
+                    <h2 class="title-section">{{item.headline}}</h2>
+                    {% else %}
+                    <a href="/">
+                        <h2 class="title-section">{{item.headline}}</h2>
+                    </a>
+                    {% endif %}
+                    <p>
+                        {{item.body}}
+                    </p>
+                    {% if item.btn %}
+                    <a class="btn" href="{{item.btn.href}}">{{item.btn.label}}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>

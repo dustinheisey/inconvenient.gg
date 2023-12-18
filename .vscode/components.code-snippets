@@ -1,0 +1,62 @@
+{
+  "Article": {
+    "prefix": "article",
+    "body": [
+      "{ component: 'article',\nstyle: {\n\t\ttheme: ''\n},\nimg: { src: 'wave.png', alt: 'wave' },\noverline: '',\ntime: '',\nheadline: '',\nbody: '',\nbtn: { label: '', url: '/'} },"
+    ]
+  },
+  "Blockquote": {
+    "prefix": "quote",
+    "body": ["component: 'blockquote',\nstyle: {\n\ttheme: ''\n},\nquote: '',\nauthor: '',"]
+  },
+  "Blurb": {
+    "prefix": "blurb",
+    "body": [
+      "{\n\tcomponent: 'blurb',\n\tstyle: {\n\t\t\ttheme: ''\n\t\t},\n\t${1|img: {src: 'wave.png' alt: 'wave' },icon: ''|},\n\toverline: '',\n\theadline: '',\n\tbody: ''\n},"
+    ]
+  },
+  "Card": {
+    "prefix": "card",
+    "body": [
+      "{component: 'card',\nstyle: {\n\t\ttheme: '',\n\t\tspan: 1\n\t},\ntime: '',\noverline: '',\nheadline: '',\nbody: ''},"
+    ]
+  },
+  "Details": {
+    "prefix": "details",
+    "body": ["{\n\tcomponent: 'details',\n\tstyle: { theme: '' },\n\theadline: '',\n\tbody: ''\n},"]
+  },
+  "Form": {
+    "prefix": "form",
+    "body": [
+      "component: 'form',\nstyle: { theme: '' },\noverline: '',\nheadline: '',\nbody: '',\ninputs: [\n\t\n],\nsubmit: ''"
+    ]
+  },
+  "Img": {
+    "prefix": "img",
+    "body": ["component: 'img',\nstyle: {\n\t\ttheme: '',\n\t\tar: 'square'\n\t},\n\tsrc: 'wave.png',\n\talt: 'wave'"]
+  },
+  "List": {
+    "prefix": "list",
+    "body": [
+      "component: 'list',\nvariant: '${1|stack,grid|}',\nstyle: { theme: '' },\noverline: '',\nheadline: '',\nbody: '',\nicon: '',\nitems: [\n\t{ icon: '', text: ''},\n]"
+    ]
+  },
+  "Stats": {
+    "prefix": "stats",
+    "body": [
+      "component: 'stats',\nvariant: '${1|inline,stack,grid|}',\nstyle: { theme: '' },\noverline: '',\nheadline: '',\nbody: '',\nitems: [\n\t{\n\t\theadline: '',\n\t\tbody: ''\n\t},\n]"
+    ]
+  },
+  "Subgallery": {
+    "prefix": "subgallery",
+    "body": [
+      "component: 'subgallery',\nvariant: '${1|masonry,stack,grid|}',\nstyle: { theme: '' },\noverline: '',\nheadline: '',\nbody: '',\nitems: [\n\t{\n\t\timg: { src: 'wave.png', alt: 'wave' },\n\t\theadline: '',\n\t\tbody: ''\n\t},\n]"
+    ]
+  },
+  "Text": {
+    "prefix": "text",
+    "body": [
+      "component: 'text',\nstyle: { theme: '' },\nsize: '${1|hero,page,region|}',\noverline: '',\nheadline: '',\nbody: '',\nbtn: { label: '', url: '/' }"
+    ]
+  }
+}

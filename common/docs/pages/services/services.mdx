@@ -1,0 +1,18 @@
+import { Canvas, Meta, Controls } from '@storybook/blocks'
+
+import * as Stories from './services.story.js'
+
+<Meta of={Stories} />
+
+# Services Page
+
+- header [header/heroLayouts]
+- introduction [infoLayouts]
+- service 1 action (who this service is for and short description/benefits) [infoLayouts]
+- service 2 action (who this service is for and short description/benefits) [infoLayouts]
+- service 3 action (who this service is for and short description/benefits) [infoLayouts]
+- service 4 action (who this service is for and short description/benefits) [infoLayouts]
+- testimonials or success stories [testimonialLayouts]
+- action to contact [actionLayouts]
+
+<Canvas of={Stories.Default} sourceState="shown" withToolbar="true" />

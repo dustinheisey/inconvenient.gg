@@ -1,0 +1,28 @@
+<div class="cover region sidebar sidebar-split gap-m theme-{{props.theme or 'background'}}">
+    <figure>
+        <blockquote>
+            &OpenCurlyDoubleQuote;{{ props.content.quote }}&CloseCurlyDoubleQuote;
+        </blockquote>
+        <figcaption class="overline">
+            {{ props.content.author }}
+        </figcaption>
+    </figure>
+    <div class="prose center">
+        {% if props.content.lead %}
+        <p class="lead">
+            {{props.content.lead}}
+        </p>
+        {% endif %}
+        <p>
+            {{props.content.body}}
+        </p>
+        <div class="grid grid-2 fixed">
+            {% for stat in props.content.stats %}
+            <div class="prose stack gap-3xs">
+                <h3 class="section-headline">{{stat.headline}}</h3>
+                <p>{{stat.body}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

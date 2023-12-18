@@ -1,0 +1,26 @@
+<footer class="bg-img theme-{{props.theme or 'background'}} {{props.classes}}">
+    <img src='{{props.content.img}}' alt="">
+    <div class="stack region align-center gap-s">
+        <ul class="cluster gap-xs">
+            {% for link in props.config.footer.links %}
+            <li>
+                <a href="{{ link.url }}" class="link link-s link-navigation">
+                    {{ link.label }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <ul class="cluster gap-xs">
+            {% for link in props.config.footer.social %}
+            <li>
+                <a href="{{link.url}}" target="_blank" class="btn btn-circular">
+                    <span class="sr-only">{{link.label}}</span>
+                    {% icon link.icon %}
+                    <tool-tip tip-position="block-start"> {{link.label}} </tool-tip>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <small>{{props.content.copywrite}}</small>
+    </div>
+</footer>
