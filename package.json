@@ -12,7 +12,7 @@
     "lint:css": "cd styles && npx stylelint \"**/*.css\" --fix",
     "lint": "npm run lint:js && npm run lint:css",
     "format": "prettier \"**/*.{cjs,html,js,json,md,njk,css}\" --ignore-path ./.eslintignore --write",
-    "sb": "storybook dev -c docs/.storybook",
+    "sb": "storybook dev -c common/docs/.storybook",
     "styles": "postcss styles/style.css -o styles/style.min.css --watch",
     "build:js": "rollup -c rollup.config.js",
     "start": "npm run build:js && cd site && rm -rf site/ && npx @11ty/eleventy --serve --incremental",

@@ -112,7 +112,8 @@ import splitLogos from '../../macros/regions/logos/split.njk'
 
 // pricing single, tiers-dividers, tiers
 
-import descriptionStats from '../../macros/regions/stats/description.njk'
+import descriptionStartStats from '../../macros/regions/stats/description-start.njk'
+import descriptionEndStats from '../../macros/regions/stats/description-end.njk'
 import imgEndStats from '../../macros/regions/stats/img-end.njk'
 import imgStartStats from '../../macros/regions/stats/img-start.njk'
 import inlineStats from '../../macros/regions/stats/inline.njk'
@@ -253,7 +254,8 @@ export const regions = {
     'start-header': startHeader
   },
   stats: {
-    'description-stats': descriptionStats,
+    'description-start-stats': descriptionStartStats,
+    'description-end-stats': descriptionEndStats,
     'img-end-stats': imgEndStats,
     'img-start-stats': imgStartStats,
     'inline-stats': inlineStats,

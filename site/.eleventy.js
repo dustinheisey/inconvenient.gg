@@ -46,7 +46,7 @@ module.exports = function (eleventyConfig) {
   })
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
-      hostname: 'https://bee-leaf.dustinheisey.com'
+      hostname: 'https://inconvenient.gg'
     }
   })
 
