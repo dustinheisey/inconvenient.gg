@@ -17,3 +17,7 @@ The world was different long ago. People wrote about their experiences down on s
 - patchouli categories - `patchouli_books/journal/en_us/categories/lost_stories.json` ✔️
 - patchouli entries - `patchouli_books/journal/en_us/entries/lost_stories/` ✔️
 -
+
+:::warning
+This page is under construction. Check back soon because I am actively updating the wiki, I just wanted to get something online in case anyone can get use from what is up so far.
+:::

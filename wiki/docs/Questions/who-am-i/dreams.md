@@ -23,4 +23,6 @@ If you choose to wake up from the dream of a billionaire you can dream your own 
 - patchouli categories - `patchouli_books/journal/en_us/categories/dreams.json` ✔️
 - patchouli entries - `patchouli_books/journal/en_us/entries/dreams/` ✔️
 
-TODO: [IM-308] document dreams
+:::warning
+This page is under construction. Check back soon because I am actively updating the wiki, I just wanted to get something online in case anyone can get use from what is up so far.
+:::

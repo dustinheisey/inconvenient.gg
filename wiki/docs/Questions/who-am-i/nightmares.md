@@ -38,4 +38,6 @@ Collect these items and then sleep to have your nightmare or dream and collect y
 - cursed - deluxe hamburger
 - lost - iron coin pile
 
-TODO: [IM-307] document nightmares part 2
+:::warning
+This page is under construction. Check back soon because I am actively updating the wiki, I just wanted to get something online in case anyone can get use from what is up so far.
+:::

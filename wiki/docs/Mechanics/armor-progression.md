@@ -22,5 +22,6 @@ Armor is staged in this modpack. This means that to craft an armor tier (ex. Iro
 - armor recipes - `kubejs/server_scripts/recipes/collections/armor.js` :heavy_check_mark:
 - armor protection values - `kubejs/startup_scripts/armor.js`
 
-TODO: document armor part 2
-[IM-309]
+:::warning
+This page is under construction. Check back soon because I am actively updating the wiki, I just wanted to get something online in case anyone can get use from what is up so far.
+:::

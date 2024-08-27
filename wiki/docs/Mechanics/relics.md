@@ -20,4 +20,6 @@ There is a chance to get various relics when you complete gateways. Higher tier 
 - relics advancements - `kubejs/server_scripts/advancements/collections/relics.js` ✔️
 - gateway drops - `???` ❓
 
-TODO: [IM-302] document relics mechanic
+:::warning
+This page is under construction. Check back soon because I am actively updating the wiki, I just wanted to get something online in case anyone can get use from what is up so far.
+:::

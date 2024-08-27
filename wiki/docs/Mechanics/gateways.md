@@ -19,3 +19,7 @@ As you progress and visit new dimensions, you can use the drops of most of the e
 - collection staging - `kubejs/server_scripts/stages/collections/gateways.js` ✔️
 - patchouli categories - `patchouli_books/journal/en_us/categories/dreams.json` ✔️
 - patchouli entries - `patchouli_books/journal/en_us/entries/dreams/` ✔️
+
+:::warning
+This page is under construction. Check back soon because I am actively updating the wiki, I just wanted to get something online in case anyone can get use from what is up so far.
+:::
