@@ -1,4 +1,6 @@
-# Restoration Procedures
+# Restorations
+
+If you choose to wake up then a big part of what you do in chapter 7.1 is to restore the earth, to clean up the mess that humanity has caused. You have quests to restore each biome. here are some ideas for each biome's restoration.
 
 - oceans
   - pick up 1000 pieces of trash & clean up fishing nets

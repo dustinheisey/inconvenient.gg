@@ -32,10 +32,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: './sidebars.js'
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/'
         },
         blog: {
           showReadingTime: true,
@@ -45,7 +44,6 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -77,7 +75,12 @@ const config = {
             label: 'Wiki'
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
+            label: 'Play Now',
+            position: 'right'
+          },
+          {
+            href: 'https://github.com/dustinheisey/An-Inconvenient-Modpack',
             label: 'GitHub',
             position: 'right'
           }
@@ -86,45 +89,45 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro'
-              }
-            ]
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus'
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus'
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus'
-              }
-            ]
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog'
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus'
-              }
-            ]
-          }
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Tutorial',
+          //       to: '/docs/intro'
+          //     }
+          //   ]
+          // },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus'
+          //     },
+          //     {
+          //       label: 'Discord',
+          //       href: 'https://discordapp.com/invite/docusaurus'
+          //     },
+          //     {
+          //       label: 'Twitter',
+          //       href: 'https://twitter.com/docusaurus'
+          //     }
+          //   ]
+          // },
+          // {
+          //   title: 'More',
+          //   items: [
+          //     {
+          //       label: 'Blog',
+          //       to: '/blog'
+          //     },
+          //     {
+          //       label: 'GitHub',
+          //       href: 'https://github.com/facebook/docusaurus'
+          //     }
+          //   ]
+          // }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} An Inconvenient Modpack. Built with Docusaurus.`
       },

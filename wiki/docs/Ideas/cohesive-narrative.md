@@ -1,114 +1,96 @@
-# Cohesive Narrative
+# Cohesive Narrative (Flashbacks Rewrite)
 
-we need to make the nightmares/flashbacks/dreams tell a singular story in parts instead of joining together a bunch of mismatched stories and making a whole from that
+we need to make the nightmares/flashbacks/dreams tell a singular story in parts instead of joining together a bunch of mismatched stories. I want each story to follow a similar pattern, with each including the thing that triggered the memory (making a hearth, etc), the main point about climate change, and give guidance on which milestone to go for next.
 
-**pattern** - climate change | what triggered the memory | what is next to do
+**Pattern** - climate change | what triggered the memory | what is next to do
 
 ## Chapter 1
 
-1. cold eye
-   - triggered by hearth | about cryo chamber and bunker | points to smeltery
-   - desc - wake up in your living room staring at a hearth, drive to the factory and see smelteries making lots of ingots, either go to a showroom of the cryochamber and or a city or something or go strait to the bunker and sleep
+### Cold eye
+
+Dream comes from creating the hearth. the narrative is going to start to answer the question of why you woke up in the bunker. in this dream you wake up in a factory floor you see lots of smelteries around you they are making stuff for cryogenic chambers you walk to a planning room or something it has display cryo chambers and a map of the bunker on a table. Someone is in there and they say a non gendered version of sir/mam, your chauffer is ready to take you to the bunker where you will sleep for 1000 years.
 
 ## Chapter 2
 
-2. exotic eye
+### Exotic eye
 
-   - triggered by smeltery | about ocean acidification | points to heart of sea
-   - desc - notice ocean is acidifying, notice rare fish population dying, notice profit potential, description of heart of the sea a delicate rare organ from a fish that you eat
+Dream comes from creating a smeltery. you dream is about ocean acidification, overfishing, flooding, and a rare fish that will fetch a huge price. its going to lead you to everbright. you are going to everbright to find the fish. (need to make ocean monument spawn only in everbright). you use the heart of the sea gem you get from the fish to create an aura eye. this allows you to sense aura in the air. board meeting discussing the rise in ocean acidification and flooding happening and how it is affecting the amount of fish being caught in nets. the company needs to pivot and catch a fish that is thriving in the new environment because it has a organ that would fetch a huge price. still in a fish farm but you see posters on the wall talking about a rare fish that is only found in a certain place in the world. your farm sells a fish that looks like it and markets it as the real deal.
 
-3. guardian eye
-   - triggered by heart of sea | about flooding & sea level rise | points to aura eye
-   - desc - watching on tv about a devastating flood, reflecting on how you sit in your comfy couch while you watch the world around you suffer. you take solace in the fact that you are bearing witness to the suffering at least.
+### Guardian eye
+
+- at your desk listening to sirens and walk upstairs to the roof -> evacuated because of flooding in a helicopter -> go home and flip channels seeing different natural disasters -> decide to make bunker
 
 ## Chapter 3
 
-4. undead eye
+### Undead eye
 
-   - triggered by lost ingot | about pandemic | points to venom sac
-   - desc -
+- triggered by lost ingot | about pandemic | points to venom sac
+- in a meeting with security -> tell them to enforce the no mask policy, no sick leave, workers leaving in droves, opportunity to steal money another way?
 
-5. corrupted eye
+### Corrupted eye
 
-   - triggered by venom sac | about parasite capitalism | points to corrupted resonance
-   - desc -
+- triggered by venom sac | about parasite capitalism | points to corrupted resonance
+- email raising rent for hundreds of people -> walk through a field with homeless tents -> draft email to political leader suggesting to criminalize poverty
 
-6. evil eye
+### Evil eye
 
-   - triggered by corrupted resonance | about funding genocide | points to cinder dust
-   - desc -
+- triggered by corrupted resonance | about funding genocide | points to cinder dust
+- touring a prison facility that looks more like a factory manufacturing explosive powder -> talking about free labor and criminalizing more things -> talk about the weapons being shipped to x country to fund a genocide -> war machine is money machine
 
-7. lost eye
-   - triggered by cinder dust | about forest fires & automation, water scarcity | points to blaze cake
-   - desc -
+### Lost eye
+
+- triggered by cinder dust | about forest fires & automation, water scarcity | points to blaze cake
+- setting line of explosive powder and starting a forest fire -> talk about drought and wildfires -> talk about how this is one of the only areas left and is hard to clear with normal methods and that it will be used to grow crops for a special cinder cake that is expensive -> fire catches and starts a chain reaction and makes a much bigger fire than anticipated -> workers die and you are evacuated
 
 ## Chapter 4
 
-1. (nether eye) drink nether tea:
-   1. climate change - oil drilling, More frequent and severe natural disasters, wildfires
-   2. trigger - going to the nether
-   3. next - choice
-   4. desc -
-2. (wither eye) chromatic compound:
-   1. climate change - choice between worlds. widespread system collapse
-   2. trigger - chromatic compound
-   3. next - nutrient paste, iron can
+### Nether eye
 
-chapter 5.1
+- triggered by nether tea | oil drilling & heat death | points to chromatic compound
+- sitting in your kitchen drinking some nether tea, fly to remote area to oversea oil drilling -> learn of an underground oil chamber -> see the oil and feel ambition -> vision darkens because you are too hot and you pass out from heat exhaustion
 
-1. () ?
-   1. climate change - animal agriculture slaughterhouse, food scarcity, water scarcity
-   2. trigger - make nutrient paste
-   3. next - money
-   4. desc -
+### Wither eye
 
-chapter 5.2
+1.  climate change - choice between worlds. widespread system collapse
+2.  trigger - chromatic compound
+3.  next - nutrient paste, iron can
 
-1. () ? 1. climate change - industrialization, unbreathable air 2. trigger - make an iron can 3. next - money 4. desc -
-   chapter 6
-1. () ?
-   1. climate change - building a bunker and a resistance movement and choosing to wake up and dream a new dream and build a new world
+## Chapter 5.1
 
-dreams
-chapter 7.1
+### Cursed eye
 
-1. () ?
-   1. climate change - collective trauma release, weep for all life
-2. () ?
-   1. climate change - a solar punk vision of society
-3. () ?
-   1. climate change - identity shift as healers and guardians of all life
-4. () ?
-   1. climate change - space age ambitions
+1.  climate change - animal agriculture slaughterhouse, food scarcity, water scarcity
+2.  trigger - make nutrient paste
+3.  next - money
 
-- [ ] check item staging
-- [ ] check happy path recipes
-- [ ] check side quest recipes
-- [ ] check patchouli entries
-- [ ] check nightmares / eyes / sleeping
-- [ ] check lost stories
+## Chapter 5.2
 
-1. cold eye (chapter 1 - hearth - cryochamber)
-   - look at hearth -> go to factory & see smeltery making ingots -> go to cryo chamber and sleep
-2. exotic eye (chapter 2 - smeltery - ocean acidification)
-   - look at thermometer with high temperature -> hear reports of ocean acidification -> go to fish farm -> talk about scamming customers
-3. guardian eye (chapter 2 - aura eye - flooding)
-   - at your desk listening to sirens and walk upstairs to the roof -> evacuated because of flooding in a helicopter -> go home and flip channels seeing different natural disasters -> decide to make bunker
-4. undead eye (chapter 3 - forgotten nugget - pandemic)
-   - in a meeting with security -> tell them to enforce the no mask policy, no sick leave, workers leaving in droves, opportunity to steal money another way?
-5. corrupted eye (chapter 3 - venom sac - parasite capitalism)
-   - email raising rent for hundreds of people -> walk through a field with homeless tents -> draft email to political leader suggesting to criminalize poverty
-6. evil eye (chapter 3 - corrupted resonance - genocide)
-   - touring a prison facility that looks more like a factory manufacturing explosive powder -> talking about free labor and criminalizing more things -> talk about the weapons being shipped to x country to fund a genocide -> war machine is money machine
-7. lost eye (chapter 3 - cinder dust - forest fire & wildfires)
-   - setting line of explosive powder and starting a forest fire -> talk about drought and wildfires -> talk about how this is one of the only areas left and is hard to clear with normal methods and that it will be used to grow crops for a special cinder cake that is expensive -> fire catches and starts a chain reaction and makes a much bigger fire than anticipated -> workers die and you are evacuated
-8. nether eye (chapter 4 - nether tea - oil drilling & heat death)
-   - sitting in your kitchen drinking some nether tea, fly to remote area to oversea oil drilling -> learn of an underground oil chamber -> see the oil and feel ambition -> vision darkens because you are too hot and you pass out from heat exhaustion
-9. ## wither eye (chapter 4 - chromatic compound - system collapse)
-10. ## cursed eye (chapter 5.1 - deluxe hamburger - animal agriculture & food scarcity)
-11. ## black eye (chapter 5.2 - plastic - industrialization & unbreathable air)
-12. ## rogue eye (chapter 6 - wake up - resisting dystopia)
-13. ## old eye (chapter 7.1 - ? - weep for earth)
-14. ## witch eye (chapter 7.2 - ? - vision for a solarpunk future)
-15. ## magical eye (chapter 7.2 - ? - guardians of the planet)
-16. ## cryptic eye (chapter 7.2 - ? - space age ambitions)
+### Black eye
+
+1.  climate change - industrialization, unbreathable air
+2.  trigger - make an iron can
+3.  next - money
+
+## Chapter 6
+
+### Rogue eye
+
+1.  climate change - building a bunker and a resistance movement and choosing to wake up and dream a new dream and build a new world
+
+## Chapter 7.1
+
+### Old eye
+
+? collective trauma release, weep for all life
+
+### Witch eye
+
+? - a solar punk vision of society
+
+### Magical eye
+
+? - identity shift as healers and guardians of all life
+
+### Cryptic eye
+
+? - space age ambitions
