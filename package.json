@@ -8,6 +8,15 @@
     "url": "https://github.com/dustinheisey/inconvenient.gg.git"
   },
   "scripts": {
+    "docusaurus": "cd ./wiki && docusaurus",
+    "wiki": "docusaurus start ./wiki",
+    "build:wiki": "cd ./wiki && docusaurus build",
+    "swizzle:wiki": "cd ./wiki && docusaurus swizzle",
+    "deploy:wiki": "cd ./wiki && docusaurus deploy",
+    "clear:wiki": "cd ./wiki && docusaurus clear",
+    "serve:wiki": "cd ./wiki && docusaurus serve",
+    "write-translations": "cd ./wiki && docusaurus write-translations",
+    "write-heading-ids": "cd ./wiki && docusaurus write-heading-ids",
     "lint:js": "npx eslint **/*.js --fix",
     "lint:css": "cd styles && npx stylelint \"**/*.css\" --fix",
     "lint": "npm run lint:js && npm run lint:css",
@@ -15,13 +24,24 @@
     "sb": "storybook dev -c common/docs/.storybook",
     "styles": "postcss styles/style.css -o styles/style.min.css --watch",
     "build:js": "rollup -c rollup.config.js",
-    "start": "npm run build:js && cd site && rm -rf site/ && npx @11ty/eleventy --serve --incremental",
+    "site": "npm run build:js && cd site && rm -rf site/ && npx @11ty/eleventy --serve --incremental",
     "build:site": "rollup -c rollup.config.js && npm run build:js && cd site && rm -rf sites/ && npx @11ty/eleventy"
   },
   "author": {
     "name": "Dustin Heisey"
   },
+  "dependencies": {
+    "@docusaurus/core": "3.5.2",
+    "@docusaurus/preset-classic": "3.5.2",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
   "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.5.2",
+    "@docusaurus/types": "3.5.2",
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-navigation": "^0.3.5",
