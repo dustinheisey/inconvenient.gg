@@ -15,6 +15,9 @@
     {
       "path": ".",
       "name": "Source"
+    },
+    {
+      "path": "../Inconvenient Modpack/Curseforge/minecraft/Instances/Dev Pack"
     }
   ],
   "settings": {}
