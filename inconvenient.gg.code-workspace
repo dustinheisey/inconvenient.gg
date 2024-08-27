@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "path": "./site",
+      "name": "Site"
+    },
+    {
+      "path": "./wiki",
+      "name": "Wiki"
+    },
+    {
+      "path": "./common",
+      "name": "Common"
+    },
+    {
+      "path": ".",
+      "name": "Source"
+    },
+    {
+      "path": "../Inconvenient Modpack/Curseforge/minecraft/Instances/Dev Pack"
+    }
+  ],
+  "settings": {}
+}
