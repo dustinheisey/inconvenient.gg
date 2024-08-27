@@ -20,12 +20,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(faviconsPlugin, {
     outputDir: './_site',
     manifest_: {
-      name: 'BeeLeaf Foundation - Championing the Survival of Bees',
-      short_name: 'BeeLeaf Foundation',
+      name: 'An Inconvenient Modpack',
+      short_name: 'Inconvenient',
       description:
         'BeeLeaf Foundation is a passionate advocate for bee conservation. Through education, habitat preservation, and policy advocacy, we’re building a future where bees flourish.',
-      theme_color: '#745b00',
-      background_color: '#14100F',
+      theme_color: '#A33614',
+      background_color: '#2B201B',
       display: 'fullscreen',
       start_url: '/',
       scope: '/',
