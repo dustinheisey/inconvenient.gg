@@ -1,22 +1,20 @@
 const config = {
   title: 'An Inconvenient Modpack',
   url: 'https://inconvenient.gg',
-  description:
-    '',
+  description: '',
   navigation: {
     logo: {
-      src: './public/svg/logo',
+      src: './public/svg/logomark.svg',
       alt: 'An Inconvenient Modpack'
     },
     header: {
-      variant: 'spaced',
-      theme: 'dark',
+      variant: 'stacked',
       links: [
         {
           label: 'Features',
-          url: '/features',
+          url: '/features'
         },
-        { label: 'Wiki', url: '/wiki' },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
         { label: 'Help Me Find Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues' },
         {
           label: 'Community',
@@ -27,9 +25,9 @@ const config = {
             { label: 'Tik Tok', url: '/' },
             { label: 'Twitch', url: '/' },
             { label: 'Reddit', url: '/' },
-            { label: 'Mastodon', url: '/' },
+            { label: 'Mastodon', url: '/' }
           ]
-        },
+        }
       ],
       action: { label: 'Play', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient' }
     },
@@ -37,90 +35,57 @@ const config = {
       links: [
         { label: 'Home', url: '/', icon: 'home' },
         { label: 'Features', url: '/features', icon: 'about' },
-        { label: 'Wiki', url: '/wiki', icon: 'books' },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
         { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', icon: 'advocate' },
         { label: 'Community', url: '/community', icon: 'contact' }
       ],
       fab: { label: 'Play', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', icon: 'donate' }
     },
     footer: {
-      variant: 'mission',
-      theme: 'dark',
-      mission:
-        'Our mission at the BeeLeaf Foundation is to foster an understanding and appreciation of bees and their vital role in our ecosystem. We are committed to promoting bee conservation through education, advocacy, and action. Our goal is to inspire individuals and communities to create environments where bees can thrive, ensuring a sustainable future for these remarkable creatures and the life-sustaining pollination work they perform.',
-      groups: [
-        {
-          title: 'About',
-          links: [
-            { label: 'Community', url: '/about/community' },
-            { label: 'Impact', url: '/about/impact' },
-            { label: 'Our Work', url: '/about/our-work' },
-            { label: 'Partners', url: '/about/partners' },
-            { label: 'Bee Facts', url: '/learn/bee-facts' },
-            { label: 'Conservation', url: '/learn/conservation-techniques' }
-          ]
-        },
-        {
-          title: 'Nonprofit',
-          links: [
-            { label: 'Home', url: '/' },
-            { label: 'About', url: '/about' },
-            { label: 'Learn', url: '/learn' },
-            { label: 'Get Involved', url: '/get-involved' },
-            { label: 'Contact', url: '/contact' },
-            { label: 'Donate', url: '/donate' }
-          ]
-        },
-        {
-          title: 'Legal',
-          links: [
-            {
-              label: 'Privacy Policy',
-              url: 'https://www.termsfeed.com/live/d5271eb0-e06a-49f5-9021-99c0bb40389b'
-            },
-            {
-              label: 'Terms of Service',
-              url: 'https://www.termsfeed.com/live/dc519ac0-71e6-49d3-a0d6-f9ce86815fa5'
-            },
-            {
-              label: 'Cookies',
-              url: 'https://www.termsfeed.com/live/012a4e98-08d0-48ab-b716-764b86ca84df'
-            },
-            { label: 'Sitemap', url: '/sitemap.xml' }
-          ]
-        }
+      variant: 'simple-bg',
+      links: [
+        { label: 'Features', url: '/features' },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
+        { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues' },
+        { label: 'Community', url: '/community' },
+        { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient' }
       ],
       social: [
         {
-          label: 'Medium',
-          icon: 'logo-medium',
-          url: 'https://medium.com/@dustin_heisey'
+          label: 'Discord',
+          icon: 'logo-discord',
+          url: ''
         },
         {
-          label: 'Dribbble',
-          icon: 'logo-dribbble',
-          url: 'https://dribbble.com/dustin_heisey'
+          label: 'Youtube',
+          icon: 'logo-youtube',
+          url: ''
         },
         {
-          label: 'Behance',
-          icon: 'logo-behance',
-          url: 'https://www.behance.net/dustin_heisey'
+          label: 'TikTok',
+          icon: 'logo-tiktok',
+          url: ''
         },
         {
-          label: 'LinkedIn',
-          icon: 'logo-linkedin',
-          url: 'https://www.linkedin.com/in/heiseydustin/'
+          label: 'Reddit',
+          icon: 'logo-reddit',
+          url: ''
+        },
+        {
+          label: 'Mastodon',
+          icon: 'logo-mastodon',
+          url: ''
         }
       ],
-      copywrite: '© 2023 BeeLeaf Foundation. All rights reserved.'
+      copywrite: '© 2024 An Inconvenient Modpack.'
     }
   },
   pages: [
     {
       url: 'index',
-      title: 'Join BeeLeaf Foundation: Become a Hero for Bees Today!',
+      title: 'An Inconvenient Modpack: Epic Minecraft Adventure with Deep Storytelling',
       description:
-        'At BeeLeaf Foundation, you can be the hero bees desperately need. Join us in the fight to conserve bee populations through education, conservation, and action.',
+        'Discover "An Inconvenient Modpack", a Minecraft experience that combines deep philosophical storytelling with immersive gameplay. Begin your journey in a transformed world, exploring custom dimensions, challenging mechanics, and a narrative that mirrors today\'s societal issues. Perfect for gamers seeking both adventure and reflection.',
       regions: {
         hero: {
           layout: 'split',
@@ -223,9 +188,9 @@ const config = {
     },
     {
       url: 'features',
-      title: 'About BeeLeaf Foundation: Our Mission to Save Bees',
+      title: 'Discover Unique Features of An Inconvenient Modpack: Advancements, Mechanics & More',
       description:
-        "Discover the core of BeeLeaf Foundation's dedication to bee conservation. Our mission, history, and vision reflect our unwavering commitment to protecting these vital creatures.",
+        'Explore the unique features of "An Inconvenient Modpack", from more than 400 advancements and almost 2000 custom recipes, to complex survival mechanics and intricate progression systems. Dive into a world where every element is designed to challenge your skills and your perspective.',
       regions: {
         mission: {
           layout: 'end-heavy',
@@ -330,110 +295,10 @@ const config = {
       }
     },
     {
-      url: 'wiki',
-      title: 'Learn About Bees with BeeLeaf Foundation: Understanding Our Buzzing Friends',
-      description:
-        'Dive into the world of bees and learn about their importance, threats, and ways to help with BeeLeaf Foundation. Discover how these fascinating creatures play a vital role in our ecosystem.',
-      regions: {
-        intro: {
-          layout: 'split',
-          theme: 'dark',
-          start: { component: 'img', src: 'learning.png', alt: 'Learning' },
-          end: {
-            component: 'text',
-            get navbar() {
-              return config.navigation
-            },
-            size: 'page',
-            overline: 'Learn About Bees',
-            headline: 'Understanding Our Buzzing Friends',
-            body: 'Bees are fascinating creatures with a vital role in our ecosystem. Dive into the world of bees and learn about their importance, the threats they face, and what you can do to help.'
-          }
-        },
-        importance: {
-          layout: 'start-heavy',
-          start: { component: 'img', src: 'importance.png', alt: 'Importance' },
-          end: {
-            component: 'text',
-            overline: 'Importance of Bees',
-            headline: 'The Tiny Heroes of Our Ecosystem',
-            body: "Bees are more than just honey producers. They're crucial pollinators that help plants reproduce. Without bees, our food supply and biodiversity are at risk. Learn more about why bees matter.",
-            btn: {
-              label: 'Learn About Bees',
-              variant: 'secondary',
-              url: '/learn/bee-facts'
-            }
-          }
-        },
-        threats: {
-          layout: 'end-heavy',
-          end: { component: 'img', src: 'wasteland.png', alt: 'Wasteland' },
-          start: {
-            component: 'text',
-            overline: 'Threats to Bees',
-            headline: 'The Challenges Bees Face',
-            body: 'From pesticides and habitat loss to climate change, bees are up against numerous threats. Understanding these threats is the first step towards protecting our buzzing friends.',
-            btn: {
-              label: 'Learn About Conservation',
-              variant: 'secondary',
-              url: '/learn/conservation-techniques'
-            }
-          }
-        },
-        resources: {
-          layout: 'switcher',
-          style: { inset: true },
-          overline: 'Resources',
-          headline: 'Dive Deeper into the World of Bees',
-          items: [
-            {
-              component: 'card',
-              style: { theme: 'primary-container' },
-              icon: 'article',
-              overline: 'Articles',
-              headline: 'Read Our Articles',
-              body: 'Read our articles about bees and their conservation. From the latest research to tips for helping bees, our articles cover a wide range of topics.'
-            },
-            {
-              component: 'card',
-              style: { theme: 'tertiary-container' },
-              icon: 'video',
-              overline: 'Videos',
-              headline: 'Watch Our Videos',
-              body: 'Watch our videos about bees and their conservation. From educational videos to inspiring stories, our videos will help you learn more about bees.'
-            },
-            {
-              component: 'card',
-              style: { theme: 'secondary-container' },
-              icon: 'books',
-              overline: 'Educational Materials',
-              headline: 'Explore Our Educational Materials',
-              body: 'Explore our educational materials about bees and their conservation. From lesson plans to activity sheets, our educational materials are perfect for teachers, parents, and students.'
-            }
-          ]
-        },
-        action: {
-          layout: 'split',
-          theme: 'dark',
-          start: { component: 'img', src: 'bee-friend.png', alt: 'Friend to The Bees' },
-          end: {
-            component: 'text',
-            overline: 'How to Help',
-            headline: 'Be a Friend to Bees',
-            body: 'There are many ways you can help bees, from planting a bee-friendly garden to reducing your use of pesticides. Discover how you can make a difference in the lives of bees.',
-            btn: {
-              label: 'Take Action',
-              url: '/get-involved'
-            }
-          }
-        }
-      }
-    },
-    {
       url: 'community',
-      title: 'Engage with the BeeLeaf Community: United for Bee Conservation',
+      title: 'Join the An Inconvenient Modpack Community: Connect on Discord, Mastodon, YouTube & More',
       description:
-        "Become part of the BeeLeaf Foundation's community and join forces with volunteers, donors, and partners who are dedicated to creating a safer world for bees.",
+        'Join our community of "An Inconvenient Modpack" players. Share your experiences, get help with challenges, and contribute to the ongoing development of this evolving Minecraft adventure. Connect with like-minded gamers who appreciate deep, meaningful gameplay.',
       regions: {
         intro: {
           layout: 'end-heavy',
@@ -517,7 +382,7 @@ const config = {
           }
         }
       }
-    },
+    }
   ]
 }
 
