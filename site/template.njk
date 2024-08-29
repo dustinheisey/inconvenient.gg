@@ -10,7 +10,8 @@ eleventyComputed:
 permalink: "{{ config.url }}.html"
 ---
 
-{% from "./common/macros/test.njk" import layout, header, footer %}
+{% from "./macros/layout.njk" import layout, header, footer %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,8 +87,7 @@ permalink: "{{ config.url }}.html"
 </head>
 
 <body class="theme-background">
-    {% commonicons %}
-    {% siteicons %}
+    {% icons %}
 
     {% if config.header != false %}
         {{ header({ config: site.navigation }) }}
