@@ -1,121 +1,85 @@
 const config = {
-  title: 'BeeLeaf Foundation - Championing the Survival of Bees',
-  url: 'https://bee-leaf.dustinheisey.com',
-  description:
-    'BeeLeaf Foundation is a passionate advocate for bee conservation. Through education, habitat preservation, and policy advocacy, we’re building a future where bees flourish.',
+  title: 'An Inconvenient Modpack',
+  url: 'https://inconvenient.gg',
+  description: '',
   navigation: {
     logo: {
       src: './public/svg/logo',
-      alt: 'BeeLeaf Foundation',
+      alt: 'An Inconvenient Modpack'
     },
     header: {
       variant: 'spaced',
       theme: 'dark',
       links: [
         {
-          label: 'About',
-          url: '/about',
-          subLinks: [
-            { label: 'Community', url: '/about/community' },
-            { label: 'Impact', url: '/about/impact' },
-            { label: 'Our Work', url: '/about/our-work' },
-            { label: 'Partners', url: '/about/partners' },
-          ],
+          label: 'Features',
+          url: '/features'
         },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
+        { label: 'Help Me Find Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues' },
         {
-          label: 'Learn',
-          url: '/learn',
+          label: 'Community',
+          url: '/community',
           subLinks: [
-            { label: 'Bee Facts', url: '/learn/bee-facts' },
-            { label: 'Conservation', url: '/learn/conservation-techniques' },
-          ],
-        },
-        { label: 'Get Involved', url: '/get-involved' },
-        { label: 'Contact', url: '/contact' },
+            { label: 'Discord', url: '/' },
+            { label: 'Youtube', url: '/' },
+            { label: 'Tik Tok', url: '/' },
+            { label: 'Twitch', url: '/' },
+            { label: 'Reddit', url: '/' },
+            { label: 'Mastodon', url: '/' }
+          ]
+        }
       ],
-      action: { label: 'Donate', url: '/donate' },
-    },
-    bottombar: {
-      links: [
-        { label: 'Home', url: '/', icon: 'home' },
-        { label: 'About', url: '/about', icon: 'about' },
-        { label: 'Learn', url: '/learn', icon: 'wave' },
-        { label: 'Get Involved', url: '/get-involved', icon: 'advocate' },
-        { label: 'Contact', url: '/contact', icon: 'contact' },
-      ],
-      fab: { label: 'Donate', url: '/donate', icon: 'donate' },
+      action: { label: 'Play', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient' },
+      bottombar: {
+        links: [
+          { label: 'Home', url: '/', icon: 'home' },
+          { label: 'Features', url: '/features', icon: 'about' },
+          { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
+          { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', icon: 'advocate' },
+          { label: 'Community', url: '/community', icon: 'contact' }
+        ],
+        fab: { label: 'Play', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', icon: 'donate' }
+      }
     },
     footer: {
-      variant: 'mission',
-      theme: 'dark',
-      mission:
-        'Our mission at the BeeLeaf Foundation is to foster an understanding and appreciation of bees and their vital role in our ecosystem. We are committed to promoting bee conservation through education, advocacy, and action. Our goal is to inspire individuals and communities to create environments where bees can thrive, ensuring a sustainable future for these remarkable creatures and the life-sustaining pollination work they perform.',
-      groups: [
-        {
-          title: 'About',
-          links: [
-            { label: 'Community', url: '/about/community' },
-            { label: 'Impact', url: '/about/impact' },
-            { label: 'Our Work', url: '/about/our-work' },
-            { label: 'Partners', url: '/about/partners' },
-            { label: 'Bee Facts', url: '/learn/bee-facts' },
-            { label: 'Conservation', url: '/learn/conservation-techniques' },
-          ],
-        },
-        {
-          title: 'Nonprofit',
-          links: [
-            { label: 'Home', url: '/' },
-            { label: 'About', url: '/about' },
-            { label: 'Learn', url: '/learn' },
-            { label: 'Get Involved', url: '/get-involved' },
-            { label: 'Contact', url: '/contact' },
-            { label: 'Donate', url: '/donate' },
-          ],
-        },
-        {
-          title: 'Legal',
-          links: [
-            {
-              label: 'Privacy Policy',
-              url: 'https://www.termsfeed.com/live/d5271eb0-e06a-49f5-9021-99c0bb40389b',
-            },
-            {
-              label: 'Terms of Service',
-              url: 'https://www.termsfeed.com/live/dc519ac0-71e6-49d3-a0d6-f9ce86815fa5',
-            },
-            {
-              label: 'Cookies',
-              url: 'https://www.termsfeed.com/live/012a4e98-08d0-48ab-b716-764b86ca84df',
-            },
-            { label: 'Sitemap', url: '/sitemap.xml' },
-          ],
-        },
+      variant: 'simple',
+      links: [
+        { label: 'Features', url: '/features' },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
+        { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues' },
+        { label: 'Community', url: '/community' },
+        { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient' }
       ],
       social: [
         {
-          label: 'Medium',
-          icon: 'logo-medium',
-          url: 'https://medium.com/@dustin_heisey',
+          label: 'Discord',
+          icon: 'logo-discord',
+          url: ''
         },
         {
-          label: 'Dribbble',
-          icon: 'logo-dribbble',
-          url: 'https://dribbble.com/dustin_heisey',
+          label: 'Youtube',
+          icon: 'logo-youtube',
+          url: ''
         },
         {
-          label: 'Behance',
-          icon: 'logo-behance',
-          url: 'https://www.behance.net/dustin_heisey',
+          label: 'TikTok',
+          icon: 'logo-tiktok',
+          url: ''
         },
         {
-          label: 'LinkedIn',
-          icon: 'logo-linkedin',
-          url: 'https://www.linkedin.com/in/heiseydustin/',
+          label: 'Reddit',
+          icon: 'logo-reddit',
+          url: ''
         },
+        {
+          label: 'Mastodon',
+          icon: 'logo-mastodon',
+          url: ''
+        }
       ],
-      copywrite: '© 2023 BeeLeaf Foundation. All rights reserved.',
-    },
+      copywrite: '© 2024 An Inconvenient Modpack'
+    }
   },
   pages: [
     {
@@ -131,7 +95,7 @@ const config = {
           start: {
             component: 'img',
             src: 'bee-hero.png',
-            alt: 'bee',
+            alt: 'bee'
           },
           end: {
             component: 'text',
@@ -143,9 +107,9 @@ const config = {
             body: "Imagine a world where the soft hum of bees fills the air, where flowers bloom in abundance thanks to their tireless work. This is the world we're fighting for, and we need you.",
             btn: {
               label: 'Join the Hive',
-              url: '/get-involved',
-            },
-          },
+              url: '/get-involved'
+            }
+          }
         },
         problem: {
           layout: 'end-heavy',
@@ -153,8 +117,7 @@ const config = {
           end: {
             component: 'text',
             size: 'region',
-            headline:
-              'Our Bees are in Danger and their survival is crucial for our ecosystem',
+            headline: 'Our Bees are in Danger and their survival is crucial for our ecosystem'
           },
           start: {
             component: 'list',
@@ -165,9 +128,9 @@ const config = {
               'Climate Change: Altered weather disrupts bee foraging patterns.',
               'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
               'Invasive Species: Non-native plants and pests harm native bees.',
-              'Intensive Agriculture: Industrial practices limit bee forage and health.',
-            ],
-          },
+              'Intensive Agriculture: Industrial practices limit bee forage and health.'
+            ]
+          }
         },
         guide: {
           layout: 'start-heavy',
@@ -176,13 +139,13 @@ const config = {
             size: 'region',
             overline: 'BeeLeaf Foundation: Your Guide to Bee Conservation',
             headline: "We're here to help you help the bees",
-            body: "We are BeeLeaf Foundation, a dedicated team of bee enthusiasts, conservationists, and educators committed to reversing the decline of bee populations. We provide resources, education, and opportunities for you to get involved. With us, you're not alone in this fight. Together, we can turn the tide.",
+            body: "We are BeeLeaf Foundation, a dedicated team of bee enthusiasts, conservationists, and educators committed to reversing the decline of bee populations. We provide resources, education, and opportunities for you to get involved. With us, you're not alone in this fight. Together, we can turn the tide."
           },
           start: {
             component: 'img',
             src: 'guide.png',
-            alt: 'Guide',
-          },
+            alt: 'Guide'
+          }
         },
         plan: {
           layout: 'switcher',
@@ -193,21 +156,21 @@ const config = {
               component: 'blurb',
               icon: 'book',
               headline: 'Education',
-              body: 'Knowledge is power. We aim to educate the public about the importance of bees. Through workshops, webinars, and community outreach, we’re spreading the word about the vital role bees play in our ecosystem.',
+              body: 'Knowledge is power. We aim to educate the public about the importance of bees. Through workshops, webinars, and community outreach, we’re spreading the word about the vital role bees play in our ecosystem.'
             },
             {
               component: 'blurb',
               icon: 'shield',
               headline: 'Conservation',
-              body: 'Protecting Bee Habitats. We’re working tirelessly to conserve and restore bee habitats. From planting wildflowers to creating urban bee sanctuaries, every action we take is a step towards a safer world for our bees.',
+              body: 'Protecting Bee Habitats. We’re working tirelessly to conserve and restore bee habitats. From planting wildflowers to creating urban bee sanctuaries, every action we take is a step towards a safer world for our bees.'
             },
             {
               component: 'blurb',
               icon: 'advocate',
               headline: 'Action',
-              body: 'Advocacy for Policy Change. We’re advocating for policies that protect bees and their habitats. From lobbying against harmful pesticides to promoting sustainable farming practices, we’re making sure our voices - and the buzz of the bees - are heard.',
-            },
-          ],
+              body: 'Advocacy for Policy Change. We’re advocating for policies that protect bees and their habitats. From lobbying against harmful pesticides to promoting sustainable farming practices, we’re making sure our voices - and the buzz of the bees - are heard.'
+            }
+          ]
         },
         action: {
           layout: 'split',
@@ -220,16 +183,16 @@ const config = {
             body: "With your help, we can create a world where bees are no longer at risk. A world where our food supply is secure, our flowers bloom, and our children can marvel at the humble bee. Imagine the joy of seeing a child's face light up at the sight of a bee, knowing that they have a future in a world where bees thrive. This is the future we're striving for. Join us in making this vision a reality.",
             btn: {
               label: 'Get Involved',
-              url: '/get-involved',
-            },
+              url: '/get-involved'
+            }
           },
           end: {
             component: 'img',
             src: 'bees-thrive.png',
-            alt: 'Bees Thriving',
-          },
-        },
-      },
+            alt: 'Bees Thriving'
+          }
+        }
+      }
     },
     {
       url: 'about',
@@ -245,8 +208,8 @@ const config = {
             size: 'page',
             overline: 'About BeeLeaf Foundation',
             headline: 'Committed to Bee Health, Education, and Conservation',
-            body: 'At BeeLeaf Foundation, we are passionate about the health and survival of bees. Our mission is to educate the public about the vital role bees play in our ecosystem and the crisis they are facing. We are a team of dedicated conservationists, educators, and bee enthusiasts working tirelessly to protect these incredible creatures. Join us in our mission to create a world where bees can thrive.',
-          },
+            body: 'At BeeLeaf Foundation, we are passionate about the health and survival of bees. Our mission is to educate the public about the vital role bees play in our ecosystem and the crisis they are facing. We are a team of dedicated conservationists, educators, and bee enthusiasts working tirelessly to protect these incredible creatures. Join us in our mission to create a world where bees can thrive.'
+          }
         },
         history: {
           layout: 'sparkline',
@@ -257,24 +220,24 @@ const config = {
             {
               component: 'blurb',
               headline: 'The Beginning',
-              body: 'Our journey began with a simple love for bees and a deep concern for their declining populations.',
+              body: 'Our journey began with a simple love for bees and a deep concern for their declining populations.'
             },
             {
               component: 'blurb',
               headline: 'The Turning Point',
-              body: 'In 2015, we launched our first conservation project, planting wildflowers in a local park. This project was a turning point for us, as it showed us the power of community action. Since then, we have been working tirelessly to conserve and restore bee habitats.',
+              body: 'In 2015, we launched our first conservation project, planting wildflowers in a local park. This project was a turning point for us, as it showed us the power of community action. Since then, we have been working tirelessly to conserve and restore bee habitats.'
             },
             {
               component: 'blurb',
               headline: 'The Next Step',
-              body: 'In 2018, we launched our first educational program, a series of workshops for children. These workshops were a huge success, and we have since expanded our educational programs to include webinars, community outreach, and more.',
+              body: 'In 2018, we launched our first educational program, a series of workshops for children. These workshops were a huge success, and we have since expanded our educational programs to include webinars, community outreach, and more.'
             },
             {
               component: 'blurb',
               headline: 'The Future',
-              body: 'We are excited to announce that we are launching our first advocacy campaign in 2020. This campaign will focus on promoting sustainable farming practices and lobbying against harmful pesticides. We are also working on a new conservation project, creating urban bee sanctuaries.',
-            },
-          ],
+              body: 'We are excited to announce that we are launching our first advocacy campaign in 2020. This campaign will focus on promoting sustainable farming practices and lobbying against harmful pesticides. We are also working on a new conservation project, creating urban bee sanctuaries.'
+            }
+          ]
         },
         team: {
           layout: 'gallery',
@@ -287,39 +250,39 @@ const config = {
               component: 'blurb',
               img: { src: 'john-doe.jpeg', alt: 'John Doe' },
               headline: 'John Doe',
-              body: 'Founder & CEO',
+              body: 'Founder & CEO'
             },
             {
               component: 'blurb',
               img: { src: 'jane-doe.jpeg', alt: 'Jane Doe' },
               headline: 'Jane Doe',
-              body: 'Director of Education',
+              body: 'Director of Education'
             },
             {
               component: 'blurb',
               img: { src: 'john-smith.jpeg', alt: 'John Smith' },
               headline: 'John Smith',
-              body: 'Director of Conservation',
+              body: 'Director of Conservation'
             },
             {
               component: 'blurb',
               img: { src: 'jane-smith.jpeg', alt: 'Jane Smith' },
               headline: 'Jane Smith',
-              body: 'Director of Advocacy',
+              body: 'Director of Advocacy'
             },
             {
               component: 'blurb',
               img: { src: 'john-jones.jpeg', alt: 'John Jones' },
               headline: 'John Jones',
-              body: 'Director of Communications',
+              body: 'Director of Communications'
             },
             {
               component: 'blurb',
               img: { src: 'jane-jones.jpeg', alt: 'Jane Jones' },
               headline: 'Jane Jones',
-              body: 'Director of Fundraising',
-            },
-          ],
+              body: 'Director of Fundraising'
+            }
+          ]
         },
         action: {
           layout: 'split',
@@ -334,11 +297,11 @@ const config = {
             body: "We envision a future where bees are no longer at risk, where our food supply is secure, our flowers bloom, and our children can marvel at the humble bee. This is the future we're striving for.",
             btn: {
               label: 'Get Involved',
-              url: '/get-involved',
-            },
-          },
-        },
-      },
+              url: '/get-involved'
+            }
+          }
+        }
+      }
     },
     {
       url: 'about/community',
@@ -354,8 +317,8 @@ const config = {
             size: 'page',
             overline: 'Community',
             headline: 'Together for Bees',
-            body: 'Our community is at the heart of our work at BeeLeaf Foundation. From volunteers and donors to partners and supporters, every member of our community plays a crucial role in our mission to protect bees.',
-          },
+            body: 'Our community is at the heart of our work at BeeLeaf Foundation. From volunteers and donors to partners and supporters, every member of our community plays a crucial role in our mission to protect bees.'
+          }
         },
         volunteers: {
           layout: 'gallery',
@@ -368,21 +331,21 @@ const config = {
               component: 'blurb',
               img: { src: 'john-doe.jpeg', alt: 'John Doe' },
               headline: 'John Doe',
-              body: 'Volunteering with BeeLeaf Foundation allows me to play a meaningful role in bee conservation. Seeing the positive impact of my efforts brings me immense joy and fulfillment.',
+              body: 'Volunteering with BeeLeaf Foundation allows me to play a meaningful role in bee conservation. Seeing the positive impact of my efforts brings me immense joy and fulfillment.'
             },
             {
               component: 'blurb',
               img: { src: 'jane-doe.jpeg', alt: 'Jane Doe' },
               headline: 'Jane Doe',
-              body: "Being part of BeeLeaf Foundation's volunteer team is a fantastic opportunity to contribute to the preservation of these essential pollinators. I am grateful for the chance to make a real difference in the world.",
+              body: "Being part of BeeLeaf Foundation's volunteer team is a fantastic opportunity to contribute to the preservation of these essential pollinators. I am grateful for the chance to make a real difference in the world."
             },
             {
               component: 'blurb',
               img: { src: 'john-smith.jpeg', alt: 'John Smith' },
               headline: 'John Smith',
-              body: 'BeeLeaf Foundation has provided me with a platform to actively engage in bee conservation. As a volunteer, I find it incredibly rewarding to witness the positive changes we bring to bee habitats and raise awareness about their importance.',
-            },
-          ],
+              body: 'BeeLeaf Foundation has provided me with a platform to actively engage in bee conservation. As a volunteer, I find it incredibly rewarding to witness the positive changes we bring to bee habitats and raise awareness about their importance.'
+            }
+          ]
         },
         donors: {
           layout: 'end-heavy',
@@ -390,7 +353,7 @@ const config = {
           start: {
             component: 'img',
             src: 'thriving-bee-habitat.png',
-            alt: 'Thriving Bee Habitat',
+            alt: 'Thriving Bee Habitat'
           },
           end: {
             component: 'stats',
@@ -400,22 +363,22 @@ const config = {
             items: [
               {
                 headline: '$1,000,000+',
-                body: 'Donated to bee conservation initiatives',
+                body: 'Donated to bee conservation initiatives'
               },
               {
                 headline: '5,000+',
-                body: 'Individual donors contributing to our mission',
+                body: 'Individual donors contributing to our mission'
               },
               {
                 headline: '25+',
-                body: 'Corporate sponsors partnering with BeeLeaf Foundation',
+                body: 'Corporate sponsors partnering with BeeLeaf Foundation'
               },
               {
                 headline: '10,000+',
-                body: 'Volunteer hours dedicated to bee conservation',
-              },
-            ],
-          },
+                body: 'Volunteer hours dedicated to bee conservation'
+              }
+            ]
+          }
         },
         action: {
           layout: 'split',
@@ -429,11 +392,11 @@ const config = {
             body: 'Join our community and be a part of the solution. Whether you volunteer, donate, or spread the word about the importance of bees, you can make a difference.',
             btn: {
               label: 'Get Involved',
-              url: '/get-involved',
-            },
-          },
-        },
-      },
+              url: '/get-involved'
+            }
+          }
+        }
+      }
     },
     {
       url: 'about/impact',
@@ -446,15 +409,15 @@ const config = {
           end: {
             component: 'img',
             src: 'making-a-difference.png',
-            alt: 'Making a Difference',
+            alt: 'Making a Difference'
           },
           start: {
             size: 'page',
             component: 'text',
             overline: 'Our Impact',
             headline: 'Making a Difference for Bees',
-            body: "At BeeLeaf Foundation, we're making a difference for bees. From educating the public and conserving habitats to advocating for better policies, our work is having a real impact.",
-          },
+            body: "At BeeLeaf Foundation, we're making a difference for bees. From educating the public and conserving habitats to advocating for better policies, our work is having a real impact."
+          }
         },
         numbers: {
           layout: 'end-heavy',
@@ -464,25 +427,25 @@ const config = {
             size: 'region',
             overline: 'Our Impact',
             headline: 'By the Numbers',
-            body: "See our impact by the numbers. From the number of people we've educated and habitats we've conserved to the policies we've influenced, these numbers tell the story of our impact.",
+            body: "See our impact by the numbers. From the number of people we've educated and habitats we've conserved to the policies we've influenced, these numbers tell the story of our impact."
           },
           end: {
             component: 'stats',
             items: [
               {
                 headline: '50,000+',
-                body: 'People educated about bee conservation',
+                body: 'People educated about bee conservation'
               },
               {
                 headline: '10,000+',
-                body: 'Habitats conserved for bee populations',
+                body: 'Habitats conserved for bee populations'
               },
               {
                 headline: '100+',
-                body: 'Policies influenced for bee-friendly practices',
-              },
-            ],
-          },
+                body: 'Policies influenced for bee-friendly practices'
+              }
+            ]
+          }
         },
         stories: {
           layout: 'end-heavy',
@@ -492,14 +455,14 @@ const config = {
             component: 'img',
             ar: 'avatar-img',
             src: 'jessica.jpeg',
-            alt: 'Jessica',
+            alt: 'Jessica'
           },
           end: {
             component: 'blockquote',
             quote:
               "I've been blown away by the impact BeeLeaf Foundation has had. BeeLeaf Foundation is making a remarkable difference, and I'm proud to support their impactful work.",
-            author: 'Jessica, BeeLeaf Foundation Supporter',
-          },
+            author: 'Jessica, BeeLeaf Foundation Supporter'
+          }
         },
         action: {
           layout: 'split',
@@ -507,7 +470,7 @@ const config = {
           start: {
             component: 'img',
             src: 'how-you-can-help.png',
-            alt: 'How You Can Help',
+            alt: 'How You Can Help'
           },
           end: {
             component: 'text',
@@ -517,11 +480,11 @@ const config = {
             body: 'You can be a part of our impact. Learn how you can get involved and make a difference for bees.',
             btn: {
               label: 'Get Involved',
-              url: '/get-involved',
-            },
-          },
-        },
-      },
+              url: '/get-involved'
+            }
+          }
+        }
+      }
     },
     {
       url: 'about/our-work',
@@ -536,10 +499,9 @@ const config = {
             size: 'page',
             component: 'text',
             overline: 'Our Work',
-            headline:
-              'Saving Bees Through Education, Conservation, and Advocacy',
-            body: "From spreading awareness about the importance of bees to tirelessly working towards the conservation and restoration of their habitats, we're committed to our buzzing friends. We stand up for bees, advocating for policies that protect them and their habitats, and we're not afraid to lobby against harmful pesticides and promote sustainable farming practices.",
-          },
+            headline: 'Saving Bees Through Education, Conservation, and Advocacy',
+            body: "From spreading awareness about the importance of bees to tirelessly working towards the conservation and restoration of their habitats, we're committed to our buzzing friends. We stand up for bees, advocating for policies that protect them and their habitats, and we're not afraid to lobby against harmful pesticides and promote sustainable farming practices."
+          }
         },
         gallery: {
           layout: 'gallery',
@@ -553,21 +515,21 @@ const config = {
               span: 2,
               overline: 'Education',
               headline: 'Spreading the Buzz about Bees',
-              body: 'We believe that education is the first step towards change. We offer workshops, webinars, and resources to educate the public about the importance of bees and the challenges they face.',
+              body: 'We believe that education is the first step towards change. We offer workshops, webinars, and resources to educate the public about the importance of bees and the challenges they face.'
             },
             {
               component: 'card',
               theme: 'tertiary-container',
               overline: 'Conservation',
               headline: 'Protecting Bee Habitats',
-              body: 'We work tirelessly to conserve and restore bee habitats. From planting wildflowers to creating urban bee sanctuaries, we are committed to creating a safer world for our bees.',
+              body: 'We work tirelessly to conserve and restore bee habitats. From planting wildflowers to creating urban bee sanctuaries, we are committed to creating a safer world for our bees.'
             },
             {
               component: 'card',
               theme: 'tertiary-container',
               overline: 'Advocacy',
               headline: 'Standing Up for Bees',
-              body: 'We advocate for policies that protect bees and their habitats. We lobby against harmful pesticides and promote sustainable farming practices to ensure the buzz of bees continues to fill the air.',
+              body: 'We advocate for policies that protect bees and their habitats. We lobby against harmful pesticides and promote sustainable farming practices to ensure the buzz of bees continues to fill the air.'
             },
             {
               component: 'card',
@@ -575,9 +537,9 @@ const config = {
               span: 2,
               overline: 'Research',
               headline: 'Advancing Bee Health and Conservation',
-              body: "We conduct and support research to advance our understanding of bees, the threats they face, and the most effective conservation strategies. Our research informs our education and advocacy efforts, ensuring we're making the biggest impact possible.",
-            },
-          ],
+              body: "We conduct and support research to advance our understanding of bees, the threats they face, and the most effective conservation strategies. Our research informs our education and advocacy efforts, ensuring we're making the biggest impact possible."
+            }
+          ]
         },
         partnerships: {
           layout: 'split',
@@ -585,7 +547,7 @@ const config = {
           start: {
             component: 'img',
             src: 'become-a-partner.png',
-            alt: 'Become a Partner',
+            alt: 'Become a Partner'
           },
           end: {
             component: 'text',
@@ -595,16 +557,15 @@ const config = {
             body: 'We collaborate with other organizations, schools, businesses, and government agencies to amplify our impact. Together, we can achieve more for bees.',
             btn: {
               label: 'See Our Partners',
-              url: '/about/partners',
-            },
-          },
-        },
-      },
+              url: '/about/partners'
+            }
+          }
+        }
+      }
     },
     {
       url: 'about/partners',
-      title:
-        'Meet BeeLeaf Foundation’s Partners: Together for Bee Conservation',
+      title: 'Meet BeeLeaf Foundation’s Partners: Together for Bee Conservation',
       description:
         'Learn about the diverse partners of BeeLeaf Foundation and how collaborations are amplifying the positive impact on bee conservation across the globe.',
       regions: {
@@ -613,15 +574,15 @@ const config = {
           end: {
             component: 'img',
             src: 'collaboration.png',
-            alt: 'Collaboration',
+            alt: 'Collaboration'
           },
           start: {
             size: 'page',
             component: 'text',
             overline: 'Our Partners',
             headline: 'Collaborating for Bees',
-            body: "We're proud to partner with other organizations, schools, businesses, and government agencies to amplify our impact. Together, we can achieve more for bees.",
-          },
+            body: "We're proud to partner with other organizations, schools, businesses, and government agencies to amplify our impact. Together, we can achieve more for bees."
+          }
         },
         partners: {
           layout: 'switcher',
@@ -632,19 +593,19 @@ const config = {
             {
               component: 'blurb',
               headline: "Ocean's Voice",
-              img: { src: 'oceansvoice-logo.png', alt: "Ocean's Voice Logo" },
+              img: { src: 'oceansvoice-logo.png', alt: "Ocean's Voice Logo" }
             },
             {
               component: 'blurb',
               headline: 'City Roots',
-              img: { src: 'cityroots-logo.png', alt: 'City Roots' },
+              img: { src: 'cityroots-logo.png', alt: 'City Roots' }
             },
             {
               component: 'blurb',
               headline: 'Desert Bloom',
-              img: { src: 'desertbloom-logo.png', alt: 'Desert Bloom' },
-            },
-          ],
+              img: { src: 'desertbloom-logo.png', alt: 'Desert Bloom' }
+            }
+          ]
         },
         action: {
           layout: 'split',
@@ -652,7 +613,7 @@ const config = {
           start: {
             component: 'img',
             src: 'lush-bee-habitat.png',
-            alt: 'Lush Bee Habitat',
+            alt: 'Lush Bee Habitat'
           },
           end: {
             component: 'text',
@@ -662,17 +623,16 @@ const config = {
             body: 'Interested in partnering with us? Learn about the benefits of partnership and how to become a partner. Together, we can make a bigger impact for bees.',
             btn: {
               label: 'Get Involved',
-              url: '/get-involved',
-            },
-          },
-        },
-      },
+              url: '/get-involved'
+            }
+          }
+        }
+      }
     },
     {
       header: false,
       url: 'learn',
-      title:
-        'Learn About Bees with BeeLeaf Foundation: Understanding Our Buzzing Friends',
+      title: 'Learn About Bees with BeeLeaf Foundation: Understanding Our Buzzing Friends',
       description:
         'Dive into the world of bees and learn about their importance, threats, and ways to help with BeeLeaf Foundation. Discover how these fascinating creatures play a vital role in our ecosystem.',
       regions: {
@@ -688,8 +648,8 @@ const config = {
             size: 'page',
             overline: 'Learn About Bees',
             headline: 'Understanding Our Buzzing Friends',
-            body: 'Bees are fascinating creatures with a vital role in our ecosystem. Dive into the world of bees and learn about their importance, the threats they face, and what you can do to help.',
-          },
+            body: 'Bees are fascinating creatures with a vital role in our ecosystem. Dive into the world of bees and learn about their importance, the threats they face, and what you can do to help.'
+          }
         },
         importance: {
           layout: 'start-heavy',
@@ -703,9 +663,9 @@ const config = {
             btn: {
               label: 'Learn About Bees',
               variant: 'secondary',
-              url: '/learn/bee-facts',
-            },
-          },
+              url: '/learn/bee-facts'
+            }
+          }
         },
         threats: {
           layout: 'end-heavy',
@@ -719,9 +679,9 @@ const config = {
             btn: {
               label: 'Learn About Conservation',
               variant: 'secondary',
-              url: '/learn/conservation-techniques',
-            },
-          },
+              url: '/learn/conservation-techniques'
+            }
+          }
         },
         resources: {
           layout: 'switcher',
@@ -735,7 +695,7 @@ const config = {
               icon: 'article',
               overline: 'Articles',
               headline: 'Read Our Articles',
-              body: 'Read our articles about bees and their conservation. From the latest research to tips for helping bees, our articles cover a wide range of topics.',
+              body: 'Read our articles about bees and their conservation. From the latest research to tips for helping bees, our articles cover a wide range of topics.'
             },
             {
               component: 'card',
@@ -743,7 +703,7 @@ const config = {
               icon: 'video',
               overline: 'Videos',
               headline: 'Watch Our Videos',
-              body: 'Watch our videos about bees and their conservation. From educational videos to inspiring stories, our videos will help you learn more about bees.',
+              body: 'Watch our videos about bees and their conservation. From educational videos to inspiring stories, our videos will help you learn more about bees.'
             },
             {
               component: 'card',
@@ -751,9 +711,9 @@ const config = {
               icon: 'books',
               overline: 'Educational Materials',
               headline: 'Explore Our Educational Materials',
-              body: 'Explore our educational materials about bees and their conservation. From lesson plans to activity sheets, our educational materials are perfect for teachers, parents, and students.',
-            },
-          ],
+              body: 'Explore our educational materials about bees and their conservation. From lesson plans to activity sheets, our educational materials are perfect for teachers, parents, and students.'
+            }
+          ]
         },
         action: {
           layout: 'split',
@@ -761,7 +721,7 @@ const config = {
           start: {
             component: 'img',
             src: 'bee-friend.png',
-            alt: 'Friend to The Bees',
+            alt: 'Friend to The Bees'
           },
           end: {
             component: 'text',
@@ -771,11 +731,11 @@ const config = {
             body: 'There are many ways you can help bees, from planting a bee-friendly garden to reducing your use of pesticides. Discover how you can make a difference in the lives of bees.',
             btn: {
               label: 'Take Action',
-              url: '/get-involved',
-            },
-          },
-        },
-      },
+              url: '/get-involved'
+            }
+          }
+        }
+      }
     },
     {
       url: 'learn/bee-facts',
@@ -791,8 +751,8 @@ const config = {
             size: 'page',
             overline: 'Bee Facts',
             headline: 'Discover the Fascinating World of Bees',
-            body: 'Bees are amazing creatures with complex behaviors and crucial roles in our ecosystem. Here are some fascinating facts about bees.',
-          },
+            body: 'Bees are amazing creatures with complex behaviors and crucial roles in our ecosystem. Here are some fascinating facts about bees.'
+          }
         },
         anatomy: {
           layout: 'start-heavy',
@@ -802,8 +762,8 @@ const config = {
             size: 'region',
             overline: 'Bee Anatomy',
             headline: 'Understanding the Bee Body',
-            body: "From their compound eyes to their stingers, every part of a bee's body is perfectly adapted for their lifestyle. Learn more about bee anatomy and how it helps them survive and thrive.",
-          },
+            body: "From their compound eyes to their stingers, every part of a bee's body is perfectly adapted for their lifestyle. Learn more about bee anatomy and how it helps them survive and thrive."
+          }
         },
         behavior: {
           layout: 'end-heavy',
@@ -813,8 +773,8 @@ const config = {
             size: 'region',
             overline: 'Bee Behavior',
             headline: 'The Social Life of Bees',
-            body: "Bees are social insects with complex behaviors. Discover the world inside a beehive, from the queen bee's royal duties to the amazing dances bees use to communicate.",
-          },
+            body: "Bees are social insects with complex behaviors. Discover the world inside a beehive, from the queen bee's royal duties to the amazing dances bees use to communicate."
+          }
         },
         types: {
           layout: 'switcher',
@@ -826,19 +786,19 @@ const config = {
             {
               component: 'blurb',
               img: { src: 'honey-bee.png', alt: 'wave' },
-              headline: 'Honey Bees',
+              headline: 'Honey Bees'
             },
             {
               component: 'blurb',
               img: { src: 'bumble-bee.png', alt: 'wave' },
-              headline: 'Bumble Bees',
+              headline: 'Bumble Bees'
             },
             {
               component: 'blurb',
               img: { src: 'carpenter-bee.png', alt: 'wave' },
-              headline: 'Carpenter Bees',
-            },
-          ],
+              headline: 'Carpenter Bees'
+            }
+          ]
         },
         conservation: {
           layout: 'split',
@@ -852,11 +812,11 @@ const config = {
             body: 'Bees are facing numerous threats, from habitat loss and pesticides to climate change. Learn why bee conservation is so important and what you can do to help.',
             btn: {
               label: 'Learn About Conservation',
-              url: '/learn/conservation-techniques',
-            },
-          },
-        },
-      },
+              url: '/learn/conservation-techniques'
+            }
+          }
+        }
+      }
     },
     {
       url: 'learn/conservation-techniques',
@@ -872,8 +832,8 @@ const config = {
             size: 'page',
             overline: 'Conservation Techniques',
             headline: 'Protecting Our Buzzing Friends',
-            body: "At BeeLeaf Foundation, we use a variety of conservation techniques to protect bees and their habitats. Learn about these techniques and how they're helping to secure a future for bees.",
-          },
+            body: "At BeeLeaf Foundation, we use a variety of conservation techniques to protect bees and their habitats. Learn about these techniques and how they're helping to secure a future for bees."
+          }
         },
         grid: {
           layout: 'stack',
@@ -884,30 +844,30 @@ const config = {
               img: { src: 'habitat.png', alt: 'Bee Habitat' },
               overline: 'Habitat Restoration',
               headline: 'Giving Bees a Place to Call Home',
-              body: "Habitat loss is a major threat to bees. We're working to restore bee habitats by planting wildflowers, creating urban bee sanctuaries, and advocating for land management practices that benefit bees.",
+              body: "Habitat loss is a major threat to bees. We're working to restore bee habitats by planting wildflowers, creating urban bee sanctuaries, and advocating for land management practices that benefit bees."
             },
             {
               component: 'article',
               img: { src: 'farming.png', alt: 'Farming' },
               overline: 'Sustainable Farming',
               headline: 'Farming with Bees in Mind',
-              body: 'Many farming practices are harmful to bees. We promote sustainable farming practices that protect bees, such as reducing pesticide use, planting cover crops, and providing habitat for bees on farmland.',
+              body: 'Many farming practices are harmful to bees. We promote sustainable farming practices that protect bees, such as reducing pesticide use, planting cover crops, and providing habitat for bees on farmland.'
             },
             {
               component: 'article',
               img: { src: 'education.png', alt: 'Education and Advocacy' },
               overline: 'Education and Advocacy',
               headline: 'Spreading the Word about Bees',
-              body: 'Education and advocacy are crucial for bee conservation. We educate the public about the importance of bees and advocate for policies that protect bees and their habitats.',
+              body: 'Education and advocacy are crucial for bee conservation. We educate the public about the importance of bees and advocate for policies that protect bees and their habitats.'
             },
             {
               component: 'article',
               img: { src: 'research.png', alt: 'Research and Monitoring' },
               overline: 'Research and Monitoring',
               headline: 'Keeping an Eye on Our Bees',
-              body: 'We conduct and support research to monitor bee populations, understand the threats they face, and evaluate the effectiveness of our conservation efforts.',
-            },
-          ],
+              body: 'We conduct and support research to monitor bee populations, understand the threats they face, and evaluate the effectiveness of our conservation efforts.'
+            }
+          ]
         },
         faq: {
           layout: 'accordion',
@@ -918,33 +878,31 @@ const config = {
             {
               component: 'details',
               headline: 'Why is habitat restoration important for bees?',
-              body: 'Habitat loss is a major threat to bees. By restoring bee habitats through planting wildflowers, creating urban bee sanctuaries, and advocating for bee-friendly land management practices, we provide bees with vital foraging and nesting areas.',
+              body: 'Habitat loss is a major threat to bees. By restoring bee habitats through planting wildflowers, creating urban bee sanctuaries, and advocating for bee-friendly land management practices, we provide bees with vital foraging and nesting areas.'
             },
             {
               component: 'details',
               headline: 'How does sustainable farming help protect bees?',
-              body: 'Many farming practices harm bees. We promote sustainable farming techniques such as reducing pesticide use, planting cover crops, and providing bee habitats on farmland to ensure the well-being of bees and the preservation of their ecosystems.',
+              body: 'Many farming practices harm bees. We promote sustainable farming techniques such as reducing pesticide use, planting cover crops, and providing bee habitats on farmland to ensure the well-being of bees and the preservation of their ecosystems.'
             },
             {
               component: 'details',
-              headline:
-                'What role does education and advocacy play in bee conservation?',
-              body: 'Education and advocacy are crucial for bee conservation. We raise public awareness about the importance of bees, their role as pollinators, and the threats they face. Additionally, we advocate for policies that protect bees and their habitats.',
+              headline: 'What role does education and advocacy play in bee conservation?',
+              body: 'Education and advocacy are crucial for bee conservation. We raise public awareness about the importance of bees, their role as pollinators, and the threats they face. Additionally, we advocate for policies that protect bees and their habitats.'
             },
             {
               component: 'details',
-              headline:
-                'Why is research and monitoring important for bee conservation?',
-              body: 'We conduct and support research to monitor bee populations, understand the challenges they encounter, and evaluate the effectiveness of our conservation efforts. This knowledge helps us develop evidence-based strategies for protecting and preserving bee populations.',
+              headline: 'Why is research and monitoring important for bee conservation?',
+              body: 'We conduct and support research to monitor bee populations, understand the challenges they encounter, and evaluate the effectiveness of our conservation efforts. This knowledge helps us develop evidence-based strategies for protecting and preserving bee populations.'
             },
             {
               component: 'details',
               headline: 'How can I contribute to bee conservation efforts?',
-              body: 'You can support bee conservation by donating to organizations like BeeLeaf Foundation. Your contribution helps fund habitat restoration projects, research initiatives, education programs, and advocacy campaigns aimed at protecting bees and securing their future.',
-            },
-          ],
-        },
-      },
+              body: 'You can support bee conservation by donating to organizations like BeeLeaf Foundation. Your contribution helps fund habitat restoration projects, research initiatives, education programs, and advocacy campaigns aimed at protecting bees and securing their future.'
+            }
+          ]
+        }
+      }
     },
     {
       url: 'contact',
@@ -966,20 +924,20 @@ const config = {
                 required: true,
                 label: 'Full Name',
                 id: 'full_name',
-                type: 'text',
+                type: 'text'
               },
               { required: true, label: 'Email', id: 'email', type: 'email' },
               {
                 required: true,
                 label: 'Message',
                 id: 'message',
-                type: 'textarea',
-              },
+                type: 'textarea'
+              }
             ],
-            submit: 'Connect',
-          },
-        },
-      },
+            submit: 'Connect'
+          }
+        }
+      }
     },
     {
       url: 'donate',
@@ -992,15 +950,15 @@ const config = {
           end: {
             component: 'img',
             src: 'positive.png',
-            alt: 'Positive Impact',
+            alt: 'Positive Impact'
           },
           start: {
             size: 'page',
             component: 'text',
             overline: 'Donate',
             headline: 'Support Our Work and Make a Difference for Bees',
-            body: 'Your donation can help us educate more people, conserve more habitats, and advocate for better policies. Every contribution, no matter how small, can make a big difference for bees.',
-          },
+            body: 'Your donation can help us educate more people, conserve more habitats, and advocate for better policies. Every contribution, no matter how small, can make a big difference for bees.'
+          }
         },
         why: {
           layout: 'start-heavy',
@@ -1017,9 +975,9 @@ const config = {
               'Funding scientific bee conservation initiatives.',
               'Providing resources for sustainable beekeeping practices.',
               'Promoting bee-friendly policies and regulations.',
-              'Engaging communities in bee conservation efforts.',
-            ],
-          },
+              'Engaging communities in bee conservation efforts.'
+            ]
+          }
         },
         form: {
           layout: 'end-heavy',
@@ -1039,7 +997,7 @@ const config = {
                 max: '1000',
                 step: '15',
                 value: '5',
-                output: '$',
+                output: '$'
               },
               {
                 required: true,
@@ -1049,14 +1007,14 @@ const config = {
                 cards: [
                   { value: 'One Time', icon: 'dollar' },
                   { value: 'Yearly', icon: 'calendar' },
-                  { value: 'Monthly', icon: 'calendar-month' },
-                ],
-              },
+                  { value: 'Monthly', icon: 'calendar-month' }
+                ]
+              }
             ],
-            submit: 'Send Donation',
-          },
-        },
-      },
+            submit: 'Send Donation'
+          }
+        }
+      }
     },
     {
       header: false,
@@ -1071,7 +1029,7 @@ const config = {
           start: {
             component: 'img',
             src: 'get-involved.png',
-            alt: 'Get Involved',
+            alt: 'Get Involved'
           },
           end: {
             component: 'text',
@@ -1081,8 +1039,8 @@ const config = {
             size: 'page',
             overline: 'Get Involved',
             headline: 'Join the Hive and Make a Difference',
-            body: 'There are many ways to get involved with BeeLeaf Foundation. Whether you donate, volunteer, or spread the word about the importance of bees, you can make a difference.',
-          },
+            body: 'There are many ways to get involved with BeeLeaf Foundation. Whether you donate, volunteer, or spread the word about the importance of bees, you can make a difference.'
+          }
         },
         grid: {
           layout: 'gallery',
@@ -1097,34 +1055,34 @@ const config = {
               component: 'card',
               overline: 'Donate',
               headline: 'Support Our Work',
-              body: 'Your donation can help us educate more people, conserve more habitats, and advocate for better policies. Every contribution, no matter how small, can make a big difference for bees.',
+              body: 'Your donation can help us educate more people, conserve more habitats, and advocate for better policies. Every contribution, no matter how small, can make a big difference for bees.'
             },
             {
               theme: 'tertiary-container',
               component: 'card',
               overline: 'Volunteer',
               headline: 'Lend a Hand for Bees',
-              body: 'Volunteering is a rewarding way to support our work. From habitat restoration projects to community outreach events, there are many ways to lend a hand for bees.',
+              body: 'Volunteering is a rewarding way to support our work. From habitat restoration projects to community outreach events, there are many ways to lend a hand for bees.'
             },
             {
               theme: 'tertiary-container',
               component: 'card',
               overline: 'Fundraise',
               headline: 'Rally Support for Bees',
-              body: 'Fundraising is a fun and effective way to support our work. Whether you host a bake sale, run a marathon, or celebrate a special occasion, you can rally support for bees.',
+              body: 'Fundraising is a fun and effective way to support our work. Whether you host a bake sale, run a marathon, or celebrate a special occasion, you can rally support for bees.'
             },
             {
               theme: 'secondary-container',
               component: 'card',
               overline: 'Advocate',
               headline: 'Stand Up for Bees',
-              body: 'Advocacy is a powerful way to support bees. Learn how to advocate for policies that protect bees and their habitats, and use your voice to make a difference.',
-            },
-          ],
-        },
-      },
-    },
-  ],
+              body: 'Advocacy is a powerful way to support bees. Learn how to advocate for policies that protect bees and their habitats, and use your voice to make a difference.'
+            }
+          ]
+        }
+      }
+    }
+  ]
 }
 
 module.exports = config

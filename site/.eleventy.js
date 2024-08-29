@@ -25,22 +25,22 @@ module.exports = (eleventyConfig, options = {}) => {
   eleventyConfig.addPlugin(inclusiveLangPlugin)
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
-      hostname: 'https://beeleaf.dustinheisey.com',
-    },
+      hostname: 'https://inconvenient.gg'
+    }
   })
   eleventyConfig.addPlugin(svgSprite, [
     {
       path: './public/icons',
       globalClasses: 'icon',
       svgSpriteShortcode: 'icons',
-      svgShortcode: 'icon',
-    },
+      svgShortcode: 'icon'
+    }
   ])
   eleventyConfig.addPlugin(pluginPWA, {
     swDest: './_site/sw.js',
     globDirectory: './_site',
     sourcemap: false,
-    inlineWorkboxRuntime: true,
+    inlineWorkboxRuntime: true
   })
   // eleventyConfig.addPlugin(purgeCssPlugin, {
   //   config: "./purgecss.config.js",
@@ -48,36 +48,33 @@ module.exports = (eleventyConfig, options = {}) => {
   // eleventyConfig.addPlugin(criticalCss);
 
   // ? Shortcodes
-  eleventyConfig.addNunjucksShortcode(
-    'img',
-    function (src, alt, cls, sizes = '100vw', widths) {
-      try {
-        const options = {
-          widths: [400, 800, 1280, null],
-          formats: ['webp', 'jpeg'],
-          outputDir: './_site/img/',
-          filenameFormat: function (id, src, width, format, options) {
-            const extension = path.extname(src)
-            const name = path.basename(src, extension)
+  eleventyConfig.addNunjucksShortcode('img', function (src, alt, cls, sizes = '100vw', widths) {
+    try {
+      const options = {
+        widths: [400, 800, 1280, null],
+        formats: ['webp', 'jpeg'],
+        outputDir: './_site/img/',
+        filenameFormat: function (id, src, width, format, options) {
+          const extension = path.extname(src)
+          const name = path.basename(src, extension)
 
-            return `${name}-${width}w.${format}`
-          },
+          return `${name}-${width}w.${format}`
         }
-        Image(src, options)
-        const imageAttributes = {
-          class: cls,
-          alt,
-          sizes,
-          loading: 'lazy',
-          decoding: 'async',
-        }
-        const metadata = Image.statsSync(src, options)
-        return Image.generateHTML(metadata, imageAttributes)
-      } catch (error) {
-        console.log(error)
       }
+      Image(src, options)
+      const imageAttributes = {
+        class: cls,
+        alt,
+        sizes,
+        loading: 'lazy',
+        decoding: 'async'
+      }
+      const metadata = Image.statsSync(src, options)
+      return Image.generateHTML(metadata, imageAttributes)
+    } catch (error) {
+      console.log(error)
     }
-  )
+  })
   eleventyConfig.addShortcode('svg', function (file, classes) {
     try {
       const relativeFilePath = `${file}.svg`
@@ -108,7 +105,7 @@ module.exports = (eleventyConfig, options = {}) => {
         sortAttributes: true,
         html5: true,
         decodeEntities: true,
-        removeOptionalTags: true,
+        removeOptionalTags: true
       })
     }
     return content
@@ -116,10 +113,10 @@ module.exports = (eleventyConfig, options = {}) => {
 
   // ? Passthrough Copies
   eleventyConfig.addPassthroughCopy({
-    './styles/index.min.css': 'index.min.css',
+    './styles/index.min.css': 'index.min.css'
   })
   eleventyConfig.addPassthroughCopy({
-    './scripts/index.min.js': 'index.min.js',
+    './scripts/index.min.js': 'index.min.js'
   })
   eleventyConfig.addPassthroughCopy({ public: '/' })
   eleventyConfig.addPassthroughCopy({ admin: '/admin' })
@@ -141,9 +138,7 @@ module.exports = (eleventyConfig, options = {}) => {
     return categories.find((item) => item.data.label === postCategory)
   })
   eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
-      'LLL dd, yyyy'
-    )
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LLL dd, yyyy')
   })
   eleventyConfig.addFilter('postDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LL-dd-yyyy')
@@ -171,12 +166,7 @@ module.exports = (eleventyConfig, options = {}) => {
 
   async function lastModifiedDate(filename) {
     try {
-      const { stdout } = await execFile('git', [
-        'log',
-        '-1',
-        '--format=%cd',
-        filename,
-      ])
+      const { stdout } = await execFile('git', ['log', '-1', '--format=%cd', filename])
       return new Date(stdout)
     } catch (e) {
       console.error(e.message)
@@ -188,35 +178,32 @@ module.exports = (eleventyConfig, options = {}) => {
   // Cache the lastModifiedDate call because shelling out to git is expensive.
   // This means the lastModifiedDate will never change per single eleventy invocation.
   const lastModifiedDateCache = new Map()
-  eleventyConfig.addNunjucksAsyncFilter(
-    'lastModifiedDate',
-    function (filename, callback) {
-      const call = (result) => {
-        result.then((date) => callback(null, date))
-        result.catch((error) => callback(error))
-      }
-      const cached = lastModifiedDateCache.get(filename)
-      if (cached) {
-        return call(cached)
-      }
-      const promise = lastModifiedDate(filename)
-      lastModifiedDateCache.set(filename, promise)
-      call(promise)
+  eleventyConfig.addNunjucksAsyncFilter('lastModifiedDate', function (filename, callback) {
+    const call = (result) => {
+      result.then((date) => callback(null, date))
+      result.catch((error) => callback(error))
     }
-  )
+    const cached = lastModifiedDateCache.get(filename)
+    if (cached) {
+      return call(cached)
+    }
+    const promise = lastModifiedDate(filename)
+    lastModifiedDateCache.set(filename, promise)
+    call(promise)
+  })
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
     html: true,
     breaks: true,
-    linkify: true,
+    linkify: true
   }).use(markdownItAnchor, {
     permalink: markdownItAnchor.permalink.linkAfterHeader({
       assistiveText: (title) => `Permalink to “${title}”`,
       visuallyHiddenClass: 'sr-only',
-      wrapper: ['<div class="inline-header">', '</div>'],
+      wrapper: ['<div class="inline-header">', '</div>']
     }),
-    permalinkSymbol: '#',
+    permalinkSymbol: '#'
   })
 
   eleventyConfig.setLibrary('md', markdownLibrary)
