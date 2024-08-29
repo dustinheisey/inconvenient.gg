@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Impact';
-  src: url('/public/impact.ttf');
+  src: url('../public/impact.ttf');
 }
 
 h1,
