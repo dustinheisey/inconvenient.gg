@@ -28,6 +28,7 @@
     "sites/bee-leaf/site": false,
     "sites/test/sitemap.njk": false,
     ".vscode": false,
-    "rollup.config.js": false
+    "rollup.config.js": false,
+    "site/sitemap.njk": false
   }
 }
