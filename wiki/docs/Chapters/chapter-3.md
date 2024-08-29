@@ -9,4 +9,3 @@ This page is under construction. Check back soon because I am actively updating 
 :::
 
 ![Chapter 3 Advancement Page](./img/chapter_3.png)
-

@@ -11,4 +11,3 @@ This page is under construction. Check back soon because I am actively updating 
 :::
 
 ![Chapter 5.1 Advancement Page](./img/chapter_5_1.png)
-

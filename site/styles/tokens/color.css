@@ -94,7 +94,7 @@
   --color-scrim: var(--color-scrim-light);
 }
 
-html[data-theme="dark"],
+html[data-theme='dark'],
 html.mode-dark {
   --color-primary: var(--color-primary-dark);
   --color-on-primary: var(--color-on-primary-dark);
@@ -162,7 +162,7 @@ html.mode-dark {
     --color-scrim: var(--color-scrim-dark);
   }
 
-  html[data-theme="light"],
+  html[data-theme='light'],
   html.mode-light {
     --color-primary: var(--color-primary-light);
     --color-on-primary: var(--color-on-primary-light);

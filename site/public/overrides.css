@@ -55,9 +55,8 @@
   --color-inverse-primary-dark: #376a20;
   --color-surface-tint-dark: #9cd67e;
   --color-outline-variant-dark: #43483e;
-  --font-family-headline: 'ui-rounded', 'Hiragino Maru Gothic ProN', 'Quicksand',
-    'Comfortaa', 'Manjari', 'Arial Rounded MT', 'Arial Rounded MT Bold',
-    'Calibri', 'source-sans-pro', 'sans-serif';
+  --font-family-headline: 'ui-rounded', 'Hiragino Maru Gothic ProN', 'Quicksand', 'Comfortaa', 'Manjari',
+    'Arial Rounded MT', 'Arial Rounded MT Bold', 'Calibri', 'source-sans-pro', 'sans-serif';
   --font-family-body: 'system-ui', 'sans-serif';
   --font-size-xs: clamp(0.7rem, calc(0.81rem + -0.13vw), 0.78rem);
   --font-size-s: clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem);

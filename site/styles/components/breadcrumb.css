@@ -10,10 +10,10 @@ nav.breadcrumb ol {
   border-right: 0.1em solid var(--color-primary);
   height: 0.8em;
   margin-inline-end: var(--space-xs);
-  content: "";
+  content: '';
 }
 
-nav.breadcrumb [aria-current="page"] {
+nav.breadcrumb [aria-current='page'] {
   color: var(--color-primary);
   font-weight: 600;
   text-decoration: none;

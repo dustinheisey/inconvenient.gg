@@ -1,10 +1,10 @@
-import terser from "@rollup/plugin-terser";
+import terser from '@rollup/plugin-terser'
 
 export default {
-  input: "scripts/index.js",
+  input: 'scripts/index.js',
   output: {
-    file: "scripts/index.min.js",
-    format: "iife",
+    file: 'scripts/index.min.js',
+    format: 'iife'
   },
-  plugins: [terser()],
-};
+  plugins: [terser()]
+}

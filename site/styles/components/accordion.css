@@ -18,12 +18,12 @@ details > summary::before {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  content: "+";
+  content: '+';
   font-size: var(--font-size-l);
 }
 
 details[open] > summary::before {
-  content: "-";
+  content: '-';
   font-size: var(--font-size-xl);
 }
 

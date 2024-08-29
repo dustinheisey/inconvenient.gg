@@ -9,5 +9,3 @@ This page is under construction. Check back soon because I am actively updating 
 :::
 
 ![Chapter 1 Advancement Page](./img/chapter_1.png)
-
-

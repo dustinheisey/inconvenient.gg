@@ -10,7 +10,7 @@ label {
 }
 
 .required::after {
-  content: "*";
+  content: '*';
   font-size: var(--font-size-body);
   color: var(--color-label-accent-override, var(--color-secondary));
 }

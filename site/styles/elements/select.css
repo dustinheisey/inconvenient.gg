@@ -19,7 +19,7 @@ select::-ms-expand {
 
 .select {
   display: grid;
-  grid-template-areas: "select";
+  grid-template-areas: 'select';
   align-items: center;
   position: relative;
   min-width: 15ch;
@@ -43,7 +43,7 @@ select::-ms-expand {
 }
 
 .select::after {
-  content: "";
+  content: '';
   justify-self: end;
   width: 0.8em;
   height: 0.5em;

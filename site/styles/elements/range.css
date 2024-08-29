@@ -1,8 +1,8 @@
-input[type="range"]:focus {
+input[type='range']:focus {
   outline: none;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   appearance: none;
   width: 20px;
   height: 20px;
@@ -12,15 +12,15 @@ input[type="range"]::-webkit-slider-thumb {
   transition: background 0.15s ease-in-out;
 }
 
-input[type="range"]:hover::-webkit-slider-thumb {
+input[type='range']:hover::-webkit-slider-thumb {
   background: var(--color-primary);
 }
 
-input[type="range"]:active::-webkit-slider-thumb {
+input[type='range']:active::-webkit-slider-thumb {
   background: var(--color-primary);
 }
 
-input[type="range"]::-moz-range-thumb {
+input[type='range']::-moz-range-thumb {
   width: 20px;
   height: 20px;
   border: 0;
@@ -30,15 +30,15 @@ input[type="range"]::-moz-range-thumb {
   transition: background 0.15s ease-in-out;
 }
 
-input[type="range"]::-moz-range-thumb:hover {
+input[type='range']::-moz-range-thumb:hover {
   background: var(--color-primary);
 }
 
-input[type="range"]:active::-moz-range-thumb {
+input[type='range']:active::-moz-range-thumb {
   background: var(--color-primary);
 }
 
-input[type="range"]:focus::-webkit-slider-thumb {
+input[type='range']:focus::-webkit-slider-thumb {
   box-shadow:
     0 0 0 3px var(--color-background),
     0 0 0 6px var(--color-primary);
@@ -59,7 +59,7 @@ output {
   min-inline-size: 9ch;
 }
 
-input[type="range"] {
+input[type='range'] {
   cursor: pointer;
   appearance: none;
   border-radius: 3px;
