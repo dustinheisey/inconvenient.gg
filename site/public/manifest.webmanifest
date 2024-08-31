@@ -4,11 +4,12 @@
   "description": "",
   "theme_color": "#A33614",
   "background_color": "#2B201B",
-  "display": "fullscreen",
+  "display": "standalone",
   "start_url": "/",
   "scope": "/",
   "orientation": "portrait",
   "display_override": ["window-control-overlay", "fullscreen", "standalone", "browser"],
+  "lang": "en",
   "icons": [
     {
       "src": "favicon/manifest-icon-192.maskable.png",
