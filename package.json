@@ -17,7 +17,7 @@
     "lint:css": "cd site/styles && npx stylelint \"**/*.css\" --fix",
     "lint": "npm run lint:js && npm run lint:css",
     "format": "prettier \"**/*.{cjs,html,js,json,md,njk,css}\" --ignore-path ./.eslintignore --write",
-    "styles": "postcss site/styles/index.css -o styles/index.min.css --watch",
+    "styles": "postcss site/styles/index.css -o site/styles/index.min.css --watch",
     "scripts": "cd site && rollup -c rollup.config.js",
     "npm": "rmdir /s /q node_modules && npm install",
     "dev:wiki": "docusaurus start ./wiki",
