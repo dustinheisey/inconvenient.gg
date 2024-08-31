@@ -1,68 +1,68 @@
 {
   "Accordion": {
-    "prefix": "accordion",
+    "prefix": "l-accordion",
     "body": [
       "$1: {\n\tlayout: 'accordion',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\toverline: '',\n\theadline: '',\n\tbody: '',\n\titems: [ \n\n \t]\n},\n"
     ]
   },
   "End Heavy": {
-    "prefix": "end-heavy",
+    "prefix": "l-end-heavy",
     "body": [
       "$1: {\n\tlayout: 'end-heavy',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\tstart: {\n\n\t},\n\tend: {\n\n\t}\n},\n"
     ]
   },
   "Center": {
-    "prefix": "center",
+    "prefix": "l-center",
     "body": [
       "$1: {\n\tlayout: 'center',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\tcontent: {\n\n\t}\n},\n"
     ]
   },
   "End": {
-    "prefix": "end",
+    "prefix": "l-end",
     "body": ["$1: {\n\tlayout: 'end',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\tcontent: {\n\n\t}\n},\n"]
   },
   "Start": {
-    "prefix": "start",
+    "prefix": "l-start",
     "body": ["$1: {\n\tlayout: 'start',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\tcontent: {\n\n\t}\n},\n"]
   },
   "Gallery": {
-    "prefix": "gallery",
+    "prefix": "l-gallery",
     "body": [
       "$1: {\n\tlayout: 'gallery',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false,\n\t\tcol: 3\n\t},\n\toverline: '',\n\theadline: '',\n\tbody: '',\n\titems: [\n\n\t],\n},\n"
     ]
   },
   "Sparkline Block Staggered": {
-    "prefix": "sparkline-block-staggered",
+    "prefix": "l-sparkline-block-staggered",
     "body": [
       "$1: {\n\tlayout: 'sparkline-block-staggered',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\toverline: '',\n\theadline: '',\n\tbody: '',\n\titems: { \n\n },\n},\n"
     ]
   },
   "Split": {
-    "prefix": "split",
+    "prefix": "l-split",
     "body": [
       "$1: {\n\tlayout: 'split',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\tstart: {\n\n\t},\n\tend: {\n\n\t}\n},\n"
     ]
   },
   "Stack": {
-    "prefix": "stack",
+    "prefix": "l-stack",
     "body": [
       "$1: {\n\tlayout: 'stack',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\toverline: '',\n\theadline: '',\n\tbody: '',\n\titems: [\n\n\t],\n},\n"
     ]
   },
   "Start Heavy": {
-    "prefix": "start-heavy",
+    "prefix": "l-start-heavy",
     "body": [
       "$1: {\n\tlayout: 'start-heavy',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\tstart: {\n\n\t},\n\tend: {\n\n\t}\n},\n"
     ]
   },
   "Bg Center": {
-    "prefix": "bg-center",
+    "prefix": "l-bg-center",
     "body": [
       "$1: {\n\tlayout: 'bg-center',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: true\n\t},\n\toverline: '',\n\theadline: '',\n\tbody: '',\n\tbg: {\n\n\t},\n\tcontent: {\n\n\t}\n},\n"
     ]
   },
   "Bg Pattern": {
-    "prefix": "bg-pattern",
+    "prefix": "l-bg-pattern",
     "body": [
       "$1: {\n\tlayout: 'bg-pattern',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\tpattern: '',\n\tcontent: {\n\t\n\t}\n},\n"
     ]
