@@ -1,63 +1,100 @@
+@font-face {
+  font-family: 'Impact';
+  src:
+    local('Impact'),
+    url('https://fonts.cdnfonts.com/s/19610/impact.woff') format('woff'),
+    url('https://fonts.cdnfonts.com/s/19610/impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    url('https://fonts.gstatic.com/s/opensans/v20/mem8YaGs126MiZpBA-UFVZ0b.woff2') format('woff2'),
+    url('https://fonts.gstatic.com/s/opensans/v20/mem8YaGs126MiZpBA-UFVp0bb.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --color-primary-light: #376a20;
-  --color-on-primary-light: #fff;
-  --color-primary-container-light: #b7f398;
-  --color-on-primary-container-light: #062100;
-  --color-secondary-light: #845400;
-  --color-on-secondary-light: #fff;
-  --color-secondary-container-light: #ffddb6;
-  --color-on-secondary-container-light: #2a1800;
-  --color-tertiary-light: #646100;
-  --color-on-tertiary-light: #fff;
-  --color-tertiary-container-light: #ede76d;
-  --color-on-tertiary-container-light: #1e1c00;
-  --color-error-light: #ba1a1a;
-  --color-error-container-light: #ffdad6;
-  --color-on-error-light: #fff;
-  --color-on-error-container-light: #410002;
-  --color-background-light: #fffbff;
-  --color-on-background-light: #1f1c00;
-  --color-surface-light: #fffbff;
-  --color-on-surface-light: #1f1c00;
-  --color-surface-variant-light: #dfe4d7;
-  --color-on-surface-variant-light: #43483e;
-  --color-outline-light: #73796d;
-  --color-inverse-on-surface-light: #fff48e;
-  --color-inverse-surface-light: #363100;
-  --color-inverse-primary-light: #9cd67e;
-  --color-surface-tint-light: #376a20;
-  --color-outline-variant-light: #c3c8bb;
-  --color-primary-dark: #9cd67e;
-  --color-on-primary-dark: #0f3900;
-  --color-primary-container-dark: #1f5107;
-  --color-on-primary-container-dark: #b7f398;
-  --color-secondary-dark: #ffb95b;
-  --color-on-secondary-dark: #462a00;
-  --color-secondary-container-dark: #643f00;
-  --color-on-secondary-container-dark: #ffddb6;
-  --color-tertiary-dark: #d0cb54;
-  --color-on-tertiary-dark: #343200;
-  --color-tertiary-container-dark: #4b4900;
-  --color-on-tertiary-container-dark: #ede76d;
-  --color-error-dark: #ffb4ab;
-  --color-error-container-dark: #93000a;
-  --color-on-error-dark: #690005;
-  --color-on-error-container-dark: #ffdad6;
-  --color-background-dark: #1f1c00;
-  --color-on-background-dark: #f2e66a;
-  --color-surface-dark: #1f1c00;
-  --color-on-surface-dark: #f2e66a;
-  --color-surface-variant-dark: #43483e;
-  --color-on-surface-variant-dark: #c3c8bb;
-  --color-outline-dark: #8d9287;
-  --color-inverse-on-surface-dark: #1f1c00;
-  --color-inverse-surface-dark: #f2e66a;
-  --color-inverse-primary-dark: #376a20;
-  --color-surface-tint-dark: #9cd67e;
-  --color-outline-variant-dark: #43483e;
-  --font-family-headline: 'ui-rounded', 'Hiragino Maru Gothic ProN', 'Quicksand', 'Comfortaa', 'Manjari',
-    'Arial Rounded MT', 'Arial Rounded MT Bold', 'Calibri', 'source-sans-pro', 'sans-serif';
-  --font-family-body: 'system-ui', 'sans-serif';
+  /* ? Colors */
+  --color-primary-light: rgb(79 102 40);
+  --color-on-primary-light: rgb(255 255 255);
+  --color-primary-container-light: rgb(209 236 160);
+  --color-on-primary-container-light: rgb(19 31 0);
+  --color-secondary-light: rgb(89 98 72);
+  --color-on-secondary-light: rgb(255 255 255);
+  --color-secondary-container-light: rgb(221 230 198);
+  --color-on-secondary-container-light: rgb(23 30 10);
+  --color-tertiary-light: rgb(57 102 97);
+  --color-on-tertiary-light: rgb(255 255 255);
+  --color-tertiary-container-light: rgb(188 236 229);
+  --color-on-tertiary-container-light: rgb(0 32 29);
+  --color-error-light: rgb(186 26 26);
+  --color-error-container-light: rgb(255 218 214);
+  --color-on-error-light: rgb(255 255 255);
+  --color-on-error-container-light: rgb(65 0 2);
+  --color-background-light: rgb(250 250 238);
+  --color-on-background-light: rgb(26 28 21);
+  --color-surface-light: rgb(252 250 236);
+  --color-on-surface-light: rgb(28 28 20);
+  --color-surface-variant-light: rgb(226 228 212);
+  --color-on-surface-variant-light: rgb(69 72 61);
+  --color-outline-light: rgb(117 120 108);
+  --color-inverse-on-surface-light: rgb(244 241 228);
+  --color-inverse-surface-light: rgb(49 49 40);
+  --color-inverse-primary-light: rgb(181 208 134);
+  --color-surface-tint-light: rgb(79 102 40);
+  --color-outline-variant-light: rgb(197 200 185);
+  --color-surface-dim-light: rgb(221 218 205);
+  --color-surface-bright-light: rgb(252 250 236);
+  --color-surface-container-lowest-light: rgb(255 255 255);
+  --color-surface-container-low-light: rgb(246 244 231);
+  --color-surface-container-light: rgb(241 238 225);
+  --color-surface-container-high-light: rgb(235 232 219);
+  --color-surface-container-highest-light: rgb(229 227 214);
+  --color-primary-dark: rgb(255 181 160);
+  --color-surface-tint-dark: rgb(255 181 160);
+  --color-on-primary-dark: rgb(86 31 15);
+  --color-primary-container-dark: rgb(114 53 35);
+  --color-on-primary-container-dark: rgb(255 219 209);
+  --color-secondary-dark: rgb(231 189 178);
+  --color-on-secondary-dark: rgb(68 42 34);
+  --color-secondary-container-dark: rgb(93 64 55);
+  --color-on-secondary-container-dark: rgb(255 219 209);
+  --color-tertiary-dark: rgb(255 179 173);
+  --color-on-tertiary-dark: rgb(87 30 27);
+  --color-tertiary-container-dark: rgb(115 51 47);
+  --color-on-tertiary-container-dark: rgb(255 218 214);
+  --color-error-dark: rgb(255 180 171);
+  --color-error-container-dark: rgb(147 0 10);
+  --color-on-error-dark: rgb(105 0 5);
+  --color-on-error-container-dark: rgb(255 218 214);
+  --color-background-dark: rgb(26 17 15);
+  --color-on-background-dark: rgb(241 223 218);
+  --color-surface-dark: rgb(25 18 12);
+  --color-on-surface-dark: rgb(239 224 214);
+  --color-surface-variant-dark: rgb(83 67 63);
+  --color-on-surface-variant-dark: rgb(216 194 188);
+  --color-outline-dark: rgb(160 140 135);
+  --color-inverse-on-surface-dark: rgb(56 47 40);
+  --color-inverse-surface-dark: rgb(239 224 214);
+  --color-inverse-primary-dark: rgb(143 75 56);
+  --color-outline-variant-dark: rgb(83 67 63);
+  --color-surface-dim-dark: rgb(25 18 12);
+  --color-surface-bright-dark: rgb(65 55 49);
+  --color-surface-container-lowest-dark: rgb(20 13 8);
+  --color-surface-container-low-dark: rgb(34 26 20);
+  --color-surface-container-dark: rgb(38 30 24);
+  --color-surface-container-high-dark: rgb(49 40 34);
+  --color-surface-container-highest-dark: rgb(60 51 44);
+
+  /* ? Typography */
+  --font-family-headline: 'Impact', 'Arial Black', 'Arial Bold', sans-serif;
+  --font-family-body: 'Open Sans', sans-serif;
+  --letter-spacing-headline: 0.05em;
+
   --font-size-xs: clamp(0.7rem, calc(0.81rem + -0.13vw), 0.78rem);
   --font-size-s: clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem);
   --font-size-m: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
@@ -66,6 +103,8 @@
   --font-size-2xl: clamp(1.94rem, calc(1.59rem + 1.77vw), 2.96rem);
   --font-size-3xl: clamp(2.33rem, calc(1.77rem + 2.81vw), 3.95rem);
   --font-size-4xl: clamp(2.8rem, calc(1.94rem + 4.28vw), 5.26rem);
+
+  /* ? Space */
   --space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
   --space-2xs: clamp(0.56rem, calc(0.54rem + 0.11vw), 0.63rem);
   --space-xs: clamp(0.88rem, calc(0.85rem + 0.11vw), 0.94rem);
@@ -87,9 +126,22 @@
   --space-3xl-4xl: clamp(6.75rem, calc(3.88rem + 14.35vw), 15rem);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
 .copywrite {
   background: transparent;
   color: var(--color-on-background);
   font-size: 12px !important;
   justify-content: center;
+}
+
+.floating a svg {
+  height: 48px;
 }
