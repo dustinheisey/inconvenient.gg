@@ -21,9 +21,9 @@
       "{component: 'card',\nstyle: {\n\t\ttheme: '',\n\t\tspan: 1\n\t},\ntime: '',\noverline: '',\nheadline: '',\nbody: ''},"
     ]
   },
-  "Details": {
-    "prefix": "c-details",
-    "body": ["{\n\tcomponent: 'details',\n\tstyle: { theme: '' },\n\theadline: '',\n\tbody: ''\n},"]
+  "Accordion": {
+    "prefix": "c-accordion",
+    "body": ["{\n\tcomponent: 'accordion',\n\tstyle: { theme: '' },\n\theadline: '',\n\tbody: ''\n},"]
   },
   "Form": {
     "prefix": "c-form",

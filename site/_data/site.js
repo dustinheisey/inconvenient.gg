@@ -314,17 +314,26 @@ const config = {
         "Become part of the BeeLeaf Foundation's community and join forces with volunteers, donors, and partners who are dedicated to creating a safer world for bees.",
       regions: {
         intro: {
-          layout: 'end-heavy',
-          end: { component: 'img', src: 'community.png', alt: 'Community' },
+          layout: 'start-heavy',
+          end: { component: 'img', src: 'logo-large.svg', alt: 'Community' },
           start: {
             component: 'text',
             size: 'page',
             overline: 'Community',
             headline: 'Together for Bees',
-            body: 'Our community is at the heart of our work at BeeLeaf Foundation. From volunteers and donors to partners and supporters, every member of our community plays a crucial role in our mission to protect bees.'
+            body: 'Our community is at the heart of our work at BeeLeaf Foundation. From volunteers and donors to partners and supporters, every member of our community plays a crucial role in our mission to protect bees.',
+            btns: [
+              {
+                url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
+                variant: 'primary',
+                target: 'blank',
+                label: 'Get on Curseforge'
+              },
+              { url: 'https://modrinth.com/', variant: 'primary', label: 'Get on Modrinth', target: 'blank' }
+            ]
           }
         },
-        volunteers: {
+        social: {
           layout: 'gallery',
           inset: true,
           overline: 'Our Volunteers',
@@ -332,73 +341,143 @@ const config = {
           body: 'Our volunteers are the heart of our hive. They help with everything from habitat restoration to community outreach. Meet some of our amazing volunteers and learn about their experiences.',
           items: [
             {
-              component: 'blurb',
-              img: { src: 'john-doe.jpeg', alt: 'John Doe' },
-              headline: 'John Doe',
-              body: 'Volunteering with BeeLeaf Foundation allows me to play a meaningful role in bee conservation. Seeing the positive impact of my efforts brings me immense joy and fulfillment.'
+              component: 'card',
+              icon: 'logo-discord',
+              size: 'xl',
+              url: '/',
+              theme: 'discord',
+              body: 'Join the community discussions and get live help'
             },
             {
-              component: 'blurb',
-              img: { src: 'jane-doe.jpeg', alt: 'Jane Doe' },
-              headline: 'Jane Doe',
-              body: "Being part of BeeLeaf Foundation's volunteer team is a fantastic opportunity to contribute to the preservation of these essential pollinators. I am grateful for the chance to make a real difference in the world."
+              component: 'card',
+              icon: 'logo-youtube',
+              size: 'xl',
+              url: '/',
+              theme: 'youtube',
+              body: 'Join the community discussions and get live help'
             },
             {
-              component: 'blurb',
-              img: { src: 'john-smith.jpeg', alt: 'John Smith' },
-              headline: 'John Smith',
-              body: 'BeeLeaf Foundation has provided me with a platform to actively engage in bee conservation. As a volunteer, I find it incredibly rewarding to witness the positive changes we bring to bee habitats and raise awareness about their importance.'
+              component: 'card',
+              icon: 'logo-tiktok',
+              size: 'xl',
+              url: '/',
+              theme: 'tiktok',
+              body: 'Join the community discussions and get live help'
+            },
+            {
+              component: 'card',
+              icon: 'logo-twitch',
+              size: 'xl',
+              url: '/',
+              theme: 'twitch',
+              body: 'Join the community discussions and get live help'
+            },
+            {
+              component: 'card',
+              icon: 'logo-reddit',
+              size: 'xl',
+              url: '/',
+              theme: 'reddit',
+              body: 'Join the community discussions and get live help'
+            },
+            {
+              component: 'card',
+              icon: 'logo-mastodon',
+              size: 'xl',
+              url: '/',
+              theme: 'mastodon',
+              body: 'Join the community discussions and get live help'
             }
           ]
         },
-        donors: {
+        // TODO: add showcase
+        // showcase: {
+        //   layout: 'end-heavy',
+        //   mobile: 'start',
+        //   start: {
+        //     component: 'img',
+        //     src: 'thriving-bee-habitat.png',
+        //     alt: 'Thriving Bee Habitat'
+        //   },
+        //   end: {
+        //     component: 'stats',
+        //     overline: 'Our Donors',
+        //     headline: 'Making Our Work Possible',
+        //     body: 'Our donors make our work possible. Their generous contributions support our education, conservation, and advocacy efforts. Hear from some of our donors about why they choose to support BeeLeaf Foundation.',
+        //     items: [
+        //       {
+        //         headline: '$1,000,000+',
+        //         body: 'Donated to bee conservation initiatives'
+        //       },
+        //       {
+        //         headline: '5,000+',
+        //         body: 'Individual donors contributing to our mission'
+        //       },
+        //       {
+        //         headline: '25+',
+        //         body: 'Corporate sponsors partnering with BeeLeaf Foundation'
+        //       },
+        //       {
+        //         headline: '10,000+',
+        //         body: 'Volunteer hours dedicated to bee conservation'
+        //       }
+        //     ]
+        //   }
+        // },
+        help: {
           layout: 'end-heavy',
+          class: 'align-start',
           mobile: 'start',
           start: {
-            component: 'img',
-            src: 'thriving-bee-habitat.png',
-            alt: 'Thriving Bee Habitat'
+            component: 'text',
+            size: 'region',
+            overline: 'Join the Journey',
+            headline: 'Help Me Build This Modpack',
+            lead: 'We’re creating more than just a modpack—we’re building a community that explores global issues, and we need your help to make it the best it can be!',
+            body: "Briefly introduce the idea that [Modpack Name] isn’t just a static project—it’s a living, evolving experience. Explain that to achieve the full potential of the modpack, you need the community's input and active involvement. Highlight the importance of the global issues addressed in the modpack and how community participation can contribute to meaningful conversations and impact."
           },
           end: {
-            component: 'stats',
-            overline: 'Our Donors',
-            headline: 'Making Our Work Possible',
-            body: 'Our donors make our work possible. Their generous contributions support our education, conservation, and advocacy efforts. Hear from some of our donors about why they choose to support BeeLeaf Foundation.',
+            component: 'accordion',
             items: [
               {
-                headline: '$1,000,000+',
-                body: 'Donated to bee conservation initiatives'
+                component: 'details',
+                style: { theme: '' },
+                headline: 'Playtest and Improve',
+                body: 'Invite users to be part of the playtesting team. Explain how their gameplay can help identify bugs, balance issues, and opportunities for new content.',
+                btn: { url: '/', label: 'Sign Up to Playtest' }
               },
               {
-                headline: '5,000+',
-                body: 'Individual donors contributing to our mission'
+                component: 'details',
+                style: { theme: '' },
+                headline: 'Share Your Experiences',
+                body: 'Encourage players to take screenshots or record clips of their gameplay. Ask them to share these on social media or submit them directly to you.',
+                btn: { url: '/', label: 'Send Your Content' }
               },
               {
-                headline: '25+',
-                body: 'Corporate sponsors partnering with BeeLeaf Foundation'
+                component: 'details',
+                style: { theme: '' },
+                headline: 'Give Feedback and Start Discussions',
+                body: 'Ask for direct feedback on features, gameplay, and story elements. Encourage players to join discussions on Discord or Reddit, particularly around the global issues featured in the modpack.',
+                btn: { url: '/', label: 'Join the Discussion' }
               },
               {
-                headline: '10,000+',
-                body: 'Volunteer hours dedicated to bee conservation'
+                component: 'details',
+                style: { theme: '' },
+                headline: 'Tell Your Friends',
+                body: 'Motivate players to share the modpack with their friends, stream it on Twitch, or talk about it on social media. Emphasize the power of word-of-mouth in growing the community.',
+                btn: { url: '/', label: 'Share with Friends' }
               }
             ]
           }
         },
         action: {
-          layout: 'split',
-          theme: 'dark',
-          end: { component: 'img', src: 'solution.png', alt: 'Solution' },
-          start: {
-            component: 'text',
-            size: 'region',
-            overline: 'Join Our Community',
-            headline: 'Be a Part of the Solution',
-            body: 'Join our community and be a part of the solution. Whether you volunteer, donate, or spread the word about the importance of bees, you can make a difference.',
-            btn: {
-              label: 'Get Involved',
-              url: '/get-involved'
-            }
-          }
+          layout: 'bg-pattern',
+          theme: 'primary',
+          pattern: 'leaves',
+          overline: 'overline to download',
+          headline: 'Call to Action to Download',
+          body: "Become part of the BeeLeaf Foundation's community and join forces with volunteers, donors and partners who are dedicated to creating a safer world for bees.",
+          btn: { label: 'Download Now', url: '/' }
         }
       }
     }

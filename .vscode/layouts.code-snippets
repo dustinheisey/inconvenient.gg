@@ -1,10 +1,4 @@
 {
-  "Accordion": {
-    "prefix": "l-accordion",
-    "body": [
-      "$1: {\n\tlayout: 'accordion',\n\tstyle: {\n\t\ttheme: '',\n\t\tcover: false\n\t},\n\toverline: '',\n\theadline: '',\n\tbody: '',\n\titems: [ \n\n \t]\n},\n"
-    ]
-  },
   "End Heavy": {
     "prefix": "l-end-heavy",
     "body": [

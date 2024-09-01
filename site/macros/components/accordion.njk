@@ -1,0 +1,34 @@
+{% from "../component.njk" import component %}
+<div class="{{props.class}}">
+    {% if props.headline %}
+        <section class="prose">
+            {% if props.overline %}
+                <p class="overline">{{props.overline}}</p>
+            {% endif %}
+            <h2 class="region-headline">{{props.headline}}</h2>
+        </section>
+    {% endif %}
+    {% if props.body %}
+        <section class="prose">
+            <p>{{props.body}}
+        </section>
+    {% endif %}
+    <div class="space-xl">
+        {% for item in props.items %}
+        <details class="{{class}} {% if item.theme %}theme-{{item.theme}}{% endif %}">
+            <summary>
+                <h3 class="title-headline">{{item.headline}}</h3>
+            </summary>
+            {% if item.btn %}
+                <div class="stack align-start gap-xs">
+                    <p>{{item.body}}</p>
+                    <a href="{{item.btn.url}}" class="btn {% if item.btn.variant %}btn-{{item.btn.variant}}{% endif %}">{{item.btn.label}}</a>
+                </div>
+            {% else %}
+                <p>{{item.body}}</p>
+            {% endif %}
+        </details>
+        <hr />
+        {% endfor %}
+    </div>
+</div>

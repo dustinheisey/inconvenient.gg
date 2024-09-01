@@ -9,7 +9,7 @@
 }
 
 .frame * {
-  background-color: var(--color-background-light);
+  /* background-color: var(--color-background-light); */
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;

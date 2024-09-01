@@ -249,3 +249,57 @@
   --color-surface: var(--color-error-container);
   --color-on-surface: var(--color-on-error-container);
 }
+
+.theme-discord {
+  background-color: #7289da;
+  color: var(--color-on-primary-light);
+
+  p {
+    color: var(--color-on-primary-light);
+  }
+}
+
+.theme-youtube {
+  background-color: #ff0000;
+  color: var(--color-on-primary-light);
+
+  p {
+    color: var(--color-on-primary-light);
+  }
+}
+
+.theme-tiktok {
+  background-color: #010101;
+  color: var(--color-on-primary-light);
+
+  p {
+    color: var(--color-on-primary-light);
+  }
+}
+
+.theme-twitch {
+  background-color: #9146ff;
+  color: var(--color-on-primary-light);
+
+  p {
+    color: var(--color-on-primary-light);
+  }
+}
+
+.theme-reddit {
+  background-color: #ff5700;
+  color: var(--color-on-primary-light);
+
+  p {
+    color: var(--color-on-primary-light);
+  }
+}
+
+.theme-mastodon {
+  background-color: #6364ff;
+  color: var(--color-on-primary-light);
+
+  p {
+    color: var(--color-on-primary-light);
+  }
+}

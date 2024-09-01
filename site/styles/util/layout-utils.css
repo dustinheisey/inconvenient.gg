@@ -51,6 +51,10 @@
   align-items: baseline !important;
 }
 
+.content-center {
+  justify-content: center !important;
+}
+
 .full {
   inline-size: 100%;
 }

@@ -19,7 +19,7 @@
 
 :root {
   /* ? Colors */
-  --color-primary-light: rgb(79 102 40);
+  --color-primary-light: #4f6628;
   --color-on-primary-light: rgb(255 255 255);
   --color-primary-container-light: rgb(209 236 160);
   --color-on-primary-container-light: rgb(19 31 0);
@@ -54,6 +54,7 @@
   --color-surface-container-light: rgb(241 238 225);
   --color-surface-container-high-light: rgb(235 232 219);
   --color-surface-container-highest-light: rgb(229 227 214);
+
   --color-primary-dark: rgb(255 181 160);
   --color-surface-tint-dark: rgb(255 181 160);
   --color-on-primary-dark: rgb(86 31 15);
@@ -89,6 +90,9 @@
   --color-surface-container-dark: rgb(38 30 24);
   --color-surface-container-high-dark: rgb(49 40 34);
   --color-surface-container-highest-dark: rgb(60 51 44);
+
+  --color-dark-primary: rgb(143 75 56);
+  --color-on-dark-primary: rgb(58 11 1);
 
   /* ? Typography */
   --font-family-headline: 'Impact', 'Arial Black', 'Arial Bold', sans-serif;
@@ -144,4 +148,8 @@ h6 {
 
 .floating a svg {
   height: 48px;
+}
+
+.overline {
+  color: var(--color-primary);
 }
