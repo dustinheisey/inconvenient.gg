@@ -1,5 +1,49 @@
 {% from "../component.njk" import component %}
-<footer class="bg-img {{props.class}}">
+{% if props.config.footer.variant === 'simple' %}
+    <footer class="bg-img">
+        <img src='/svg/footer-background.svg' alt="">
+        <div class="full stack gap-m align-center region">
+            <a href="/">
+                <span class="sr-only">Home</span>
+                {% svg './public/svg/logo' %}
+            </a>
+            <ul class="cluster gap-xs align-start">
+                {% for link in props.config.footer.links %}
+                    <li>
+                        <a href="{{ link.url }}" class="link link-s link-navigation {% if link.external === true %}external{% endif %}" {% if link.external === true %}target="_blank" {% endif %}>
+                            {{ link.label }}
+                            {% if link.external === true %}{% icon 'external-link' %}{% endif %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul class="cluster gap-xs align-start">
+                {% for link in props.config.footer.social %}
+                <li>
+                    <a href="{{link.url}}" target="_blank" class="btn btn-circular">
+                        <span class="sr-only">{{link.label}}</span>
+                        {% icon link.icon %}
+                        <tool-tip tip-position="block-start"> {{link.label}} </tool-tip>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+
+            {% if props.config.footer.carbon === true %}
+            <div class="stack align-center gap-0">
+                <div class="cluster full theme-surface justify-center">
+                    <div id="wcb" class="carbonbadge wcb-d"></div>
+                    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+                </div>
+                <small class="copywrite">{{props.config.footer.copywrite}}</small>
+            </div>
+                
+            {% endif %}
+            
+        </div>
+    </footer>
+{% else %}
+    <footer class="bg-img {{props.class}}">
     <img src='/svg/footer-background.svg' alt="">
     <div class="full stack align-center region">
         <div class="cluster justify-between full gap-xl align-start">
@@ -65,3 +109,4 @@
         </div>
     </div>
 </footer>
+{% endif %}

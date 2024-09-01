@@ -49,11 +49,12 @@ const config = {
       variant: 'simple',
       links: [
         { label: 'Features', url: '/features' },
-        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
-        { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues' },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg', external: true },
+        { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', external: true },
         { label: 'Community', url: '/community' },
-        { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient' }
+        { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', external: true }
       ],
+      carbon: true,
       social: [
         {
           label: 'Discord',

@@ -86,3 +86,10 @@
   --space-2xl-3xl: clamp(4.5rem, calc(3.46rem + 5.22vw), 7.5rem);
   --space-3xl-4xl: clamp(6.75rem, calc(3.88rem + 14.35vw), 15rem);
 }
+
+.copywrite {
+  background: transparent;
+  color: var(--color-on-background);
+  font-size: 12px !important;
+  justify-content: center;
+}
