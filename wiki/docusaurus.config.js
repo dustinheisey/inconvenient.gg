@@ -10,17 +10,14 @@ import { themes as prismThemes } from 'prism-react-renderer'
 const config = {
   title: 'An Inconvenient Wiki',
   tagline: 'A Player\'s Guide to "An Inconvenient Modpack"',
-  favicon: 'img/favicon.svg',
+  favicon: 'svg/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://inconvenient.gg',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  baseUrl: '/wiki',
+  staticDirectories: ['../common'],
   i18n: {
     defaultLocale: 'en',
     locales: ['en']
@@ -30,11 +27,9 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           sidebarPath: './sidebars.js'
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
         },
         blog: {
           showReadingTime: true,
@@ -50,9 +45,14 @@ const config = {
           onUntruncatedBlogPosts: 'warn'
         },
         theme: {
-          customCss: './src/css/custom.css'
+          customCss: [
+            '../site/styles/index.min.css',
+            './src/css/color.css',
+            './src/css/typography.css',
+            './src/css/overrides.css'
+          ]
         }
-      })
+      }
     ]
   ],
 

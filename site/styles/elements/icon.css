@@ -36,6 +36,11 @@ Sizes
 }
 
 /* relative units */
+.icon-xs {
+  inline-size: 16px;
+  block-size: 16px;
+}
+
 .icon-s {
   inline-size: 20px;
   block-size: 20px;
