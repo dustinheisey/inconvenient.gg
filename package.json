@@ -10,8 +10,7 @@
   },
   "scripts": {
     "dev:site": "cd site && npx @11ty/eleventy --serve --quiet --incremental",
-    "build:site": "cd site && rmdir /s /q _site && npx @11ty/eleventy && npm run assets",
-    "i": "rmdir /s /q node_modules && npm install",
+    "build:site": "cd site && rmdir /s /q _site && npx @11ty/eleventy && npm run assets:site",
     "assets:site": "cd site && svgo -f ./public/svg -o ./_site/svg && pwa-asset-generator ./public/favicon.svg ./_site/favicon --opaque false --favicon --type png --index && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#13100F' --padding '20%' --icon-only && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#13100F' --splash-only --type png --padding '20%' && npm run dev:site",
     "lint:js": "cd site && npx eslint **/*.js --fix",
     "lint:css": "cd site/styles && npx stylelint \"**/*.css\" --fix",
@@ -21,6 +20,7 @@
     "scripts": "cd site && rollup -c rollup.config.js",
     "npm": "rmdir /s /q node_modules && npm install",
     "dev:wiki": "docusaurus start ./wiki",
+    "swizzle:wiki": "cd wiki && docusaurus swizzle",
     "build:wiki": "docusaurus build ./wiki",
     "clear:wiki": "docusaurus clear ./wiki",
     "serve:wiki": "docusaurus serve ./wiki",
@@ -75,6 +75,7 @@
     "storybook": "^7.4.1",
     "storybook-dark-mode": "^3.0.1",
     "stylelint-config-standard": "^34.0.0",
+    "swizzle": "^1.1.0",
     "util": "^0.12.5"
   },
   "devDependencies": {
