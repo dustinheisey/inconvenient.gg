@@ -18,6 +18,15 @@ function setPreference() {
 function reflectPreference() {
   document.firstElementChild.setAttribute('data-theme', theme.value)
   document.querySelector('#theme-toggle')?.setAttribute('aria-label', theme.value)
+
+  // Update footer background image based on the theme
+  const footerBackground = document.querySelector('#footer-background')
+  console.log(footerBackground)
+  if (theme.value === 'dark') {
+    footerBackground.src = '/svg/footer-background-2.svg'
+  } else {
+    footerBackground.src = '/svg/footer-background.svg'
+  }
 }
 
 function onClick() {

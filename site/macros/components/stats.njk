@@ -1,4 +1,6 @@
-<div class="stack gap-xl">
+<div class="stack gap-xl {% if props.border %}border-block-start{% endif %} {% if props.region %}region align-center inset-xl{% endif %}">
+
+
     {% if props.headline %}
         <section>
             {% if props.overline %}
@@ -12,7 +14,7 @@
     {% endif %}
     
     {% if props.variant === 'inline' %}
-        <div class="switcher switch-phone align-start gap-xl {{class}}">
+        <div class="switcher switch-phone align-start gap-xl {{props.class}}">
             {% for item in props.items %}
             <div class="prose stack gap-3xs {% if props.center %} align-center text-center {% endif %}">
                 <h3 class="section-headline">{{item.headline}}</h3>
@@ -22,7 +24,7 @@
         </div>
     
     {% elif props.variant === 'stack' %}
-        <div class="stack gap-l fixed {{class}}">
+        <div class="stack gap-l fixed {{props.class}}">
             {% for item in props.items %}
             <div class="prose stack gap-3xs">
                 <h3 class="section-headline">{{item.headline}}</h3>
@@ -32,7 +34,7 @@
         </div>
         
     {% else %}
-        <div class="{{class}} grid grid-2 fixed">
+        <div class="{{props.class}} grid grid-2 fixed">
             {% for stat in props.items %}
             <div class="prose stack gap-3xs">
                 <h3 class="section-headline">{{stat.headline}}</h3>

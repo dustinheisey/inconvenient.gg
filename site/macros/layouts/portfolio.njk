@@ -7,7 +7,7 @@
         {% endif %}
         <div class="grid grid-2 gap-m">
             {% for item in config.portfolio %} 
-                <div class="{{class}} prose">
+                <div class="{{props.class}} prose">
                     <div class="frame">
                         {% set src = './public/img/' + item.data.img %}
                         {% img src, item.data.alt %}

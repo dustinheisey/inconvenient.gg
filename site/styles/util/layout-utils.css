@@ -58,3 +58,7 @@
 .full {
   inline-size: 100%;
 }
+
+.border-block-start {
+  border-block-start: 1px solid var(--color-outline-variant);
+}

@@ -10,12 +10,12 @@
     {% endif %}
     {% if props.body %}
         <section class="prose">
-            <p>{{props.body}}
+            <p class="{{props.align}}">{{props.body}}</p>
         </section>
     {% endif %}
     <div class="space-xl">
         {% for item in props.items %}
-        <details class="{{class}} {% if item.theme %}theme-{{item.theme}}{% endif %}">
+        <details class="{{props.class}} {% if item.theme %}theme-{{item.theme}}{% endif %}">
             <summary>
                 <h3 class="title-headline">{{item.headline}}</h3>
             </summary>

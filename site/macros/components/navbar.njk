@@ -1,6 +1,6 @@
 {% if props.config.header.variant === 'stack' %}
 <nav>
-    <div class="{{class}} stack region gap-xs align-center no-inset">
+    <div class="{{props.class}} stack region gap-xs align-center no-inset">
         <a href="/">
             <span class="sr-only">Home</span>
             {% svg './public/svg/logo' %}
@@ -89,7 +89,7 @@
 </nav>
 {% else %}
 <nav>
-    <div class="{{class}} cluster region gap-xs {% if props.config.header.variant === 'start' %}justify-start{% elif props.config.header.variant === 'center' %}justify-center{% elif props.config.header.variant === 'end' %}justify-end{% elif props.config.header.variant === 'spaced' %}justify-between{% elif props.config.header.variant === 'stack' %}{% endif %} no-inset">
+    <div class="{{props.class}} cluster region gap-xs {% if props.config.header.variant === 'start' %}justify-start{% elif props.config.header.variant === 'center' %}justify-center{% elif props.config.header.variant === 'end' %}justify-end{% elif props.config.header.variant === 'spaced' %}justify-between{% elif props.config.header.variant === 'stack' %}{% endif %} no-inset">
         <a href="/">
             <span class="sr-only">Home</span>
             {% svg './public/svg/logo' %}

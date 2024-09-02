@@ -6,6 +6,10 @@
   color: var(--color-on-primary);
 }
 
+.color-light {
+  color: var(--color-on-primary-light);
+}
+
 .color-secondary {
   color: var(--color-secondary);
 }

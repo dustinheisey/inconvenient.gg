@@ -1,4 +1,4 @@
-<div class="{{class}} prose">
+<div class="{{props.class}} prose">
     {% if props.img %}
         <div class="frame">
             {% if props.img.variant === 'avatar' %}
@@ -15,18 +15,21 @@
             <h3 class="title-headline">{{props.headline}}</h3>
         </div>
     {% else %}
-    <h3 class="{% if props.url %}section-headline{% else %}title-headline{% endif %}">
-        {% if props.icon %}
-        {% icon props.icon, "icon" %}
+    <div>
+        <h3 class="{% if props.url %}section-headline{% else %}title-headline{% endif %}">
+            {% if props.icon %}
+            {% icon props.icon, "icon" %}
+            {% endif %}
+            {% if props.url %}
+                <a href="{{props.url}}" class="link-navigation">{{props.headline}}</a>
+            {% else  %}
+                {{props.headline}}   
+            {% endif %}
+        </h3>
         {% endif %}
-        {% if props.url %}
-            <a href="{{props.url}}" class="link-navigation">{{props.headline}}</a>
-        {% else  %}
-            {{props.headline}}   
-        {% endif %}
-    </h3>
-    {% endif %}
-    <p>
-        {{props.body}}
-    </p>
+        <p>
+            {{props.body}}
+        </p>
+    </div>
+    <p style="margin: 0; text-align:end">{{props.date}}</p>
 </div>

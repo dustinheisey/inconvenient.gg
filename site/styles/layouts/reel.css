@@ -5,6 +5,8 @@
   overflow-y: hidden;
   max-inline-size: 100%;
   scrollbar-color: var(--color-primary) var(--color-background);
+  padding-block: var(--space-xl);
+  padding-inline: 0;
 }
 
 .reel.justify-center {

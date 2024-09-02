@@ -1,4 +1,10 @@
 {
+  "Lorem": {
+    "prefix": "lorem",
+    "body": [
+      "\"Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.\""
+    ]
+  },
   "Text Input": {
     "prefix": "e-input-text",
     "body": ["{ required: true, label: '', id: '', type: 'text'},\n"]

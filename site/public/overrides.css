@@ -55,9 +55,9 @@
   --color-surface-container-high-light: rgb(235 232 219);
   --color-surface-container-highest-light: rgb(229 227 214);
 
-  --color-primary-dark: rgb(255 181 160);
+  --color-primary-dark: #ffb5a0;
   --color-surface-tint-dark: rgb(255 181 160);
-  --color-on-primary-dark: rgb(86 31 15);
+  --color-on-primary-dark: #561f0f;
   --color-primary-container-dark: rgb(114 53 35);
   --color-on-primary-container-dark: rgb(255 219 209);
   --color-secondary-dark: rgb(231 189 178);
