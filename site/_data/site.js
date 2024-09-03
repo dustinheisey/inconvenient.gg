@@ -94,13 +94,70 @@ const config = {
       regions: {
         hero: {
           layout: 'bg-center',
+          navigation: {
+            logo: {
+              src: './public/svg/logo',
+              alt: 'An Inconvenient Modpack'
+            },
+            header: {
+              variant: 'stack',
+              links: [
+                {
+                  label: 'Features',
+                  url: '/features'
+                },
+                { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
+                {
+                  label: 'Help Me Find Bugs',
+                  external: true,
+                  url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues'
+                },
+                {
+                  label: 'Community',
+                  url: '/community',
+                  subLinks: [
+                    { label: 'Discord', url: '/', external: true },
+                    { label: 'Youtube', url: '/', external: true },
+                    { label: 'Tik Tok', url: '/', external: true },
+                    { label: 'Twitch', url: '/', external: true },
+                    { label: 'Reddit', url: '/', external: true },
+                    { label: 'Mastodon', url: '/', external: true }
+                  ]
+                }
+              ],
+              action: {
+                label: 'Play',
+                url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
+                external: true
+              },
+              bottombar: {
+                links: [
+                  { label: 'Home', url: '/', icon: 'home' },
+                  { label: 'Features', url: '/features', icon: 'about' },
+                  { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
+                  {
+                    label: 'Bugs',
+                    url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
+                    icon: 'advocate'
+                  },
+                  { label: 'Community', url: '/community', icon: 'contact' }
+                ],
+                fab: {
+                  label: 'Play',
+                  url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
+                  icon: 'donate'
+                }
+              }
+            }
+          },
           overline: 'Awaken to a World on the Brink',
           headline: 'Will You Save It or Let It Fall?',
           body: 'After a thousand years, the Earth has changed. Your decisions will shape its future—choose wisely',
           btns: [
             { url: '/', label: 'Start Your Journey' },
             { variant: 'secondary', url: '/', label: 'Watch the Full Trailer' }
-          ]
+          ],
+          video: { src: 'test.mp4' }
         },
         wakeUp: {
           layout: 'end-heavy',

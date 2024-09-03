@@ -8,7 +8,8 @@
 
 .bg-img > img,
 .bg-img > svg,
-.bg-img > picture {
+.bg-img > picture,
+.bg-img > video {
   grid-column: 1;
   grid-row: 1;
   object-fit: cover;
@@ -19,7 +20,7 @@
   border-radius: 0;
 }
 
-.bg-img > :not(img, svg, picture) {
+.bg-img > :not(img, svg, picture, video) {
   grid-column: 1;
   grid-row: 1;
   z-index: 1;
