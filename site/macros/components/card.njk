@@ -1,5 +1,5 @@
 {% if props.size === 'xl'  %}
-<a href="{{props.url}}" class="prose stack content-center card card-icon card-link">
+<a href="{{props.url}}" class="prose stack content-center card card-icon card-link theme-{{props.theme}}">
         {% if props.icon %}{% icon props.icon, "icon icon-xl" %}{% endif %}
         <p>{{props.body}}</p>
     </a> 

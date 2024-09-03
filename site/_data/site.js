@@ -89,131 +89,171 @@ const config = {
     {
       url: 'index',
       header: false,
-      title: 'Join BeeLeaf Foundation: Become a Hero for Bees Today!',
-      description:
-        'At BeeLeaf Foundation, you can be the hero bees desperately need. Join us in the fight to conserve bee populations through education, conservation, and action.',
+      title: '',
+      description: '',
       regions: {
         hero: {
-          layout: 'split',
-          theme: 'dark',
-          start: {
-            component: 'img',
-            src: 'bee-hero.png',
-            alt: 'bee'
-          },
-          end: {
-            component: 'text',
-            get navbar() {
-              return config.navigation
-            },
-            size: 'hero',
-            headline: 'Join the Hive, Save the Bees',
-            body: "Imagine a world where the soft hum of bees fills the air, where flowers bloom in abundance thanks to their tireless work. This is the world we're fighting for, and we need you.",
-            btn: {
-              label: 'Join the Hive',
-              url: '/get-involved'
-            }
-          }
+          layout: 'bg-center',
+          overline: 'Awaken to a World on the Brink',
+          headline: 'Will You Save It or Let It Fall?',
+          body: 'After a thousand years, the Earth has changed. Your decisions will shape its future—choose wisely',
+          btns: [
+            { url: '/', label: 'Start Your Journey' },
+            { variant: 'secondary', url: '/', label: 'Watch the Full Trailer' }
+          ]
         },
-        problem: {
+        wakeUp: {
           layout: 'end-heavy',
-          class: 'inset',
           end: {
             component: 'text',
             size: 'region',
-            headline: 'Our Bees are in Danger and their survival is crucial for our ecosystem'
-          },
-          start: {
-            component: 'list',
-            icon: 'remove',
-            items: [
-              'Pesticides: Toxic chemicals harming bee populations.',
-              'Habitat Loss: Shrinking habitats deprive bees of food.',
-              'Climate Change: Altered weather disrupts bee foraging patterns.',
-              'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
-              'Invasive Species: Non-native plants and pests harm native bees.',
-              'Intensive Agriculture: Industrial practices limit bee forage and health.'
-            ]
-          }
-        },
-        guide: {
-          layout: 'start-heavy',
-          end: {
-            component: 'text',
-            size: 'region',
-            overline: 'BeeLeaf Foundation: Your Guide to Bee Conservation',
-            headline: "We're here to help you help the bees",
-            body: "We are BeeLeaf Foundation, a dedicated team of bee enthusiasts, conservationists, and educators committed to reversing the decline of bee populations. We provide resources, education, and opportunities for you to get involved. With us, you're not alone in this fight. Together, we can turn the tide."
+            overline: 'The Journey Begins',
+            headline: 'Wake Up in a World Forgotten',
+            body: 'You emerge from a thousand-year slumber, with no memory of who you are or what happened. The world you once knew is gone—can you uncover your past and shape the future?'
           },
           start: {
             component: 'img',
-            src: 'guide.png',
-            alt: 'Guide'
+            src: 'wave.png',
+            alt: 'wave'
           }
         },
-        plan: {
-          layout: 'switcher',
-          overline: 'Our Plan: Education, Conservation, and Action',
-          headline: 'Together, we can create a brighter future for our bees',
+        rebuild: {
+          layout: 'gallery',
+          overline: '',
+          variant: 'masonry',
+          text: 'start',
+          headline: 'Rebuild a World to Rediscover Your Past',
+          body: 'The remnants of a once-thriving civilization lie at your feet. As you rebuild, fragments of your memory start to return. Each step you take, each piece of technology you rediscover, brings you closer to the truth.',
           items: [
             {
-              component: 'blurb',
-              icon: 'book',
-              headline: 'Education',
-              body: 'Knowledge is power. We aim to educate the public about the importance of bees. Through workshops, webinars, and community outreach, we’re spreading the word about the vital role bees play in our ecosystem.'
+              component: 'img',
+              src: 'wave.png',
+              alt: '1'
             },
             {
-              component: 'blurb',
-              icon: 'shield',
-              headline: 'Conservation',
-              body: 'Protecting Bee Habitats. We’re working tirelessly to conserve and restore bee habitats. From planting wildflowers to creating urban bee sanctuaries, every action we take is a step towards a safer world for our bees.'
+              component: 'img',
+              src: 'wave.png',
+              alt: '2'
             },
             {
-              component: 'blurb',
-              icon: 'advocate',
-              headline: 'Action',
-              body: 'Advocacy for Policy Change. We’re advocating for policies that protect bees and their habitats. From lobbying against harmful pesticides to promoting sustainable farming practices, we’re making sure our voices - and the buzz of the bees - are heard.'
+              component: 'img',
+              src: 'wave.png',
+              alt: '3'
+            },
+            {
+              component: 'img',
+              src: 'wave.png',
+              alt: '4'
+            },
+            {
+              component: 'img',
+              src: 'wave.png',
+              alt: '5.1'
+            },
+            {
+              component: 'img',
+              src: 'wave.png',
+              alt: '5.2'
             }
           ]
         },
-        action: {
-          layout: 'split',
-          theme: 'dark',
+        explore: {
+          layout: 'reel',
+          size: 'region',
+          overline: 'Discover Your Path',
+          headline: 'Explore a World Transformed',
+          body: 'Travel through time and space to uncover the truth. Visit new dimensions, each telling the story of a world ravaged by climate change. Piece together the history of what happened while you slept.',
+          items: [
+            {
+              component: 'card',
+              variant: 'flip',
+              img: { src: 'story-seeker.webp', alt: 'Story Seeker' },
+              headline: 'Everbright'
+            },
+            {
+              component: 'card',
+              variant: 'flip',
+              img: { src: 'adventure/1.webp', alt: 'Adventurer' },
+              headline: 'Undergarden'
+            },
+            {
+              component: 'card',
+              variant: 'flip',
+              img: { src: 'engineer.webp', alt: 'Engineer' },
+              headline: 'Everdawn'
+            },
+            {
+              component: 'card',
+              variant: 'flip',
+              img: { src: 'survivalist.webp', alt: 'Survivalist' },
+              headline: 'The Twilight Forest'
+            },
+            {
+              component: 'card',
+              variant: 'flip',
+              img: { src: 'architect.webp', alt: 'Architect' },
+              headline: 'The Nether'
+            },
+            {
+              component: 'card',
+              variant: 'flip',
+              img: { src: 'architect.webp', alt: 'Architect' },
+              headline: 'The Bumblezone'
+            },
+            {
+              component: 'card',
+              variant: 'flip',
+              img: { src: 'architect.webp', alt: 'Architect' },
+              headline: 'Blueleaf'
+            },
+            {
+              component: 'card',
+              variant: 'flip',
+              img: { src: 'architect.webp', alt: 'Architect' },
+              headline: 'More to Come'
+            }
+          ]
+        },
+        choice: {
+          layout: 'split-slider',
           start: {
             component: 'text',
             size: 'region',
-            overline: 'Together, We Can Ensure a Future for Bees',
-            headline: 'Join us in creating a world where bees thrive',
-            body: "With your help, we can create a world where bees are no longer at risk. A world where our food supply is secure, our flowers bloom, and our children can marvel at the humble bee. Imagine the joy of seeing a child's face light up at the sight of a bee, knowing that they have a future in a world where bees thrive. This is the future we're striving for. Join us in making this vision a reality.",
-            btn: {
-              label: 'Get Involved',
-              url: '/get-involved'
-            }
-          },
-          end: {
-            component: 'img',
-            src: 'bees-thrive.png',
-            alt: 'Bees Thriving'
+            overline: '',
+            headline: 'Decide the Fate of the World',
+            body: 'With knowledge comes power. Will you use it to create a harmonious solarpunk utopia, or will you repeat history and usher in a cyberpunk dystopia? The choice is yours.',
+            btn: { label: 'Join Now', url: '/' }
           }
+        },
+        action: {
+          layout: 'bg-pattern',
+          theme: 'primary',
+          pattern: 'leaves',
+          overline: 'Write Your Own Story',
+          headline: 'Shape the World with Your Choices',
+          body: "Every decision you make in 'An Inconvenient Modpack' leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.",
+          btns: [
+            { label: 'Download Now', url: '/' },
+            { variant: 'secondary', label: 'Visit the Wiki', url: '/' }
+          ]
         }
       }
     },
     {
       url: 'features',
-      title: 'About BeeLeaf Foundation: Our Mission to Save Bees',
-      description:
-        "Discover the core of BeeLeaf Foundation's dedication to bee conservation. Our mission, history, and vision reflect our unwavering commitment to protecting these vital creatures.",
+      title: '',
+      description: '',
       regions: {
         overview: {
           layout: 'start-heavy',
-          start: { component: 'img', src: 'impact.png', alt: 'Impact' },
+          start: { component: 'img', src: '2-visions.webp', alt: 'Impact', ar: 'square' },
           end: {
             component: 'text',
             size: 'hero',
-            overline: 'overline',
-            headline: 'headline',
-            body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.',
-            btn: { label: 'Download Now', url: '/' }
+            overline: 'A World at a Crossroads',
+            headline: 'Rebuild a World or Help it Collapse',
+            body: 'After a thousand years of recovery, Earth stands at a crossroads. Will you lead humanity back into darkness, or will you forge a new path towards harmony with nature?',
+            btn: { label: 'Start Your Journey', url: '/' }
           },
           stats: {
             component: 'stats',
@@ -256,9 +296,9 @@ const config = {
         personas: {
           layout: 'reel',
           size: 'region',
-          overline: 'overline',
-          headline: 'headline',
-          body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.',
+          overline: 'Discover Your Path',
+          headline: 'Something for Every Player',
+          body: "Whether you're a lore enthusiast, a thrill-seeker, a technical mastermind, a survival expert, or a master architect, 'An Inconvenient Modpack' has something tailored for you.",
           items: [
             {
               component: 'card',
@@ -293,241 +333,11 @@ const config = {
             }
           ]
         },
-
-        // storySeeker: {
-        //   layout: 'end-heavy',
-        //   start: {
-        //     component: 'list',
-        //     variant: 'stack',
-        //     style: { theme: '' },
-        //     overline: 'overline',
-        //     headline: 'The Story Seeker',
-        //     body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.',
-        //     icon: 'open-book',
-        //     items: [
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' }
-        //     ]
-        //   },
-        //   end: { component: 'img', src: 'impact.png', alt: 'Impact' }
-        // },
-        // adventurer: {
-        //   layout: 'start-heavy',
-        //   end: {
-        //     component: 'list',
-        //     variant: 'stack',
-        //     style: { theme: '' },
-        //     overline: 'overline',
-        //     headline: 'The Adventurer',
-        //     body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.',
-        //     icon: 'compass-05',
-        //     items: [
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' }
-        //     ]
-        //   },
-        //   start: { component: 'img', src: 'impact.png', alt: 'Impact' }
-        // },
-        // engineer: {
-        //   layout: 'end-heavy',
-        //   start: {
-        //     component: 'list',
-        //     variant: 'stack',
-        //     style: { theme: '' },
-        //     overline: 'overline',
-        //     headline: 'The Engineer',
-        //     body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.',
-        //     icon: 'settings-3',
-        //     items: [
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' }
-        //     ]
-        //   },
-        //   end: { component: 'img', src: 'impact.png', alt: 'Impact' }
-        // },
-        // architect: {
-        //   layout: 'start-heavy',
-        //   end: {
-        //     component: 'list',
-        //     variant: 'stack',
-        //     style: { theme: '' },
-        //     overline: 'overline',
-        //     headline: 'The Architect',
-        //     body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.',
-        //     icon: 'block',
-        //     items: [
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' }
-        //     ]
-        //   },
-        //   start: { component: 'img', src: 'impact.png', alt: 'Impact' }
-        // },
-        // survivalist: {
-        //   layout: 'end-heavy',
-        //   start: {
-        //     component: 'list',
-        //     variant: 'stack',
-        //     style: { theme: '' },
-        //     overline: 'overline',
-        //     headline: 'The Survivalist',
-        //     body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.',
-        //     icon: 'energy',
-        //     items: [
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' },
-        //       { text: 'something line 1' }
-        //     ]
-        //   },
-        //   end: { component: 'img', src: 'impact.png', alt: 'Impact' }
-        // },
-        // features: {
-        //   layout: 'gallery',
-        //   variant: 'masonry',
-        //   items: [
-        //     {
-        //       component: 'card',
-        //       theme: 'primary-container',
-        //       headline: 'Custom bunker spawn structure',
-        //       body: 'Begin your journey in a custom-designed bunker, equipped with essential resources and technology to kickstart your survival and exploration.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'secondary-container',
-        //       headline: 'Pollution',
-        //       body: 'Manage the environmental impact of your actions, as pollution can deteriorate the world around you, affecting both the environment and your health.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'tertiary-container',
-        //       headline: 'Temperature',
-        //       body: 'Adapt to varying temperatures that influence your survival, requiring you to seek warmth or coolness depending on the climate.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'primary-container',
-        //       headline: 'Thirst',
-        //       body: 'Keep yourself hydrated in the game, with thirst being a crucial survival mechanic that affects your health and stamina.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'secondary-container',
-        //       headline: 'Armor progression',
-        //       body: 'Progress through different tiers of armor, each offering increased protection and unique abilities to enhance your survival.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'tertiary-container',
-        //       headline: 'Aura system',
-        //       body: 'Harness and manage a mystical energy called Aura, which affects your abilities, crafting, and interactions with the environment.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'primary-container',
-        //       headline: 'Blood system',
-        //       body: "Monitor your character's blood levels, which play a vital role in health and can be influenced by injuries, diseases, and certain abilities."
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'secondary-container',
-        //       headline: 'Choose the fate of the world',
-        //       body: 'Make critical decisions that determine whether the world will flourish in harmony or spiral back into environmental destruction.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'tertiary-container',
-        //       headline: 'Economy',
-        //       body: 'Engage with an in-game economy where you can trade resources, craft items, and interact with NPCs to build wealth and influence.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'primary-container',
-        //       headline: 'End portal overhaul',
-        //       body: 'Experience a completely reimagined End portal, with new challenges and requirements to unlock the portal and face the Ender Dragon.'
-        //     },
-
-        //     {
-        //       component: 'card',
-        //       theme: 'secondary-container',
-        //       headline: 'Realistic F3 stats',
-        //       body: 'Use enhanced F3 stats that provide more realistic and detailed information about your environment, aiding in navigation and survival.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'tertiary-container',
-        //       headline: 'Gateways',
-        //       body: 'Defend against relentless waves of enemies in special gateway arenas, testing your combat skills and strategy.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'primary-container',
-        //       headline: 'Restore life to a barren world',
-        //       body: 'Bring back biodiversity by reviving extinct species, planting trees, and restoring ecosystems in a once-barren world.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'secondary-container',
-        //       headline: 'Hordes',
-        //       body: 'Face massive hordes of enemies that challenge your survival skills, requiring strategy and preparation to overcome.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'tertiary-container',
-        //       headline: 'Ore generation overhaul',
-        //       body: 'Discover a completely revamped ore generation system, offering new mining challenges and rewards as you explore deeper underground.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'primary-container',
-        //       headline: 'Multiple Patchouli books',
-        //       body: 'Access a series of in-game guidebooks that provide detailed information and instructions on various game mechanics and features.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'secondary-container',
-        //       headline: 'Realistic torches',
-        //       body: 'Use torches that behave realistically, requiring maintenance and care to keep your surroundings lit and safe from darkness.'
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'tertiary-container',
-        //       headline: 'Relics',
-        //       body: 'Find and collect ancient relics that grant powerful abilities or bonuses, adding depth and variety to your gameplay.'
-        //     },
-
-        //     {
-        //       component: 'card',
-        //       theme: 'primary-container',
-        //       headline: 'Sanity',
-        //       body: "Manage your character's sanity as you face the horrors of a post-apocalyptic world, with mental health affecting gameplay and decision-making."
-        //     },
-        //     {
-        //       component: 'card',
-        //       theme: 'secondary-container',
-        //       headline: 'Spirit Orbs',
-        //       body: "Collect Spirit Orbs to unlock special abilities, enhance your character's stats, and interact with mystical elements in the game."
-        //     }
-        //   ]
-        // },
         history: {
           layout: 'sparkline',
           variant: 'block',
-          overline: 'Our History',
-          headline: 'A Legacy of Love for Bees',
-          body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.',
+          headline: 'The Never Ending Story',
+          body: "Building 'An Inconvenient Modpack' has been a journey of innovation, challenges, and relentless passion. The project isn't complete yet, here's what I've done so far.",
           items: [
             {
               component: 'blurb',
@@ -567,33 +377,31 @@ const config = {
             class: 'full',
             align: 'center',
             headline: 'FAQs',
-            body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.',
+            body: 'Here are some of the most common questions to help you get started and enjoy your experience with the modpack.',
             items: [
               {
                 component: 'details',
                 style: { theme: '' },
                 headline: 'How do I install the modpack?',
-                body: 'Invite users to be part of the playtesting team. Explain how their gameplay can help identify bugs, balance issues, and opportunities for new content.',
-                btn: { url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', label: 'Download Modpack' }
+                body: 'You can install the modpack by downloading it from CurseForge or Modrinth. Follow the installation guide provided on our Wiki for step-by-step instructions.'
               },
               {
                 component: 'details',
                 style: { theme: '' },
                 headline: 'Where can I post bugs?',
-                body: 'Encourage players to take screenshots or record clips of their gameplay. Ask them to share these on social media or submit them directly to you.',
-                btn: { url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', label: 'Create an Issue' }
+                body: 'Please report any bugs you encounter via our GitHub Issues page or join our Discord community for support and discussions.'
               },
               {
                 component: 'details',
                 style: { theme: '' },
                 headline: 'Can I play this on a server?',
-                body: 'Ask for direct feedback on features, gameplay, and story elements. Encourage players to join discussions on Discord or Reddit, particularly around the global issues featured in the modpack.'
+                body: 'Yes, the modpack is designed to be multiplayer-friendly! You can set up your own server using the provided server files.'
               },
               {
                 component: 'details',
                 style: { theme: '' },
                 headline: 'Is there support for shaders?',
-                body: 'Motivate players to share the modpack with their friends, stream it on Twitch, or talk about it on social media. Emphasize the power of word-of-mouth in growing the community.'
+                body: 'Yes, the modpack is compatible with popular shaders. We recommend using OptiFine or Sodium for the best visual experience.'
               }
             ]
           }
@@ -602,18 +410,20 @@ const config = {
           layout: 'bg-pattern',
           theme: 'primary',
           pattern: 'leaves',
-          overline: 'overline to download',
-          headline: 'Call to Action to Download',
-          body: "Become part of the BeeLeaf Foundation's community and join forces with volunteers, donors and partners who are dedicated to creating a safer world for bees.",
-          btn: { label: 'Download Now', url: '/' }
+          overline: 'Write Your Own Story',
+          headline: 'Shape the World with Your Choices',
+          body: "Every decision you make in 'An Inconvenient Modpack' leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.",
+          btns: [
+            { label: 'Download Now', url: '/' },
+            { variant: 'secondary', label: 'Visit the Wiki', url: '/' }
+          ]
         }
       }
     },
     {
       url: 'community',
-      title: 'Engage with the BeeLeaf Community: United for Bee Conservation',
-      description:
-        "Become part of the BeeLeaf Foundation's community and join forces with volunteers, donors, and partners who are dedicated to creating a safer world for bees.",
+      title: '',
+      description: '',
       regions: {
         intro: {
           layout: 'start-heavy',
@@ -776,10 +586,13 @@ const config = {
           layout: 'bg-pattern',
           theme: 'primary',
           pattern: 'leaves',
-          overline: 'overline to download',
-          headline: 'Call to Action to Download',
-          body: "Become part of the BeeLeaf Foundation's community and join forces with volunteers, donors and partners who are dedicated to creating a safer world for bees.",
-          btn: { label: 'Download Now', url: '/' }
+          overline: 'Write Your Own Story',
+          headline: 'Shape the World with Your Choices',
+          body: "Every decision you make in 'An Inconvenient Modpack' leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.",
+          btns: [
+            { label: 'Download Now', url: '/' },
+            { variant: 'secondary', label: 'Visit the Wiki', url: '/' }
+          ]
         }
       }
     }
