@@ -1,45 +1,3 @@
-.card {
-  box-shadow: var(--shadow-l);
-  padding: var(--space-m);
-  border-radius: var(--radius-l);
-}
-
-.card.card-icon {
-  height: min-content;
-  aspect-ratio: 1/1;
-  align-items: center;
-  text-align: center;
-  padding: 0;
-
-  p {
-    width: 20ch;
-  }
-}
-.card.card-link {
-  transform: translate3d(0, 0, 0);
-  will-change: transform;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
-
-.card.card-link:hover {
-  box-shadow: var(--shadow-xl);
-  transform: translate3d(0, -2px, 0);
-}
-
-.card-image {
-  padding: 0;
-}
-
-.card-image img,
-.card-image .frame {
-  border-radius: var(--radius-l) var(--radius-l) 0 0;
-}
-
-.card-image > .content {
-  padding: var(--space-m);
-}
-
 /* article {
   --img-scale: 1.001;
   --title-color: black;
@@ -140,3 +98,89 @@ article:has(:hover, :focus) {
     object-fit: cover;
   }
 } */
+
+/* Card container */
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  border-radius: var(--radius-l);
+  transition: transform 0.3s ease;
+  box-shadow: var(--shadow-l);
+}
+
+.card-flip {
+  width: 50ch;
+}
+.card.card-icon {
+  height: min-content;
+  aspect-ratio: 1/1;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+
+  p {
+    width: 20ch;
+  }
+}
+.card.card-link {
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.card.card-link:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translate3d(0, -2px, 0);
+}
+
+.card:hover {
+  /* transform: scale(1.05); Slight scale on hover */
+}
+
+.card-image {
+  padding: 0;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  picture {
+    height: 100%;
+  }
+}
+
+/* Card image */
+.card-image img,
+.card-image .frame {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-l);
+}
+
+/* Card overlay */
+.card-overlay {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(from var(--color-primary) h s l / 0.9); /* Semi-transparent overlay */
+  opacity: 0; /* Hidden by default */
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  transition: opacity 0.4s ease;
+  border-radius: var(--radius-l);
+}
+
+.card:hover .card-overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+/* Card text */
+.card-text {
+  padding: var(--space-l);
+}

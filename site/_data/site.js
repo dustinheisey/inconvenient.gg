@@ -157,7 +157,7 @@ const config = {
             { url: '/', label: 'Start Your Journey' },
             { variant: 'secondary', url: '/', label: 'Watch the Full Trailer' }
           ],
-          video: { src: 'test.mp4' }
+          video: { src: 'bunker.mp4' }
         },
         wakeUp: {
           layout: 'end-heavy',
@@ -225,7 +225,8 @@ const config = {
               component: 'card',
               variant: 'flip',
               img: { src: 'story-seeker.webp', alt: 'Story Seeker' },
-              headline: 'Everbright'
+              headline: 'Everbright',
+              body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.'
             },
             {
               component: 'card',
@@ -359,31 +360,75 @@ const config = {
               variant: 'flip',
               img: { src: 'story-seeker.webp', alt: 'Story Seeker' },
               headline: 'Story Seeker',
-              list: [{ text: '' }]
+              icon: 'book',
+              list: [
+                'Pesticides: Toxic chemicals harming bee populations.',
+                'Habitat Loss: Shrinking habitats deprive bees of food.',
+                'Climate Change: Altered weather disrupts bee foraging patterns.',
+                'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
+                'Invasive Species: Non-native plants and pests harm native bees.',
+                'Intensive Agriculture: Industrial practices limit bee forage and health.'
+              ]
             },
             {
               component: 'card',
               variant: 'flip',
               img: { src: 'adventure/1.webp', alt: 'Adventurer' },
-              headline: 'Adventurer'
+              headline: 'Adventurer',
+              icon: 'compass',
+              list: [
+                'Pesticides: Toxic chemicals harming bee populations.',
+                'Habitat Loss: Shrinking habitats deprive bees of food.',
+                'Climate Change: Altered weather disrupts bee foraging patterns.',
+                'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
+                'Invasive Species: Non-native plants and pests harm native bees.',
+                'Intensive Agriculture: Industrial practices limit bee forage and health.'
+              ]
             },
             {
               component: 'card',
               variant: 'flip',
               img: { src: 'engineer.webp', alt: 'Engineer' },
-              headline: 'Engineer'
+              headline: 'Engineer',
+              icon: 'settings',
+              list: [
+                'Pesticides: Toxic chemicals harming bee populations.',
+                'Habitat Loss: Shrinking habitats deprive bees of food.',
+                'Climate Change: Altered weather disrupts bee foraging patterns.',
+                'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
+                'Invasive Species: Non-native plants and pests harm native bees.',
+                'Intensive Agriculture: Industrial practices limit bee forage and health.'
+              ]
             },
             {
               component: 'card',
               variant: 'flip',
               img: { src: 'survivalist.webp', alt: 'Survivalist' },
-              headline: 'Survivalist'
+              headline: 'Survivalist',
+              icon: 'energy',
+              list: [
+                'Pesticides: Toxic chemicals harming bee populations.',
+                'Habitat Loss: Shrinking habitats deprive bees of food.',
+                'Climate Change: Altered weather disrupts bee foraging patterns.',
+                'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
+                'Invasive Species: Non-native plants and pests harm native bees.',
+                'Intensive Agriculture: Industrial practices limit bee forage and health.'
+              ]
             },
             {
               component: 'card',
               variant: 'flip',
               img: { src: 'architect.webp', alt: 'Architect' },
-              headline: 'Architect'
+              headline: 'Architect',
+              icon: 'block',
+              list: [
+                'Pesticides: Toxic chemicals harming bee populations.',
+                'Habitat Loss: Shrinking habitats deprive bees of food.',
+                'Climate Change: Altered weather disrupts bee foraging patterns.',
+                'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
+                'Invasive Species: Non-native plants and pests harm native bees.',
+                'Intensive Agriculture: Industrial practices limit bee forage and health.'
+              ]
             }
           ]
         },
@@ -600,9 +645,9 @@ const config = {
             component: 'text',
             size: 'region',
             overline: 'Join the Journey',
-            headline: 'Help Me Build This Modpack',
-            lead: 'We’re creating more than just a modpack—we’re building a community that explores global issues, and we need your help to make it the best it can be!',
-            body: "Briefly introduce the idea that [Modpack Name] isn’t just a static project—it’s a living, evolving experience. Explain that to achieve the full potential of the modpack, you need the community's input and active involvement. Highlight the importance of the global issues addressed in the modpack and how community participation can contribute to meaningful conversations and impact."
+            headline: 'Help Shape the Future of This Modpack',
+            lead: "An Inconvenient Modpack is more than a modpack. It's a living, evolving experience that dives deep into global issues like climate change, capitalism, trauma, and hope. But to bring this vision to life, I need your help.",
+            body: 'This project thrives on community collaboration. Your feedback and participation will shape the modpack’s journey, exploring not only the impact of our choices but also the power we hold to create the world we want. Together, we can tell a story of resilience, and hope, and prove that we have the ability to save our planet.'
           },
           end: {
             component: 'accordion',

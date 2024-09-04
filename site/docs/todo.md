@@ -4,7 +4,6 @@
 
 - [ ] logo on video
 - [ ] video filter overlay
-- [ ] video full trailer
 - [ ] record video
 - [ ] wake up and forget img
 - [ ] record snapshot of each chapter
@@ -20,12 +19,10 @@
 - [ ] features page responsiveness
 - [ ] list features for each persona
 - [ ] write timeline points
-- [ ] think of any more faqs x
 
 ## Community
 
 - [ ] hero image
-- [ ] rethink social grid
 - [ ] make sure call to help is finalized and works x
 - [ ] community page responsiveness
 - [ ] overlines, headlines, bodies, btn texts for community page
@@ -46,6 +43,9 @@
 - [ ] status counter of downloads
 - [ ] add animations
 - [ ] increase spacing between sections and make it more cinematic
+- [ ] think of any more faqs
+- [ ] video full trailer
+- [ ] rethink social grid
 
 ### Scroll Driven Animations
 
