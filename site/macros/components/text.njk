@@ -111,20 +111,20 @@
         {% endif %}
         <p>{{props.body}}</p>
         {% if props.btn %}
-            <a href="{{props.btn.url}}" class="btn {% if props.btn.variant %}btn-{{props.btn.variant}}{% endif %}">{{props.btn.label}}</a>
+            <a href="{{props.btn.url}}" class="btn {{props.btn.variant}}">{{props.btn.label}}</a>
         {% endif %}
         
         {% if props.btns %}
-        <div class="btn-group">
+        <div class="cluster gap-2xs">
             {% for btn in props.btns %}
-                <a href="{{btn.url}}" class="btn {% if btn.variant %}btn-{{btn.variant}}{% endif %}" {% if btn.target === 'blank' %}target="_blank"{% endif %}>{{btn.label}}</a>
+                <a href="{{btn.url}}" class="btn {{btn.variant}}" {% if btn.target === 'blank' %}target="_blank"{% endif %}>{{btn.label}}</a>
             {% endfor %}
         </div>
         {% endif %}
         {% if props.input %}
             <div class="input-group">
                 <input type="{{props.input.type}}" placeholder="{{props.input.placeholder}}" class="input">
-                <button type="submit" class="btn btn-primary">{{props.input.btn}}</button>
+                <button type="submit" class="btn">{{props.input.btn}}</button>
             </div>
         {% endif %}
     </section>

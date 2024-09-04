@@ -494,11 +494,11 @@ const config = {
             btns: [
               {
                 url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
-                variant: 'primary',
+                variant: 'secondary',
                 target: 'blank',
                 label: 'Get on Curseforge'
               },
-              { url: 'https://modrinth.com/', variant: 'primary', label: 'Get on Modrinth', target: 'blank' }
+              { url: 'https://modrinth.com/', variant: 'secondary', label: 'Get on Modrinth', target: 'blank' }
             ]
           }
         },

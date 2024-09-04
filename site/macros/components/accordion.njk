@@ -22,7 +22,7 @@
             {% if item.btn %}
                 <div class="stack align-start gap-xs">
                     <p>{{item.body}}</p>
-                    <a href="{{item.btn.url}}" class="btn {% if item.btn.variant %}btn-{{item.btn.variant}}{% endif %}">{{item.btn.label}}</a>
+                    <a href="{{item.btn.url}}" class="btn {{item.btn.variant}}">{{item.btn.label}}</a>
                 </div>
             {% else %}
                 <p>{{item.body}}</p>

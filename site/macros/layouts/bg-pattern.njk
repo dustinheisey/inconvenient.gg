@@ -14,12 +14,12 @@
         <p>{{props.body}}</p>
         {% endif %}
         {% if props.btn %}
-            <a href="{{props.btn.url}}" class="btn {% if props.btn.variant %}btn-{{props.btn.variant}}{% endif %}">{{props.btn.label}}</a>
+            <a href="{{props.btn.url}}" class="btn {{props.btn.variant}}">{{props.btn.label}}</a>
         {% endif %}
                 {% if props.btns %}
-        <div class="btn-group">
+        <div class="cluster gap-2xs">
             {% for btn in props.btns %}
-                <a href="{{btn.url}}" class="btn {% if btn.variant %}btn-{{btn.variant}}{% endif %}" {% if btn.target === 'blank' %}target="_blank"{% endif %}>{{btn.label}}</a>
+                <a href="{{btn.url}}" class="btn {{btn.variant}}" {% if btn.target === 'blank' %}target="_blank"{% endif %}>{{btn.label}}</a>
             {% endfor %}
         </div>
         {% endif %}
@@ -28,7 +28,7 @@
                 <input type="hidden" name="form-name" value="newsletter">
                 <label class="sr-only required" for="newsletter-email">Email Address</label>
                 <input class="input" id="newsletter-email" name="newsletter-email" required="" type="email" placeholder="Email Address">
-                <button class="btn btn-primary fixed" type="submit">Subscribe</button>
+                <button class="btn fixed" type="submit">Subscribe</button>
             </form>
         {% endif %}
     </section>

@@ -84,6 +84,12 @@
   --color-on-background: var(--color-on-primary-light);
   --color-surface: var(--color-primary-light);
   --color-on-surface: var(--color-on-primary-light);
+
+  .btn.secondary {
+    background: transparent;
+    color: var(--color-on-primary-light);
+    border-color: var(--color-on-primary-light);
+  }
 }
 
 .theme-primary-container {
