@@ -1,5 +1,6 @@
 {% from "../component.njk" import component %}
-<div class="region bg-pattern pattern-{{props.pattern}} {{props.class}} theme-{{props.theme}} inset-xl">
+<div class="region">
+<div class="bg-pattern pattern-{{props.pattern}} {{props.class}} theme-{{props.theme}} inset-xl">
     <section class="prose {% if props.align %}stack align-{{props.align}}{% endif %}">
         {% if props.overline %}
         <p class="overline">{{props.overline}}</p>
@@ -33,3 +34,5 @@
         {% endif %}
     </section>
 </div>
+</div>
+

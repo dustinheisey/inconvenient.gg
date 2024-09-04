@@ -170,46 +170,46 @@ const config = {
           },
           start: {
             component: 'img',
-            src: 'wave.png',
+            src: 'vision-1.jpg',
             alt: 'wave'
           }
         },
         rebuild: {
           layout: 'gallery',
-          overline: '',
+          overline: 'overline',
           variant: 'masonry',
           text: 'start',
-          headline: 'Rebuild a World to Rediscover Your Past',
+          headline: 'Rebuild to Rediscover',
           body: 'The remnants of a once-thriving civilization lie at your feet. As you rebuild, fragments of your memory start to return. Each step you take, each piece of technology you rediscover, brings you closer to the truth.',
           items: [
             {
               component: 'img',
-              src: 'wave.png',
+              src: 'vision-1.jpg',
               alt: '1'
             },
             {
               component: 'img',
-              src: 'wave.png',
+              src: 'vision-1.jpg',
               alt: '2'
             },
             {
               component: 'img',
-              src: 'wave.png',
+              src: 'vision-1.jpg',
               alt: '3'
             },
             {
               component: 'img',
-              src: 'wave.png',
+              src: 'vision-1.jpg',
               alt: '4'
             },
             {
               component: 'img',
-              src: 'wave.png',
+              src: 'vision-1.jpg',
               alt: '5.1'
             },
             {
               component: 'img',
-              src: 'wave.png',
+              src: 'vision-1.jpg',
               alt: '5.2'
             }
           ]
@@ -276,7 +276,7 @@ const config = {
           start: {
             component: 'text',
             size: 'region',
-            overline: '',
+            overline: 'overline',
             headline: 'Decide the Fate of the World',
             body: 'With knowledge comes power. Will you use it to create a harmonious solarpunk utopia, or will you repeat history and usher in a cyberpunk dystopia? The choice is yours.',
             btn: { label: 'Join Now', url: '/' }
@@ -316,9 +316,6 @@ const config = {
             component: 'stats',
             variant: 'inline',
             class: 'text-center',
-            overline: '',
-            headline: '',
-            body: '',
             border: true,
             region: true,
             text: 'center',
@@ -393,6 +390,7 @@ const config = {
         history: {
           layout: 'sparkline',
           variant: 'block',
+          overline: 'overline',
           headline: 'The Never Ending Story',
           body: "Building 'An Inconvenient Modpack' has been a journey of innovation, challenges, and relentless passion. The project isn't complete yet, here's what I've done so far.",
           items: [
@@ -433,6 +431,7 @@ const config = {
             component: 'accordion',
             class: 'full',
             align: 'center',
+            overline: 'overline',
             headline: 'FAQs',
             body: 'Here are some of the most common questions to help you get started and enjoy your experience with the modpack.',
             items: [

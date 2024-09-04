@@ -34,7 +34,7 @@
 
 - [x] buttons on different backgrounds
 - [x] button groups on different backgrounds
-- [ ] left align all text x
+- [ ] left align all text
 - [ ] make flip card styles
 - [ ] dark mode light mode call to action bgs
 - [ ] bottombar
@@ -46,3 +46,14 @@
 - [ ] status counter of downloads
 - [ ] add animations
 - [ ] increase spacing between sections and make it more cinematic
+
+### Scroll Driven Animations
+
+- https://scroll-driven-animations.style/demos/horizontal-section/css/
+- https://scroll-driven-animations.style/demos/shrinking-header-shadow/css/
+- https://scroll-driven-animations.style/demos/stacking-cards/css/
+- https://scroll-driven-animations.style/demos/parallax-carousel/css/
+- https://scroll-driven-animations.style/demos/parallax-carousel/css/
+- https://scroll-driven-animations.style/demos/reverse-scroll/css/
+- https://scroll-driven-animations.style/demos/carousel-with-markers/css/#carousel_05
+- https://scroll-driven-animations.style/demos/progress-bar/css/
