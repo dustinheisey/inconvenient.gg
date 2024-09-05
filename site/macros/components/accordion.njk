@@ -22,7 +22,10 @@
             {% if item.btn %}
                 <div class="stack align-start gap-xs">
                     <p>{{item.body}}</p>
-                    <a href="{{item.btn.url}}" class="btn {{item.btn.variant}}">{{item.btn.label}}</a>
+                    <a href="{{item.btn.url}}" class="btn {% if item.btn.variant %}{{item.btn.variant}}{% endif %} {% if item.btn.external === true %}external{% endif %}" {% if item.btn.external === true %}target="_blank"{% endif %}>
+                        {{item.btn.label}}
+                        {% if item.btn.external === true %}{% icon 'external-link' %}{% endif %}
+                    </a>
                 </div>
             {% else %}
                 <p>{{item.body}}</p>

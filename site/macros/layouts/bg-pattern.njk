@@ -15,12 +15,18 @@
         <p>{{props.body}}</p>
         {% endif %}
         {% if props.btn %}
-            <a href="{{props.btn.url}}" class="btn {{props.btn.variant}}">{{props.btn.label}}</a>
+            <a href="{{props.btn.url}}" class="btn {% if props.btn.variant %}{{props.btn.variant}}{% endif %} {% if props.btn.external === true %}external{% endif %}" {% if props.btn.external === true %}target="_blank"{% endif %}>
+                {{props.btn.label}}
+                {% if props.btn.external === true %}{% icon 'external-link' %}{% endif %}
+            </a>
         {% endif %}
                 {% if props.btns %}
         <div class="cluster gap-2xs">
             {% for btn in props.btns %}
-                <a href="{{btn.url}}" class="btn {{btn.variant}}" {% if btn.target === 'blank' %}target="_blank"{% endif %}>{{btn.label}}</a>
+                <a href="{{btn.url}}" class="btn {% if btn.variant %}{{btn.variant}}{% endif %} {% if btn.external === true %}external{% endif %}" {% if btn.external === true %}target="_blank"{% endif %}>
+                    {{btn.label}}
+                    {% if btn.external === true %}{% icon 'external-link' %}{% endif %}
+                </a>
             {% endfor %}
         </div>
         {% endif %}

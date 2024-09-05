@@ -24,7 +24,7 @@ const config = {
           label: 'Community',
           url: '/community',
           subLinks: [
-            { label: 'Discord', url: '/', external: true },
+            { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
             { label: 'Youtube', url: '/', external: true },
             { label: 'Tik Tok', url: '/', external: true },
             { label: 'Twitch', url: '/', external: true },
@@ -59,7 +59,7 @@ const config = {
         {
           label: 'Discord',
           icon: 'logo-discord',
-          url: ''
+          url: 'https://discord.gg/dJbfXV9JnF'
         },
         {
           label: 'Youtube',
@@ -116,7 +116,7 @@ const config = {
                   label: 'Community',
                   url: '/community',
                   subLinks: [
-                    { label: 'Discord', url: '/', external: true },
+                    { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
                     { label: 'Youtube', url: '/', external: true },
                     { label: 'Tik Tok', url: '/', external: true },
                     { label: 'Twitch', url: '/', external: true },
@@ -482,25 +482,21 @@ const config = {
             items: [
               {
                 component: 'details',
-                style: { theme: '' },
                 headline: 'How do I install the modpack?',
                 body: 'You can install the modpack by downloading it from CurseForge or Modrinth. Follow the installation guide provided on our Wiki for step-by-step instructions.'
               },
               {
                 component: 'details',
-                style: { theme: '' },
                 headline: 'Where can I post bugs?',
                 body: 'Please report any bugs you encounter via our GitHub Issues page or join our Discord community for support and discussions.'
               },
               {
                 component: 'details',
-                style: { theme: '' },
                 headline: 'Can I play this on a server?',
                 body: 'Yes, the modpack is designed to be multiplayer-friendly! You can set up your own server using the provided server files.'
               },
               {
                 component: 'details',
-                style: { theme: '' },
                 headline: 'Is there support for shaders?',
                 body: 'Yes, the modpack is compatible with popular shaders. We recommend using OptiFine or Sodium for the best visual experience.'
               }
@@ -532,32 +528,32 @@ const config = {
           start: {
             component: 'text',
             size: 'page',
-            overline: 'Community',
-            headline: 'Together for Bees',
-            body: 'Our community is at the heart of our work at BeeLeaf Foundation. From volunteers and donors to partners and supporters, every member of our community plays a crucial role in our mission to protect bees.',
+            overline: 'Be Apart of the Story',
+            headline: 'Join the Movement to Shape a Better Future',
+            body: 'My vision is to create a community built on Solarpunk principles—where mutual aid, collaboration, and restoration of the planet are at the heart of everything we do. Together, we can build not only a new world in the game but also inspire real-world change by imagining and acting on a better future. Will you help me create this vision?',
             btns: [
               {
                 url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
                 variant: 'secondary',
-                target: 'blank',
+                external: true,
                 label: 'Get on Curseforge'
               },
-              { url: 'https://modrinth.com/', variant: 'secondary', label: 'Get on Modrinth', target: 'blank' }
+              { url: 'https://modrinth.com/', variant: 'secondary', label: 'Get on Modrinth', external: true }
             ]
           }
         },
         social: {
           layout: 'gallery',
           inset: true,
-          overline: 'Our Volunteers',
-          headline: 'The Heart of Our Hive',
-          body: 'Our volunteers are the heart of our hive. They help with everything from habitat restoration to community outreach. Meet some of our amazing volunteers and learn about their experiences.',
+          overline: 'Connect and Engage',
+          headline: 'Join the Conversation',
+          body: "I aim to create a vibrant community built on collaboration, storytelling, and action. Whether you're seeking tips, sharing gameplay, or joining discussions, these platforms are where we connect to shape the modpack's future. Let’s explore how our choices, both in-game and in life, can drive meaningful change. Join a community ready to explore, rebuild, and inspire.",
           items: [
             {
               component: 'card',
               icon: 'logo-discord',
               size: 'xl',
-              url: '/',
+              url: 'https://discord.gg/dJbfXV9JnF',
               theme: 'discord',
               body: 'Join the community discussions and get live help'
             },
@@ -567,7 +563,7 @@ const config = {
               size: 'xl',
               url: '/',
               theme: 'youtube',
-              body: 'Join the community discussions and get live help'
+              body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
             },
             {
               component: 'card',
@@ -575,7 +571,7 @@ const config = {
               size: 'xl',
               url: '/',
               theme: 'tiktok',
-              body: 'Join the community discussions and get live help'
+              body: 'Discover quick tips, behind-the-scenes content, and player moments.'
             },
             {
               component: 'card',
@@ -583,7 +579,7 @@ const config = {
               size: 'xl',
               url: '/',
               theme: 'twitch',
-              body: 'Join the community discussions and get live help'
+              body: 'Join live streams of me fixing bugs and playtesting the modpack.'
             },
             {
               component: 'card',
@@ -591,7 +587,7 @@ const config = {
               size: 'xl',
               url: '/',
               theme: 'reddit',
-              body: 'Join the community discussions and get live help'
+              body: 'Share your experiences, discuss strategies, and connect with other players.'
             },
             {
               component: 'card',
@@ -599,44 +595,11 @@ const config = {
               size: 'xl',
               url: '/',
               theme: 'mastodon',
-              body: 'Join the community discussions and get live help'
+              body: 'Stay updated with the latest modpack news and community discussions.'
             }
           ]
         },
         // TODO: add showcase
-        // showcase: {
-        //   layout: 'end-heavy',
-        //   mobile: 'start',
-        //   start: {
-        //     component: 'img',
-        //     src: 'thriving-bee-habitat.png',
-        //     alt: 'Thriving Bee Habitat'
-        //   },
-        //   end: {
-        //     component: 'stats',
-        //     overline: 'Our Donors',
-        //     headline: 'Making Our Work Possible',
-        //     body: 'Our donors make our work possible. Their generous contributions support our education, conservation, and advocacy efforts. Hear from some of our donors about why they choose to support BeeLeaf Foundation.',
-        //     items: [
-        //       {
-        //         headline: '$1,000,000+',
-        //         body: 'Donated to bee conservation initiatives'
-        //       },
-        //       {
-        //         headline: '5,000+',
-        //         body: 'Individual donors contributing to our mission'
-        //       },
-        //       {
-        //         headline: '25+',
-        //         body: 'Corporate sponsors partnering with BeeLeaf Foundation'
-        //       },
-        //       {
-        //         headline: '10,000+',
-        //         body: 'Volunteer hours dedicated to bee conservation'
-        //       }
-        //     ]
-        //   }
-        // },
         help: {
           layout: 'end-heavy',
           class: 'align-start',
@@ -646,39 +609,55 @@ const config = {
             size: 'region',
             overline: 'Join the Journey',
             headline: 'Help Shape the Future of This Modpack',
-            lead: "An Inconvenient Modpack is more than a modpack. It's a living, evolving experience that dives deep into global issues like climate change, capitalism, trauma, and hope. But to bring this vision to life, I need your help.",
-            body: 'This project thrives on community collaboration. Your feedback and participation will shape the modpack’s journey, exploring not only the impact of our choices but also the power we hold to create the world we want. Together, we can tell a story of resilience, and hope, and prove that we have the ability to save our planet.'
+            lead: 'An Inconvenient Modpack is more than just a modpack. It’s an evolving experience that asks players to think critically about global issues like climate change, capitalism, and the path toward a hopeful future. But to bring this vision to life, I need your help.',
+            body: 'This project thrives on community collaboration. Your feedback and participation will not only shape the modpack’s journey but also deepen the conversations we need to have about our world today. Together, we can tell a story of resilience, hope, and prove that we have the power to change the course of our future—both in the game and beyond.'
           },
           end: {
             component: 'accordion',
             items: [
               {
                 component: 'details',
-                style: { theme: '' },
                 headline: 'Playtest and Improve',
-                body: 'Invite users to be part of the playtesting team. Explain how their gameplay can help identify bugs, balance issues, and opportunities for new content.',
-                btn: { url: '/', label: 'Sign Up to Playtest' }
+                body: 'Help me make An Inconvenient Modpack the best it can be by playtesting for me. Your gameplay insights are invaluable in identifying bugs, balance issues, and opportunities for new content. Together, we’ll fine-tune the experience to make it more engaging for everyone.',
+                btn: {
+                  url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
+                  external: true,
+                  variant: 'secondary',
+                  label: 'Report Issues on Github'
+                }
               },
               {
                 component: 'details',
-                style: { theme: '' },
                 headline: 'Share Your Experiences',
-                body: 'Encourage players to take screenshots or record clips of their gameplay. Ask them to share these on social media or submit them directly to you.',
-                btn: { url: '/', label: 'Send Your Content' }
+                body: 'Your journey through the modpack is unique, and we want to see it! Share your favorite moments, take screenshots, or record gameplay clips. Spread the word on social media or submit your content directly to help inspire others and highlight the impact of your story.',
+                btn: {
+                  url: 'https://discord.gg/dJbfXV9JnF',
+                  variant: 'secondary',
+                  external: true,
+                  label: 'Share on Discord'
+                }
               },
               {
                 component: 'details',
-                style: { theme: '' },
                 headline: 'Give Feedback and Start Discussions',
-                body: 'Ask for direct feedback on features, gameplay, and story elements. Encourage players to join discussions on Discord or Reddit, particularly around the global issues featured in the modpack.',
-                btn: { url: '/', label: 'Join the Discussion' }
+                body: 'The project is constantly evolving, and your feedback plays a key role in shaping the future of the modpack. Share your thoughts on features, gameplay, and story elements. Join discussions on Discord or Reddit to dive deeper into the global issues explored in the modpack and help spark new ideas.',
+                btn: {
+                  url: 'https://discord.gg/dJbfXV9JnF',
+                  external: true,
+                  variant: 'secondary',
+                  label: 'Join the Discussion on Discord'
+                }
               },
               {
                 component: 'details',
-                style: { theme: '' },
                 headline: 'Tell Your Friends',
-                body: 'Motivate players to share the modpack with their friends, stream it on Twitch, or talk about it on social media. Emphasize the power of word-of-mouth in growing the community.',
-                btn: { url: '/', label: 'Share with Friends' }
+                body: 'Help grow our community by sharing the modpack with friends, streaming your experience, or spreading the word on social media. Word-of-mouth is powerful, and your voice can help bring more players into the journey to rebuild our world.',
+                btn: {
+                  url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
+                  external: true,
+                  variant: 'secondary',
+                  label: 'Spread the Word'
+                }
               }
             ]
           }
@@ -688,11 +667,15 @@ const config = {
           theme: 'primary',
           pattern: 'leaves',
           overline: 'Write Your Own Story',
-          headline: 'Shape the World with Your Choices',
-          body: "Every decision you make in 'An Inconvenient Modpack' leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.",
+          headline: 'Download and Shape the Future',
+          body: 'Explore new worlds, uncover forgotten histories, and make decisions that will shape the fate of humanity. Begin your journey today, and if you want to learn more, explore the wiki for insights into the issues and themes you’ll encounter. Together, we can imagine a new world and work toward creating it.',
           btns: [
-            { label: 'Download Now', url: '/' },
-            { variant: 'secondary', label: 'Visit the Wiki', url: '/' }
+            {
+              label: 'Download Now',
+              external: true,
+              url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
+            },
+            { variant: 'secondary', label: 'Visit the Wiki', url: '/wiki' }
           ]
         }
       }
