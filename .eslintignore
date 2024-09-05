@@ -1,4 +1,0 @@
-site/_site
-node_modules
-!.storybook
-index.min.js

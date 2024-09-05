@@ -1,5 +1,6 @@
 {
   "name": "inconvenient.gg",
+  "type": "module",
   "description": "Website for 'An Inconvenient Modpack'",
   "repository": {
     "type": "git",
@@ -12,7 +13,7 @@
     "dev:site": "cd site && npx @11ty/eleventy --serve --quiet --incremental",
     "build:site": "cd site && rmdir /s /q _site && npx @11ty/eleventy && npm run assets:site",
     "assets:site": "cd site && svgo -f ./public/svg -o ./_site/svg && pwa-asset-generator ./public/favicon.svg ./_site/favicon --opaque false --favicon --type png --index && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#13100F' --padding '20%' --icon-only && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#13100F' --splash-only --type png --padding '20%' && npm run dev:site",
-    "lint:js": "npx eslint **/*.js --fix",
+    "lint:js": "npx eslint --fix",
     "lint:css": "npx stylelint \"**/*.css\" --fix",
     "lint": "npm run lint:js && npm run lint:css",
     "format": "prettier \"**/*.{cjs,html,js,json,md,njk,css}\" --ignore-path ./.eslintignore --write",
@@ -50,11 +51,9 @@
     "eleventy-plugin-purgecss": "^0.4.0",
     "eleventy-plugin-pwa-v2": "^1.0.1",
     "eleventy-plugin-svg-sprite": "^2.4.2",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-storybook": "^0.6.13",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-storybook": "^0.8.0",
     "fs": "^0.0.1-security",
     "html-minifier": "^4.0.0",
     "lit": "^3.2.0",
@@ -83,7 +82,7 @@
     "@docusaurus/module-type-aliases": "3.5.2",
     "@docusaurus/types": "3.5.2",
     "@eslint/js": "^9.9.1",
-    "eslint": "^8.57.0",
+    "eslint": "^9.9.1",
     "globals": "^15.9.0"
   },
   "prettier": {
