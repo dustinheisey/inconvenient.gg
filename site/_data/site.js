@@ -14,7 +14,7 @@ const config = {
           label: 'Features',
           url: '/features'
         },
-        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
+        { label: 'Wiki', url: '/wiki' },
         {
           label: 'Help Me Find Bugs',
           external: true,
@@ -24,12 +24,12 @@ const config = {
           label: 'Community',
           url: '/community',
           subLinks: [
-            { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
-            { label: 'Youtube', url: '/', external: true },
-            { label: 'Tik Tok', url: '/', external: true },
-            { label: 'Twitch', url: '/', external: true },
-            { label: 'Reddit', url: '/', external: true },
-            { label: 'Mastodon', url: '/', external: true }
+            { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true }
+            // { label: 'Youtube', url: '/', external: true },
+            // { label: 'Tik Tok', url: '/', external: true },
+            // { label: 'Twitch', url: '/', external: true },
+            // { label: 'Reddit', url: '/', external: true },
+            // { label: 'Mastodon', url: '/', external: true }
           ]
         }
       ],
@@ -38,7 +38,7 @@ const config = {
         links: [
           { label: 'Home', url: '/', icon: 'home' },
           { label: 'Features', url: '/features', icon: 'about' },
-          { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
+          { label: 'Wiki', url: '/wiki', icon: 'books' },
           { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', icon: 'advocate' },
           { label: 'Community', url: '/community', icon: 'contact' }
         ],
@@ -49,7 +49,7 @@ const config = {
       variant: 'simple',
       links: [
         { label: 'Features', url: '/features' },
-        { label: 'Wiki', url: 'https://wiki.inconvenient.gg', external: true },
+        { label: 'Wiki', url: '/wiki', external: true },
         { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', external: true },
         { label: 'Community', url: '/community' },
         { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', external: true }
@@ -60,27 +60,27 @@ const config = {
           label: 'Discord',
           icon: 'logo-discord',
           url: 'https://discord.gg/dJbfXV9JnF'
-        },
-        {
-          label: 'Youtube',
-          icon: 'logo-youtube',
-          url: ''
-        },
-        {
-          label: 'TikTok',
-          icon: 'logo-tiktok',
-          url: ''
-        },
-        {
-          label: 'Reddit',
-          icon: 'logo-reddit',
-          url: ''
-        },
-        {
-          label: 'Mastodon',
-          icon: 'logo-mastodon',
-          url: ''
         }
+        // {
+        //   label: 'Youtube',
+        //   icon: 'logo-youtube',
+        //   url: ''
+        // },
+        // {
+        //   label: 'TikTok',
+        //   icon: 'logo-tiktok',
+        //   url: ''
+        // },
+        // {
+        //   label: 'Reddit',
+        //   icon: 'logo-reddit',
+        //   url: ''
+        // },
+        // {
+        //   label: 'Mastodon',
+        //   icon: 'logo-mastodon',
+        //   url: ''
+        // }
       ],
       copywrite: '© 2024 An Inconvenient Modpack'
     }
@@ -106,7 +106,7 @@ const config = {
                   label: 'Features',
                   url: '/features'
                 },
-                { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
+                { label: 'Wiki', url: '/wiki' },
                 {
                   label: 'Help Me Find Bugs',
                   external: true,
@@ -116,12 +116,12 @@ const config = {
                   label: 'Community',
                   url: '/community',
                   subLinks: [
-                    { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
-                    { label: 'Youtube', url: '/', external: true },
-                    { label: 'Tik Tok', url: '/', external: true },
-                    { label: 'Twitch', url: '/', external: true },
-                    { label: 'Reddit', url: '/', external: true },
-                    { label: 'Mastodon', url: '/', external: true }
+                    { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true }
+                    // { label: 'Youtube', url: '/', external: true },
+                    // { label: 'Tik Tok', url: '/', external: true },
+                    // { label: 'Twitch', url: '/', external: true },
+                    // { label: 'Reddit', url: '/', external: true },
+                    // { label: 'Mastodon', url: '/', external: true }
                   ]
                 }
               ],
@@ -134,7 +134,7 @@ const config = {
                 links: [
                   { label: 'Home', url: '/', icon: 'home' },
                   { label: 'Features', url: '/features', icon: 'about' },
-                  { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
+                  { label: 'Wiki', url: '/wiki', icon: 'books' },
                   {
                     label: 'Bugs',
                     url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
@@ -154,7 +154,11 @@ const config = {
           headline: 'Will You Save It or Let It Fall?',
           body: 'After a thousand years, the Earth has changed. Your decisions will shape its future—choose wisely',
           btns: [
-            { url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', label: 'Start Your Journey' }
+            {
+              url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
+              external: true,
+              label: 'Start Your Journey'
+            }
             // { variant: 'secondary', url: '/', label: 'Watch the Full Trailer' }
           ],
           video: { src: 'bunker.mp4' }
@@ -280,7 +284,11 @@ const config = {
             overline: 'overline',
             headline: 'Decide the Fate of the World',
             body: 'With knowledge comes power. Will you use it to create a harmonious solarpunk utopia, or will you repeat history and usher in a cyberpunk dystopia? The choice is yours.',
-            btn: { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient' }
+            btn: {
+              label: 'Play Now',
+              external: true,
+              url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
+            }
           }
         },
         action: {
@@ -291,7 +299,11 @@ const config = {
           headline: 'Shape the World with Your Choices',
           body: "Every decision you make in 'An Inconvenient Modpack' leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.",
           btns: [
-            { label: 'Download Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient' },
+            {
+              label: 'Download Now',
+              external: true,
+              url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
+            },
             { variant: 'secondary', label: 'Visit the Wiki', url: '/wiki' }
           ]
         }
@@ -473,8 +485,8 @@ const config = {
               date: 'May 2023',
               class: 'cluster justify-between align-start'
             }
-          ],
-          btn: { label: 'See Roadmap', url: '/roadmap' }
+          ]
+          // btn: { label: 'See Roadmap', url: '/roadmap' }
         },
         faq: {
           layout: 'center',
@@ -579,47 +591,47 @@ const config = {
               url: 'https://discord.gg/dJbfXV9JnF',
               theme: 'discord',
               body: 'Join the community discussions and get live help'
-            },
-            {
-              component: 'card',
-              icon: 'logo-youtube',
-              size: 'xl',
-              url: '/',
-              theme: 'youtube',
-              body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
-            },
-            {
-              component: 'card',
-              icon: 'logo-tiktok',
-              size: 'xl',
-              url: '/',
-              theme: 'tiktok',
-              body: 'Discover quick tips, behind-the-scenes content, and player moments.'
-            },
-            {
-              component: 'card',
-              icon: 'logo-twitch',
-              size: 'xl',
-              url: '/',
-              theme: 'twitch',
-              body: 'Join live streams of me fixing bugs and playtesting the modpack.'
-            },
-            {
-              component: 'card',
-              icon: 'logo-reddit',
-              size: 'xl',
-              url: '/',
-              theme: 'reddit',
-              body: 'Share your experiences, discuss strategies, and connect with other players.'
-            },
-            {
-              component: 'card',
-              icon: 'logo-mastodon',
-              size: 'xl',
-              url: '/',
-              theme: 'mastodon',
-              body: 'Stay updated with the latest modpack news and community discussions.'
             }
+            // {
+            //   component: 'card',
+            //   icon: 'logo-youtube',
+            //   size: 'xl',
+            //   url: '/',
+            //   theme: 'youtube',
+            //   body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
+            // },
+            // {
+            //   component: 'card',
+            //   icon: 'logo-tiktok',
+            //   size: 'xl',
+            //   url: '/',
+            //   theme: 'tiktok',
+            //   body: 'Discover quick tips, behind-the-scenes content, and player moments.'
+            // },
+            // {
+            //   component: 'card',
+            //   icon: 'logo-twitch',
+            //   size: 'xl',
+            //   url: '/',
+            //   theme: 'twitch',
+            //   body: 'Join live streams of me fixing bugs and playtesting the modpack.'
+            // },
+            // {
+            //   component: 'card',
+            //   icon: 'logo-reddit',
+            //   size: 'xl',
+            //   url: '/',
+            //   theme: 'reddit',
+            //   body: 'Share your experiences, discuss strategies, and connect with other players.'
+            // },
+            // {
+            //   component: 'card',
+            //   icon: 'logo-mastodon',
+            //   size: 'xl',
+            //   url: '/',
+            //   theme: 'mastodon',
+            //   body: 'Stay updated with the latest modpack news and community discussions.'
+            // }
           ]
         },
         // TODO: add showcase
