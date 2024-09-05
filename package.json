@@ -1,6 +1,5 @@
 {
   "name": "inconvenient.gg",
-  "type": "module",
   "description": "Website for 'An Inconvenient Modpack'",
   "repository": {
     "type": "git",

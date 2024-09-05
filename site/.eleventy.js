@@ -30,7 +30,7 @@ module.exports = (eleventyConfig, options = {}) => {
   })
   eleventyConfig.addPlugin(svgSprite, [
     {
-      path: '../common/common/icons',
+      path: '../common/icons',
       globalClasses: 'icon',
       svgSpriteShortcode: 'icons',
       svgShortcode: 'icon'
@@ -113,10 +113,10 @@ module.exports = (eleventyConfig, options = {}) => {
 
   // ? Passthrough Copies
   eleventyConfig.addPassthroughCopy({
-    'common/common/styles/index.min.css': 'index.min.css'
+    'common/styles/index.min.css': 'index.min.css'
   })
   eleventyConfig.addPassthroughCopy({
-    'common/common/scripts/index.min.js': 'index.min.js'
+    'common/scripts/index.min.js': 'index.min.js'
   })
   eleventyConfig.addPassthroughCopy({ public: '/' })
   eleventyConfig.addPassthroughCopy({ admin: '/admin' })
