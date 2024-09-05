@@ -4,13 +4,40 @@
         <p>{{props.body}}</p>
     </a> 
 {% elif props.variant === 'flip'%}
-    <a href="{{props.url}}" class="card card-link inset-0 bg-img align-start">
+    {# <a href="{{props.url}}" class="card card-link inset-0 bg-img align-start">
         {% set src = './public/img/' + props.img.src%}
         {% img src, props.img.alt %}
         <div class="stack inset-l">
             <h3 class="section-headline color-light">{{props.headline}}</h3>
         </div>
-    </a>
+    </a> #}
+    <div class="card card-flip theme-card" tabindex="0">
+  <div class="card-image">
+    {% set src = './public/img/' + props.img.src%}
+        {% img src, props.img.alt %}
+  </div>
+  <div class="card-overlay">
+    <div class="card-text stack gap-s">
+      <h3 class="section-headline">{{props.headline}}</h3>
+      {% if props.list %}
+        <ul class="stack gap-xs">
+            {% for item in props.list %}
+            <li class="inline align-start gap-xs">
+                {% icon item.icon or props.icon, "" %}
+                {{item.text or item}}
+            </li>
+            {% endfor %}
+        </ul>
+      {% endif %}
+      {% if props.body %}
+        <p>{{props.body}}</p>
+      {% endif %}
+    </div>
+  </div>
+  
+</div>
+
+
 {% elif props.url %}
        <a href="{{props.url}}" class="prose stack card card-link theme-{{props.theme}}">
         {% if props.icon %}{% icon props.icon, "icon icon-l" %}{% endif %}

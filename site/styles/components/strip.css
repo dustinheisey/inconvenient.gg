@@ -13,6 +13,6 @@
 }
 
 .reel > .card {
-  width: 20rem;
+  /* width: 20rem; */
   scroll-snap-align: start;
 }
