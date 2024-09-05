@@ -1,6 +1,6 @@
 {% from "../component.njk" import component %}
 <div class="region theme-{{props.theme or 'background'}}">
-    <section class="prose auto stack gap-xs justify-center align-center grow-1">
+    <section class="prose auto stack gap-xs text-center justify-center align-center grow-1">
         {% if props.overline %}
             <p class="overline">{{props.overline}}</p>
         {% endif %}
@@ -27,7 +27,7 @@
         <p>{{props.body}}</p>
     </section>
 
-    <div class="region reel gap-m align-center {{props.class}} ">
+    <div class="region reel gap-m {{props.class}} ">
         {% for item in props.items %}
             {{ component(item, '', {}) }}
         {% endfor %}

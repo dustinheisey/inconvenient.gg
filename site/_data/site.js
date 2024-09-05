@@ -154,8 +154,8 @@ const config = {
           headline: 'Will You Save It or Let It Fall?',
           body: 'After a thousand years, the Earth has changed. Your decisions will shape its future—choose wisely',
           btns: [
-            { url: '/', label: 'Start Your Journey' },
-            { variant: 'secondary', url: '/', label: 'Watch the Full Trailer' }
+            { url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', label: 'Start Your Journey' }
+            // { variant: 'secondary', url: '/', label: 'Watch the Full Trailer' }
           ],
           video: { src: 'bunker.mp4' }
         },
@@ -280,7 +280,7 @@ const config = {
             overline: 'overline',
             headline: 'Decide the Fate of the World',
             body: 'With knowledge comes power. Will you use it to create a harmonious solarpunk utopia, or will you repeat history and usher in a cyberpunk dystopia? The choice is yours.',
-            btn: { label: 'Join Now', url: '/' }
+            btn: { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient' }
           }
         },
         action: {
@@ -291,8 +291,8 @@ const config = {
           headline: 'Shape the World with Your Choices',
           body: "Every decision you make in 'An Inconvenient Modpack' leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.",
           btns: [
-            { label: 'Download Now', url: '/' },
-            { variant: 'secondary', label: 'Visit the Wiki', url: '/' }
+            { label: 'Download Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient' },
+            { variant: 'secondary', label: 'Visit the Wiki', url: '/wiki' }
           ]
         }
       }
@@ -304,14 +304,19 @@ const config = {
       regions: {
         overview: {
           layout: 'start-heavy',
-          start: { component: 'img', src: '2-visions.webp', alt: 'Impact', ar: 'square' },
+          align: 'stretch',
+          start: { component: 'img', src: 'feature-split.webp', alt: 'Impact', ar: 'square' },
           end: {
             component: 'text',
             size: 'hero',
             overline: 'A World at a Crossroads',
-            headline: 'Rebuild a World or Help it Collapse',
-            body: 'After a thousand years of recovery, Earth stands at a crossroads. Will you lead humanity back into darkness, or will you forge a new path towards harmony with nature?',
-            btn: { label: 'Start Your Journey', url: '/' }
+            headline: 'Explore, Create, and Transform',
+            body: 'Enjoy a wealth of engaging and immersive gamplay, and connect with the world around you and the choices you make. Every feature of this modpack has been carefully crafted to offer you the tools to uncover stories, build thriving communities, and master survival in a world transformed by climate change. Whether you’re a story seeker, adventurer, engineer, architect, or survivalist, this modpack empowers you to shape the future in your own way.',
+            btn: {
+              label: 'Start Your Journey',
+              external: true,
+              url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
+            }
           },
           stats: {
             component: 'stats',
@@ -353,7 +358,7 @@ const config = {
           size: 'region',
           overline: 'Discover Your Path',
           headline: 'Something for Every Player',
-          body: "Whether you're a lore enthusiast, a thrill-seeker, a technical mastermind, a survival expert, or a master architect, 'An Inconvenient Modpack' has something tailored for you.",
+          body: "Whether you're drawn to uncover ancient stories, navigate new worlds, master intricate systems, survive harsh realities, or design the future, 'An Inconvenient Modpack' has been crafted to connect with your unique style. Your choices, your impact.",
           items: [
             {
               component: 'card',
@@ -362,12 +367,12 @@ const config = {
               headline: 'Story Seeker',
               icon: 'book',
               list: [
-                'Pesticides: Toxic chemicals harming bee populations.',
-                'Habitat Loss: Shrinking habitats deprive bees of food.',
-                'Climate Change: Altered weather disrupts bee foraging patterns.',
-                'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
-                'Invasive Species: Non-native plants and pests harm native bees.',
-                'Intensive Agriculture: Industrial practices limit bee forage and health.'
+                'Rebuild civilization and uncover your forgotten past through your nightmares.',
+                'Reflect on your journey through journal entries and personal discoveries.',
+                "Find ancient stories detailing climate change from the victims' perspectives.",
+                'Experience immersive dreams that reveal both harsh truths and hopeful possibilities.',
+                'Choose between joining a Solarpunk community or climbing the ranks of Corpo Corporation',
+                'Face climate catastrophes head-on or restore the environment with public works projects'
               ]
             },
             {
@@ -377,12 +382,13 @@ const config = {
               headline: 'Adventurer',
               icon: 'compass',
               list: [
-                'Pesticides: Toxic chemicals harming bee populations.',
-                'Habitat Loss: Shrinking habitats deprive bees of food.',
-                'Climate Change: Altered weather disrupts bee foraging patterns.',
-                'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
-                'Invasive Species: Non-native plants and pests harm native bees.',
-                'Intensive Agriculture: Industrial practices limit bee forage and health.'
+                'Wake up in a bunker and explore the remnants of a world before climate change',
+                'Discover overhauled world generation with layered stone and massive ore clusters.',
+                'Explore 10 diverse dimensions filled with unique challenges.',
+                'Battle formidable bosses across various worlds.',
+                'Survive hordes of enemies that spawn every few nights.',
+                'Defend against waves of enemies emerging from mysterious gateways.',
+                'Collect powerful relics that enhance your abilities.'
               ]
             },
             {
@@ -392,12 +398,12 @@ const config = {
               headline: 'Engineer',
               icon: 'settings',
               list: [
-                'Pesticides: Toxic chemicals harming bee populations.',
-                'Habitat Loss: Shrinking habitats deprive bees of food.',
-                'Climate Change: Altered weather disrupts bee foraging patterns.',
-                'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
-                'Invasive Species: Non-native plants and pests harm native bees.',
-                'Intensive Agriculture: Industrial practices limit bee forage and health.'
+                'Tackle dozens of complex engineering challenges.',
+                'Progression focused on automation and efficiency.',
+                'Utilize realistic production methods for crafting various items.',
+                'Master systems like pottery, metallurgy, witchcraft, and blood magic, or dive into petroleum engineering and animal agriculture.',
+                'Choose between managing pollution or designing eco-friendly setups.',
+                'Reverse-engineer 12 milestone feats to unlock the End.'
               ]
             },
             {
@@ -407,12 +413,12 @@ const config = {
               headline: 'Survivalist',
               icon: 'energy',
               list: [
-                'Pesticides: Toxic chemicals harming bee populations.',
-                'Habitat Loss: Shrinking habitats deprive bees of food.',
-                'Climate Change: Altered weather disrupts bee foraging patterns.',
-                'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
-                'Invasive Species: Non-native plants and pests harm native bees.',
-                'Intensive Agriculture: Industrial practices limit bee forage and health.'
+                'Manage thirst as you explore harsh environments.',
+                'Survive extreme temperatures with climate challenges.',
+                'Upgrade health and stamina by completing advancements.',
+                'Protect your sanity, or suffer unsettling consequences.',
+                'Navigate the dangerous effects of pollution on the world.',
+                'Face smarter, faster enemies, with zombies that track you by scent and attack in groups.'
               ]
             },
             {
@@ -422,12 +428,12 @@ const config = {
               headline: 'Architect',
               icon: 'block',
               list: [
-                'Pesticides: Toxic chemicals harming bee populations.',
-                'Habitat Loss: Shrinking habitats deprive bees of food.',
-                'Climate Change: Altered weather disrupts bee foraging patterns.',
-                'Colony Collapse Disorder (CCD): Mysterious honeybee colony losses threaten ecosystems.',
-                'Invasive Species: Non-native plants and pests harm native bees.',
-                'Intensive Agriculture: Industrial practices limit bee forage and health.'
+                'Design and construct using thousands of new blocks and materials.',
+                'Use advanced technologies to streamline massive building projects and quickly bring your vision to life.',
+                'Terraform the environment, building in landscapes either devastated by climate change or restored to natural beauty through your designs.',
+                'Build your own railways and public transportation systems.',
+                'Create intricate production lines and enormous factories.',
+                'Build your own Solarpunk society the way you want to'
               ]
             }
           ]
@@ -435,9 +441,9 @@ const config = {
         history: {
           layout: 'sparkline',
           variant: 'block',
-          overline: 'overline',
+          overline: 'The Journey So Far',
           headline: 'The Never Ending Story',
-          body: "Building 'An Inconvenient Modpack' has been a journey of innovation, challenges, and relentless passion. The project isn't complete yet, here's what I've done so far.",
+          body: "Building 'An Inconvenient Modpack' has been a personal journey of discovery, challenges, and excitement. This project isn’t just about gameplay; it’s about finding ways to connect global issues—like climate change and sustainability—with the stories we create in the game. Here’s a look at how far we’ve come.",
           items: [
             {
               component: 'blurb',
@@ -476,19 +482,31 @@ const config = {
             component: 'accordion',
             class: 'full',
             align: 'center',
-            overline: 'overline',
-            headline: 'FAQs',
+            overline: 'Get Started',
+            headline: 'Frequently Asked Questions',
             body: 'Here are some of the most common questions to help you get started and enjoy your experience with the modpack.',
             items: [
               {
                 component: 'details',
                 headline: 'How do I install the modpack?',
-                body: 'You can install the modpack by downloading it from CurseForge or Modrinth. Follow the installation guide provided on our Wiki for step-by-step instructions.'
+                body: 'You can install the modpack by downloading it from CurseForge or Modrinth. Follow the installation guide provided on our Wiki for step-by-step instructions.',
+                btn: {
+                  url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
+                  external: true,
+                  variant: 'secondary',
+                  label: 'Download Now'
+                }
               },
               {
                 component: 'details',
                 headline: 'Where can I post bugs?',
-                body: 'Please report any bugs you encounter via our GitHub Issues page or join our Discord community for support and discussions.'
+                body: 'Please report any bugs you encounter via our GitHub Issues page or join our Discord community for support and discussions.',
+                btn: {
+                  url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
+                  external: true,
+                  variant: 'secondary',
+                  label: 'Report Issues on Github'
+                }
               },
               {
                 component: 'details',
@@ -498,7 +516,7 @@ const config = {
               {
                 component: 'details',
                 headline: 'Is there support for shaders?',
-                body: 'Yes, the modpack is compatible with popular shaders. We recommend using OptiFine or Sodium for the best visual experience.'
+                body: 'Yes, the modpack is compatible with popular shaders. Occulus is already installed so you should be able to add any shader and it will run.'
               }
             ]
           }
@@ -508,11 +526,15 @@ const config = {
           theme: 'primary',
           pattern: 'leaves',
           overline: 'Write Your Own Story',
-          headline: 'Shape the World with Your Choices',
-          body: "Every decision you make in 'An Inconvenient Modpack' leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.",
+          headline: 'Download and Shape the Future',
+          body: 'Explore new worlds, uncover forgotten histories, and make decisions that will shape the fate of humanity. Begin your journey today, and if you want to learn more, explore the wiki for insights into the issues and themes you’ll encounter. Together, we can imagine a new world and work toward creating it.',
           btns: [
-            { label: 'Download Now', url: '/' },
-            { variant: 'secondary', label: 'Visit the Wiki', url: '/' }
+            {
+              label: 'Download Now',
+              external: true,
+              url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
+            },
+            { variant: 'secondary', label: 'Visit the Wiki', url: '/wiki' }
           ]
         }
       }
@@ -524,7 +546,8 @@ const config = {
       regions: {
         intro: {
           layout: 'start-heavy',
-          end: { component: 'img', src: 'logo-large.svg', alt: 'Community' },
+          align: 'stretch',
+          end: { component: 'img', src: 'community.webp', alt: 'Community' },
           start: {
             component: 'text',
             size: 'page',
