@@ -57,6 +57,7 @@
     "eslint-plugin-storybook": "^0.6.13",
     "fs": "^0.0.1-security",
     "html-minifier": "^4.0.0",
+    "lit": "^3.2.0",
     "luxon": "^3.4.3",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.7",
