@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Impact';
+  font-family: Impact;
   src:
     local('Impact'),
     url('https://fonts.cdnfonts.com/s/19610/impact.woff') format('woff'),
@@ -54,7 +54,6 @@
   --color-surface-container-light: rgb(241 238 225);
   --color-surface-container-high-light: rgb(235 232 219);
   --color-surface-container-highest-light: rgb(229 227 214);
-
   --color-primary-dark: #ffb5a0;
   --color-surface-tint-dark: rgb(255 181 160);
   --color-on-primary-dark: #561f0f;
@@ -90,7 +89,6 @@
   --color-surface-container-dark: rgb(38 30 24);
   --color-surface-container-high-dark: rgb(49 40 34);
   --color-surface-container-highest-dark: rgb(60 51 44);
-
   --color-dark-primary: rgb(143 75 56);
   --color-on-dark-primary: rgb(58 11 1);
 
@@ -98,7 +96,6 @@
   --font-family-headline: 'Impact', 'Arial Black', 'Arial Bold', sans-serif;
   --font-family-body: 'Open Sans', sans-serif;
   --letter-spacing-headline: 0.05em;
-
   --font-size-xs: clamp(0.7rem, calc(0.81rem + -0.13vw), 0.78rem);
   --font-size-s: clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem);
   --font-size-m: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
@@ -128,7 +125,6 @@
   --space-xl-2xl: clamp(3.38rem, calc(2.81rem + 2.83vw), 5rem);
   --space-2xl-3xl: clamp(4.5rem, calc(3.46rem + 5.22vw), 7.5rem);
   --space-3xl-4xl: clamp(6.75rem, -0.4674rem + 36.087vw, 27.5rem);
-
   --gap-page: var(--space-4xl);
 }
 
