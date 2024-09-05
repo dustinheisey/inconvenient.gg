@@ -10,14 +10,14 @@ import { themes as prismThemes } from 'prism-react-renderer'
 const config = {
   title: 'An Inconvenient Wiki',
   tagline: 'A Player\'s Guide to "An Inconvenient Modpack"',
-  favicon: 'svg/favicon.svg',
+  favicon: 'favicon.svg',
 
   // Set the production url of your site here
   url: 'https://inconvenient.gg',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/wiki',
-  staticDirectories: ['../common'],
+  staticDirectories: ['../common/icons', '../common/svg'],
   i18n: {
     defaultLocale: 'en',
     locales: ['en']
@@ -45,12 +45,7 @@ const config = {
           onUntruncatedBlogPosts: 'warn'
         },
         theme: {
-          customCss: [
-            '../site/styles/index.min.css',
-            './src/css/color.css',
-            './src/css/typography.css',
-            './src/css/overrides.css'
-          ]
+          customCss: ['../index.min.css', './src/css/color.css', './src/css/typography.css', './src/css/overrides.css']
         }
       }
     ]

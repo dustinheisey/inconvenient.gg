@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
-import Logo from '/svg/logo.svg'
-import ExternalLink from '/icons/external-link.svg'
+import Logo from '/logo.svg'
+import ExternalLink from '/external-link.svg'
 
 const storageKey = 'theme-preference'
 const theme = {

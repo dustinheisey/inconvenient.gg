@@ -1,20 +1,20 @@
 import React from 'react'
-import Logo from '/svg/logo.svg'
+import Logo from '/logo.svg'
 import useBaseUrl from '@docusaurus/useBaseUrl'
-import Background from '/svg/footer-background.svg'
+import Background from '/footer-background.svg'
 
-import ExternalLink from '/icons/external-link.svg'
+import ExternalLink from '/external-link.svg'
 
-import LogoDiscord from '/icons/logo-discord.svg'
-import LogoYoutube from '/icons/logo-youtube.svg'
-import LogoTikTok from '/icons/logo-tiktok.svg'
-import LogoReddit from '/icons/logo-reddit.svg'
-import LogoMastodon from '/icons/logo-mastodon.svg'
+import LogoDiscord from '/logo-discord.svg'
+import LogoYoutube from '/logo-youtube.svg'
+import LogoTikTok from '/logo-tiktok.svg'
+import LogoReddit from '/logo-reddit.svg'
+import LogoMastodon from '/logo-mastodon.svg'
 
 function Footer() {
   return (
     <footer className="bg-img">
-      <img src={useBaseUrl('/svg/footer-background.svg')} />
+      <img src={useBaseUrl('/footer-background.svg')} />
       <div className="full stack gap-m align-center region">
         <a href="/">
           <span className="sr-only">Home</span>
