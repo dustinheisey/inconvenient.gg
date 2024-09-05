@@ -116,7 +116,7 @@ module.exports = (eleventyConfig, options = {}) => {
     'common/common/styles/index.min.css': 'index.min.css'
   })
   eleventyConfig.addPassthroughCopy({
-    './scripts/index.min.js': 'index.min.js'
+    'common/common/scripts/index.min.js': 'index.min.js'
   })
   eleventyConfig.addPassthroughCopy({ public: '/' })
   eleventyConfig.addPassthroughCopy({ admin: '/admin' })

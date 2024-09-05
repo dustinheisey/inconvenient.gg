@@ -1,9 +1,9 @@
 import terser from '@rollup/plugin-terser'
 
 export default {
-  input: 'scripts/index.js',
+  input: './index.js',
   output: {
-    file: 'scripts/index.min.js',
+    file: './index.min.js',
     format: 'iife'
   },
   plugins: [terser()]
