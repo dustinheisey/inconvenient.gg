@@ -113,6 +113,7 @@ article:has(:hover, :focus) {
 .card-flip {
   width: 50ch;
 }
+
 .card.card-icon {
   height: min-content;
   aspect-ratio: 1/1;
@@ -124,6 +125,7 @@ article:has(:hover, :focus) {
     width: 20ch;
   }
 }
+
 .card.card-link {
   transform: translate3d(0, 0, 0);
   will-change: transform;
@@ -144,6 +146,7 @@ article:has(:hover, :focus) {
   padding: 0;
   grid-column: 1/1;
   grid-row: 1/1;
+
   picture {
     height: 100%;
   }
@@ -166,7 +169,7 @@ article:has(:hover, :focus) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: hsl(from var(--color-primary) h s l / 0.9); /* Semi-transparent overlay */
+  background-color: hsl(from var(--color-primary) h s l / 90%); /* Semi-transparent overlay */
   opacity: 0; /* Hidden by default */
   display: flex;
   justify-content: start;

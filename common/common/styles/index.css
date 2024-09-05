@@ -1,8 +1,7 @@
-@import './global/reset.css';
-@import './global/global.css';
-
-@import './components/*.css';
-@import './elements/*.css';
-@import './layouts/*.css';
-@import './tokens/*.css';
-@import './util/*.css';
+@import url('./global/reset.css');
+@import url('./global/global.css');
+@import url('./components/*.css');
+@import url('./elements/*.css');
+@import url('./layouts/*.css');
+@import url('./tokens/*.css');
+@import url('./util/*.css');

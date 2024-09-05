@@ -1,8 +1,7 @@
 .reel {
   display: flex;
   block-size: auto;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: auto hidden;
   max-inline-size: 100%;
   scrollbar-color: var(--color-primary) var(--color-background);
   padding-block: var(--space-xl);

@@ -65,6 +65,7 @@
 .theme-card {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
+
   --color-headline-override: var(--color-on-primary);
 }
 
@@ -272,7 +273,7 @@
 }
 
 .theme-youtube {
-  background-color: #ff0000;
+  background-color: #f00;
   color: var(--color-on-primary-light);
 
   p {

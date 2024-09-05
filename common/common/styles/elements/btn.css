@@ -6,18 +6,14 @@
   gap: var(--space-3xs);
   inline-size: auto;
   padding: var(--space-2xs) var(--space-s);
-
   font-family: var(--font-family-body);
   font-weight: 400;
   letter-spacing: var(--letter-spacing-body);
   line-height: var(--line-height-body);
   font-size: var(--font-size-s);
-
-  border: none;
   cursor: pointer;
   border-radius: var(--radius-pill);
   box-shadow: var(--shadow-xs);
-
   transition:
     background-color 0.3s,
     box-shadow 0.3s,
@@ -33,6 +29,7 @@
 
   &:focus-visible {
     --color-outline: var(--color-primary);
+
     outline: 3px solid var(--color-outline);
     outline-offset: 3px;
   }

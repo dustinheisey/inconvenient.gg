@@ -19,6 +19,7 @@ footer .region {
 
 footer {
   padding: var(--inset-page);
+
   /* margin-block-start: calc(var(--gap-page) / 2);
   margin-block-end: calc(var(--gap-page) / 2); */
 }
@@ -44,6 +45,7 @@ footer.bg-img > .stack {
   max-inline-size: var(--max-inline-size-region);
   inline-size: 100%;
   padding-block: calc(var(--inset, var(--gap-page)) / 2);
+
   --gap: var(--gap-region);
 }
 

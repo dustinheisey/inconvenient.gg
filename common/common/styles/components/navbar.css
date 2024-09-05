@@ -43,9 +43,8 @@ nav {
     padding: var(--space-2xs);
 
     .stack {
-      flex-direction: row;
+      flex-flow: row wrap;
       justify-content: space-between;
-      flex-wrap: wrap;
 
       > * + * {
         margin-top: 0 !important;
@@ -131,8 +130,7 @@ nav {
 }
 
 .bottombar > ul > .fab > a {
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-block: 0 0;
 }
 
 @media (--tablet-portrait-up) {
@@ -151,9 +149,8 @@ nav {
 
 @media (--phone-only) {
   nav .stack {
-    flex-direction: row !important;
+    flex-flow: row wrap !important;
     justify-content: space-between !important;
-    flex-wrap: wrap;
 
     > * + * {
       margin-top: 0 !important;

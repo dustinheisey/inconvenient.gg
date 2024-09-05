@@ -1,7 +1,6 @@
 .strip {
   display: block;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: scroll hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
