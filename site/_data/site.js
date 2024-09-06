@@ -247,7 +247,7 @@ const config = {
             //
             {
               component: 'card',
-              icon: 'pentacle',
+              icon: 'witch',
               size: 'xl',
               theme: 'slate',
               headline: 'Occultism'
@@ -263,7 +263,7 @@ const config = {
             //
             {
               component: 'card',
-              icon: 'yarn',
+              icon: 'needle',
               size: 'xl',
               theme: 'clay',
               headline: 'Textiles'
@@ -306,14 +306,14 @@ const config = {
             //
             {
               component: 'card',
-              icon: 'dyes',
+              icon: 'palette',
               size: 'xl',
               theme: 'rust',
               headline: 'Dye making'
             },
             {
               component: 'card',
-              icon: 'chip',
+              icon: 'electronics',
               size: 'xl',
               theme: 'olive',
               headline: 'Electronics'
@@ -334,7 +334,7 @@ const config = {
             },
             {
               component: 'card',
-              icon: 'cake',
+              icon: 'baking',
               size: 'xl',
               theme: 'beige',
               headline: 'Baking'

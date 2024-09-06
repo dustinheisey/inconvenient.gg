@@ -10,8 +10,8 @@
   },
   "scripts": {
     "dev:site": "cd site && npx @11ty/eleventy --serve --quiet --incremental",
-    "build:site": "cd site && rmdir /s /q _site && npx @11ty/eleventy && npm run assets:site",
-    "assets:site": "cd site && svgo -f ./public/svg -o ./_site/svg && pwa-asset-generator ./public/favicon.svg ./_site/favicon --opaque false --favicon --type png --index && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#13100F' --padding '20%' --icon-only && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#13100F' --splash-only --type png --padding '20%' && npm run dev:site",
+    "build:site": "cd site && rm -r _site && npx @11ty/eleventy",
+    "assets:site": "cd site && svgo -f ./public/svg -o ./_site/svg && pwa-asset-generator ./public/favicon.svg ./_site/favicon --opaque false --favicon --type png --index && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#13100F' --padding '20%' --icon-only && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#13100F' --splash-only --type png --padding '20%'",
     "lint:js": "cd site && npx eslint **/*.js --fix",
     "lint:css": "cd site/styles && npx stylelint \"**/*.css\" --fix",
     "lint": "npm run lint:js && npm run lint:css",
