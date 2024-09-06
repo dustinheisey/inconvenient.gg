@@ -32,3 +32,10 @@
   background-color: var(--color-background);
   box-shadow: var(--shadow-xl);
 }
+
+/* .bg-img .overlay {
+  block-size: 100%;
+  inline-size: 100%;
+  border-image: fill 1
+    linear-gradient(hsl(from var(--color-primary) h s l / 0.5), hsl(from var(--color-primary) h s l / 0.5));
+} */

@@ -25,4 +25,8 @@
   .masonry.col-3 {
     columns: 3;
   }
+
+  .masonry.col-4 {
+    columns: 4;
+  }
 }

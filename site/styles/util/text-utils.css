@@ -13,3 +13,7 @@
 .nowrap {
   white-space: nowrap !important;
 }
+
+.wrap-balance {
+  text-wrap: balance !important;
+}

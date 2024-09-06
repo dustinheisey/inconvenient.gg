@@ -143,8 +143,23 @@ article:has(:hover, :focus) {
   padding: 0;
   grid-column: 1/1;
   grid-row: 1/1;
-  picture {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: 1fr max-content;
+  .frame {
     height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
+
+  & > .magnifier {
+    background: hsl(from var(--color-primary) h s l / 0.9);
+    border-radius: var(--radius-circle);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: var(--space-m);
+    padding: var(--space-xs);
+    aspect-ratio: 1/1;
   }
 }
 
@@ -175,8 +190,14 @@ article:has(:hover, :focus) {
   border-radius: var(--radius-l);
 }
 
-.card:hover .card-overlay {
-  opacity: 1; /* Show the overlay on hover */
+.card:hover {
+  .card-overlay {
+    opacity: 1; /* Show the overlay on hover */
+  }
+
+  .magnifier {
+    display: none;
+  }
 }
 
 /* Card text */

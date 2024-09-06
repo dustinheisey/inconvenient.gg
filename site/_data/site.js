@@ -150,129 +150,259 @@ const config = {
               }
             }
           },
-          overline: 'Awaken to a World on the Brink',
-          headline: 'Will You Save It or Let It Fall?',
-          body: 'After a thousand years, the Earth has changed. Your decisions will shape its future—choose wisely',
+          overline: 'The Earth is Dying • But It’s Not Too Late',
+          headline: 'Awaken, Uncover, and Decide Humanity’s Fate',
+          body: 'You’ve been asleep for a thousand years. The world you once knew is gone. Can you rise above the ruins, face the consequences of humanity’s mistakes, and rebuild what was lost? Or will you let the Earth fall into chaos once more?',
           btns: [
             {
               url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
               external: true,
-              label: 'Start Your Journey'
+              label: 'Begin Your Journey'
             }
             // { variant: 'secondary', url: '/', label: 'Watch the Full Trailer' }
           ],
           video: { src: 'bunker.mp4' }
         },
         wakeUp: {
-          layout: 'end-heavy',
+          layout: 'start-heavy',
           end: {
             component: 'text',
             size: 'region',
-            overline: 'The Journey Begins',
-            headline: 'Wake Up in a World Forgotten',
-            body: 'You emerge from a thousand-year slumber, with no memory of who you are or what happened. The world you once knew is gone—can you uncover your past and shape the future?'
+            overline: "You've Slept Far Too Long",
+            headline: 'Awaken in a World You No Longer Recognize',
+            body: "You open your eyes in a cold, desolate bunker, and it feels like you're still trapped in a dream—a nightmare. A thousand years have passed, and the world you knew has vanished. Can you survive long enough to uncover the truth?"
           },
           start: {
             component: 'img',
-            src: 'vision-1.jpg',
-            alt: 'wave'
+            src: 'bunker.png',
+            ar: 'square',
+            alt: 'Underground Bunket'
           }
         },
         rebuild: {
           layout: 'gallery',
-          overline: 'overline',
+          overline: "Piece Together What's Left",
           variant: 'masonry',
           text: 'start',
-          headline: 'Rebuild to Rediscover',
-          body: 'The remnants of a once-thriving civilization lie at your feet. As you rebuild, fragments of your memory start to return. Each step you take, each piece of technology you rediscover, brings you closer to the truth.',
+          col: 4,
+          headline: 'Rebuild to Remember',
+          body: 'As you rebuild the shattered world, fragments of your memory return, and you begin to wake up, piece by piece. Each step forward reveals a truth you’ve long forgotten—about yourself, the past, and the role you played in humanity’s downfall. Will rebuilding the world help you wake from this nightmare?',
           items: [
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '1'
+              component: 'card',
+              icon: 'leather',
+              size: 'xl',
+              theme: 'clay',
+              headline: 'Leather making'
             },
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '2'
+              component: 'card',
+              icon: 'pottery',
+              size: 'xl',
+              theme: 'clay',
+              headline: 'Pottery'
             },
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '3'
+              component: 'card',
+              icon: 'cooking',
+              size: 'xl',
+              theme: 'rust',
+              headline: 'Cooking'
             },
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '4'
+              component: 'card',
+              icon: 'thermometer',
+              size: 'xl',
+              theme: 'rust',
+              headline: 'Temperature Regulation'
             },
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '5.1'
+              component: 'card',
+              icon: 'compass',
+              size: 'xl',
+              theme: 'beige',
+              headline: 'Navigation'
             },
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '5.2'
+              component: 'card',
+              icon: 'ingot',
+              size: 'xl',
+              theme: 'slate',
+              headline: 'Metallurgy'
+            },
+            {
+              component: 'card',
+              icon: 'sprout',
+              size: 'xl',
+              theme: 'olive',
+              headline: 'Agriculture'
+            },
+            {
+              component: 'card',
+              icon: 'poop',
+              size: 'xl',
+              theme: 'clay',
+              headline: 'Composting'
+            },
+            //
+            {
+              component: 'card',
+              icon: 'pentacle',
+              size: 'xl',
+              theme: 'slate',
+              headline: 'Occultism'
+            },
+            //
+            {
+              component: 'card',
+              icon: 'tree-tap',
+              size: 'xl',
+              theme: 'olive',
+              headline: 'Tree Tapping'
+            },
+            //
+            {
+              component: 'card',
+              icon: 'yarn',
+              size: 'xl',
+              theme: 'clay',
+              headline: 'Textiles'
+            },
+            {
+              component: 'card',
+              icon: 'candle',
+              size: 'xl',
+              theme: 'clay',
+              headline: 'Candle Making'
+            },
+            {
+              component: 'card',
+              icon: 'tree',
+              size: 'xl',
+              theme: 'olive',
+              headline: 'Natural Magic'
+            },
+            {
+              component: 'card',
+              icon: 'blood',
+              size: 'xl',
+              theme: 'rust',
+              headline: 'Blood Magic'
+            },
+            {
+              component: 'card',
+              icon: 'paper',
+              size: 'xl',
+              theme: 'beige',
+              headline: 'Paper Making'
+            },
+            {
+              component: 'card',
+              icon: 'pig',
+              size: 'xl',
+              theme: 'beige',
+              headline: 'Animal Husbandry'
+            },
+            //
+            {
+              component: 'card',
+              icon: 'dyes',
+              size: 'xl',
+              theme: 'rust',
+              headline: 'Dye making'
+            },
+            {
+              component: 'card',
+              icon: 'chip',
+              size: 'xl',
+              theme: 'olive',
+              headline: 'Electronics'
+            },
+            {
+              component: 'card',
+              icon: 'flask',
+              size: 'xl',
+              theme: 'rust',
+              headline: 'Air Distillation'
+            },
+            {
+              component: 'card',
+              icon: 'gunpowder',
+              size: 'xl',
+              theme: 'slate',
+              headline: 'Gunpowder'
+            },
+            {
+              component: 'card',
+              icon: 'cake',
+              size: 'xl',
+              theme: 'beige',
+              headline: 'Baking'
+            },
+            {
+              component: 'card',
+              icon: 'barrel',
+              size: 'xl',
+              theme: 'slate',
+              headline: 'Oil Refinement'
             }
           ]
         },
         explore: {
           layout: 'reel',
           size: 'region',
-          overline: 'Discover Your Path',
-          headline: 'Explore a World Transformed',
-          body: 'Travel through time and space to uncover the truth. Visit new dimensions, each telling the story of a world ravaged by climate change. Piece together the history of what happened while you slept.',
+          overline: "The Past Won't Stay Buried",
+          headline: 'Explore New Worlds to Discover the Truth ',
+          body: "The ruins of humanity's downfall are scattered across distant worlds. Only by traveling through these dimensions can you uncover the hidden stories of what happened while you slept. Can you piece together the truth before you're lost in the chaos of the past?",
           items: [
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'story-seeker.webp', alt: 'Story Seeker' },
+              img: { ar: 'square', src: 'everbright.png', alt: 'Everbright' },
               headline: 'Everbright',
-              body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.'
+              body: 'Step into the snowy expanses of Everbright, where a mysterious, long-lost civilization once thrived. The frosty beauty of this land hides the darker truths of a world that ignored its warnings. Will you explore its icy secrets?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'adventure/1.webp', alt: 'Adventurer' },
-              headline: 'Undergarden'
+              img: { src: 'undergarden.png', alt: 'Undergarden' },
+              headline: 'Undergarden',
+              body: 'In the eerie caverns of Undergarden, something far worse than darkness awaits. Nature has reclaimed this place, but it left behind a haunting legacy. Can you navigate its forgotten depths?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'engineer.webp', alt: 'Engineer' },
-              headline: 'Everdawn'
+              img: { src: 'everdawn.png', alt: 'Everdawn' },
+              headline: 'Everdawn',
+              body: 'Everdawn is alive with heat and chaos. Its warm lands are teeming with life, but something more sinister lurks beneath. The remnants of past disasters remain. What will you uncover here?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'survivalist.webp', alt: 'Survivalist' },
-              headline: 'The Twilight Forest'
+              img: { src: 'twilight.png', alt: 'The Twilight Forest' },
+              headline: 'The Twilight Forest',
+              body: 'In the abandoned streets of The Twilight Forest, echoes of a great tragedy persist. This once-flourishing land now lies in silence. Can you face the shadows of its forgotten past?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'architect.webp', alt: 'Architect' },
-              headline: 'The Nether'
+              img: { src: 'nether.png', alt: 'The Nether' },
+              headline: 'The Nether',
+              body: 'Once a thriving industrial hub, The Nether now burns in the aftermath of unchecked greed. With fire and brimstone all around, this place tells a cautionary tale. What role will you play?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'architect.webp', alt: 'Architect' },
-              headline: 'The Bumblezone'
+              img: { src: 'bumblezone.png', alt: 'The Bumblezone' },
+              headline: 'The Bumblezone',
+              body: "Explore the buzzing world inside The Bumblezone, a realm of endless honeycombs and hidden danger. But don't be fooled by its golden glow—this world has seen better days. Will you find hope here?"
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'architect.webp', alt: 'Architect' },
-              headline: 'Blueleaf'
-            },
-            {
-              component: 'card',
-              variant: 'flip',
-              img: { src: 'architect.webp', alt: 'Architect' },
-              headline: 'More to Come'
+              img: { src: 'blueleaf.png', alt: 'Blueleaf' },
+              headline: 'Blueleaf',
+              body: 'A paradise of endless resources and wealth, Blueleaf glimmers with opportunity. But behind its beauty lies a world of exploitation and ambition. Will you rise to the top or take a different path?'
             }
           ]
         },
@@ -281,9 +411,9 @@ const config = {
           start: {
             component: 'text',
             size: 'region',
-            overline: 'overline',
-            headline: 'Decide the Fate of the World',
-            body: 'With knowledge comes power. Will you use it to create a harmonious solarpunk utopia, or will you repeat history and usher in a cyberpunk dystopia? The choice is yours.',
+            overline: 'The Future is in Your Hands',
+            headline: 'Will You Dream of a New World or Stay Trapped in The Nightmare?',
+            body: 'We’ve been living in a dream—a nightmare that we mistake for reality. You now have the power to wake up, to reject the broken path we’re on, dream a new dream, and create a new world. Or will you stay trapped, letting the Earth spiral further into chaos? The future is yours to decide.',
             btn: {
               label: 'Play Now',
               external: true,
@@ -461,8 +591,85 @@ const config = {
             {
               component: 'blurb',
               headline: 'The Beginning',
-              body: 'Our journey began with a simple love for bees and a deep concern for their declining populations.',
-              date: 'September 2023',
+              body: 'It all started with a vision to craft a modpack that would not only challenge players but also weave in environmental storytelling in a meaningful way.',
+              date: 'August 2021',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Chapters 1 - 5',
+              body: 'A solid foundation was laid with a deep array of recipes, advancements, and mechanics that players would explore in the early chapters of their journey.',
+              date: 'September 2021',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'The Stories Begin',
+              body: 'The narrative started to unfold through Patchouli entries, bringing a rich backstory to life and connecting it with the gameplay.',
+              date: 'November 2021',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Milestones',
+              body: 'Major milestones were marked by Ender Eye rewards and significant progression, offering players a structured way to feel the weight of their accomplishments.',
+              date: 'January 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'The Bunker & The Lost City',
+              body: 'Players wake up in an underground bunker while the surface, dominated by decaying cities—The Lost Cities—awaits exploration.',
+              date: 'February 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Gateways',
+              body: 'Gateways from other dimensions began to open, restoring life to the overworld. At first, the world is empty except for zombies, but with each completed gateway, the world starts to rejuvenate.',
+              date: 'April 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Nightmares & Lost Pages',
+              body: 'Each milestone brings fragmented memories in the form of nightmares, while scraps of paper across dimensions tell stories of a climate-ravaged world from a thousand years ago.',
+              date: 'May 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: '1.18.2',
+              body: 'The modpack was updated to version 1.18.2, incorporating new challenges and features.',
+              date: 'Late 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Relics',
+              body: 'Ancient relics became rewards for completing dimension gateways, granting players powerful artifacts that shaped their future progression.',
+              date: 'Around November 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Release Alpha Version to Curseforge',
+              body: "An Inconvenient Modpack reached its first public release on Curseforge, allowing players to dive into the modpack's world, complete with server files.",
+              date: 'February 2023',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Feature Complete up to Chapter 6',
+              body: 'With Chapters 1 through 5.2 playtested and refined, the focus shifted to wrapping up the final chapters, polishing the experience for all players.',
+              date: 'Ongoing - Need Help',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'The Dream',
+              body: 'The modpack leads to the ultimate truth—players are faced with hard choices that shape their path.',
+              date: 'Coming in 2024',
               class: 'cluster justify-between align-start'
             },
             {

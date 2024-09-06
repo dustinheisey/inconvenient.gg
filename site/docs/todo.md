@@ -2,39 +2,37 @@
 
 ## Landing
 
-- [ ] logo on video
-- [ ] video filter overlay
-- [ ] record video
-- [ ] wake up and forget img
-- [ ] record snapshot of each chapter
-- [ ] take screenshot of each dimension
-- [ ] add description of each dimension to dimension cards
-- [ ] overlines, headlines, bodies, btn texts for landing page
+- [x] record video
+- [z] wake up and forget img
+- [ ] icons for rebuild to remember
+- [x] take screenshot of each dimension
+- [x] add description of each dimension to dimension cards
+- [x] overlines, headlines, bodies, btn texts for landing page
 - [ ] landing page responsiveness
 
 ## Features
 
-- [ ] hero image
-- [ ] overlines, headlines, bodies, btn texts for features page
+- [x] hero image
+- [x] overlines, headlines, bodies, btn texts for features page
 - [ ] features page responsiveness
-- [ ] list features for each persona
-- [ ] write timeline points
+- [x] list features for each persona
+- [x] write timeline points
 
 ## Community
 
-- [ ] hero image
-- [ ] make sure call to help is finalized and works x
+- [x] hero image
+- [x] make sure call to help is finalized and works
 - [ ] community page responsiveness
-- [ ] overlines, headlines, bodies, btn texts for community page
+- [x] overlines, headlines, bodies, btn texts for community page
 
 ## Global
 
 - [x] buttons on different backgrounds
 - [x] button groups on different backgrounds
-- [ ] left align all text
-- [ ] make flip card styles
+- [x] make flip card styles
 - [ ] dark mode light mode call to action bgs
 - [ ] bottombar
+- [ ] clean up text formatting
 
 ## Improvements
 
@@ -46,6 +44,12 @@
 - [ ] think of any more faqs
 - [ ] video full trailer
 - [ ] rethink social grid
+- [ ] card checkbox clicking hack for mobile support
+- [ ] fix themes and fix video overlay
+- [ ] logo on video
+- [ ] video filter overlay
+- [ ] left align all text
+- [ ] make the text more personal
 
 ### Scroll Driven Animations
 
