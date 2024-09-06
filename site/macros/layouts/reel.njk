@@ -27,7 +27,7 @@
         <p>{{props.body}}</p>
     </section>
 
-    <div class="region reel gap-m {{props.class}} ">
+    <div class="region reel gap-m {{props.class}} card-container">
         {% for item in props.items %}
             {{ component(item, '', {}) }}
         {% endfor %}

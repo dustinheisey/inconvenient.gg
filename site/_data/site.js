@@ -24,12 +24,12 @@ const config = {
           label: 'Community',
           url: '/community',
           subLinks: [
-            { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true }
-            // { label: 'Youtube', url: '/', external: true },
-            // { label: 'Tik Tok', url: '/', external: true },
+            { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
+            { label: 'Youtube', url: '/', external: true },
+            { label: 'Tik Tok', url: '/', external: true },
             // { label: 'Twitch', url: '/', external: true },
             // { label: 'Reddit', url: '/', external: true },
-            // { label: 'Mastodon', url: '/', external: true }
+            { label: 'Mastodon', url: '/', external: true }
           ]
         }
       ],
@@ -60,27 +60,27 @@ const config = {
           label: 'Discord',
           icon: 'logo-discord',
           url: 'https://discord.gg/dJbfXV9JnF'
-        }
-        // {
-        //   label: 'Youtube',
-        //   icon: 'logo-youtube',
-        //   url: ''
-        // },
-        // {
-        //   label: 'TikTok',
-        //   icon: 'logo-tiktok',
-        //   url: ''
-        // },
+        },
+        {
+          label: 'Youtube',
+          icon: 'logo-youtube',
+          url: ''
+        },
+        {
+          label: 'TikTok',
+          icon: 'logo-tiktok',
+          url: ''
+        },
         // {
         //   label: 'Reddit',
         //   icon: 'logo-reddit',
         //   url: ''
         // },
-        // {
-        //   label: 'Mastodon',
-        //   icon: 'logo-mastodon',
-        //   url: ''
-        // }
+        {
+          label: 'Mastodon',
+          icon: 'logo-mastodon',
+          url: ''
+        }
       ],
       copywrite: '© 2024 An Inconvenient Modpack'
     }
@@ -116,12 +116,12 @@ const config = {
                   label: 'Community',
                   url: '/community',
                   subLinks: [
-                    { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true }
-                    // { label: 'Youtube', url: '/', external: true },
-                    // { label: 'Tik Tok', url: '/', external: true },
+                    { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
+                    { label: 'Youtube', url: '/', external: true },
+                    { label: 'Tik Tok', url: '/', external: true },
                     // { label: 'Twitch', url: '/', external: true },
                     // { label: 'Reddit', url: '/', external: true },
-                    // { label: 'Mastodon', url: '/', external: true }
+                    { label: 'Mastodon', url: '/', external: true }
                   ]
                 }
               ],
@@ -332,6 +332,7 @@ const config = {
           },
           stats: {
             component: 'stats',
+            center: true,
             variant: 'inline',
             class: 'text-center',
             border: true,
@@ -455,34 +456,112 @@ const config = {
           variant: 'block',
           overline: 'The Journey So Far',
           headline: 'The Never Ending Story',
-          body: "Building 'An Inconvenient Modpack' has been a personal journey of discovery, challenges, and excitement. This project isn’t just about gameplay; it’s about finding ways to connect global issues—like climate change and sustainability—with the stories we create in the game. Here’s a look at how far we’ve come.",
+          body: "Building An Inconvenient Modpack has been a long and evolving process—spanning several years of challenges, creativity, and inspiration. What started as a simple idea turned into a complex, story-driven experience that tackles real-world issues through the lens of gameplay. While the timeline below gives you a glimpse into some of the key features and milestones, it's important to note that the dates are rough estimates. After working on this for 3-4 years, exact timelines have blurred, and the scope of the project continues to grow.",
           items: [
+
             {
               component: 'blurb',
               headline: 'The Beginning',
-              body: 'Our journey began with a simple love for bees and a deep concern for their declining populations.',
-              date: 'September 2023',
+              body: "It all started with a vision to craft a modpack that would not only challenge players but also weave in environmental storytelling in a meaningful way.",
+              date: 'August 2021',
               class: 'cluster justify-between align-start'
             },
             {
               component: 'blurb',
-              headline: 'The Turning Point',
-              body: 'In 2015, we launched our first conservation project, planting wildflowers in a local park. This project was a turning point for us, as it showed us the power of community action. Since then, we have been working tirelessly to conserve and restore bee habitats.',
-              date: 'July 2023',
+              headline: 'Chapters 1 - 5',
+              body: 'A solid foundation was laid with a deep array of recipes, advancements, and mechanics that players would explore in the early chapters of their journey.',
+              date: 'September 2021',
               class: 'cluster justify-between align-start'
             },
             {
               component: 'blurb',
-              headline: 'The Next Step',
-              body: 'In 2018, we launched our first educational program, a series of workshops for children. These workshops were a huge success, and we have since expanded our educational programs to include webinars, community outreach, and more.',
-              date: 'November 2023',
+              headline: 'The Stories Begin',
+              body: 'The narrative started to unfold through Patchouli entries, bringing a rich backstory to life and connecting it with the gameplay.',
+              date: 'November 2021',
               class: 'cluster justify-between align-start'
             },
             {
               component: 'blurb',
-              headline: 'The Future',
-              body: 'We are excited to announce that we are launching our first advocacy campaign in 2020. This campaign will focus on promoting sustainable farming practices and lobbying against harmful pesticides. We are also working on a new conservation project, creating urban bee sanctuaries.',
-              date: 'May 2023',
+              headline: 'Milestones',
+              body: 'Major milestones were marked by Ender Eye rewards and significant progression, offering players a structured way to feel the weight of their accomplishments.',
+              date: 'January 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'The Bunker & The Lost City',
+              body: 'Players wake up in an underground bunker while the surface, dominated by decaying cities—The Lost Cities—awaits exploration.',
+              date: 'February 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Gateways',
+              body: 'Gateways from other dimensions began to open, restoring life to the overworld. At first, the world is empty except for zombies, but with each completed gateway, the world starts to rejuvenate.',
+              date: 'April 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Nightmares & Lost Pages',
+              body: 'Each milestone brings fragmented memories in the form of nightmares, while scraps of paper across dimensions tell stories of a climate-ravaged world from a thousand years ago.',
+              date: 'May 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: '1.18.2',
+              body: 'The modpack was updated to version 1.18.2, incorporating new challenges and features.',
+              date: 'Late 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Relics',
+              body: 'Ancient relics became rewards for completing dimension gateways, granting players powerful artifacts that shaped their future progression.',
+              date: 'Around November 2022',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Release Alpha Version to Curseforge',
+              body: 'An Inconvenient Modpack reached its first public release on Curseforge, allowing players to dive into the modpack\'s world, complete with server files.',
+              date: 'February 2023',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Feature Complete up to Chapter 6',
+              body: 'With Chapters 1 through 5.2 playtested and refined, the focus shifted to wrapping up the final chapters, polishing the experience for all players.',
+              date: 'Ongoing - Need Help',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'The Dream',
+              body: 'The modpack leads to the ultimate truth—players are faced with hard choices that shape their path.',
+              date: 'Coming in 2024',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Restore the World & Build a Solarpunk Community',
+              body: 'Will you wake up and rebuild the world with sustainable technology and hope for the future?',
+              date: 'Coming in 2024',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Adapt to Climate Catastrophe & Rise to The Top of Corpo Corporation',
+              body: 'Or will you stay asleep, climbing the corporate ladder in a dystopian world?',
+              date: 'Coming in 2024',
+              class: 'cluster justify-between align-start'
+            },
+            {
+              component: 'blurb',
+              headline: 'Ascension',
+              body: 'Explore the cosmos, terraform new worlds, and achieve technological dominance—leaving Earth behind.',
+              date: 'Coming in 2024',
               class: 'cluster justify-between align-start'
             }
           ]
@@ -579,6 +658,7 @@ const config = {
         },
         social: {
           layout: 'gallery',
+          col: 4,
           inset: true,
           overline: 'Connect and Engage',
           headline: 'Join the Conversation',
@@ -591,23 +671,23 @@ const config = {
               url: 'https://discord.gg/dJbfXV9JnF',
               theme: 'discord',
               body: 'Join the community discussions and get live help'
-            }
-            // {
-            //   component: 'card',
-            //   icon: 'logo-youtube',
-            //   size: 'xl',
-            //   url: '/',
-            //   theme: 'youtube',
-            //   body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
-            // },
-            // {
-            //   component: 'card',
-            //   icon: 'logo-tiktok',
-            //   size: 'xl',
-            //   url: '/',
-            //   theme: 'tiktok',
-            //   body: 'Discover quick tips, behind-the-scenes content, and player moments.'
-            // },
+            },
+            {
+              component: 'card',
+              icon: 'logo-youtube',
+              size: 'xl',
+              url: '/',
+              theme: 'youtube',
+              body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
+            },
+            {
+              component: 'card',
+              icon: 'logo-tiktok',
+              size: 'xl',
+              url: '/',
+              theme: 'tiktok',
+              body: 'Discover quick tips, behind-the-scenes content, and player moments.'
+            },
             // {
             //   component: 'card',
             //   icon: 'logo-twitch',
@@ -624,14 +704,14 @@ const config = {
             //   theme: 'reddit',
             //   body: 'Share your experiences, discuss strategies, and connect with other players.'
             // },
-            // {
-            //   component: 'card',
-            //   icon: 'logo-mastodon',
-            //   size: 'xl',
-            //   url: '/',
-            //   theme: 'mastodon',
-            //   body: 'Stay updated with the latest modpack news and community discussions.'
-            // }
+            {
+              component: 'card',
+              icon: 'logo-mastodon',
+              size: 'xl',
+              url: '/',
+              theme: 'mastodon',
+              body: 'Stay updated with the latest modpack news and community discussions.'
+            }
           ]
         },
         // TODO: add showcase

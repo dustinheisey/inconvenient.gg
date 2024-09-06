@@ -21,7 +21,7 @@
                 {% endfor %}
             </div>
         {% else %}
-            <div class="grid grid-{{props.col or 3}}">
+            <div class="cluster gap-m justify-center align-stretch">
                 {% for item in props.items %}
                     {{ component(item) }}
                 {% endfor %}
