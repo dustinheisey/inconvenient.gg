@@ -446,7 +446,7 @@ const config = {
         overview: {
           layout: 'start-heavy',
           align: 'stretch',
-          start: { component: 'img', src: 'feature-split.webp', alt: 'Impact', ar: 'square' },
+          start: { component: 'img', src: 'feature-split.webp', alt: '2 Visions of The Future', ar: 'square' },
           end: {
             component: 'text',
             size: 'hero',
@@ -520,7 +520,7 @@ const config = {
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'adventure/1.webp', alt: 'Adventurer' },
+              img: { src: 'adventure.webp', alt: 'Adventurer' },
               headline: 'Adventurer',
               icon: 'compass',
               list: [
