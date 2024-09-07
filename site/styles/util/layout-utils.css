@@ -69,3 +69,9 @@
     top: var(--space-3xl);
   }
 }
+
+@media (--phone-only) {
+  footer.bg-img {
+    margin-block-end: var(--space-xl);
+  }
+}
