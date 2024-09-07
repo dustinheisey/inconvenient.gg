@@ -568,119 +568,130 @@ const config = {
           ]
         },
         history: {
-          layout: 'sparkline',
-          variant: 'block',
-          overline: 'The Journey So Far',
-          headline: 'The Never Ending Story',
-          body: "Building An Inconvenient Modpack has been a long and evolving process—spanning several years of challenges, creativity, and inspiration. What started as a simple idea turned into a complex, story-driven experience that tackles real-world issues through the lens of gameplay. While the timeline below gives you a glimpse into some of the key features and milestones, it's important to note that the dates are rough estimates. After working on this for 3-4 years, exact timelines have blurred, and the scope of the project continues to grow.",
-          items: [
-            {
-              component: 'blurb',
-              headline: 'The Beginning',
-              body: "I was playing sevTech with my boyfriend and thought, 'This is great but I can do better'",
-              date: 'August 2021',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'Chapters 1 - 5',
-              body: 'A solid foundation was laid with a deep array of recipes, advancements, and mechanics that players would explore in the early chapters of their journey.',
-              date: 'September 2021',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'The Stories Begin',
-              body: 'The narrative started to unfold through Patchouli entries, bringing a rich backstory to life and connecting it with the gameplay.',
-              date: 'November 2021',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'Milestones',
-              body: 'Major milestones were marked by Ender Eye rewards and significant progression, offering players a structured way to feel the weight of their accomplishments.',
-              date: 'January 2022',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'The Bunker & The Lost City',
-              body: 'Players wake up in an underground bunker while the surface, dominated by decaying cities—The Lost Cities—awaits exploration.',
-              date: 'February 2022',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'Gateways',
-              body: 'Gateways from other dimensions began to open, restoring life to the overworld. At first, the world is empty except for zombies, but with each completed gateway, the world starts to rejuvenate.',
-              date: 'April 2022',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'Nightmares & Lost Pages',
-              body: 'Each milestone brings fragmented memories in the form of nightmares, while scraps of paper across dimensions tell stories of a climate-ravaged world from a thousand years ago.',
-              date: 'May 2022',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: '1.18.2',
-              body: 'The modpack was updated to version 1.18.2, incorporating new challenges and features.',
-              date: 'Late 2022',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'Relics',
-              body: 'Ancient relics became rewards for completing dimension gateways, granting players powerful artifacts that shaped their future progression.',
-              date: 'Around November 2022',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'Release Alpha Version to Curseforge',
-              body: "An Inconvenient Modpack reached its first public release on Curseforge, allowing players to dive into the modpack's world, complete with server files.",
-              date: 'February 2023',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'Feature Complete up to Chapter 6',
-              body: 'With Chapters 1 through 5.2 playtested and refined, the focus shifted to wrapping up the final chapters, polishing the experience for all players.',
-              date: 'Ongoing - Need Help',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'The Dream',
-              body: 'The modpack leads to the ultimate truth—players are faced with hard choices that shape their path.',
-              date: 'Coming in 2024',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'Restore the World & Build a Solarpunk Community',
-              body: 'Will you wake up and rebuild the world with sustainable technology and hope for the future?',
-              date: 'Coming in 2024',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'Adapt to Climate Catastrophe & Rise to The Top of Corpo Corporation',
-              body: 'Or will you stay asleep, climbing the corporate ladder in a dystopian world?',
-              date: 'Coming in 2024',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'Ascension',
-              body: 'Explore the cosmos, terraform new worlds, and achieve technological dominance—leaving Earth behind.',
-              date: 'Coming in 2024',
-              class: 'cluster justify-between align-start'
-            }
-          ]
-          // btn: { label: 'See Roadmap', url: '/TODO' }
+          layout: 'end-heavy',
+          align: 'start',
+          mobile: 'start',
+          start: {
+            component: 'text',
+            size: 'region',
+            justify: 'start',
+            sticky: true,
+            overline: 'The Journey So Far',
+            headline: 'The Never Ending Story',
+            body: "Building An Inconvenient Modpack has been a long and evolving process—spanning several years of challenges, creativity, and inspiration. What started as a simple idea turned into a complex, story-driven experience that tackles real-world issues through the lens of gameplay. While the timeline below gives you a glimpse into some of the key features and milestones, it's important to note that the dates are rough estimates. After working on this for 3-4 years, exact timelines have blurred, and the scope of the project continues to grow."
+            // btn: { label: 'See Roadmap', url: '/TODO' }
+          },
+          end: {
+            component: 'sparkline',
+            variant: 'block',
+            items: [
+              {
+                component: 'blurb',
+                variant: 'stack',
+                headline: 'The Beginning',
+                body: "I was playing sevTech with my boyfriend and thought, 'This is great but I can do better'",
+                date: 'August 2021'
+              },
+              {
+                component: 'blurb',
+                variant: 'stack',
+                headline: 'Chapters 1 - 5',
+                body: 'A solid foundation was laid with a deep array of recipes, advancements, and mechanics that players would explore in the early chapters of their journey.',
+                date: 'September 2021'
+              },
+              {
+                component: 'blurb',
+                headline: 'The Stories Begin',
+                body: 'The narrative started to unfold through Patchouli entries, bringing a rich backstory to life and connecting it with the gameplay.',
+                date: 'November 2021',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Milestones',
+                body: 'Major milestones were marked by Ender Eye rewards and significant progression, offering players a structured way to feel the weight of their accomplishments.',
+                date: 'January 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'The Bunker & The Lost City',
+                body: 'Players wake up in an underground bunker while the surface, dominated by decaying cities—The Lost Cities—awaits exploration.',
+                date: 'February 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Gateways',
+                body: 'Gateways from other dimensions began to open, restoring life to the overworld. At first, the world is empty except for zombies, but with each completed gateway, the world starts to rejuvenate.',
+                date: 'April 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Nightmares & Lost Pages',
+                body: 'Each milestone brings fragmented memories in the form of nightmares, while scraps of paper across dimensions tell stories of a climate-ravaged world from a thousand years ago.',
+                date: 'May 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: '1.18.2',
+                body: 'The modpack was updated to version 1.18.2, incorporating new challenges and features.',
+                date: 'Late 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Relics',
+                body: 'Ancient relics became rewards for completing dimension gateways, granting players powerful artifacts that shaped their future progression.',
+                date: 'Around November 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Release Alpha Version to Curseforge',
+                body: "An Inconvenient Modpack reached its first public release on Curseforge, allowing players to dive into the modpack's world, complete with server files.",
+                date: 'February 2023',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Feature Complete up to Chapter 6',
+                body: 'With Chapters 1 through 5.2 playtested and refined, the focus shifted to wrapping up the final chapters, polishing the experience for all players.',
+                date: 'Ongoing - Need Help',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'The Dream',
+                body: 'The modpack leads to the ultimate truth—players are faced with hard choices that shape their path.',
+                date: 'Coming in 2024',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Restore the World & Build a Solarpunk Community',
+                body: 'Will you wake up and rebuild the world with sustainable technology and hope for the future?',
+                date: 'Coming in 2024',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Adapt to Climate Catastrophe & Rise to The Top of Corpo Corporation',
+                body: 'Or will you stay asleep, climbing the corporate ladder in a dystopian world?',
+                date: 'Coming in 2024',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Ascension',
+                body: 'Explore the cosmos, terraform new worlds, and achieve technological dominance—leaving Earth behind.',
+                date: 'Coming in 2024',
+                variant: 'stack'
+              }
+            ]
+          }
         },
         faq: {
           layout: 'center',
@@ -753,6 +764,7 @@ const config = {
       regions: {
         intro: {
           layout: 'start-heavy',
+          mobile: 'end',
           align: 'stretch',
           end: { component: 'img', src: 'community.webp', alt: 'Community' },
           start: {

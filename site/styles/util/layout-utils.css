@@ -62,3 +62,10 @@
 .border-block-start {
   border-block-start: 1px solid var(--color-outline-variant);
 }
+
+@media (--desktop-up) {
+  .sticky {
+    position: sticky;
+    top: var(--space-3xl);
+  }
+}

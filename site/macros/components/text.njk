@@ -1,4 +1,4 @@
-<div class="stack gap-xl {{class}}">
+<div class="stack gap-xl {{class}} {% if props.sticky %}sticky{% endif %}">
     {% if props.navbar %}
         <header class="navbar">
             <nav class="inset-0">
@@ -82,7 +82,7 @@
         </header>
     {% endif %}
 
-    <section class="prose auto stack gap-xs justify-center align-{{config.align or 'start'}} grow-1">
+    <section class="prose auto stack gap-xs justify-{{props.justify or 'start'}} align-{{props.align or 'start'}} grow-1">
         {% if props.overline %}
             <p class="overline">{{props.overline}}</p>
         {% endif %}
