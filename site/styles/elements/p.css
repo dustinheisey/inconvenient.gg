@@ -23,7 +23,7 @@ p {
 .overline {
   font-family: var(--font-family-body);
   font-size: var(--font-size-s);
-  color: var(--color-primary);
+  color: var(--color-p-override, var(--color-primary));
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-overline);
   font-weight: var(--font-weight-headline);

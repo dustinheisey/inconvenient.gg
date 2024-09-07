@@ -347,3 +347,10 @@
     color: var(--color-on-primary-light);
   }
 }
+
+.theme-action {
+  background-color: var(--color-primary-split);
+  color: var(--color-on-primary-light);
+  --color-headline-override: var(--color-on-primary-light);
+  --color-p-override: var(--color-on-primary-light);
+}

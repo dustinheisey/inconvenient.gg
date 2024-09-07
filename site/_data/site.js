@@ -408,7 +408,7 @@ const config = {
         },
         action: {
           layout: 'bg-pattern',
-          theme: 'primary',
+          theme: 'action',
           pattern: 'leaves',
           overline: 'Write Your Own Story',
           headline: 'Shape the World with Your Choices',
@@ -729,7 +729,7 @@ const config = {
         },
         action: {
           layout: 'bg-pattern',
-          theme: 'primary',
+          theme: 'action',
           pattern: 'leaves',
           overline: 'Write Your Own Story',
           headline: 'Download and Shape the Future',
@@ -894,7 +894,7 @@ const config = {
         },
         action: {
           layout: 'bg-pattern',
-          theme: 'primary',
+          theme: 'action',
           pattern: 'leaves',
           overline: 'Write Your Own Story',
           headline: 'Download and Shape the Future',
