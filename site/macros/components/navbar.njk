@@ -64,7 +64,7 @@
             </div>
             <div class="bottombar">
                 <ul>
-                    {% for item in props.config.bottombar.links %}
+                    {% for item in props.config.header.bottombar.links %}
                     <li>
                         <a href="{{item.url}}" class="navigation">
                             {% icon item.icon %}
@@ -73,9 +73,9 @@
                     </li>
                     {% endfor %}
                     <li class="fab">
-                        <a href="{{props.config.bottombar.fab.url}}">
-                            <span class="sr-only">{{props.config.bottombar.fab.label}}</span>
-                            {# {% icon props.config.bottombar.fab.icon %} #}
+                        <a href="{{props.config.header.bottombar.fab.url}}">
+                            <span class="sr-only">{{props.config.header.bottombar.fab.label}}</span>
+                            {% icon props.config.header.bottombar.fab.icon %}
                         </a>
                     </li>
                 </ul>
@@ -145,7 +145,7 @@
         </div>
         <div class="bottombar">
             <ul>
-                {% for item in props.config.bottombar.links %}
+                {% for item in props.config.header.bottombar.links %}
                 <li>
                     <a href="{{item.url}}" class="navigation">
                         {% icon item.icon %}
@@ -154,9 +154,9 @@
                 </li>
                 {% endfor %}
                 <li class="fab">
-                    <a href="{{props.config.bottombar.fab.url}}">
-                        <span class="sr-only">{{props.config.bottombar.fab.label}}</span>
-                        {# {% icon props.config.bottombar.fab.icon %} #}
+                    <a href="{{props.config.header.bottombar.fab.url}}">
+                        <span class="sr-only">{{props.config.header.bottombar.fab.label}}</span>
+                        {# {% icon props.config.header.bottombar.fab.icon %} #}
                     </a>
                 </li>
             </ul>

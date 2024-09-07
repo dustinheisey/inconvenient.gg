@@ -36,12 +36,12 @@ const config = {
       bottombar: {
         links: [
           { label: 'Home', url: '/', icon: 'home' },
-          { label: 'Features', url: '/features', icon: 'about' },
+          { label: 'Features', url: '/features', icon: 'star' },
           { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
           { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', icon: 'advocate' },
-          { label: 'Community', url: '/community', icon: 'contact' }
+          { label: 'Community', url: '/community', icon: 'chat' }
         ],
-        fab: { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', icon: 'donate' }
+        fab: { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', icon: 'play' }
       }
     },
     footer: {
@@ -133,19 +133,19 @@ const config = {
               bottombar: {
                 links: [
                   { label: 'Home', url: '/', icon: 'home' },
-                  { label: 'Features', url: '/features', icon: 'about' },
+                  { label: 'Features', url: '/features', icon: 'star' },
                   { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
                   {
                     label: 'Bugs',
                     url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
                     icon: 'advocate'
                   },
-                  { label: 'Community', url: '/community', icon: 'contact' }
+                  { label: 'Community', url: '/community', icon: 'chat' }
                 ],
                 fab: {
                   label: 'Play Now',
                   url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
-                  icon: 'donate'
+                  icon: 'play'
                 }
               }
             }

@@ -40,3 +40,16 @@
   border-image: fill 1
     linear-gradient(hsl(from var(--color-primary) h s l / 0.5), hsl(from var(--color-primary) h s l / 0.5));
 } */
+
+.inconvenient-logo-video {
+  --color-on-background: var(--color-background-light);
+}
+
+.theme-video {
+  --color-primary: var(--color-on-primary-light);
+  --color-on-primary: var(--color-on-background-light);
+  --color-headline-override: var(--color-on-primary-light);
+  --color-p-override: var(--color-on-primary-light);
+  --color-on-background: var(--color-on-primary-light);
+  --icon-fill: var(--color-on-primary-light);
+}

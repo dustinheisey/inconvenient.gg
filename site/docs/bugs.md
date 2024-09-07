@@ -50,6 +50,7 @@
 - [ ] video filter overlay
 - [ ] left align all text
 - [ ] make the text more personal
+- [ ] fix bottombar hiding behind footer
 
 ### Scroll Driven Animations
 

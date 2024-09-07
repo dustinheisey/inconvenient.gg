@@ -60,7 +60,7 @@
                     </div>
                     <div class="bottombar">
                         <ul>
-                            {% for item in props.navbar.bottombar.links %}
+                            {% for item in props.header.bottombar.links %}
                             <li>
                                 <a href="{{item.url}}" class="navigation">
                                     {% icon item.icon %}
@@ -69,9 +69,9 @@
                             </li>
                             {% endfor %}
                         </ul>
-                        <a href="{{props.navbar.bottombar.fab.url}}" class="fab">
-                            <span class="sr-only">{{props.navbar.bottombar.fab.label}}</span>
-                            {# {% icon props.navbar.bottombar.fab.icon %} #}
+                        <a href="{{props.header.bottombar.fab.url}}" class="fab">
+                            <span class="sr-only">{{props.header.bottombar.fab.label}}</span>
+                            {# {% icon props.header.bottombar.fab.icon %} #}
                         </a>
                     </div>
                 </div>
