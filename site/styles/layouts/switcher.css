@@ -12,7 +12,7 @@
 }
 
 .switch-phone {
-  --threshold: 480px;
+  --threshold: 128px;
 }
 
 .switch-tablet {
