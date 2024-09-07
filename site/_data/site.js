@@ -14,7 +14,7 @@ const config = {
           label: 'Features',
           url: '/features'
         },
-        { label: 'Wiki', url: '/wiki' },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
         {
           label: 'Help Me Find Bugs',
           external: true,
@@ -33,23 +33,23 @@ const config = {
           ]
         }
       ],
-      action: { label: 'Play', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', external: true },
+      action: { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', external: true },
       bottombar: {
         links: [
           { label: 'Home', url: '/', icon: 'home' },
           { label: 'Features', url: '/features', icon: 'about' },
-          { label: 'Wiki', url: '/wiki', icon: 'books' },
+          { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
           { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', icon: 'advocate' },
           { label: 'Community', url: '/community', icon: 'contact' }
         ],
-        fab: { label: 'Play', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', icon: 'donate' }
+        fab: { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', icon: 'donate' }
       }
     },
     footer: {
       variant: 'simple',
       links: [
         { label: 'Features', url: '/features' },
-        { label: 'Wiki', url: '/wiki', external: true },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
         { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', external: true },
         { label: 'Community', url: '/community' },
         { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', external: true }
@@ -106,7 +106,7 @@ const config = {
                   label: 'Features',
                   url: '/features'
                 },
-                { label: 'Wiki', url: '/wiki' },
+                { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
                 {
                   label: 'Help Me Find Bugs',
                   external: true,
@@ -126,7 +126,7 @@ const config = {
                 }
               ],
               action: {
-                label: 'Play',
+                label: 'Play Now',
                 url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
                 external: true
               },
@@ -134,7 +134,7 @@ const config = {
                 links: [
                   { label: 'Home', url: '/', icon: 'home' },
                   { label: 'Features', url: '/features', icon: 'about' },
-                  { label: 'Wiki', url: '/wiki', icon: 'books' },
+                  { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
                   {
                     label: 'Bugs',
                     url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
@@ -143,7 +143,7 @@ const config = {
                   { label: 'Community', url: '/community', icon: 'contact' }
                 ],
                 fab: {
-                  label: 'Play',
+                  label: 'Play Now',
                   url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
                   icon: 'donate'
                 }
@@ -170,21 +170,20 @@ const config = {
             size: 'region',
             overline: "You've Slept Far Too Long",
             headline: 'Awaken in a World You No Longer Recognize',
-            body: "You open your eyes in a cold, desolate bunker, and it feels like you're still trapped in a dream—a nightmare. A thousand years have passed, and the world you knew has vanished. Can you survive long enough to uncover the truth?"
+            body: 'You open your eyes in a cold, desolate bunker, and it feels like you’re still trapped in a dream—a nightmare. A thousand years have passed, and the world you knew has vanished. Can you survive long enough to uncover the truth?'
           },
           start: {
             component: 'img',
             src: 'bunker.png',
             ar: 'square',
-            alt: 'Underground Bunket'
+            alt: 'Underground Bunker'
           }
         },
         rebuild: {
           layout: 'gallery',
-          overline: "Piece Together What's Left",
+          overline: 'Piece Together What’s Left',
           variant: 'masonry',
           text: 'start',
-          col: 4,
           headline: 'Rebuild to Remember',
           body: 'As you rebuild the shattered world, fragments of your memory return, and you begin to wake up, piece by piece. Each step forward reveals a truth you’ve long forgotten—about yourself, the past, and the role you played in humanity’s downfall. Will rebuilding the world help you wake from this nightmare?',
           items: [
@@ -352,8 +351,8 @@ const config = {
           layout: 'reel',
           size: 'region',
           overline: "The Past Won't Stay Buried",
-          headline: 'Explore New Worlds to Discover the Truth ',
-          body: "The ruins of humanity's downfall are scattered across distant worlds. Only by traveling through these dimensions can you uncover the hidden stories of what happened while you slept. Can you piece together the truth before you're lost in the chaos of the past?",
+          headline: 'Explore New Worlds to Discover the Truth',
+          body: "The ruins of humanity’s downfall are scattered across distant worlds. Only by traveling through these dimensions can you uncover the hidden stories of what happened while you slept. Can you piece together the truth before you're lost in the chaos of the past?",
           items: [
             {
               component: 'card',
@@ -395,7 +394,7 @@ const config = {
               variant: 'flip',
               img: { src: 'bumblezone.png', alt: 'The Bumblezone' },
               headline: 'The Bumblezone',
-              body: "Explore the buzzing world inside The Bumblezone, a realm of endless honeycombs and hidden danger. But don't be fooled by its golden glow—this world has seen better days. Will you find hope here?"
+              body: 'Explore the buzzing world inside The Bumblezone, a realm of endless honeycombs and hidden danger. But don’t be fooled by its golden glow—this world has seen better days. Will you find hope here?'
             },
             {
               component: 'card',
@@ -434,7 +433,7 @@ const config = {
               external: true,
               url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
             },
-            { variant: 'secondary', label: 'Visit the Wiki', url: '/wiki' }
+            { variant: 'secondary', label: 'Visit the Wiki', url: 'https://wiki.inconvenient.gg' }
           ]
         }
       }
@@ -514,8 +513,8 @@ const config = {
                 'Reflect on your journey through journal entries and personal discoveries.',
                 "Find ancient stories detailing climate change from the victims' perspectives.",
                 'Experience immersive dreams that reveal both harsh truths and hopeful possibilities.',
-                'Choose between joining a Solarpunk community or climbing the ranks of Corpo Corporation',
-                'Face climate catastrophes head-on or restore the environment with public works projects'
+                'Choose between joining a Solarpunk community or climbing the ranks of Corpo Corporation.',
+                'Face climate catastrophes head-on or restore the environment with public works projects.'
               ]
             },
             {
@@ -525,7 +524,7 @@ const config = {
               headline: 'Adventurer',
               icon: 'compass',
               list: [
-                'Wake up in a bunker and explore the remnants of a world before climate change',
+                'Wake up in a bunker and explore the remnants of a world before climate change.',
                 'Discover overhauled world generation with layered stone and massive ore clusters.',
                 'Explore 10 diverse dimensions filled with unique challenges.',
                 'Battle formidable bosses across various worlds.',
@@ -576,7 +575,7 @@ const config = {
                 'Terraform the environment, building in landscapes either devastated by climate change or restored to natural beauty through your designs.',
                 'Build your own railways and public transportation systems.',
                 'Create intricate production lines and enormous factories.',
-                'Build your own Solarpunk society the way you want to'
+                'Build your own Solarpunk society the way you want to.'
               ]
             }
           ]
@@ -586,12 +585,12 @@ const config = {
           variant: 'block',
           overline: 'The Journey So Far',
           headline: 'The Never Ending Story',
-          body: "Building An Inconvenient Modpack has been a long and evolving process—spanning several years of challenges, creativity, and inspiration. What started as a simple idea turned into a complex, story-driven experience that tackles real-world issues through the lens of gameplay. While the timeline below gives you a glimpse into some of the key features and milestones, it's important to note that the dates are rough estimates. After working on this for 3-4 years, exact timelines have blurred, and the scope of the project continues to grow.",
+          body: "Building 'An Inconvenient Modpack' has been a long and evolving process—spanning several years of challenges, creativity, and inspiration. What started as a simple idea turned into a complex, story-driven experience that tackles real-world issues through the lens of gameplay. While the timeline below gives you a glimpse into some of the key features and milestones, it's important to note that the dates are rough estimates. After working on this for 3-4 years, exact timelines have blurred, and the scope of the project continues to grow.",
           items: [
             {
               component: 'blurb',
               headline: 'The Beginning',
-              body: 'It all started with a vision to craft a modpack that would not only challenge players but also weave in environmental storytelling in a meaningful way.',
+              body: "I was playing sevTech with my boyfriend and thought, 'This is great but I can do better'",
               date: 'August 2021',
               class: 'cluster justify-between align-start'
             },
@@ -654,7 +653,7 @@ const config = {
             {
               component: 'blurb',
               headline: 'Release Alpha Version to Curseforge',
-              body: "An Inconvenient Modpack reached its first public release on Curseforge, allowing players to dive into the modpack's world, complete with server files.",
+              body: "'An Inconvenient Modpack' reached its first public release on Curseforge, allowing players to dive into the modpack's world, complete with server files.",
               date: 'February 2023',
               class: 'cluster justify-between align-start'
             },
@@ -754,7 +753,7 @@ const config = {
               external: true,
               url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
             },
-            { variant: 'secondary', label: 'Visit the Wiki', url: '/wiki' }
+            { variant: 'secondary', label: 'Visit the Wiki', url: 'https://wiki.inconvenient.gg' }
           ]
         }
       }
@@ -787,7 +786,6 @@ const config = {
         },
         social: {
           layout: 'gallery',
-          col: 4,
           inset: true,
           overline: 'Connect and Engage',
           headline: 'Join the Conversation',
@@ -795,11 +793,19 @@ const config = {
           items: [
             {
               component: 'card',
+              icon: 'logo-mastodon',
+              size: 'xl',
+              url: '/',
+              theme: 'mastodon',
+              body: 'Stay updated with the latest modpack news and community discussions.'
+            },
+            {
+              component: 'card',
               icon: 'logo-discord',
               size: 'xl',
               url: 'https://discord.gg/dJbfXV9JnF',
               theme: 'discord',
-              body: 'Join the community discussions and get live help'
+              body: 'Join the community discussions and get live help.'
             },
             {
               component: 'card',
@@ -815,8 +821,8 @@ const config = {
               size: 'xl',
               url: '/',
               theme: 'tiktok',
-              body: 'Discover quick tips, behind-the-scenes content, and player moments.'
-            },
+              body: 'Discover quick tips, and behind-the-scenes content.'
+            }
             // {
             //   component: 'card',
             //   icon: 'logo-twitch',
@@ -833,14 +839,6 @@ const config = {
             //   theme: 'reddit',
             //   body: 'Share your experiences, discuss strategies, and connect with other players.'
             // },
-            {
-              component: 'card',
-              icon: 'logo-mastodon',
-              size: 'xl',
-              url: '/',
-              theme: 'mastodon',
-              body: 'Stay updated with the latest modpack news and community discussions.'
-            }
           ]
         },
         // TODO: add showcase
@@ -853,7 +851,7 @@ const config = {
             size: 'region',
             overline: 'Join the Journey',
             headline: 'Help Shape the Future of This Modpack',
-            lead: 'An Inconvenient Modpack is more than just a modpack. It’s an evolving experience that asks players to think critically about global issues like climate change, capitalism, and the path toward a hopeful future. But to bring this vision to life, I need your help.',
+            lead: "'An Inconvenient Modpack' is more than just a modpack. It’s an evolving experience that asks players to think critically about global issues like climate change, capitalism, and the path toward a hopeful future. But to bring this vision to life, I need your help.",
             body: 'This project thrives on community collaboration. Your feedback and participation will not only shape the modpack’s journey but also deepen the conversations we need to have about our world today. Together, we can tell a story of resilience, hope, and prove that we have the power to change the course of our future—both in the game and beyond.'
           },
           end: {
@@ -862,7 +860,7 @@ const config = {
               {
                 component: 'details',
                 headline: 'Playtest and Improve',
-                body: 'Help me make An Inconvenient Modpack the best it can be by playtesting for me. Your gameplay insights are invaluable in identifying bugs, balance issues, and opportunities for new content. Together, we’ll fine-tune the experience to make it more engaging for everyone.',
+                body: "Help me make 'An Inconvenient Modpack' the best it can be by playtesting for me. Your gameplay insights are invaluable in identifying bugs, balance issues, and opportunities for new content. Together, we’ll fine-tune the experience to make it more engaging for everyone.",
                 btn: {
                   url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
                   external: true,
@@ -873,7 +871,7 @@ const config = {
               {
                 component: 'details',
                 headline: 'Share Your Experiences',
-                body: 'Your journey through the modpack is unique, and we want to see it! Share your favorite moments, take screenshots, or record gameplay clips. Spread the word on social media or submit your content directly to help inspire others and highlight the impact of your story.',
+                body: 'Your journey through the modpack is unique, and I want to see it! Share your favorite moments, take screenshots, or record gameplay clips. Spread the word on social media or submit your content directly to help inspire others and highlight the impact of your story.',
                 btn: {
                   url: 'https://discord.gg/dJbfXV9JnF',
                   variant: 'secondary',
@@ -919,7 +917,7 @@ const config = {
               external: true,
               url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
             },
-            { variant: 'secondary', label: 'Visit the Wiki', url: '/wiki' }
+            { variant: 'secondary', label: 'Visit the Wiki', url: 'https://wiki.inconvenient.gg' }
           ]
         }
       }
