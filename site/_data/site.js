@@ -1,7 +1,6 @@
 const config = {
   title: 'An Inconvenient Modpack',
   url: 'https://inconvenient.gg',
-  description: '',
   navigation: {
     logo: {
       src: './public/svg/logo',
@@ -25,11 +24,11 @@ const config = {
           url: '/community',
           subLinks: [
             { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
-            { label: 'Youtube', url: '/', external: true },
-            { label: 'Tik Tok', url: '/', external: true },
-            // { label: 'Twitch', url: '/', external: true },
-            // { label: 'Reddit', url: '/', external: true },
-            { label: 'Mastodon', url: '/', external: true }
+            { label: 'Youtube', url: 'TODO', external: true },
+            { label: 'Tik Tok', url: 'TODO', external: true },
+            // { label: 'Twitch', url: 'TODO', external: true },
+            // { label: 'Reddit', url: 'TODO', external: true },
+            { label: 'Mastodon', url: 'TODO', external: true }
           ]
         }
       ],
@@ -64,22 +63,22 @@ const config = {
         {
           label: 'Youtube',
           icon: 'logo-youtube',
-          url: ''
+          url: 'TODO'
         },
         {
           label: 'TikTok',
           icon: 'logo-tiktok',
-          url: ''
+          url: 'TODO'
         },
         // {
         //   label: 'Reddit',
         //   icon: 'logo-reddit',
-        //   url: ''
+        //   url: 'TODO'
         // },
         {
           label: 'Mastodon',
           icon: 'logo-mastodon',
-          url: ''
+          url: 'TODO'
         }
       ],
       copywrite: '© 2024 An Inconvenient Modpack'
@@ -89,8 +88,9 @@ const config = {
     {
       url: 'index',
       header: false,
-      title: '',
-      description: '',
+      title: 'An Inconvenient Modpack – Awaken, Rebuild, and Shape the Future',
+      description:
+        'Awaken in a world transformed. Rebuild civilization, explore new dimensions, and uncover the truth. Your choices shape the future. Download now and start your journey.',
       regions: {
         hero: {
           layout: 'bg-center',
@@ -117,11 +117,11 @@ const config = {
                   url: '/community',
                   subLinks: [
                     { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
-                    { label: 'Youtube', url: '/', external: true },
-                    { label: 'Tik Tok', url: '/', external: true },
-                    // { label: 'Twitch', url: '/', external: true },
-                    // { label: 'Reddit', url: '/', external: true },
-                    { label: 'Mastodon', url: '/', external: true }
+                    { label: 'Youtube', url: 'TODO', external: true },
+                    { label: 'Tik Tok', url: 'TODO', external: true },
+                    // { label: 'Twitch', url: 'TODO', external: true },
+                    // { label: 'Reddit', url: 'TODO', external: true },
+                    { label: 'Mastodon', url: 'TODO', external: true }
                   ]
                 }
               ],
@@ -159,7 +159,7 @@ const config = {
               external: true,
               label: 'Begin Your Journey'
             }
-            // { variant: 'secondary', url: '/', label: 'Watch the Full Trailer' }
+            // { variant: 'secondary', url: 'TODO', label: 'Watch the Full Trailer' }
           ],
           video: { src: 'bunker.mp4' }
         },
@@ -426,7 +426,7 @@ const config = {
           pattern: 'leaves',
           overline: 'Write Your Own Story',
           headline: 'Shape the World with Your Choices',
-          body: "Every decision you make in 'An Inconvenient Modpack' leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.",
+          body: 'Every decision you make in An Inconvenient Modpack leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.',
           btns: [
             {
               label: 'Download Now',
@@ -440,8 +440,9 @@ const config = {
     },
     {
       url: 'features',
-      title: '',
-      description: '',
+      title: 'Explore Features of An Inconvenient Modpack – Survival, Storytelling, and Innovation',
+      description:
+        'Discover the core features of An Inconvenient Modpack. Rebuild civilization, explore unique dimensions, and master survival with 1333+ recipes, 10 chapters, and more.',
       regions: {
         overview: {
           layout: 'start-heavy',
@@ -500,7 +501,7 @@ const config = {
           size: 'region',
           overline: 'Discover Your Path',
           headline: 'Something for Every Player',
-          body: "Whether you're drawn to uncover ancient stories, navigate new worlds, master intricate systems, survive harsh realities, or design the future, 'An Inconvenient Modpack' has been crafted to connect with your unique style. Your choices, your impact.",
+          body: "Whether you're drawn to uncover ancient stories, navigate new worlds, master intricate systems, survive harsh realities, or design the future, An Inconvenient Modpack has been crafted to connect with your unique style. Your choices, your impact.",
           items: [
             {
               component: 'card',
@@ -585,7 +586,7 @@ const config = {
           variant: 'block',
           overline: 'The Journey So Far',
           headline: 'The Never Ending Story',
-          body: "Building 'An Inconvenient Modpack' has been a long and evolving process—spanning several years of challenges, creativity, and inspiration. What started as a simple idea turned into a complex, story-driven experience that tackles real-world issues through the lens of gameplay. While the timeline below gives you a glimpse into some of the key features and milestones, it's important to note that the dates are rough estimates. After working on this for 3-4 years, exact timelines have blurred, and the scope of the project continues to grow.",
+          body: "Building An Inconvenient Modpack has been a long and evolving process—spanning several years of challenges, creativity, and inspiration. What started as a simple idea turned into a complex, story-driven experience that tackles real-world issues through the lens of gameplay. While the timeline below gives you a glimpse into some of the key features and milestones, it's important to note that the dates are rough estimates. After working on this for 3-4 years, exact timelines have blurred, and the scope of the project continues to grow.",
           items: [
             {
               component: 'blurb',
@@ -653,7 +654,7 @@ const config = {
             {
               component: 'blurb',
               headline: 'Release Alpha Version to Curseforge',
-              body: "'An Inconvenient Modpack' reached its first public release on Curseforge, allowing players to dive into the modpack's world, complete with server files.",
+              body: "An Inconvenient Modpack reached its first public release on Curseforge, allowing players to dive into the modpack's world, complete with server files.",
               date: 'February 2023',
               class: 'cluster justify-between align-start'
             },
@@ -693,7 +694,7 @@ const config = {
               class: 'cluster justify-between align-start'
             }
           ]
-          // btn: { label: 'See Roadmap', url: '/roadmap' }
+          // btn: { label: 'See Roadmap', url: '/TODO' }
         },
         faq: {
           layout: 'center',
@@ -760,8 +761,9 @@ const config = {
     },
     {
       url: 'community',
-      title: '',
-      description: '',
+      title: 'Join the Community of An Inconvenient Modpack – Collaborate, Rebuild, and Inspire',
+      description:
+        'Become part of a Solarpunk-inspired community. Collaborate, playtest, and help shape the future of An Inconvenient Modpack. Join the movement and start making an impact.',
       regions: {
         intro: {
           layout: 'start-heavy',
@@ -780,7 +782,7 @@ const config = {
                 external: true,
                 label: 'Get on Curseforge'
               },
-              { url: 'https://modrinth.com/', variant: 'secondary', label: 'Get on Modrinth', external: true }
+              { url: 'https://modrinth.com/TODO', variant: 'secondary', label: 'Get on Modrinth', external: true }
             ]
           }
         },
@@ -795,7 +797,7 @@ const config = {
               component: 'card',
               icon: 'logo-mastodon',
               size: 'xl',
-              url: '/',
+              url: 'TODO',
               theme: 'mastodon',
               body: 'Stay updated with the latest modpack news and community discussions.'
             },
@@ -811,7 +813,7 @@ const config = {
               component: 'card',
               icon: 'logo-youtube',
               size: 'xl',
-              url: '/',
+              url: 'TODO',
               theme: 'youtube',
               body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
             },
@@ -819,7 +821,7 @@ const config = {
               component: 'card',
               icon: 'logo-tiktok',
               size: 'xl',
-              url: '/',
+              url: 'TODO',
               theme: 'tiktok',
               body: 'Discover quick tips, and behind-the-scenes content.'
             }
@@ -827,7 +829,7 @@ const config = {
             //   component: 'card',
             //   icon: 'logo-twitch',
             //   size: 'xl',
-            //   url: '/',
+            //   url: 'TODO',
             //   theme: 'twitch',
             //   body: 'Join live streams of me fixing bugs and playtesting the modpack.'
             // },
@@ -835,7 +837,7 @@ const config = {
             //   component: 'card',
             //   icon: 'logo-reddit',
             //   size: 'xl',
-            //   url: '/',
+            //   url: 'TODO',
             //   theme: 'reddit',
             //   body: 'Share your experiences, discuss strategies, and connect with other players.'
             // },
@@ -851,7 +853,7 @@ const config = {
             size: 'region',
             overline: 'Join the Journey',
             headline: 'Help Shape the Future of This Modpack',
-            lead: "'An Inconvenient Modpack' is more than just a modpack. It’s an evolving experience that asks players to think critically about global issues like climate change, capitalism, and the path toward a hopeful future. But to bring this vision to life, I need your help.",
+            lead: 'An Inconvenient Modpack is more than just a modpack. It’s an evolving experience that asks players to think critically about global issues like climate change, capitalism, and the path toward a hopeful future. But to bring this vision to life, I need your help.',
             body: 'This project thrives on community collaboration. Your feedback and participation will not only shape the modpack’s journey but also deepen the conversations we need to have about our world today. Together, we can tell a story of resilience, hope, and prove that we have the power to change the course of our future—both in the game and beyond.'
           },
           end: {
@@ -860,7 +862,7 @@ const config = {
               {
                 component: 'details',
                 headline: 'Playtest and Improve',
-                body: "Help me make 'An Inconvenient Modpack' the best it can be by playtesting for me. Your gameplay insights are invaluable in identifying bugs, balance issues, and opportunities for new content. Together, we’ll fine-tune the experience to make it more engaging for everyone.",
+                body: 'Help me make An Inconvenient Modpack the best it can be by playtesting for me. Your gameplay insights are invaluable in identifying bugs, balance issues, and opportunities for new content. Together, we’ll fine-tune the experience to make it more engaging for everyone.',
                 btn: {
                   url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
                   external: true,
