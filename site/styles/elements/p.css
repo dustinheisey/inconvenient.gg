@@ -3,7 +3,7 @@ p {
   line-height: var(--line-height-body);
   font-family: var(--font-family-body);
   font-weight: var(--font-weight-body);
-  color: var(--color-on-background);
+  color: var(--color-p-override, var(--color-on-background));
   max-inline-size: 60ch;
   min-inline-size: 10ch;
   margin: 0;

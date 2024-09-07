@@ -192,41 +192,37 @@ const config = {
               icon: 'leather',
               size: 'xl',
               theme: 'clay',
+              url: 'https://wiki.inconvenient.gg/milestones/leather-making',
               headline: 'Leather making'
             },
             {
               component: 'card',
-              icon: 'pottery',
               size: 'xl',
-              theme: 'clay',
-              headline: 'Pottery'
-            },
-            {
-              component: 'card',
-              icon: 'cooking',
-              size: 'xl',
-              theme: 'rust',
-              headline: 'Cooking'
-            },
-            {
-              component: 'card',
-              icon: 'thermometer',
-              size: 'xl',
-              theme: 'rust',
-              headline: 'Temperature Regulation'
+              theme: 'slate',
+              url: 'https://wiki.inconvenient.gg/nightmares/cold',
+              body: 'I am sitting in an office chair, looking at my desktop. It has multiple files open, showing schematic plans for an underground bunker.'
             },
             {
               component: 'card',
               icon: 'compass',
               size: 'xl',
               theme: 'beige',
+              url: 'https://wiki.inconvenient.gg/milestones/navigation',
               headline: 'Navigation'
+            },
+            {
+              component: 'card',
+              size: 'xl',
+              theme: 'olive',
+              url: 'https://wiki.inconvenient.gg/nightmares/undead',
+              body: 'I read multiple reports of a strange illness affecting people across the world, causing their skin to rot and their minds to become increasingly confused and violent.'
             },
             {
               component: 'card',
               icon: 'ingot',
               size: 'xl',
               theme: 'slate',
+              url: 'https://wiki.inconvenient.gg/milestones/metallurgy',
               headline: 'Metallurgy'
             },
             {
@@ -234,118 +230,108 @@ const config = {
               icon: 'sprout',
               size: 'xl',
               theme: 'olive',
+              url: 'https://wiki.inconvenient.gg/milestones/agriculture',
               headline: 'Agriculture'
             },
             {
               component: 'card',
-              icon: 'poop',
               size: 'xl',
-              theme: 'clay',
-              headline: 'Composting'
-            },
-            //
-            {
-              component: 'card',
-              icon: 'witch',
-              size: 'xl',
-              theme: 'slate',
-              headline: 'Occultism'
-            },
-            //
-            {
-              component: 'card',
-              icon: 'tree-tap',
-              size: 'xl',
-              theme: 'olive',
-              headline: 'Tree Tapping'
-            },
-            //
-            {
-              component: 'card',
-              icon: 'needle',
-              size: 'xl',
-              theme: 'clay',
-              headline: 'Textiles'
-            },
-            {
-              component: 'card',
-              icon: 'candle',
-              size: 'xl',
-              theme: 'clay',
-              headline: 'Candle Making'
+              theme: 'beige',
+              url: 'https://wiki.inconvenient.gg/nightmares/exotic',
+              body: "I'm reading news that mass die-offs of wild fish have been occurring due to ocean acidification."
             },
             {
               component: 'card',
               icon: 'tree',
               size: 'xl',
               theme: 'olive',
+              url: 'https://wiki.inconvenient.gg/milestones/natural-magic',
               headline: 'Natural Magic'
+            },
+
+            {
+              component: 'card',
+              icon: 'needle',
+              size: 'xl',
+              theme: 'clay',
+              url: 'https://wiki.inconvenient.gg/milestones/textiles',
+              headline: 'Textiles'
+            },
+            {
+              component: 'card',
+              icon: 'pottery',
+              size: 'xl',
+              theme: 'beige',
+              url: 'https://wiki.inconvenient.gg/milestones/pottery',
+              headline: 'Pottery'
             },
             {
               component: 'card',
               icon: 'blood',
               size: 'xl',
               theme: 'rust',
+              url: 'https://wiki.inconvenient.gg/milestones/blood-magic',
               headline: 'Blood Magic'
-            },
-            {
-              component: 'card',
-              icon: 'paper',
-              size: 'xl',
-              theme: 'beige',
-              headline: 'Paper Making'
             },
             {
               component: 'card',
               icon: 'pig',
               size: 'xl',
-              theme: 'beige',
+              theme: 'clay',
+              url: 'https://wiki.inconvenient.gg/milestones/animal-husbandry',
               headline: 'Animal Husbandry'
             },
-            //
+
             {
               component: 'card',
               icon: 'palette',
               size: 'xl',
               theme: 'rust',
+              url: 'https://wiki.inconvenient.gg/milestones/dye-making',
               headline: 'Dye making'
             },
             {
               component: 'card',
               icon: 'electronics',
               size: 'xl',
-              theme: 'olive',
+              theme: 'beige',
+              url: 'https://wiki.inconvenient.gg/milestones/electronics',
               headline: 'Electronics'
-            },
-            {
-              component: 'card',
-              icon: 'flask',
-              size: 'xl',
-              theme: 'rust',
-              headline: 'Air Distillation'
             },
             {
               component: 'card',
               icon: 'gunpowder',
               size: 'xl',
               theme: 'slate',
+              url: 'https://wiki.inconvenient.gg/milestones/gunpowder',
               headline: 'Gunpowder'
             },
+
             {
               component: 'card',
-              icon: 'baking',
+              icon: 'cooking',
               size: 'xl',
-              theme: 'beige',
-              headline: 'Baking'
+              theme: 'rust',
+              url: 'https://wiki.inconvenient.gg/milestones/cooking',
+              headline: 'Cooking'
             },
             {
               component: 'card',
               icon: 'barrel',
               size: 'xl',
               theme: 'slate',
-              headline: 'Oil Refinement'
+              url: 'https://wiki.inconvenient.gg/milestones/petroleum',
+              headline: 'Petroleum'
+            },
+            {
+              component: 'card',
+              size: 'xl',
+              theme: 'olive',
+              url: 'https://wiki.inconvenient.gg/nightmares/wither',
+              body: "I'm watching the news of a Category 6 hurricane that has been sweeping through the country for weeks now. It's bringing with it massive floods that have forced millions to evacuate and lose their homes."
             }
-          ]
+          ],
+          btn: { url: 'https://wiki.inconvenient.gg/milestones', label: 'See Dozens More Milestones' }
         },
         explore: {
           layout: 'reel',

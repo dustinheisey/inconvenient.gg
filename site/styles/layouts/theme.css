@@ -83,8 +83,9 @@
 
 .theme-beige {
   background-color: #d3c4a3;
-  color: var(--color-on-background);
-  --color-headline-override: var(--color-on-background);
+  color: var(--color-on-background-light);
+  --color-headline-override: var(--color-on-background-light);
+  --color-p-override: var(--color-on-background-light);
 }
 
 .theme-rust {
