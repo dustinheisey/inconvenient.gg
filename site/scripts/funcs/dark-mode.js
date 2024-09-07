@@ -23,8 +23,10 @@ function reflectPreference() {
   const footerBackground = document.querySelector('#footer-background')
   console.log(footerBackground)
   if (theme.value === 'dark') {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#8f4b38')
     footerBackground.src = '/svg/footer-background-2.svg'
   } else {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#4f6628')
     footerBackground.src = '/svg/footer-background.svg'
   }
 }
