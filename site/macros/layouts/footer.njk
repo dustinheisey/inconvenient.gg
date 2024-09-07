@@ -7,7 +7,7 @@
                 <span class="sr-only">Home</span>
                 {% svg './public/svg/logo' %}
             </a>
-            <ul class="cluster gap-xs align-start">
+            <ul class="cluster gap-xs align-start justify-center">
                 {% for link in props.config.footer.links %}
                     <li>
                         <a href="{{ link.url }}" class="link link-s link-navigation {% if link.external === true %}external{% endif %}" {% if link.external === true %}target="_blank" {% endif %}>

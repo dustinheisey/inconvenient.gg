@@ -75,3 +75,21 @@
     margin-block-end: var(--space-xl);
   }
 }
+
+.logo-mobile {
+  display: block;
+}
+
+.logo-desktop {
+  display: none;
+}
+
+@media (--tablet-portrait-up) {
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
+  }
+}
