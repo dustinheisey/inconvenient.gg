@@ -1,0 +1,17 @@
+import { Canvas, Meta, Controls } from '@storybook/blocks'
+
+import * as Stories from './landing.story.js'
+
+<Meta of={Stories} />
+
+# Landing Page
+
+- hero [hero]
+- problem [infoLayouts]
+- guide [infoLayouts]
+- plan [feature/processLayouts]
+- call to action [actionLayouts]
+- success [testimonialLayouts]
+- freebie / newsletter[actionLayouts]
+
+<Canvas of={Stories.Default} sourceState="shown" withToolbar="true" />

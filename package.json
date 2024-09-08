@@ -24,7 +24,8 @@
     "lint:js": "npx eslint --fix",
     "lint:css": "npx stylelint \"**/*.css\" --fix",
     "lint": "npm run lint:js && npm run lint:css",
-    "format": "prettier \"**/*.{cjs,html,js,json,md,njk,css}\" --write"
+    "format": "prettier \"**/*.{cjs,html,js,json,md,njk,css}\" --write",
+    "sb": "npx storybook dev --config-dir './common/docs/.storybook'"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -38,10 +39,9 @@
     "@mdx-js/react": "^3.0.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "@rollup/plugin-terser": "^0.4.3",
-    "@storybook/addon-a11y": "^7.4.1",
-    "@storybook/addon-essentials": "^7.4.1",
-    "@storybook/blocks": "^7.4.1",
-    "@storybook/html-webpack5": "^7.4.1",
+    "@storybook/addon-a11y": "^8.2.9",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
     "a11y-sitechecker": "^6.0.1",
     "clsx": "^2.0.0",
     "cssnano": "^6.0.1",
@@ -51,7 +51,6 @@
     "eleventy-plugin-svg-sprite": "^2.4.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-storybook": "^0.8.0",
     "fs": "^0.0.1-security",
     "html-minifier": "^4.0.0",
     "lit": "^3.2.0",
@@ -70,8 +69,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "simple-nunjucks-loader": "^3.2.0",
-    "storybook": "^7.4.1",
-    "storybook-dark-mode": "^3.0.1",
+    "storybook": "^8.2.9",
+    "storybook-dark-mode": "^4.0.2",
     "stylelint-config-standard": "^34.0.0",
     "swizzle": "^1.1.0",
     "util": "^0.12.5"
@@ -80,6 +79,7 @@
     "@docusaurus/module-type-aliases": "3.5.2",
     "@docusaurus/types": "3.5.2",
     "@eslint/js": "^9.9.1",
+    "@storybook/web-components-vite": "^8.2.9",
     "eslint": "^9.9.1",
     "globals": "^15.9.0"
   },

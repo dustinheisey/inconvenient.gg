@@ -1,0 +1,19 @@
+import { Canvas, Meta, Controls } from '@storybook/blocks'
+
+import * as Stories from './about.story.js'
+
+<Meta of={Stories} />
+
+# About Page
+
+- dont make it about you
+- keep it short
+
+- header [header/heroLayouts]
+- introduction paragraph with personal relatable microstory to build connection. second paragraph linking it back to services and why its good for your customer [infoLayouts]
+- skills & expertise
+- portfolio samples [portfolioLayouts]
+- testimonials [testimonialLayouts]
+- action [actionLayouts]
+
+<Canvas of={Stories.Default} sourceState="shown" withToolbar="true" />
