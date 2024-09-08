@@ -62,3 +62,34 @@
 .border-block-start {
   border-block-start: 1px solid var(--color-outline-variant);
 }
+
+@media (--desktop-up) {
+  .sticky {
+    position: sticky;
+    top: var(--space-3xl);
+  }
+}
+
+@media (--phone-only) {
+  footer.bg-img {
+    margin-block-end: var(--space-xl);
+  }
+}
+
+.logo-mobile {
+  display: block;
+}
+
+.logo-desktop {
+  display: none;
+}
+
+@media (--tablet-portrait-up) {
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
+  }
+}

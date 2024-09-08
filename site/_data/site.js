@@ -1,7 +1,6 @@
 const config = {
   title: 'An Inconvenient Modpack',
   url: 'https://inconvenient.gg',
-  description: '',
   navigation: {
     logo: {
       src: './public/svg/logo',
@@ -14,7 +13,7 @@ const config = {
           label: 'Features',
           url: '/features'
         },
-        { label: 'Wiki', url: '/wiki' },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
         {
           label: 'Help Me Find Bugs',
           external: true,
@@ -24,32 +23,32 @@ const config = {
           label: 'Community',
           url: '/community',
           subLinks: [
-            { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true }
-            // { label: 'Youtube', url: '/', external: true },
-            // { label: 'Tik Tok', url: '/', external: true },
-            // { label: 'Twitch', url: '/', external: true },
-            // { label: 'Reddit', url: '/', external: true },
-            // { label: 'Mastodon', url: '/', external: true }
+            { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
+            { label: 'Youtube', url: 'TODO', external: true },
+            { label: 'Tik Tok', url: 'TODO', external: true },
+            // { label: 'Twitch', url: 'TODO', external: true },
+            // { label: 'Reddit', url: 'TODO', external: true },
+            { label: 'Mastodon', url: 'TODO', external: true }
           ]
         }
       ],
-      action: { label: 'Play', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', external: true },
+      action: { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', external: true },
       bottombar: {
         links: [
           { label: 'Home', url: '/', icon: 'home' },
-          { label: 'Features', url: '/features', icon: 'about' },
-          { label: 'Wiki', url: '/wiki', icon: 'books' },
+          { label: 'Features', url: '/features', icon: 'star' },
+          { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
           { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', icon: 'advocate' },
-          { label: 'Community', url: '/community', icon: 'contact' }
+          { label: 'Community', url: '/community', icon: 'chat' }
         ],
-        fab: { label: 'Play', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', icon: 'donate' }
+        fab: { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', icon: 'play' }
       }
     },
     footer: {
       variant: 'simple',
       links: [
         { label: 'Features', url: '/features' },
-        { label: 'Wiki', url: '/wiki', external: true },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
         { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', external: true },
         { label: 'Community', url: '/community' },
         { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', external: true }
@@ -60,27 +59,27 @@ const config = {
           label: 'Discord',
           icon: 'logo-discord',
           url: 'https://discord.gg/dJbfXV9JnF'
-        }
-        // {
-        //   label: 'Youtube',
-        //   icon: 'logo-youtube',
-        //   url: ''
-        // },
-        // {
-        //   label: 'TikTok',
-        //   icon: 'logo-tiktok',
-        //   url: ''
-        // },
+        },
+        {
+          label: 'Youtube',
+          icon: 'logo-youtube',
+          url: 'TODO'
+        },
+        {
+          label: 'TikTok',
+          icon: 'logo-tiktok',
+          url: 'TODO'
+        },
         // {
         //   label: 'Reddit',
         //   icon: 'logo-reddit',
-        //   url: ''
+        //   url: 'TODO'
         // },
-        // {
-        //   label: 'Mastodon',
-        //   icon: 'logo-mastodon',
-        //   url: ''
-        // }
+        {
+          label: 'Mastodon',
+          icon: 'logo-mastodon',
+          url: 'TODO'
+        }
       ],
       copywrite: '© 2024 An Inconvenient Modpack'
     }
@@ -89,8 +88,9 @@ const config = {
     {
       url: 'index',
       header: false,
-      title: '',
-      description: '',
+      title: 'An Inconvenient Modpack – Awaken, Rebuild, and Shape the Future',
+      description:
+        'Awaken in a world transformed. Rebuild civilization, explore new dimensions, and uncover the truth. Your choices shape the future. Download now and start your journey.',
       regions: {
         hero: {
           layout: 'bg-center',
@@ -106,7 +106,7 @@ const config = {
                   label: 'Features',
                   url: '/features'
                 },
-                { label: 'Wiki', url: '/wiki' },
+                { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
                 {
                   label: 'Help Me Find Bugs',
                   external: true,
@@ -116,163 +116,278 @@ const config = {
                   label: 'Community',
                   url: '/community',
                   subLinks: [
-                    { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true }
-                    // { label: 'Youtube', url: '/', external: true },
-                    // { label: 'Tik Tok', url: '/', external: true },
-                    // { label: 'Twitch', url: '/', external: true },
-                    // { label: 'Reddit', url: '/', external: true },
-                    // { label: 'Mastodon', url: '/', external: true }
+                    { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
+                    { label: 'Youtube', url: 'TODO', external: true },
+                    { label: 'Tik Tok', url: 'TODO', external: true },
+                    // { label: 'Twitch', url: 'TODO', external: true },
+                    // { label: 'Reddit', url: 'TODO', external: true },
+                    { label: 'Mastodon', url: 'TODO', external: true }
                   ]
                 }
               ],
               action: {
-                label: 'Play',
+                label: 'Play Now',
                 url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
                 external: true
               },
               bottombar: {
                 links: [
                   { label: 'Home', url: '/', icon: 'home' },
-                  { label: 'Features', url: '/features', icon: 'about' },
-                  { label: 'Wiki', url: '/wiki', icon: 'books' },
+                  { label: 'Features', url: '/features', icon: 'star' },
+                  { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
                   {
                     label: 'Bugs',
                     url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
                     icon: 'advocate'
                   },
-                  { label: 'Community', url: '/community', icon: 'contact' }
+                  { label: 'Community', url: '/community', icon: 'chat' }
                 ],
                 fab: {
-                  label: 'Play',
+                  label: 'Play Now',
                   url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
-                  icon: 'donate'
+                  icon: 'play'
                 }
               }
             }
           },
-          overline: 'Awaken to a World on the Brink',
-          headline: 'Will You Save It or Let It Fall?',
-          body: 'After a thousand years, the Earth has changed. Your decisions will shape its future—choose wisely',
+          overline: 'The Earth is Dying • But It’s Not Too Late',
+          headline: 'Awaken, Uncover, and Decide Humanity’s Fate',
+          body: 'You’ve been asleep for a thousand years. The world you once knew is gone. Can you rise above the ruins, face the consequences of humanity’s mistakes, and rebuild what was lost? Or will you let the Earth fall into chaos once more?',
           btns: [
             {
               url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
               external: true,
-              label: 'Start Your Journey'
+              label: 'Begin Your Journey'
             }
-            // { variant: 'secondary', url: '/', label: 'Watch the Full Trailer' }
+            // { variant: 'secondary', url: 'TODO', label: 'Watch the Full Trailer' }
           ],
           video: { src: 'bunker.mp4' }
         },
         wakeUp: {
-          layout: 'end-heavy',
+          layout: 'start-heavy',
           end: {
             component: 'text',
             size: 'region',
-            overline: 'The Journey Begins',
-            headline: 'Wake Up in a World Forgotten',
-            body: 'You emerge from a thousand-year slumber, with no memory of who you are or what happened. The world you once knew is gone—can you uncover your past and shape the future?'
+            overline: "You've Slept Far Too Long",
+            headline: 'Awaken in a World You No Longer Recognize',
+            body: 'You open your eyes in a cold, desolate bunker, and it feels like you’re still trapped in a dream—a nightmare. A thousand years have passed, and the world you knew has vanished. Can you survive long enough to uncover the truth?'
           },
           start: {
             component: 'img',
-            src: 'vision-1.jpg',
-            alt: 'wave'
+            src: 'bunker.png',
+            ar: 'square',
+            alt: 'Underground Bunker'
           }
         },
         rebuild: {
           layout: 'gallery',
-          overline: 'overline',
+          overline: 'Piece Together What’s Left',
           variant: 'masonry',
           text: 'start',
-          headline: 'Rebuild to Rediscover',
-          body: 'The remnants of a once-thriving civilization lie at your feet. As you rebuild, fragments of your memory start to return. Each step you take, each piece of technology you rediscover, brings you closer to the truth.',
+          headline: 'Rebuild to Remember',
+          body: 'As you rebuild the shattered world, fragments of your memory return, and you begin to wake up, piece by piece. Each step forward reveals a truth you’ve long forgotten—about yourself, the past, and the role you played in humanity’s downfall. Will rebuilding the world help you wake from this nightmare?',
           items: [
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '1'
+              component: 'card',
+              icon: 'leather',
+              size: 'xl',
+              theme: 'clay',
+              url: 'https://wiki.inconvenient.gg/milestones/leather-making',
+              headline: 'Leather making'
             },
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '2'
+              component: 'card',
+              size: 'xl',
+              theme: 'slate',
+              url: 'https://wiki.inconvenient.gg/nightmares/cold',
+              body: 'I am sitting in an office chair, looking at my desktop. It has multiple files open, showing schematic plans for an underground bunker.'
             },
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '3'
+              component: 'card',
+              icon: 'compass',
+              size: 'xl',
+              theme: 'beige',
+              url: 'https://wiki.inconvenient.gg/milestones/navigation',
+              headline: 'Navigation'
             },
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '4'
+              component: 'card',
+              size: 'xl',
+              theme: 'olive',
+              url: 'https://wiki.inconvenient.gg/nightmares/undead',
+              body: 'I read multiple reports of a strange illness affecting people across the world, causing their skin to rot and their minds to become increasingly confused and violent.'
             },
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '5.1'
+              component: 'card',
+              icon: 'ingot',
+              size: 'xl',
+              theme: 'slate',
+              url: 'https://wiki.inconvenient.gg/milestones/metallurgy',
+              headline: 'Metallurgy'
             },
             {
-              component: 'img',
-              src: 'vision-1.jpg',
-              alt: '5.2'
+              component: 'card',
+              icon: 'sprout',
+              size: 'xl',
+              theme: 'olive',
+              url: 'https://wiki.inconvenient.gg/milestones/agriculture',
+              headline: 'Agriculture'
+            },
+            {
+              component: 'card',
+              size: 'xl',
+              theme: 'beige',
+              url: 'https://wiki.inconvenient.gg/nightmares/exotic',
+              body: "I'm reading news that mass die-offs of wild fish have been occurring due to ocean acidification."
+            },
+            {
+              component: 'card',
+              icon: 'tree',
+              size: 'xl',
+              theme: 'olive',
+              url: 'https://wiki.inconvenient.gg/milestones/natural-magic',
+              headline: 'Natural Magic'
+            },
+
+            {
+              component: 'card',
+              icon: 'needle',
+              size: 'xl',
+              theme: 'clay',
+              url: 'https://wiki.inconvenient.gg/milestones/textiles',
+              headline: 'Textiles'
+            },
+            {
+              component: 'card',
+              icon: 'pottery',
+              size: 'xl',
+              theme: 'beige',
+              url: 'https://wiki.inconvenient.gg/milestones/pottery',
+              headline: 'Pottery'
+            },
+            {
+              component: 'card',
+              icon: 'blood',
+              size: 'xl',
+              theme: 'rust',
+              url: 'https://wiki.inconvenient.gg/milestones/blood-magic',
+              headline: 'Blood Magic'
+            },
+            {
+              component: 'card',
+              icon: 'pig',
+              size: 'xl',
+              theme: 'clay',
+              url: 'https://wiki.inconvenient.gg/milestones/animal-husbandry',
+              headline: 'Animal Husbandry'
+            },
+
+            {
+              component: 'card',
+              icon: 'palette',
+              size: 'xl',
+              theme: 'rust',
+              url: 'https://wiki.inconvenient.gg/milestones/dye-making',
+              headline: 'Dye making'
+            },
+            {
+              component: 'card',
+              icon: 'electronics',
+              size: 'xl',
+              theme: 'beige',
+              url: 'https://wiki.inconvenient.gg/milestones/electronics',
+              headline: 'Electronics'
+            },
+            {
+              component: 'card',
+              icon: 'gunpowder',
+              size: 'xl',
+              theme: 'slate',
+              url: 'https://wiki.inconvenient.gg/milestones/gunpowder',
+              headline: 'Gunpowder'
+            },
+
+            {
+              component: 'card',
+              icon: 'cooking',
+              size: 'xl',
+              theme: 'rust',
+              url: 'https://wiki.inconvenient.gg/milestones/cooking',
+              headline: 'Cooking'
+            },
+            {
+              component: 'card',
+              icon: 'barrel',
+              size: 'xl',
+              theme: 'slate',
+              url: 'https://wiki.inconvenient.gg/milestones/petroleum',
+              headline: 'Petroleum'
+            },
+            {
+              component: 'card',
+              size: 'xl',
+              theme: 'olive',
+              url: 'https://wiki.inconvenient.gg/nightmares/wither',
+              body: "I'm watching the news of a Category 6 hurricane that has been sweeping through the country for weeks now. It's bringing with it massive floods that have forced millions to evacuate and lose their homes."
             }
-          ]
+          ],
+          btn: { url: 'https://wiki.inconvenient.gg/milestones', label: 'See Dozens More Milestones' }
         },
         explore: {
           layout: 'reel',
           size: 'region',
-          overline: 'Discover Your Path',
-          headline: 'Explore a World Transformed',
-          body: 'Travel through time and space to uncover the truth. Visit new dimensions, each telling the story of a world ravaged by climate change. Piece together the history of what happened while you slept.',
+          overline: "The Past Won't Stay Buried",
+          headline: 'Explore New Worlds to Discover the Truth',
+          body: "The ruins of humanity’s downfall are scattered across distant worlds. Only by traveling through these dimensions can you uncover the hidden stories of what happened while you slept. Can you piece together the truth before you're lost in the chaos of the past?",
           items: [
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'story-seeker.webp', alt: 'Story Seeker' },
+              img: { ar: 'square', src: 'everbright.png', alt: 'Everbright' },
               headline: 'Everbright',
-              body: 'Occaecat cupidatat amet Lorem dolore qui cillum ipsum dolor nulla. Sint nisi elit amet incididunt in dolor.'
+              body: 'Step into the snowy expanses of Everbright, where a mysterious, long-lost civilization once thrived. The frosty beauty of this land hides the darker truths of a world that ignored its warnings. Will you explore its icy secrets?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'adventure/1.webp', alt: 'Adventurer' },
-              headline: 'Undergarden'
+              img: { src: 'undergarden.png', alt: 'Undergarden' },
+              headline: 'Undergarden',
+              body: 'In the eerie caverns of Undergarden, something far worse than darkness awaits. Nature has reclaimed this place, but it left behind a haunting legacy. Can you navigate its forgotten depths?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'engineer.webp', alt: 'Engineer' },
-              headline: 'Everdawn'
+              img: { src: 'everdawn.png', alt: 'Everdawn' },
+              headline: 'Everdawn',
+              body: 'Everdawn is alive with heat and chaos. Its warm lands are teeming with life, but something more sinister lurks beneath. The remnants of past disasters remain. What will you uncover here?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'survivalist.webp', alt: 'Survivalist' },
-              headline: 'The Twilight Forest'
+              img: { src: 'twilight.png', alt: 'The Twilight Forest' },
+              headline: 'The Twilight Forest',
+              body: 'In the abandoned streets of The Twilight Forest, echoes of a great tragedy persist. This once-flourishing land now lies in silence. Can you face the shadows of its forgotten past?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'architect.webp', alt: 'Architect' },
-              headline: 'The Nether'
+              img: { src: 'nether.png', alt: 'The Nether' },
+              headline: 'The Nether',
+              body: 'Once a thriving industrial hub, The Nether now burns in the aftermath of unchecked greed. With fire and brimstone all around, this place tells a cautionary tale. What role will you play?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'architect.webp', alt: 'Architect' },
-              headline: 'The Bumblezone'
+              img: { src: 'bumblezone.png', alt: 'The Bumblezone' },
+              headline: 'The Bumblezone',
+              body: 'Explore the buzzing world inside The Bumblezone, a realm of endless honeycombs and hidden danger. But don’t be fooled by its golden glow—this world has seen better days. Will you find hope here?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'architect.webp', alt: 'Architect' },
-              headline: 'Blueleaf'
-            },
-            {
-              component: 'card',
-              variant: 'flip',
-              img: { src: 'architect.webp', alt: 'Architect' },
-              headline: 'More to Come'
+              img: { src: 'blueleaf.png', alt: 'Blueleaf' },
+              headline: 'Blueleaf',
+              body: 'A paradise of endless resources and wealth, Blueleaf glimmers with opportunity. But behind its beauty lies a world of exploitation and ambition. Will you rise to the top or take a different path?'
             }
           ]
         },
@@ -281,9 +396,9 @@ const config = {
           start: {
             component: 'text',
             size: 'region',
-            overline: 'overline',
-            headline: 'Decide the Fate of the World',
-            body: 'With knowledge comes power. Will you use it to create a harmonious solarpunk utopia, or will you repeat history and usher in a cyberpunk dystopia? The choice is yours.',
+            overline: 'The Future is in Your Hands',
+            headline: 'Will You Dream of a New World or Stay Trapped in The Nightmare?',
+            body: 'We’ve been living in a dream—a nightmare that we mistake for reality. You now have the power to wake up, to reject the broken path we’re on, dream a new dream, and create a new world. Or will you stay trapped, letting the Earth spiral further into chaos? The future is yours to decide.',
             btn: {
               label: 'Play Now',
               external: true,
@@ -293,31 +408,32 @@ const config = {
         },
         action: {
           layout: 'bg-pattern',
-          theme: 'primary',
+          theme: 'action',
           pattern: 'leaves',
           overline: 'Write Your Own Story',
           headline: 'Shape the World with Your Choices',
-          body: "Every decision you make in 'An Inconvenient Modpack' leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.",
+          body: 'Every decision you make in An Inconvenient Modpack leaves a mark on the world. The fate of the Earth is in your hands. Download the modpack and start crafting a story that’s uniquely yours.',
           btns: [
             {
               label: 'Download Now',
               external: true,
               url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
             },
-            { variant: 'secondary', label: 'Visit the Wiki', url: '/wiki' }
+            { variant: 'secondary', label: 'Visit the Wiki', url: 'https://wiki.inconvenient.gg' }
           ]
         }
       }
     },
     {
       url: 'features',
-      title: '',
-      description: '',
+      title: 'Explore Features of An Inconvenient Modpack – Survival, Storytelling, and Innovation',
+      description:
+        'Discover the core features of An Inconvenient Modpack. Rebuild civilization, explore unique dimensions, and master survival with 1333+ recipes, 10 chapters, and more.',
       regions: {
         overview: {
           layout: 'start-heavy',
           align: 'stretch',
-          start: { component: 'img', src: 'feature-split.webp', alt: 'Impact', ar: 'square' },
+          start: { component: 'img', src: 'feature-split.webp', alt: '2 Visions of The Future', ar: 'square' },
           end: {
             component: 'text',
             size: 'hero',
@@ -332,6 +448,7 @@ const config = {
           },
           stats: {
             component: 'stats',
+            center: true,
             variant: 'inline',
             class: 'text-center',
             border: true,
@@ -370,7 +487,7 @@ const config = {
           size: 'region',
           overline: 'Discover Your Path',
           headline: 'Something for Every Player',
-          body: "Whether you're drawn to uncover ancient stories, navigate new worlds, master intricate systems, survive harsh realities, or design the future, 'An Inconvenient Modpack' has been crafted to connect with your unique style. Your choices, your impact.",
+          body: "Whether you're drawn to uncover ancient stories, navigate new worlds, master intricate systems, survive harsh realities, or design the future, An Inconvenient Modpack has been crafted to connect with your unique style. Your choices, your impact.",
           items: [
             {
               component: 'card',
@@ -383,18 +500,18 @@ const config = {
                 'Reflect on your journey through journal entries and personal discoveries.',
                 "Find ancient stories detailing climate change from the victims' perspectives.",
                 'Experience immersive dreams that reveal both harsh truths and hopeful possibilities.',
-                'Choose between joining a Solarpunk community or climbing the ranks of Corpo Corporation',
-                'Face climate catastrophes head-on or restore the environment with public works projects'
+                'Choose between joining a Solarpunk community or climbing the ranks of Corpo Corporation.',
+                'Face climate catastrophes head-on or restore the environment with public works projects.'
               ]
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'adventure/1.webp', alt: 'Adventurer' },
+              img: { src: 'adventure.webp', alt: 'Adventurer' },
               headline: 'Adventurer',
               icon: 'compass',
               list: [
-                'Wake up in a bunker and explore the remnants of a world before climate change',
+                'Wake up in a bunker and explore the remnants of a world before climate change.',
                 'Discover overhauled world generation with layered stone and massive ore clusters.',
                 'Explore 10 diverse dimensions filled with unique challenges.',
                 'Battle formidable bosses across various worlds.',
@@ -445,48 +562,136 @@ const config = {
                 'Terraform the environment, building in landscapes either devastated by climate change or restored to natural beauty through your designs.',
                 'Build your own railways and public transportation systems.',
                 'Create intricate production lines and enormous factories.',
-                'Build your own Solarpunk society the way you want to'
+                'Build your own Solarpunk society the way you want to.'
               ]
             }
           ]
         },
         history: {
-          layout: 'sparkline',
-          variant: 'block',
-          overline: 'The Journey So Far',
-          headline: 'The Never Ending Story',
-          body: "Building 'An Inconvenient Modpack' has been a personal journey of discovery, challenges, and excitement. This project isn’t just about gameplay; it’s about finding ways to connect global issues—like climate change and sustainability—with the stories we create in the game. Here’s a look at how far we’ve come.",
-          items: [
-            {
-              component: 'blurb',
-              headline: 'The Beginning',
-              body: 'Our journey began with a simple love for bees and a deep concern for their declining populations.',
-              date: 'September 2023',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'The Turning Point',
-              body: 'In 2015, we launched our first conservation project, planting wildflowers in a local park. This project was a turning point for us, as it showed us the power of community action. Since then, we have been working tirelessly to conserve and restore bee habitats.',
-              date: 'July 2023',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'The Next Step',
-              body: 'In 2018, we launched our first educational program, a series of workshops for children. These workshops were a huge success, and we have since expanded our educational programs to include webinars, community outreach, and more.',
-              date: 'November 2023',
-              class: 'cluster justify-between align-start'
-            },
-            {
-              component: 'blurb',
-              headline: 'The Future',
-              body: 'We are excited to announce that we are launching our first advocacy campaign in 2020. This campaign will focus on promoting sustainable farming practices and lobbying against harmful pesticides. We are also working on a new conservation project, creating urban bee sanctuaries.',
-              date: 'May 2023',
-              class: 'cluster justify-between align-start'
-            }
-          ]
-          // btn: { label: 'See Roadmap', url: '/roadmap' }
+          layout: 'end-heavy',
+          align: 'start',
+          mobile: 'start',
+          start: {
+            component: 'text',
+            size: 'region',
+            justify: 'start',
+            sticky: true,
+            overline: 'The Journey So Far',
+            headline: 'The Never Ending Story',
+            body: "Building An Inconvenient Modpack has been a long and evolving process—spanning several years of challenges, creativity, and inspiration. What started as a simple idea turned into a complex, story-driven experience that tackles real-world issues through the lens of gameplay. While the timeline below gives you a glimpse into some of the key features and milestones, it's important to note that the dates are rough estimates. After working on this for 3-4 years, exact timelines have blurred, and the scope of the project continues to grow."
+            // btn: { label: 'See Roadmap', url: '/TODO' }
+          },
+          end: {
+            component: 'sparkline',
+            variant: 'block',
+            items: [
+              {
+                component: 'blurb',
+                variant: 'stack',
+                headline: 'The Beginning',
+                body: "I was playing sevTech with my boyfriend and thought, 'This is great but I can do better'",
+                date: 'August 2021'
+              },
+              {
+                component: 'blurb',
+                variant: 'stack',
+                headline: 'Chapters 1 - 5',
+                body: 'A solid foundation was laid with a deep array of recipes, advancements, and mechanics that players would explore in the early chapters of their journey.',
+                date: 'September 2021'
+              },
+              {
+                component: 'blurb',
+                headline: 'The Stories Begin',
+                body: 'The narrative started to unfold through Patchouli entries, bringing a rich backstory to life and connecting it with the gameplay.',
+                date: 'November 2021',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Milestones',
+                body: 'Major milestones were marked by Ender Eye rewards and significant progression, offering players a structured way to feel the weight of their accomplishments.',
+                date: 'January 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'The Bunker & The Lost City',
+                body: 'Players wake up in an underground bunker while the surface, dominated by decaying cities—The Lost Cities—awaits exploration.',
+                date: 'February 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Gateways',
+                body: 'Gateways from other dimensions began to open, restoring life to the overworld. At first, the world is empty except for zombies, but with each completed gateway, the world starts to rejuvenate.',
+                date: 'April 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Nightmares & Lost Pages',
+                body: 'Each milestone brings fragmented memories in the form of nightmares, while scraps of paper across dimensions tell stories of a climate-ravaged world from a thousand years ago.',
+                date: 'May 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: '1.18.2',
+                body: 'The modpack was updated to version 1.18.2, incorporating new challenges and features.',
+                date: 'Late 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Relics',
+                body: 'Ancient relics became rewards for completing dimension gateways, granting players powerful artifacts that shaped their future progression.',
+                date: 'Around November 2022',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Release Alpha Version to Curseforge',
+                body: "An Inconvenient Modpack reached its first public release on Curseforge, allowing players to dive into the modpack's world, complete with server files.",
+                date: 'February 2023',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Feature Complete up to Chapter 6',
+                body: 'With Chapters 1 through 5.2 playtested and refined, the focus shifted to wrapping up the final chapters, polishing the experience for all players.',
+                date: 'Ongoing - Need Help',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'The Dream',
+                body: 'The modpack leads to the ultimate truth—players are faced with hard choices that shape their path.',
+                date: 'Coming in 2024',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Restore the World & Build a Solarpunk Community',
+                body: 'Will you wake up and rebuild the world with sustainable technology and hope for the future?',
+                date: 'Coming in 2024',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Adapt to Climate Catastrophe & Rise to The Top of Corpo Corporation',
+                body: 'Or will you stay asleep, climbing the corporate ladder in a dystopian world?',
+                date: 'Coming in 2024',
+                variant: 'stack'
+              },
+              {
+                component: 'blurb',
+                headline: 'Ascension',
+                body: 'Explore the cosmos, terraform new worlds, and achieve technological dominance—leaving Earth behind.',
+                date: 'Coming in 2024',
+                variant: 'stack'
+              }
+            ]
+          }
         },
         faq: {
           layout: 'center',
@@ -535,7 +740,7 @@ const config = {
         },
         action: {
           layout: 'bg-pattern',
-          theme: 'primary',
+          theme: 'action',
           pattern: 'leaves',
           overline: 'Write Your Own Story',
           headline: 'Download and Shape the Future',
@@ -546,18 +751,20 @@ const config = {
               external: true,
               url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
             },
-            { variant: 'secondary', label: 'Visit the Wiki', url: '/wiki' }
+            { variant: 'secondary', label: 'Visit the Wiki', url: 'https://wiki.inconvenient.gg' }
           ]
         }
       }
     },
     {
       url: 'community',
-      title: '',
-      description: '',
+      title: 'Join the Community of An Inconvenient Modpack – Collaborate, Rebuild, and Inspire',
+      description:
+        'Become part of a Solarpunk-inspired community. Collaborate, playtest, and help shape the future of An Inconvenient Modpack. Join the movement and start making an impact.',
       regions: {
         intro: {
           layout: 'start-heavy',
+          mobile: 'end',
           align: 'stretch',
           end: { component: 'img', src: 'community.webp', alt: 'Community' },
           start: {
@@ -573,7 +780,7 @@ const config = {
                 external: true,
                 label: 'Get on Curseforge'
               },
-              { url: 'https://modrinth.com/', variant: 'secondary', label: 'Get on Modrinth', external: true }
+              { url: 'https://modrinth.com/TODO', variant: 'secondary', label: 'Get on Modrinth', external: true }
             ]
           }
         },
@@ -586,33 +793,41 @@ const config = {
           items: [
             {
               component: 'card',
+              icon: 'logo-mastodon',
+              size: 'xl',
+              url: 'TODO',
+              theme: 'mastodon',
+              body: 'Stay updated with the latest modpack news and community discussions.'
+            },
+            {
+              component: 'card',
               icon: 'logo-discord',
               size: 'xl',
               url: 'https://discord.gg/dJbfXV9JnF',
               theme: 'discord',
-              body: 'Join the community discussions and get live help'
+              body: 'Join the community discussions and get live help.'
+            },
+            {
+              component: 'card',
+              icon: 'logo-youtube',
+              size: 'xl',
+              url: 'TODO',
+              theme: 'youtube',
+              body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
+            },
+            {
+              component: 'card',
+              icon: 'logo-tiktok',
+              size: 'xl',
+              url: 'TODO',
+              theme: 'tiktok',
+              body: 'Discover quick tips, and behind-the-scenes content.'
             }
-            // {
-            //   component: 'card',
-            //   icon: 'logo-youtube',
-            //   size: 'xl',
-            //   url: '/',
-            //   theme: 'youtube',
-            //   body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
-            // },
-            // {
-            //   component: 'card',
-            //   icon: 'logo-tiktok',
-            //   size: 'xl',
-            //   url: '/',
-            //   theme: 'tiktok',
-            //   body: 'Discover quick tips, behind-the-scenes content, and player moments.'
-            // },
             // {
             //   component: 'card',
             //   icon: 'logo-twitch',
             //   size: 'xl',
-            //   url: '/',
+            //   url: 'TODO',
             //   theme: 'twitch',
             //   body: 'Join live streams of me fixing bugs and playtesting the modpack.'
             // },
@@ -620,18 +835,10 @@ const config = {
             //   component: 'card',
             //   icon: 'logo-reddit',
             //   size: 'xl',
-            //   url: '/',
+            //   url: 'TODO',
             //   theme: 'reddit',
             //   body: 'Share your experiences, discuss strategies, and connect with other players.'
             // },
-            // {
-            //   component: 'card',
-            //   icon: 'logo-mastodon',
-            //   size: 'xl',
-            //   url: '/',
-            //   theme: 'mastodon',
-            //   body: 'Stay updated with the latest modpack news and community discussions.'
-            // }
           ]
         },
         // TODO: add showcase
@@ -664,7 +871,7 @@ const config = {
               {
                 component: 'details',
                 headline: 'Share Your Experiences',
-                body: 'Your journey through the modpack is unique, and we want to see it! Share your favorite moments, take screenshots, or record gameplay clips. Spread the word on social media or submit your content directly to help inspire others and highlight the impact of your story.',
+                body: 'Your journey through the modpack is unique, and I want to see it! Share your favorite moments, take screenshots, or record gameplay clips. Spread the word on social media or submit your content directly to help inspire others and highlight the impact of your story.',
                 btn: {
                   url: 'https://discord.gg/dJbfXV9JnF',
                   variant: 'secondary',
@@ -699,7 +906,7 @@ const config = {
         },
         action: {
           layout: 'bg-pattern',
-          theme: 'primary',
+          theme: 'action',
           pattern: 'leaves',
           overline: 'Write Your Own Story',
           headline: 'Download and Shape the Future',
@@ -710,7 +917,7 @@ const config = {
               external: true,
               url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient'
             },
-            { variant: 'secondary', label: 'Visit the Wiki', url: '/wiki' }
+            { variant: 'secondary', label: 'Visit the Wiki', url: 'https://wiki.inconvenient.gg' }
           ]
         }
       }

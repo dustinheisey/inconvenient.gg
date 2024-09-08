@@ -103,6 +103,7 @@
 :root {
   --color-primary: var(--color-primary-light);
   --color-on-primary: var(--color-on-primary-light);
+  --color-primary-split: var(--color-primary-light);
   --color-primary-container: var(--color-primary-container-light);
   --color-on-primary-container: var(--color-on-primary-container-light);
   --color-secondary: var(--color-secondary-light);
@@ -137,6 +138,7 @@ html.mode-dark,
 html[data-theme='dark'] {
   --color-primary: var(--color-primary-dark);
   --color-on-primary: var(--color-on-primary-dark);
+  --color-primary-split: var(--color-dark-primary);
   --color-primary-container: var(--color-primary-container-dark);
   --color-on-primary-container: var(--color-on-primary-container-dark);
   --color-secondary: var(--color-secondary-dark);
@@ -171,6 +173,7 @@ html[data-theme='dark'] {
   :root {
     --color-primary: var(--color-primary-dark);
     --color-on-primary: var(--color-on-primary-dark);
+    --color-primary-split: var(--color-dark-primary);
     --color-primary-container: var(--color-primary-container-dark);
     --color-on-primary-container: var(--color-on-primary-container-dark);
     --color-secondary: var(--color-secondary-dark);
@@ -205,6 +208,7 @@ html[data-theme='dark'] {
   html[data-theme='light'] {
     --color-primary: var(--color-primary-light);
     --color-on-primary: var(--color-on-primary-light);
+    --color-primary-split: var(--color-primary-light);
     --color-primary-container: var(--color-primary-container-light);
     --color-on-primary-container: var(--color-on-primary-container-light);
     --color-secondary: var(--color-secondary-light);

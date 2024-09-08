@@ -3,7 +3,8 @@
     <div class="{{props.class}} stack region gap-xs align-center no-inset">
         <a href="/">
             <span class="sr-only">Home</span>
-            {% svg './public/svg/logo' %}
+            {% svg './public/svg/logo', 'logo-desktop' %}
+            {% svg './public/svg/mobile-logo', 'logo-mobile' %}
         </a>
         <div class="cluster">
             <ul class="topbar cluster gap-m">
@@ -64,7 +65,7 @@
             </div>
             <div class="bottombar">
                 <ul>
-                    {% for item in props.config.bottombar.links %}
+                    {% for item in props.config.header.bottombar.links %}
                     <li>
                         <a href="{{item.url}}" class="navigation">
                             {% icon item.icon %}
@@ -73,9 +74,9 @@
                     </li>
                     {% endfor %}
                     <li class="fab">
-                        <a href="{{props.config.bottombar.fab.url}}">
-                            <span class="sr-only">{{props.config.bottombar.fab.label}}</span>
-                            {# {% icon props.config.bottombar.fab.icon %} #}
+                        <a href="{{props.config.header.bottombar.fab.url}}">
+                            <span class="sr-only">{{props.config.header.bottombar.fab.label}}</span>
+                            {% icon props.config.header.bottombar.fab.icon %}
                         </a>
                     </li>
                 </ul>
@@ -92,7 +93,8 @@
     <div class="{{props.class}} cluster region gap-xs {% if props.config.header.variant === 'start' %}justify-start{% elif props.config.header.variant === 'center' %}justify-center{% elif props.config.header.variant === 'end' %}justify-end{% elif props.config.header.variant === 'spaced' %}justify-between{% elif props.config.header.variant === 'stack' %}{% endif %} no-inset">
         <a href="/">
             <span class="sr-only">Home</span>
-            {% svg './public/svg/logo' %}
+            {% svg './public/svg/logo', 'logo-desktop' %}
+            {% svg './public/svg/mobile-logo', 'logo-mobile' %}
         </a>
         <ul class="topbar cluster gap-m">
             {% for link in props.config.header.links %} {% if link.subLinks %}
@@ -145,7 +147,7 @@
         </div>
         <div class="bottombar">
             <ul>
-                {% for item in props.config.bottombar.links %}
+                {% for item in props.config.header.bottombar.links %}
                 <li>
                     <a href="{{item.url}}" class="navigation">
                         {% icon item.icon %}
@@ -154,9 +156,9 @@
                 </li>
                 {% endfor %}
                 <li class="fab">
-                    <a href="{{props.config.bottombar.fab.url}}">
-                        <span class="sr-only">{{props.config.bottombar.fab.label}}</span>
-                        {# {% icon props.config.bottombar.fab.icon %} #}
+                    <a href="{{props.config.header.bottombar.fab.url}}">
+                        <span class="sr-only">{{props.config.header.bottombar.fab.label}}</span>
+                        {# {% icon props.config.header.bottombar.fab.icon %} #}
                     </a>
                 </li>
             </ul>

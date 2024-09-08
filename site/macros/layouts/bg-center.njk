@@ -1,52 +1,55 @@
-<div class="bg-img filter theme-primary">
+<div class="bg-img">
+    <div class="overlay"></div>
     {% if props.img %}
         {% set src = './public/img/' + props.img.src%}
         {% img src, props.img.alt %}
     {% endif %}
     {% if props.video %}
-        <video src="./video/{{props.video.src}}" autoplay muted></video>
+        <video src="./video/{{props.video.src}}" autoplay muted loop></video>
     {% endif %}
     <div class="cover {{props.classes}} cover-nav">
-    {% if props.navigation %}
+        {% if props.navigation %}
             <header class="navbar">
                 <nav class="inset-0">
                     <div class="cluster justify-between region inset-0 gap-m">
-                        <a href="/">
+                        <a href="/" class="inconvenient-logo-video">
                             <span class="sr-only">Home</span>
-                            {% svg './public/svg/logo' %}
+                            {% svg './public/svg/logo', 'logo-desktop' %}
+                            {% svg './public/svg/mobile-logo', 'logo-mobile' %}
                         </a>
                         <div class="cluster">
                             <ul class="topbar cluster gap-m">
-                                {% for link in props.navigation.header.links %} {% if link.subLinks %}
-                                <li>
-                                    <drop-down>
-                                        <a href="{{ link.url }}" class="link link-navigation" {% if isActive %}aria-current="page" {% endif %}>
-                                            {{ link.label }}
-                                        </a>
-                                        <ul>
-                                            {% for subLink in link.subLinks %}
-                                            <li>
-                                                <a href="{{ subLink.url }}" class="link link-navigation" {% if isActive %}aria-current="page" {% endif %}>
-                                                    {{ subLink.label }}
-                                                </a>
-                                            </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </drop-down>
-                                </li>
+                                {% for link in props.navigation.header.links %} 
+                                {% if link.subLinks %}
+                                    <li>
+                                        <drop-down>
+                                            <a href="{{ link.url }}" class="theme-video link link-navigation" {% if isActive %}aria-current="page" {% endif %}>
+                                                {{ link.label }}
+                                            </a>
+                                            <ul class="theme-surface">
+                                                {% for subLink in link.subLinks %}
+                                                <a href="{{ subLink.url }}" class="link link-navigation {% if subLink.external === true %}external{% endif %}" {% if isActive %}aria-current="page" {% endif %} {% if subLink.external === true %}target="_blank" {% endif %}>
+                                                {{ subLink.label }}
+                                                {% if subLink.external === true %}{% icon 'external-link' %}{% endif %}
+                                            </a>
+                                                {% endfor %}
+                                            </ul>
+                                        </drop-down>
+                                    </li>
                                 {% else %}
                                 <li>
-                                    <a href="{{ link.url }}" class="link link-navigation">
-                                        {{ link.label }}
-                                    </a>
+                                    <a href="{{ link.url }}" class="theme-video link link-navigation {% if props.navigation.header.action.external === true %}external{% endif %}" {% if link.external === true %}target="_blank"{% endif %}>
+                                {{ link.label }}
+                                {% if link.external === true %}{% icon 'external-link' %}{% endif %}
+                            </a>
                                 </li>
                                 {% endif %} {% endfor %}
                             </ul>
                             <div class="cluster gap-xs">
                                 <button type="button" class="dark-mode-toggle" id="theme-toggle" title="Toggles light & dark" aria-live="polite">
-                                    <svg focusable="false" class="sun-and-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">
-                                        <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="var(--color-primary)" />
-                                        <g class="sun-beams" stroke="var(--color-primary)">
+                                    <svg focusable="false" class="sun-and-moon theme-video" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">
+                                        <circle class="sun theme-video" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="var(--color-primary)" />
+                                        <g class="sun-beams theme-video" stroke="var(--color-primary)">
                                             <line x1="12" y1="1" x2="12" y2="3" />
                                             <line x1="12" y1="21" x2="12" y2="23" />
                                             <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
@@ -56,19 +59,22 @@
                                             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
                                             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
                                         </g>
-                                        <mask class="moon" id="moon-mask">
+                                        <mask class="moon theme-video" id="moon-mask">
                                             <rect x="0" y="0" height="100%" width="100%" fill="white" />
                                             <circle cx="24" cy="10" r="6" fill="black" />
                                         </mask>
                                     </svg>
                                     <tool-tip tip-position="block-end">Toggle <span class="badge badge-primary">\</span></tool-tip>
                                 </button>
-                                <a href="{{props.navigation.header.action.url}}" class="btn">{{props.navigation.header.action.label}}</a>
+                                <a href="{{props.navigation.header.action.url}}" class="btn {% if props.navigation.header.action.external === true %}external{% endif %}" {% if props.navigation.header.action.external === true %}target="_blank"{% endif %}>
+                                    {{props.navigation.header.action.label}}
+                                    {% if props.navigation.header.action.external === true %}{% icon 'external-link' %}{% endif %}
+                                </a>
                             </div>
                         </div>
                         <div class="bottombar">
                             <ul>
-                                {% for item in props.navigation.bottombar.links %}
+                                {% for item in props.navigation.header.bottombar.links %}
                                 <li>
                                     <a href="{{item.url}}" class="navigation">
                                         {% icon item.icon %}
@@ -77,9 +83,9 @@
                                 </li>
                                 {% endfor %}
                             </ul>
-                            <a href="{{props.navigation.bottombar.fab.url}}" class="fab">
-                                <span class="sr-only">{{props.navigation.bottombar.fab.label}}</span>
-                                {# {% icon props.navigation.bottombar.fab.icon %} #}
+                            <a href="{{props.navigation.header.bottombar.fab.url}}" class="fab">
+                                <span class="sr-only">{{props.navigation.header.bottombar.fab.label}}</span>
+                                {% icon props.navigation.header.bottombar.fab.icon %}
                             </a>
                         </div>
                     </div>
@@ -89,21 +95,32 @@
                 </nav>
             </header>
         {% endif %}
-        <div class="principle inset region prose stack align-center text-center gap-xs">
+        <div class="principle  inset region prose stack wrap-balance align-center text-center gap-xs">
             {% if props.badge %}
             <a href="/" class="badge badge-primary">{{props.badge}}</a>
             {% endif %}
-            <h1>{{props.headline}}</h1>
-            <p>
+            {% if props.overline %}
+                <p class="overline theme-video">{{props.overline}}</p>
+            {% endif %}
+            <h1 class="theme-video">{{props.headline}}</h1>
+            <p class="theme-video">
                 {{props.body}}
             </p>
             {% if props.btn %}
-            <a href="{{props.btn.href}}" class="btn {% if props.btn.variant %}{{props.btn.href}}{% endif %}">{{props.btn.label}}</a>
+                <a href="{{props.btn.url}}" class="btn {% if props.btn.external === true %}external{% endif %}" {% if props.btn.external === true %}target="_blank"{% endif %}>
+                    {{props.btn.label}}
+                    {% if props.btn.external === true %}{% icon 'external-link' %}{% endif %}
+                </a>
             {% endif %}
             {% if props.btns %}
                 <div class="cluster gap-2xs">
                     {% for btn in props.btns %}
-                        <a href="{{btn.url}}" class="btn {{btn.variant}}" {% if btn.target === 'blank' %}target="_blank"{% endif %}>{{btn.label}}</a>
+                        <a href="{{btn.url}}" class="btn {% if btn.external === true %}external{% endif %}" {% if btn.external === true %}target="_blank"{% endif %}>
+                            {{btn.label}}
+                            {% if btn.external === true %}
+                                {% icon 'external-link' %}
+                            {% endif %}
+                        </a>
                     {% endfor %}
                 </div>
             {% endif %}
