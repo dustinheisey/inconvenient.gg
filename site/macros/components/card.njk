@@ -9,7 +9,7 @@
 {% elif props.variant === 'flip'%}
     {# <a href="{{props.url}}" class="card card-link inset-0 bg-img align-start">
         {% set src = './public/img/' + props.img.src%}
-        {% img src, props.img.alt %}
+        {% img src, props.img.alt, '', '100vw', props.img.loading %}
         <div class="stack inset-l">
             <h3 class="section-headline color-light">{{props.headline}}</h3>
         </div>
@@ -18,7 +18,7 @@
   <div class="card-image">
     <div class="frame {% if props.img.ar %}{{props.img.ar}}{% endif %}">
         {% set src = './public/img/' + props.img.src%}
-        {% img src, props.img.alt %}
+        {% img src, props.img.alt, '', '100vw', props.img.loading %}
     </div>
     <div class="magnifier">{% icon 'magnifier', "icon icon-s" %}</div>
   </div>

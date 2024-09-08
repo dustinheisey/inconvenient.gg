@@ -10,7 +10,7 @@
                 <div class="{{props.class}} prose">
                     <div class="frame">
                         {% set src = './public/img/' + item.data.img %}
-                        {% img src, item.data.alt %}
+                        {% img src, props.img.alt, '', '100vw', props.img.loading %}
                     </div>
                     <h3 class="section-headline">
                         <a href="{{item.data.permalink}}" class="link-navigation">{{item.data.title}}</a>

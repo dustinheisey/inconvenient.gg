@@ -21,7 +21,6 @@ function reflectPreference() {
 
   // Update footer background image based on the theme
   const footerBackground = document.querySelector('#footer-background')
-  console.log(footerBackground)
   if (theme.value === 'dark') {
     document.querySelector('meta[name="theme-color"]').setAttribute('content', '#8f4b38')
     document.querySelector('.bg-pattern').setAttribute('class', 'bg-pattern pattern-cogs theme-action inset-xl')

@@ -2,10 +2,15 @@
     <div class="overlay"></div>
     {% if props.img %}
         {% set src = './public/img/' + props.img.src%}
-        {% img src, props.img.alt %}
+        {% img src, props.img.alt, '', '100vw', props.img.loading %}
     {% endif %}
     {% if props.video %}
-        <video src="./video/{{props.video.src}}" autoplay muted loop></video>
+        <video autoplay muted loop playsinline preload="auto" poster="./img/{{props.video.poster}}">
+            <source src="./video/{{props.video.src}}.webm" type="video/webm">
+            <source src="./video/{{props.video.src}}.mp4" type="video/mp4">
+            <!-- Fallback for unsupported browsers -->
+            Your browser does not support the video tag.
+        </video>
     {% endif %}
     <div class="cover {{props.classes}} cover-nav">
         {% if props.navigation %}

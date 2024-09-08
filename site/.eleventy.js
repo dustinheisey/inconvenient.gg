@@ -48,7 +48,7 @@ module.exports = (eleventyConfig, options = {}) => {
   // eleventyConfig.addPlugin(criticalCss);
 
   // ? Shortcodes
-  eleventyConfig.addNunjucksShortcode('img', function (src, alt, cls, sizes = '100vw', widths) {
+  eleventyConfig.addNunjucksShortcode('img', function (src, alt, cls, sizes = '100vw', loading) {
     try {
       const options = {
         widths: [400, 800, 1280, null],
@@ -66,9 +66,9 @@ module.exports = (eleventyConfig, options = {}) => {
         class: cls,
         alt,
         sizes,
-        loading: 'lazy',
         decoding: 'async'
       }
+      if (loading === 'lazy') imageAttributes.loading = 'lazy'
       const metadata = Image.statsSync(src, options)
       return Image.generateHTML(metadata, imageAttributes)
     } catch (error) {
