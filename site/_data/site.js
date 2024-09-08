@@ -26,8 +26,8 @@ const config = {
             { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
             { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
             { label: 'Tik Tok', url: 'TODO', external: true },
-            // { label: 'Twitch', url: 'TODO', external: true },
-            // { label: 'Reddit', url: 'TODO', external: true },
+            { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
+            { label: 'Reddit', url: 'https://www.reddit.com/user/inconvenientGG/', external: true },
             { label: 'Mastodon', url: 'TODO', external: true }
           ]
         }
@@ -70,11 +70,11 @@ const config = {
           icon: 'logo-tiktok',
           url: 'TODO'
         },
-        // {
-        //   label: 'Reddit',
-        //   icon: 'logo-reddit',
-        //   url: 'TODO'
-        // },
+        {
+          label: 'Reddit',
+          icon: 'logo-reddit',
+          url: 'https://www.reddit.com/user/inconvenientGG/'
+        },
         {
           label: 'Mastodon',
           icon: 'logo-mastodon',
@@ -119,8 +119,8 @@ const config = {
                     { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
                     { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
                     { label: 'Tik Tok', url: 'TODO', external: true },
-                    // { label: 'Twitch', url: 'TODO', external: true },
-                    // { label: 'Reddit', url: 'TODO', external: true },
+                    { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
+                    { label: 'Reddit', url: 'https://www.reddit.com/user/inconvenientGG/', external: true },
                     { label: 'Mastodon', url: 'TODO', external: true }
                   ]
                 }
@@ -823,23 +823,23 @@ const config = {
               url: 'TODO',
               theme: 'tiktok',
               body: 'Discover quick tips, and behind-the-scenes content.'
+            },
+            {
+              component: 'card',
+              icon: 'logo-twitch',
+              size: 'xl',
+              url: 'https://www.twitch.tv/inconvenientgg',
+              theme: 'twitch',
+              body: 'Join live streams of me fixing bugs and playtesting the modpack.'
+            },
+            {
+              component: 'card',
+              icon: 'logo-reddit',
+              size: 'xl',
+              url: 'https://www.reddit.com/user/inconvenientGG/',
+              theme: 'reddit',
+              body: 'Share your experiences, discuss strategies, and connect with other players.'
             }
-            // {
-            //   component: 'card',
-            //   icon: 'logo-twitch',
-            //   size: 'xl',
-            //   url: 'TODO',
-            //   theme: 'twitch',
-            //   body: 'Join live streams of me fixing bugs and playtesting the modpack.'
-            // },
-            // {
-            //   component: 'card',
-            //   icon: 'logo-reddit',
-            //   size: 'xl',
-            //   url: 'TODO',
-            //   theme: 'reddit',
-            //   body: 'Share your experiences, discuss strategies, and connect with other players.'
-            // },
           ]
         },
         // TODO: add showcase
