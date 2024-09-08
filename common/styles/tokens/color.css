@@ -35,7 +35,6 @@
   --color-surface-container-light: rgb(241 238 225);
   --color-surface-container-high-light: rgb(235 232 219);
   --color-surface-container-highest-light: rgb(229 227 214);
-
   --color-primary-dark: rgb(255 181 160);
   --color-surface-tint-dark: rgb(255 181 160);
   --color-on-primary-dark: rgb(86 31 15);
@@ -71,7 +70,6 @@
   --color-surface-container-dark: rgb(38 30 24);
   --color-surface-container-high-dark: rgb(49 40 34);
   --color-surface-container-highest-dark: rgb(60 51 44);
-
   --color-dark-primary: rgb(143 75 56);
   --color-on-dark-primary: rgb(58 11 1);
 }
@@ -86,7 +84,7 @@
   --ifm-color-primary-lighter: #4cc678;
   --ifm-color-primary-lightest: #59d88d;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 10%);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -98,7 +96,7 @@
   --ifm-color-primary-light: #ff7f71;
   --ifm-color-primary-lighter: #ff9184;
   --ifm-color-primary-lightest: #ffaaa3;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 30%);
 }
 
 /* ? Dark Mode Stuff */
@@ -135,6 +133,7 @@
   --color-outline-variant: var(--color-outline-variant-light);
   --color-scrim: var(--color-scrim-light);
 }
+
 html.mode-dark,
 html[data-theme='dark'] {
   --color-primary: var(--color-primary-dark);
@@ -169,6 +168,7 @@ html[data-theme='dark'] {
   --color-outline-variant: var(--color-outline-variant-dark);
   --color-scrim: var(--color-scrim-dark);
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-primary: var(--color-primary-dark);
@@ -203,6 +203,7 @@ html[data-theme='dark'] {
     --color-outline-variant: var(--color-outline-variant-dark);
     --color-scrim: var(--color-scrim-dark);
   }
+
   html.mode-light,
   html[data-theme='light'] {
     --color-primary: var(--color-primary-light);

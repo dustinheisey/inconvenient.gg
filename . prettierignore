@@ -1,0 +1,7 @@
+**/node_modules
+**/.git
+site/\_site
+common/index.min.css
+common/index.min.js
+wiki/.docusaurus
+wiki/build

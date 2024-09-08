@@ -41,7 +41,7 @@ export default [
     ignores: [
       'site/_site/**/*.js',
       '!.storybook',
-      'index.min.js',
+      'common/index.min.js',
       'wiki/build/**/*.js',
       'wiki/.docusaurus/**.js',
       'wiki/babel.config.js'

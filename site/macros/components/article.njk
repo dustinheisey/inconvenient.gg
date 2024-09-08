@@ -1,6 +1,8 @@
 <article class="sidebar">
-    {% set src = './public/img/' + props.img.src%}
-    <div class="fixed frame avatar-img">{% img src, props.img.alt%}</div>
+    {% if props.img.src %}
+        {% set src = './public/img/' + props.img.src%}
+        <div class="fixed frame avatar-img">{% img src, props.img.alt%}</div>
+    {% endif %}
     <div>
         {% if props.time %}
         <div class="cluster">

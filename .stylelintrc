@@ -1,4 +1,4 @@
 {
   "extends": "stylelint-config-standard",
-  "ignoreFiles": ["./index.min.css", "./common/styles/index.css"]
+  "ignoreFiles": ["./common/index.min.css", "./common/styles/index.css"]
 }
