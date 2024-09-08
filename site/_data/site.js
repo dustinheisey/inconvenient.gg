@@ -24,7 +24,7 @@ const config = {
           url: '/community',
           subLinks: [
             { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
-            { label: 'Youtube', url: 'TODO', external: true },
+            { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
             { label: 'Tik Tok', url: 'TODO', external: true },
             // { label: 'Twitch', url: 'TODO', external: true },
             // { label: 'Reddit', url: 'TODO', external: true },
@@ -63,7 +63,7 @@ const config = {
         {
           label: 'Youtube',
           icon: 'logo-youtube',
-          url: 'TODO'
+          url: 'https://www.youtube.com/@inconvenientGG'
         },
         {
           label: 'TikTok',
@@ -117,7 +117,7 @@ const config = {
                   url: '/community',
                   subLinks: [
                     { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
-                    { label: 'Youtube', url: 'TODO', external: true },
+                    { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
                     { label: 'Tik Tok', url: 'TODO', external: true },
                     // { label: 'Twitch', url: 'TODO', external: true },
                     // { label: 'Reddit', url: 'TODO', external: true },
@@ -812,7 +812,7 @@ const config = {
               component: 'card',
               icon: 'logo-youtube',
               size: 'xl',
-              url: 'TODO',
+              url: 'https://www.youtube.com/@inconvenientGG',
               theme: 'youtube',
               body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
             },
