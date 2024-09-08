@@ -1,7 +1,7 @@
 <div class="bg-img">
     <div class="overlay"></div>
     {% if props.img %}
-        {% set src = './public/img/' + props.img.src%}
+        {% set src = '../common/img/' + props.img.src%}
         {% img src, props.img.alt %}
     {% endif %}
     {% if props.video %}

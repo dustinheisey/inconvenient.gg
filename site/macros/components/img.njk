@@ -3,7 +3,7 @@
         <img src="https://i.pravatar.cc/300" alt="avatar">
     {% else %}
         {% if props.src %}
-            {% set src = './public/img/' + props.src%}
+            {% set src = '../common/img/' + props.src%}
             {% img src, props.alt %}
         {% endif %}
     {% endif %}

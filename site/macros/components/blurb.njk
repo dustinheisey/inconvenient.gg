@@ -4,7 +4,7 @@
             {% if props.img.variant === 'avatar' %}
                 <img src="https://i.pravatar.cc/300" alt="avatar">
             {% else %}
-                {% set src = './public/img/' + props.img.src%}
+                {% set src = '../common/img/' + props.img.src%}
                 {% img src, props.img.alt %}
             {% endif %}
         </div>
