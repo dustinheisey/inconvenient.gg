@@ -45,12 +45,7 @@ const config = {
           onUntruncatedBlogPosts: 'warn'
         },
         theme: {
-          customCss: [
-            '../common/index.min.css',
-            './src/css/color.css',
-            './src/css/typography.css',
-            './src/css/overrides.css'
-          ]
+          customCss: ['../common/index.min.css', './src/css/overrides.css']
         }
       }
     ]

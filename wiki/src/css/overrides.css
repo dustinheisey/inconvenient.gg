@@ -1,12 +1,4 @@
 .card {
-  background-color: var(--color-primary-container);
-  color: var(--color-on-primary-container);
-  border: 0 !important;
-
-  &:hover {
-    color: var(--color-on-primary-container);
-  }
-
   h2 {
     font-family: var(--font-family-body);
     font-weight: 800;
