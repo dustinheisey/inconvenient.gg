@@ -30,7 +30,7 @@ module.exports = (eleventyConfig, options = {}) => {
   })
   eleventyConfig.addPlugin(svgSprite, [
     {
-      path: '../common/icons',
+      path: '../common/media/icons',
       globalClasses: 'icon',
       svgSpriteShortcode: 'icons',
       svgShortcode: 'icon'
@@ -119,7 +119,7 @@ module.exports = (eleventyConfig, options = {}) => {
     '../common/index.min.js': 'index.min.js'
   })
   eleventyConfig.addPassthroughCopy({ public: '/' })
-  eleventyConfig.addPassthroughCopy({ admin: '/admin' })
+  eleventyConfig.addPassthroughCopy({ '../common/media/video/': '/video' })
 
   // ? Filters
   eleventyConfig.addFilter('cssmin', function (code) {

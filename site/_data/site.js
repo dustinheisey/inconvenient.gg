@@ -3,7 +3,7 @@ const config = {
   url: 'https://inconvenient.gg',
   navigation: {
     logo: {
-      src: './public/svg/logo',
+      src: '../common/media/svg/logo',
       alt: 'An Inconvenient Modpack'
     },
     header: {
@@ -96,7 +96,7 @@ const config = {
           layout: 'bg-center',
           navigation: {
             logo: {
-              src: './public/svg/logo',
+              src: '../common/media/svg/logo',
               alt: 'An Inconvenient Modpack'
             },
             header: {

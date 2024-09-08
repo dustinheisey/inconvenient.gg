@@ -8,7 +8,7 @@
       "\tdescription: '',",
       "\tnavigation: {",
       "\t\tlogo: {",
-      "\t\t\tsrc: './public/svg/logo',",
+      "\t\t\tsrc: './common/media/svg/logo',",
       "\t\t\talt: ''",
       "\t\t},",
       "\t\theader: {",

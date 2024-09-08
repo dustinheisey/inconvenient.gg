@@ -9,7 +9,7 @@
             {% for item in config.portfolio %} 
                 <div class="{{props.class}} prose">
                     <div class="frame">
-                        {% set src = '../common/img/' + item.data.img %}
+                        {% set src = '../common/media/img/' + item.data.img %}
                         {% img src, item.data.alt %}
                     </div>
                     <h3 class="section-headline">

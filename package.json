@@ -11,7 +11,7 @@
   "scripts": {
     "dev:site": "cd site && npx @11ty/eleventy --serve --quiet --incremental",
     "build:site": "cd site && rm -rf _site && npx @11ty/eleventy",
-    "assets:site": "cd site && svgo -f ./public/svg -o ./_site/svg && pwa-asset-generator ./public/favicon.svg ./_site/favicon --opaque false --favicon --type png --index && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#1a110f' --padding '15%' --icon-only && pwa-asset-generator ./public/favicon.svg ./_site/favicon --background '#1a110f' --splash-only --type png --padding '10%'",
+    "assets:site": "cd site && svgo -f ../common/media/svg -o ./_site/svg && pwa-asset-generator ./common/media/svg/favicon.svg ./_site/favicon --opaque false --favicon --type png --index && pwa-asset-generator ./common/media/svg/favicon.svg ./_site/favicon --background '#1a110f' --padding '15%' --icon-only && pwa-asset-generator ./common/media/svg/favicon.svg ./_site/favicon --background '#1a110f' --splash-only --type png --padding '10%'",
     "dev:wiki": "docusaurus start ./wiki",
     "swizzle:wiki": "cd wiki && docusaurus swizzle",
     "build:wiki": "docusaurus build ./wiki",

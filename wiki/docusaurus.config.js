@@ -17,7 +17,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/wiki',
-  staticDirectories: ['../common/icons', '../common/svg'],
+  staticDirectories: ['../common/media/icons', '../common/media/svg'],
   i18n: {
     defaultLocale: 'en',
     locales: ['en']

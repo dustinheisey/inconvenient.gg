@@ -1,7 +1,27 @@
+@font-face {
+  font-family: Impact;
+  src:
+    local('Impact'),
+    url('https://fonts.cdnfonts.com/s/19610/impact.woff') format('woff'),
+    url('https://fonts.cdnfonts.com/s/19610/impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    url('https://fonts.gstatic.com/s/opensans/v20/mem8YaGs126MiZpBA-UFVZ0b.woff2') format('woff2'),
+    url('https://fonts.gstatic.com/s/opensans/v20/mem8YaGs126MiZpBA-UFVp0bb.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Typography */
 :root {
-  --font-family-headline: 'Charter', 'Bitstream Charter', 'Sitka Text', 'Cambria', 'serif';
-  --font-family-body: 'Inter', 'Roboto', 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', 'Arial', 'sans-serif';
+  --font-family-headline: 'Impact', 'Arial Black', 'Arial Bold', sans-serif;
+  --font-family-body: 'Open Sans', sans-serif;
+  --letter-spacing-headline: 0.05em;
   --font-size-xs: clamp(0.7rem, calc(0.81rem + -0.13vw), 0.78rem);
   --font-size-s: clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem);
   --font-size-m: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);

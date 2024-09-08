@@ -5,7 +5,7 @@
         <div class="theme-surface stack gap-m align-center card">
             <a href="/">
                 <span class="sr-only">Home</span>
-                {% svg './public/svg/logo' %}
+                {% svg '../common/media/svg/logo' %}
             </a>
             <ul class="cluster gap-xs align-start justify-center">
                 {% for link in props.config.footer.links %}
@@ -50,7 +50,7 @@
             <div class="stack align-start gap-xs">
                 <a href="/">
                     <span class="sr-only">Home</span>
-                    {% svg './public/svg/logo' %}
+                    {% svg '../common/media/svg/logo' %}
                 </a>
                 {% if props.config.footer.variant === 'mission' %}
                     <div class="prose prose-s">
