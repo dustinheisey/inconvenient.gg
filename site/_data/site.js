@@ -24,10 +24,10 @@ const config = {
           url: '/community',
           subLinks: [
             { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
-            { label: 'Youtube', url: 'TODO', external: true },
-            { label: 'Tik Tok', url: 'TODO', external: true },
-            // { label: 'Twitch', url: 'TODO', external: true },
-            // { label: 'Reddit', url: 'TODO', external: true },
+            { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
+            { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
+            { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
+            { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
             { label: 'Mastodon', url: 'TODO', external: true }
           ]
         }
@@ -63,18 +63,18 @@ const config = {
         {
           label: 'Youtube',
           icon: 'logo-youtube',
-          url: 'TODO'
+          url: 'https://www.youtube.com/@inconvenientGG'
         },
         {
           label: 'TikTok',
           icon: 'logo-tiktok',
-          url: 'TODO'
+          url: 'https://www.tiktok.com/@inconvenientdev'
         },
-        // {
-        //   label: 'Reddit',
-        //   icon: 'logo-reddit',
-        //   url: 'TODO'
-        // },
+        {
+          label: 'Reddit',
+          icon: 'logo-reddit',
+          url: 'https://www.reddit.com/r/InconvenientModpack/'
+        },
         {
           label: 'Mastodon',
           icon: 'logo-mastodon',
@@ -117,10 +117,10 @@ const config = {
                   url: '/community',
                   subLinks: [
                     { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
-                    { label: 'Youtube', url: 'TODO', external: true },
-                    { label: 'Tik Tok', url: 'TODO', external: true },
-                    // { label: 'Twitch', url: 'TODO', external: true },
-                    // { label: 'Reddit', url: 'TODO', external: true },
+                    { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
+                    { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
+                    { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
+                    { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
                     { label: 'Mastodon', url: 'TODO', external: true }
                   ]
                 }
@@ -161,7 +161,7 @@ const config = {
             }
             // { variant: 'secondary', url: 'TODO', label: 'Watch the Full Trailer' }
           ],
-          video: { src: 'bunker.mp4' }
+          video: { src: 'bunker-small-compressed', poster: 'bunker-video.webp' }
         },
         wakeUp: {
           layout: 'start-heavy',
@@ -174,7 +174,8 @@ const config = {
           },
           start: {
             component: 'img',
-            src: 'bunker.png',
+            loading: 'lazy',
+            src: 'bunker.webp',
             ar: 'square',
             alt: 'Underground Bunker'
           }
@@ -343,49 +344,49 @@ const config = {
             {
               component: 'card',
               variant: 'flip',
-              img: { ar: 'square', src: 'everbright.png', alt: 'Everbright' },
+              img: { ar: 'square', src: 'everbright.webp', alt: 'Everbright', loading: 'lazy' },
               headline: 'Everbright',
               body: 'Step into the snowy expanses of Everbright, where a mysterious, long-lost civilization once thrived. The frosty beauty of this land hides the darker truths of a world that ignored its warnings. Will you explore its icy secrets?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'undergarden.png', alt: 'Undergarden' },
+              img: { src: 'undergarden.webp', alt: 'Undergarden', loading: 'lazy' },
               headline: 'Undergarden',
               body: 'In the eerie caverns of Undergarden, something far worse than darkness awaits. Nature has reclaimed this place, but it left behind a haunting legacy. Can you navigate its forgotten depths?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'everdawn.png', alt: 'Everdawn' },
+              img: { src: 'everdawn.webp', alt: 'Everdawn', loading: 'lazy' },
               headline: 'Everdawn',
               body: 'Everdawn is alive with heat and chaos. Its warm lands are teeming with life, but something more sinister lurks beneath. The remnants of past disasters remain. What will you uncover here?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'twilight.png', alt: 'The Twilight Forest' },
+              img: { src: 'twilight.webp', alt: 'The Twilight Forest', loading: 'lazy' },
               headline: 'The Twilight Forest',
               body: 'In the abandoned streets of The Twilight Forest, echoes of a great tragedy persist. This once-flourishing land now lies in silence. Can you face the shadows of its forgotten past?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'nether.png', alt: 'The Nether' },
+              img: { src: 'nether.webp', alt: 'The Nether', loading: 'lazy' },
               headline: 'The Nether',
               body: 'Once a thriving industrial hub, The Nether now burns in the aftermath of unchecked greed. With fire and brimstone all around, this place tells a cautionary tale. What role will you play?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'bumblezone.png', alt: 'The Bumblezone' },
+              img: { src: 'bumblezone.webp', alt: 'The Bumblezone', loading: 'lazy' },
               headline: 'The Bumblezone',
               body: 'Explore the buzzing world inside The Bumblezone, a realm of endless honeycombs and hidden danger. But don’t be fooled by its golden glow—this world has seen better days. Will you find hope here?'
             },
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'blueleaf.png', alt: 'Blueleaf' },
+              img: { src: 'blueleaf.webp', alt: 'Blueleaf', loading: 'lazy' },
               headline: 'Blueleaf',
               body: 'A paradise of endless resources and wealth, Blueleaf glimmers with opportunity. But behind its beauty lies a world of exploitation and ambition. Will you rise to the top or take a different path?'
             }
@@ -492,7 +493,7 @@ const config = {
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'story-seeker.webp', alt: 'Story Seeker' },
+              img: { src: 'story-seeker.webp', alt: 'Story Seeker', loading: 'lazy' },
               headline: 'Story Seeker',
               icon: 'book',
               list: [
@@ -507,7 +508,7 @@ const config = {
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'adventure.webp', alt: 'Adventurer' },
+              img: { src: 'adventure.webp', alt: 'Adventurer', loading: 'lazy' },
               headline: 'Adventurer',
               icon: 'compass',
               list: [
@@ -523,7 +524,7 @@ const config = {
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'engineer.webp', alt: 'Engineer' },
+              img: { src: 'engineer.webp', alt: 'Engineer', loading: 'lazy' },
               headline: 'Engineer',
               icon: 'settings',
               list: [
@@ -538,7 +539,7 @@ const config = {
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'survivalist.webp', alt: 'Survivalist' },
+              img: { src: 'survivalist.webp', alt: 'Survivalist', loading: 'lazy' },
               headline: 'Survivalist',
               icon: 'energy',
               list: [
@@ -553,7 +554,7 @@ const config = {
             {
               component: 'card',
               variant: 'flip',
-              img: { src: 'architect.webp', alt: 'Architect' },
+              img: { src: 'architect.webp', alt: 'Architect', loading: 'lazy' },
               headline: 'Architect',
               icon: 'block',
               list: [
@@ -811,7 +812,7 @@ const config = {
               component: 'card',
               icon: 'logo-youtube',
               size: 'xl',
-              url: 'TODO',
+              url: 'https://www.youtube.com/@inconvenientGG',
               theme: 'youtube',
               body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
             },
@@ -819,26 +820,26 @@ const config = {
               component: 'card',
               icon: 'logo-tiktok',
               size: 'xl',
-              url: 'TODO',
+              url: 'https://www.tiktok.com/@inconvenientdev',
               theme: 'tiktok',
               body: 'Discover quick tips, and behind-the-scenes content.'
+            },
+            {
+              component: 'card',
+              icon: 'logo-twitch',
+              size: 'xl',
+              url: 'https://www.twitch.tv/inconvenientgg',
+              theme: 'twitch',
+              body: 'Join live streams of me fixing bugs and playtesting the modpack.'
+            },
+            {
+              component: 'card',
+              icon: 'logo-reddit',
+              size: 'xl',
+              url: 'https://www.reddit.com/r/InconvenientModpack/',
+              theme: 'reddit',
+              body: 'Share your experiences, discuss strategies, and connect with other players.'
             }
-            // {
-            //   component: 'card',
-            //   icon: 'logo-twitch',
-            //   size: 'xl',
-            //   url: 'TODO',
-            //   theme: 'twitch',
-            //   body: 'Join live streams of me fixing bugs and playtesting the modpack.'
-            // },
-            // {
-            //   component: 'card',
-            //   icon: 'logo-reddit',
-            //   size: 'xl',
-            //   url: 'TODO',
-            //   theme: 'reddit',
-            //   body: 'Share your experiences, discuss strategies, and connect with other players.'
-            // },
           ]
         },
         // TODO: add showcase
