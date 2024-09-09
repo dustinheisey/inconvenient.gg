@@ -38,7 +38,7 @@ const config = {
           { label: 'Home', url: '/', icon: 'home' },
           { label: 'Features', url: '/features', icon: 'star' },
           { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
-          { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', icon: 'advocate' },
+          { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', icon: 'bug' },
           { label: 'Community', url: '/community', icon: 'chat' }
         ],
         fab: { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', icon: 'play' }
@@ -138,7 +138,7 @@ const config = {
                   {
                     label: 'Bugs',
                     url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
-                    icon: 'advocate'
+                    icon: 'bug'
                   },
                   { label: 'Community', url: '/community', icon: 'chat' }
                 ],
