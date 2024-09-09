@@ -27,7 +27,7 @@ const config = {
             { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
             { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
             { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
-            { label: 'Reddit', url: 'https://www.reddit.com/user/inconvenientGG/', external: true },
+            { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
             { label: 'Mastodon', url: 'TODO', external: true }
           ]
         }
@@ -73,7 +73,7 @@ const config = {
         {
           label: 'Reddit',
           icon: 'logo-reddit',
-          url: 'https://www.reddit.com/user/inconvenientGG/'
+          url: 'https://www.reddit.com/r/InconvenientModpack/'
         },
         {
           label: 'Mastodon',
@@ -120,7 +120,7 @@ const config = {
                     { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
                     { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
                     { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
-                    { label: 'Reddit', url: 'https://www.reddit.com/user/inconvenientGG/', external: true },
+                    { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
                     { label: 'Mastodon', url: 'TODO', external: true }
                   ]
                 }
@@ -836,7 +836,7 @@ const config = {
               component: 'card',
               icon: 'logo-reddit',
               size: 'xl',
-              url: 'https://www.reddit.com/user/inconvenientGG/',
+              url: 'https://www.reddit.com/r/InconvenientModpack/',
               theme: 'reddit',
               body: 'Share your experiences, discuss strategies, and connect with other players.'
             }
