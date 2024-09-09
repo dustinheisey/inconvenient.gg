@@ -25,7 +25,7 @@ const config = {
           subLinks: [
             { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
             { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
-            { label: 'Tik Tok', url: 'TODO', external: true },
+            { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
             { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
             { label: 'Reddit', url: 'https://www.reddit.com/user/inconvenientGG/', external: true },
             { label: 'Mastodon', url: 'TODO', external: true }
@@ -68,7 +68,7 @@ const config = {
         {
           label: 'TikTok',
           icon: 'logo-tiktok',
-          url: 'TODO'
+          url: 'https://www.tiktok.com/@inconvenientdev'
         },
         {
           label: 'Reddit',
@@ -118,7 +118,7 @@ const config = {
                   subLinks: [
                     { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
                     { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
-                    { label: 'Tik Tok', url: 'TODO', external: true },
+                    { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
                     { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
                     { label: 'Reddit', url: 'https://www.reddit.com/user/inconvenientGG/', external: true },
                     { label: 'Mastodon', url: 'TODO', external: true }
@@ -820,7 +820,7 @@ const config = {
               component: 'card',
               icon: 'logo-tiktok',
               size: 'xl',
-              url: 'TODO',
+              url: 'https://www.tiktok.com/@inconvenientdev',
               theme: 'tiktok',
               body: 'Discover quick tips, and behind-the-scenes content.'
             },
