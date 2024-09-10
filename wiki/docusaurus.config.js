@@ -60,7 +60,7 @@ const config = {
         title: 'An Inconvenient Wiki',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg'
+          src: 'img/logo.webp'
         },
         items: [
           {

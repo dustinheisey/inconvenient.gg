@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import Logo from '/logo.svg'
+import Logo from '/logo.webp'
 import ExternalLink from '/external-link.svg'
 import Home from '/home.svg'
 import Star from '/star.svg'

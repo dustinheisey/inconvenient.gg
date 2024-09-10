@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '/logo.svg'
+import Logo from '/logo.webp'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 import ExternalLink from '/external-link.svg'

@@ -10,11 +10,6 @@ const svgSprite = require('eleventy-plugin-svg-sprite')
 const sitemap = require('@quasibit/eleventy-plugin-sitemap')
 const CleanCSS = require('clean-css')
 const { promisify } = require('util')
-const { DateTime } = require('luxon')
-const stat = promisify(fs.stat)
-const markdownIt = require('markdown-it')
-const markdownItAnchor = require('markdown-it-anchor')
-const execFile = promisify(require('child_process').execFile)
 // const purgeCssPlugin = require("eleventy-plugin-purgecss");
 // const criticalCss = require("eleventy-critical-css");
 
@@ -119,92 +114,9 @@ module.exports = (eleventyConfig, options = {}) => {
     './scripts/index.min.js': 'index.min.js'
   })
   eleventyConfig.addPassthroughCopy({ public: '/' })
-  eleventyConfig.addPassthroughCopy({ admin: '/admin' })
 
   // ? Filters
-  eleventyConfig.addFilter('cssmin', function (code) {
-    return new CleanCSS({}).minify(code).styles
-  })
-
-  // ? Filters
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd')
-  })
-  eleventyConfig.addFilter('tagsOnly', (tag) => {
-    return tag.filter((item) => item !== 'post')
-  })
-  eleventyConfig.addFilter('getCategory', (categories, categoryTag) => {
-    let postCategory = categoryTag.find((item) => item !== 'post')
-    return categories.find((item) => item.data.label === postCategory)
-  })
-  eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LLL dd, yyyy')
-  })
-  eleventyConfig.addFilter('postDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LL-dd-yyyy')
-  })
-  eleventyConfig.addFilter('splitlines', (input) => {
-    const parts = input.split(' ')
-    const lines = parts.reduce(function (prev, current) {
-      if (!prev.length) {
-        return [current]
-      }
-
-      let lastOne = prev[prev.length - 1]
-
-      if (lastOne.length + current.length > 19) {
-        return [...prev, current]
-      }
-
-      prev[prev.length - 1] = lastOne + ' ' + current
-
-      return prev
-    }, [])
-
-    return lines
-  })
-
-  async function lastModifiedDate(filename) {
-    try {
-      const { stdout } = await execFile('git', ['log', '-1', '--format=%cd', filename])
-      return new Date(stdout)
-    } catch (e) {
-      console.error(e.message)
-      // Fallback to stat if git isn't working.
-      const stats = await stat(filename)
-      return stats.mtime // Date
-    }
-  }
-  // Cache the lastModifiedDate call because shelling out to git is expensive.
-  // This means the lastModifiedDate will never change per single eleventy invocation.
-  const lastModifiedDateCache = new Map()
-  eleventyConfig.addNunjucksAsyncFilter('lastModifiedDate', function (filename, callback) {
-    const call = (result) => {
-      result.then((date) => callback(null, date))
-      result.catch((error) => callback(error))
-    }
-    const cached = lastModifiedDateCache.get(filename)
-    if (cached) {
-      return call(cached)
-    }
-    const promise = lastModifiedDate(filename)
-    lastModifiedDateCache.set(filename, promise)
-    call(promise)
-  })
-
-  /* Markdown Overrides */
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true
-  }).use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.linkAfterHeader({
-      assistiveText: (title) => `Permalink to “${title}”`,
-      visuallyHiddenClass: 'sr-only',
-      wrapper: ['<div class="inline-header">', '</div>']
-    }),
-    permalinkSymbol: '#'
-  })
-
-  eleventyConfig.setLibrary('md', markdownLibrary)
+  // eleventyConfig.addFilter('cssmin', function (code) {
+  //   return new CleanCSS({}).minify(code).styles
+  // })
 }
