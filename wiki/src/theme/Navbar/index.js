@@ -14,8 +14,7 @@ const theme = {
 }
 
 function getColorPreference() {
-  if (localStorage.getItem(storageKey)) return localStorage.getItem(storageKey)
-  else {
+  if (typeof window !== 'undefined') {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   }
 }
@@ -23,7 +22,6 @@ function getColorPreference() {
 let footerVariant = 'light'
 
 function setPreference() {
-  localStorage.setItem(storageKey, theme.value)
   reflectPreference()
 }
 
@@ -59,7 +57,10 @@ function Navbar() {
     document.addEventListener('keyup', handleKeyUp)
 
     // Set up media query listener for system theme changes
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    let mediaQuery
+    if (typeof window !== 'undefined') {
+      mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    }
     const handleMediaChange = ({ matches: isDark }) => {
       theme.value = isDark ? 'dark' : 'light'
       setPreference()
