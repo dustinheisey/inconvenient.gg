@@ -16,7 +16,7 @@ const config = {
   url: 'https://inconvenient.gg',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/wiki',
+  baseUrl: '/',
   staticDirectories: ['../common/icons', '../site/public/svg'],
   i18n: {
     defaultLocale: 'en',
