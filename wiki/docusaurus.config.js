@@ -17,7 +17,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/wiki',
-  staticDirectories: ['../common'],
+  staticDirectories: ['../common/icons', '../site/public/svg'],
   i18n: {
     defaultLocale: 'en',
     locales: ['en']
@@ -45,12 +45,7 @@ const config = {
           onUntruncatedBlogPosts: 'warn'
         },
         theme: {
-          customCss: [
-            '../site/styles/index.min.css',
-            './src/css/color.css',
-            './src/css/typography.css',
-            './src/css/overrides.css'
-          ]
+          customCss: ['../site/styles/index.min.css', './src/css/overrides.css']
         }
       }
     ]

@@ -1,6 +1,12 @@
 import React, { useRef, useEffect } from 'react'
-import Logo from '/svg/logo.svg'
-import ExternalLink from '/icons/external-link.svg'
+import Logo from '/logo.svg'
+import ExternalLink from '/external-link.svg'
+import Home from '/home.svg'
+import Star from '/star.svg'
+import Books from '/books.svg'
+import Bug from '/bug.svg'
+import Chat from '/chat.svg'
+import Play from '/play.svg'
 
 const storageKey = 'theme-preference'
 const theme = {
@@ -13,6 +19,8 @@ function getColorPreference() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   }
 }
+
+let footerVariant = 'light'
 
 function setPreference() {
   localStorage.setItem(storageKey, theme.value)
@@ -69,7 +77,7 @@ function Navbar() {
   }, [])
 
   return (
-    <nav>
+    <nav style={{ zIndex: 1 }}>
       <div className="stack region gap-xs align-center no-inset">
         <a href="/">
           <span className="sr-only">Home</span>
@@ -83,7 +91,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="/wiki" className="link link-navigation">
+              <a href="https://wiki.inconvenient.gg" className="link link-navigation" target="_blank">
                 Wiki
               </a>
             </li>
@@ -104,37 +112,61 @@ function Navbar() {
                 </a>
                 <ul>
                   <li>
-                    <a href="" target="_blank" className="link link-navigation cluster gap-3xs">
+                    <a
+                      href="https://discord.gg/dJbfXV9JnF"
+                      target="_blank"
+                      className="link link-navigation cluster gap-3xs"
+                    >
                       Discord
                       <ExternalLink title="External" className="icon-s" />
                     </a>
                   </li>
                   <li>
-                    <a href="" target="_blank" className="link link-navigation cluster gap-3xs">
+                    <a
+                      href="https://www.youtube.com/@inconvenientGG"
+                      target="_blank"
+                      className="link link-navigation cluster gap-3xs"
+                    >
                       Youtube
                       <ExternalLink title="External" className="icon-s" />
                     </a>
                   </li>
                   <li>
-                    <a href="" target="_blank" className="link link-navigation cluster gap-3xs">
+                    <a
+                      href="https://www.tiktok.com/@inconvenientdev"
+                      target="_blank"
+                      className="link link-navigation cluster gap-3xs"
+                    >
                       TikTok
                       <ExternalLink title="External" className="icon-s" />
                     </a>
                   </li>
                   <li>
-                    <a href="" target="_blank" className="link link-navigation cluster gap-3xs">
+                    <a
+                      href="https://www.twitch.tv/inconvenientgg"
+                      target="_blank"
+                      className="link link-navigation cluster gap-3xs"
+                    >
                       Twitch
                       <ExternalLink title="External" className="icon-s" />
                     </a>
                   </li>
                   <li>
-                    <a href="" target="_blank" className="link link-navigation cluster gap-3xs">
+                    <a
+                      href="https://www.reddit.com/r/InconvenientModpack/"
+                      target="_blank"
+                      className="link link-navigation cluster gap-3xs"
+                    >
                       Reddit
                       <ExternalLink title="External" className="icon-s" />
                     </a>
                   </li>
                   <li>
-                    <a href="" target="_blank" className="link link-navigation cluster gap-3xs">
+                    <a
+                      href="https://climatejustice.social/@InconvenientDev"
+                      target="_blank"
+                      className="link link-navigation cluster gap-3xs"
+                    >
                       Mastodon
                       <ExternalLink title="External" className="icon-s" />
                     </a>
@@ -189,24 +221,53 @@ function Navbar() {
               <ExternalLink title="External" className="icon-s" />
             </a>
           </div>
-          <div className="bottombar">
+          {/* <div className="bottombar">
             <ul>
               <li>
                 <a href="/" className="navigation">
-                  <span>test</span>
+                  <Home title="Home" className="icon-s" />
+                  <span>Home</span>
                 </a>
               </li>
-              <li className="fab">
-                <a href="/">
-                  <span className="sr-only">test</span>
+              <li>
+                <a href="/features" className="navigation">
+                  <Star title="Star" className="icon-s" />
+                  <span>Features</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wiki.inconvenient.gg" className="navigation" target="_blank">
+                  <Books title="Books" className="icon-s" />
+                  Wiki
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/dustinheisey/An-Inconvenient-Modpack/issues"
+                  className="navigation"
+                  target="_blank"
+                >
+                  <Bug title="Bug" className="icon-s" />
+                  Bugs
+                </a>
+              </li>
+              <li>
+                <a href="/community" className="navigation">
+                  <Chat title="Chat" className="icon-s" />
+                  <span>Community</span>
                 </a>
               </li>
             </ul>
-          </div>
+            <li className="fab">
+              <a href="https://www.curseforge.com/minecraft/modpacks/inconvenient" target="_blank">
+                <Play title="Play" className="icon-s" />
+                <span className="sr-only">Play Now</span>
+              </a>
+            </li>
+          </div> */}
         </div>
       </div>
     </nav>
   )
 }
-
 export default Navbar

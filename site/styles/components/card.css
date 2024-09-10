@@ -115,6 +115,9 @@ article:has(:hover, :focus) {
   max-width: 500px;
   min-height: 100%;
 }
+.card-flip:hover {
+  cursor: pointer;
+}
 .card.card-icon {
   min-width: fit-content;
   padding: var(--space-m);

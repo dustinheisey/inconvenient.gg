@@ -1,21 +1,20 @@
 import React from 'react'
-import Logo from '/svg/logo.svg'
+import Logo from '/logo.svg'
 import useBaseUrl from '@docusaurus/useBaseUrl'
-import Background from '/svg/footer-background.svg'
 
-import ExternalLink from '/icons/external-link.svg'
+import ExternalLink from '/external-link.svg'
 
-import LogoDiscord from '/icons/logo-discord.svg'
-import LogoYoutube from '/icons/logo-youtube.svg'
-import LogoTikTok from '/icons/logo-tiktok.svg'
-import LogoReddit from '/icons/logo-reddit.svg'
-import LogoMastodon from '/icons/logo-mastodon.svg'
+import LogoDiscord from '/logo-discord.svg'
+import LogoYoutube from '/logo-youtube.svg'
+import LogoTikTok from '/logo-tiktok.svg'
+import LogoTwitch from '/logo-twitch.svg'
+import LogoReddit from '/logo-reddit.svg'
+import LogoMastodon from '/logo-mastodon.svg'
 
 function Footer() {
   return (
-    <footer className="bg-img">
-      <img src={useBaseUrl('/svg/footer-background.svg')} />
-      <div className="full stack gap-m align-center region">
+    <footer className="full stack gap-m align-center">
+      <div class="cluster full justify-between">
         <a href="/">
           <span className="sr-only">Home</span>
           <Logo title="An Inconvenient Modpack Logo" />
@@ -57,39 +56,46 @@ function Footer() {
             </a>
           </li>
         </ul>
+      </div>
+      <div class="cluster full justify-between">
         <ul className="cluster gap-xs align-start">
           <li>
-            <a href="/" target="_blank" className="btn btn-circular">
+            <a href="https://discord.gg/dJbfXV9JnF" target="_blank" className="btn btn-circular">
               <span className="sr-only">Discord</span>
               <LogoDiscord title="Discord" className="icon" />
               <tool-tip tip-position="block-start">Discord</tool-tip>
             </a>
           </li>
           <li>
-            <a href="/" target="_blank" className="btn btn-circular">
+            <a href="https://www.youtube.com/@inconvenientGG" target="_blank" className="btn btn-circular">
               <span className="sr-only">Youtube</span>
               <LogoYoutube title="Youtube" className="icon" />
               <tool-tip tip-position="block-start">Youtube</tool-tip>
             </a>
           </li>
           <li>
-            <a href="/" target="_blank" className="btn btn-circular">
+            <a href="https://www.tiktok.com/@inconvenientdev" target="_blank" className="btn btn-circular">
               <span className="sr-only">TikTok</span>
               <LogoTikTok title="TikTok" className="icon" />
               <tool-tip tip-position="block-start">TikTok</tool-tip>
             </a>
           </li>
-
           <li>
-            <a href="/" target="_blank" className="btn btn-circular">
+            <a href="https://www.twitch.tv/inconvenientgg" target="_blank" className="btn btn-circular">
+              <span className="sr-only">Twitch</span>
+              <LogoTwitch title="Twitch" className="icon" />
+              <tool-tip tip-position="block-start">Twitch</tool-tip>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/r/InconvenientModpack/" target="_blank" className="btn btn-circular">
               <span className="sr-only">Reddit</span>
               <LogoReddit title="Reddit" className="icon" />
               <tool-tip tip-position="block-start">Reddit</tool-tip>
             </a>
           </li>
-
           <li>
-            <a href="/" target="_blank" className="btn btn-circular">
+            <a href="https://climatejustice.social/@InconvenientDev" target="_blank" className="btn btn-circular">
               <span className="sr-only">Mastodon</span>
               <LogoMastodon title="Mastodon" className="icon" />
               <tool-tip tip-position="block-start">Mastodon</tool-tip>
@@ -97,10 +103,6 @@ function Footer() {
           </li>
         </ul>
         <div className="stack align-center gap-0">
-          <div className="cluster full theme-surface justify-center">
-            <div id="wcb" className="carbonbadge wcb-d"></div>
-            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-          </div>
           <small className="copywrite">&copy; 2024. An Inconvenient Modpack</small>
         </div>
       </div>

@@ -138,7 +138,7 @@ const config = {
                   {
                     label: 'Bugs',
                     url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
-                    icon: 'advocate'
+                    icon: 'bug'
                   },
                   { label: 'Community', url: '/community', icon: 'chat' }
                 ],

@@ -30,7 +30,7 @@ module.exports = (eleventyConfig, options = {}) => {
   })
   eleventyConfig.addPlugin(svgSprite, [
     {
-      path: './public/icons',
+      path: '../common/icons',
       globalClasses: 'icon',
       svgSpriteShortcode: 'icons',
       svgShortcode: 'icon'
