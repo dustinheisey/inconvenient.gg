@@ -28,7 +28,7 @@ const config = {
             { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
             { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
             { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
-            { label: 'Mastodon', url: 'TODO', external: true }
+            { label: 'Mastodon', url: 'https://climatejustice.social/@InconvenientDev', external: true }
           ]
         }
       ],
@@ -78,7 +78,7 @@ const config = {
         {
           label: 'Mastodon',
           icon: 'logo-mastodon',
-          url: 'TODO'
+          url: 'https://climatejustice.social/@InconvenientDev'
         }
       ],
       copywrite: '© 2024 An Inconvenient Modpack'
@@ -121,7 +121,7 @@ const config = {
                     { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
                     { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
                     { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
-                    { label: 'Mastodon', url: 'TODO', external: true }
+                    { label: 'Mastodon', url: 'https://climatejustice.social/@InconvenientDev', external: true }
                   ]
                 }
               ],
@@ -796,7 +796,7 @@ const config = {
               component: 'card',
               icon: 'logo-mastodon',
               size: 'xl',
-              url: 'TODO',
+              url: 'https://climatejustice.social/@InconvenientDev',
               theme: 'mastodon',
               body: 'Stay updated with the latest modpack news and community discussions.'
             },

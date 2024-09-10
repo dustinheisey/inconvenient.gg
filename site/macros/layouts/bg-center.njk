@@ -1,5 +1,4 @@
 <div class="bg-img">
-    <div class="overlay"></div>
     {% if props.img %}
         {% set src = './public/img/' + props.img.src%}
         {% img src, props.img.alt, '', '100vw', props.img.loading %}
