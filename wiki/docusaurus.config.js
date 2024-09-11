@@ -1,130 +1,73 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import { themes as prismThemes } from 'prism-react-renderer'
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+export default {
   title: 'An Inconvenient Wiki',
   tagline: 'A Player\'s Guide to "An Inconvenient Modpack"',
-  favicon: 'svg/favicon.svg',
-
-  // Set the production url of your site here
-  url: 'https://inconvenient.gg',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  favicon: 'favicon.svg',
+  url: 'https://wiki.inconvenient.gg',
   baseUrl: '/',
-  staticDirectories: ['../common/icons', '../site/public/svg'],
+  themes: [],
+  plugins: [],
+  presets: [
+    [
+      'classic',
+      {
+        docs: {
+          routeBasePath: '/',
+          sidebarPath: './sidebars.js'
+        },
+        blog: false
+      }
+    ]
+  ],
+  staticDirectories: ['../common/icons', '../site/public/svg', '../site/public/img'],
   i18n: {
     defaultLocale: 'en',
     locales: ['en']
   },
-
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      {
-        docs: {
-          sidebarPath: './sidebars.js'
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn'
-        },
-        theme: {
-          customCss: ['../site/styles/index.min.css', './src/css/overrides.css']
-        }
-      }
-    ]
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'An Inconvenient Wiki',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.webp'
+          src: 'logo.webp'
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'wiki',
-            position: 'left',
-            label: 'Wiki'
+            href: 'https://inconvenient.gg/features',
+            position: 'right',
+            label: 'Features'
           },
           {
-            href: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
-            label: 'Play Now',
-            position: 'right'
+            type: 'docSidebar',
+            sidebarId: 'wiki',
+            position: 'right',
+            label: 'Wiki'
           },
           {
             href: 'https://github.com/dustinheisey/An-Inconvenient-Modpack',
             label: 'GitHub',
             position: 'right'
+          },
+          {
+            href: 'https://inconvenient.gg/community',
+            position: 'right',
+            label: 'Community'
+          },
+          {
+            href: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
+            label: 'Play Now',
+            position: 'right'
           }
         ]
       },
-      footer: {
-        style: 'dark',
-        links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro'
-          //     }
-          //   ]
-          // },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus'
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus'
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus'
-          //     }
-          //   ]
-          // },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog'
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus'
-          //     }
-          //   ]
-          // }
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} An Inconvenient Modpack. Built with Docusaurus.`
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true
+        }
       },
       prism: {
         theme: prismThemes.github,
@@ -132,5 +75,3 @@ const config = {
       }
     })
 }
-
-export default config

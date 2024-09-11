@@ -79,20 +79,20 @@ function Navbar() {
 
   return (
     <nav style={{ zIndex: 1 }}>
-      <div className="stack region gap-xs align-center no-inset">
-        <a href="/">
+      <div className="cluster justify-between region gap-xs align-center no-inset">
+        <a href="https://inconvenient.gg">
           <span className="sr-only">Home</span>
-          <Logo title="An Inconvenient Modpack Logo" />
+          <img src={Logo} alt="An Inconvenient Modpack Logo" />
         </a>
         <div className="cluster">
           <ul className="topbar cluster gap-m">
             <li>
-              <a href="/features" className="link link-navigation">
+              <a href="https://inconvenient.gg/features" className="link link-navigation">
                 Features
               </a>
             </li>
             <li>
-              <a href="https://wiki.inconvenient.gg" className="link link-navigation" target="_blank">
+              <a href="/category/introduction" className="link link-navigation">
                 Wiki
               </a>
             </li>
@@ -108,7 +108,7 @@ function Navbar() {
             </li>
             <li>
               <drop-down>
-                <a href="/community" className="link link-navigation">
+                <a href="https://inconvenient.gg/community" className="link link-navigation">
                   Community
                 </a>
                 <ul>
@@ -225,19 +225,19 @@ function Navbar() {
           {/* <div className="bottombar">
             <ul>
               <li>
-                <a href="/" className="navigation">
+                <a href="https://inconvenient.gg/" className="navigation">
                   <Home title="Home" className="icon-s" />
                   <span>Home</span>
                 </a>
               </li>
               <li>
-                <a href="/features" className="navigation">
+                <a href="https://inconvenient.gg/features" className="navigation">
                   <Star title="Star" className="icon-s" />
                   <span>Features</span>
                 </a>
               </li>
               <li>
-                <a href="https://wiki.inconvenient.gg" className="navigation" target="_blank">
+                <a href="https://wiki.inconvenient.gg/category/introduction" className="navigation" target="_blank">
                   <Books title="Books" className="icon-s" />
                   Wiki
                 </a>
@@ -253,7 +253,7 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="/community" className="navigation">
+                <a href="https://inconvenient.gg/community" className="navigation">
                   <Chat title="Chat" className="icon-s" />
                   <span>Community</span>
                 </a>

@@ -14,19 +14,22 @@ import LogoMastodon from '/logo-mastodon.svg'
 function Footer() {
   return (
     <footer className="full stack gap-m align-center">
-      <div class="cluster full justify-between">
-        <a href="/">
+      <div className="cluster full justify-between">
+        <a href="https://inconvenient.gg" className="cluster gap-xs">
           <span className="sr-only">Home</span>
-          <Logo title="An Inconvenient Modpack Logo" />
+          <img src={Logo} alt="An Inconvenient Modpack Logo" />
+          <h3 className="section-headline">
+            An <span className="color-primary">Inconvenient</span> Modpack
+          </h3>
         </a>
         <ul className="cluster gap-xs align-start">
           <li>
-            <a href="/features" className="link link-s link-navigation">
+            <a href="https://inconvenient.gg/features" className="link link-s link-navigation">
               Features
             </a>
           </li>
           <li>
-            <a href="/wiki" className="link link-s link-navigation">
+            <a href="/category/introduction" className="link link-s link-navigation">
               Wiki
             </a>
           </li>
@@ -41,7 +44,7 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="/community" className="link link-s link-navigation">
+            <a href="https://inconvenient.gg/community" className="link link-s link-navigation">
               Community
             </a>
           </li>
@@ -57,7 +60,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div class="cluster full justify-between">
+      <div className="cluster full justify-between">
         <ul className="cluster gap-xs align-start">
           <li>
             <a href="https://discord.gg/dJbfXV9JnF" target="_blank" className="btn btn-circular">
