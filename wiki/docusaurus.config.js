@@ -16,11 +16,18 @@ export default {
           routeBasePath: '/',
           sidebarPath: './sidebars.js'
         },
-        blog: false
+        blog: false,
+        theme: {
+          customCss: [
+            // '../site/styles/index.min.css',
+            // './src/css/overrides.css',
+            './src/css/styleguide.css'
+          ]
+        }
       }
     ]
   ],
-  staticDirectories: ['../common/icons', '../site/public/svg', '../site/public/img'],
+  staticDirectories: ['../site/public/', '../common/icons', '../site/public/svg', '../site/public/img'],
   i18n: {
     defaultLocale: 'en',
     locales: ['en']
@@ -65,7 +72,6 @@ export default {
       },
       docs: {
         sidebar: {
-          hideable: true,
           autoCollapseCategories: true
         }
       },

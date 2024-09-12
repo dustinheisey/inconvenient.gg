@@ -13,7 +13,7 @@ const config = {
           label: 'Features',
           url: '/features'
         },
-        { label: 'Wiki', url: 'https://wiki.inconvenient.gg/category/introduction' },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
         {
           label: 'Help Me Find Bugs',
           external: true,
@@ -37,7 +37,7 @@ const config = {
         links: [
           { label: 'Home', url: '/', icon: 'home' },
           { label: 'Features', url: '/features', icon: 'star' },
-          { label: 'Wiki', url: 'https://wiki.inconvenient.gg/category/introduction', icon: 'books' },
+          { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
           { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', icon: 'advocate' },
           { label: 'Community', url: '/community', icon: 'chat' }
         ],
@@ -48,7 +48,7 @@ const config = {
       variant: 'simple',
       links: [
         { label: 'Features', url: '/features' },
-        { label: 'Wiki', url: 'https://wiki.inconvenient.gg/category/introduction' },
+        { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
         { label: 'Bugs', url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues', external: true },
         { label: 'Community', url: '/community' },
         { label: 'Play Now', url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient', external: true }
@@ -106,7 +106,7 @@ const config = {
                   label: 'Features',
                   url: '/features'
                 },
-                { label: 'Wiki', url: 'https://wiki.inconvenient.gg/category/introduction' },
+                { label: 'Wiki', url: 'https://wiki.inconvenient.gg' },
                 {
                   label: 'Help Me Find Bugs',
                   external: true,
@@ -134,7 +134,7 @@ const config = {
                 links: [
                   { label: 'Home', url: '/', icon: 'home' },
                   { label: 'Features', url: '/features', icon: 'star' },
-                  { label: 'Wiki', url: 'https://wiki.inconvenient.gg/category/introduction', icon: 'books' },
+                  { label: 'Wiki', url: 'https://wiki.inconvenient.gg', icon: 'books' },
                   {
                     label: 'Bugs',
                     url: 'https://github.com/dustinheisey/An-Inconvenient-Modpack/issues',
@@ -423,7 +423,7 @@ const config = {
             {
               variant: 'secondary',
               label: 'Visit the Wiki',
-              url: 'https://wiki.inconvenient.gg/category/introduction'
+              url: 'https://wiki.inconvenient.gg'
             }
           ]
         }
@@ -759,7 +759,7 @@ const config = {
             {
               variant: 'secondary',
               label: 'Visit the Wiki',
-              url: 'https://wiki.inconvenient.gg/category/introduction'
+              url: 'https://wiki.inconvenient.gg'
             }
           ]
         }
@@ -929,7 +929,7 @@ const config = {
             {
               variant: 'secondary',
               label: 'Visit the Wiki',
-              url: 'https://wiki.inconvenient.gg/category/introduction'
+              url: 'https://wiki.inconvenient.gg'
             }
           ]
         }
