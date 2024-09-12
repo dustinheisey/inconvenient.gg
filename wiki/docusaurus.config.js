@@ -36,15 +36,15 @@ export default {
         },
         items: [
           {
+            type: 'docSidebar',
+            sidebarId: 'wiki',
+            position: 'left',
+            label: 'Wiki'
+          },
+          {
             href: 'https://inconvenient.gg/features',
             position: 'right',
             label: 'Features'
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'wiki',
-            position: 'right',
-            label: 'Wiki'
           },
           {
             href: 'https://github.com/dustinheisey/An-Inconvenient-Modpack',
