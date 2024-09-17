@@ -19,3 +19,5 @@ I'm actively working through the chapters, fixing bugs, and making advancements 
 - **Chapter 7.1**: 🔵 Planning
 - **Chapter 7.2**: 🔵 Planning
 - **Chapter 8**: 🔵 Planning
+
+<a rel="me" href="https://climatejustice.social/@InconvenientDev"></a>
