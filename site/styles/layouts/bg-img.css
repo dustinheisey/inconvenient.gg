@@ -39,6 +39,11 @@
     linear-gradient(hsl(from var(--color-primary) h s l / 0.5), hsl(from var(--color-primary) h s l / 0.5));
 } */
 
+video {
+  z-index: 0;
+  position: relative;
+}
+
 .inconvenient-logo-video {
   --color-on-background: var(--color-background-light);
 }
