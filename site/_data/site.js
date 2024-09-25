@@ -24,9 +24,8 @@ const config = {
           url: '/community',
           subLinks: [
             { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
-            { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
+            { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientDev?sub_confirmation=1', external: true },
             { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
-            { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
             { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
             { label: 'Mastodon', url: 'https://climatejustice.social/@InconvenientDev', external: true }
           ]
@@ -63,7 +62,7 @@ const config = {
         {
           label: 'Youtube',
           icon: 'logo-youtube',
-          url: 'https://www.youtube.com/@inconvenientGG'
+          url: 'https://www.youtube.com/@inconvenientDev?sub_confirmation=1'
         },
         {
           label: 'TikTok',
@@ -117,9 +116,12 @@ const config = {
                   url: '/community',
                   subLinks: [
                     { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
-                    { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientGG', external: true },
+                    {
+                      label: 'Youtube',
+                      url: 'https://www.youtube.com/@inconvenientDev?sub_confirmation=1',
+                      external: true
+                    },
                     { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
-                    { label: 'Twitch', url: 'https://www.twitch.tv/inconvenientgg', external: true },
                     { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
                     { label: 'Mastodon', url: 'https://climatejustice.social/@InconvenientDev', external: true }
                   ]
@@ -785,11 +787,11 @@ const config = {
             btns: [
               {
                 url: 'https://www.curseforge.com/minecraft/modpacks/inconvenient',
-                variant: 'secondary',
+                variant: 'primary',
                 external: true,
-                label: 'Get on Curseforge'
-              },
-              { url: 'https://modrinth.com/TODO', variant: 'secondary', label: 'Get on Modrinth', external: true }
+                label: 'Play Modpack'
+              }
+              // { url: 'https://modrinth.com/TODO', variant: 'secondary', label: 'Get on Modrinth', external: true }
             ]
           }
         },
@@ -820,7 +822,7 @@ const config = {
               component: 'card',
               icon: 'logo-youtube',
               size: 'xl',
-              url: 'https://www.youtube.com/@inconvenientGG',
+              url: 'https://www.youtube.com/@inconvenientDev?sub_confirmation=1',
               theme: 'youtube',
               body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
             },
@@ -831,14 +833,6 @@ const config = {
               url: 'https://www.tiktok.com/@inconvenientdev',
               theme: 'tiktok',
               body: 'Discover quick tips, and behind-the-scenes content.'
-            },
-            {
-              component: 'card',
-              icon: 'logo-twitch',
-              size: 'xl',
-              url: 'https://www.twitch.tv/inconvenientgg',
-              theme: 'twitch',
-              body: 'Join live streams of me fixing bugs and playtesting the modpack.'
             },
             {
               component: 'card',
