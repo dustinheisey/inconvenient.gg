@@ -70,7 +70,7 @@
 }
 
 .theme-clay {
-  background-color: #b3876b;
+  background-color: #8c5942;
   color: var(--color-on-primary-light);
   --color-headline-override: var(--color-on-primary-light);
   --color-p-override: var(--color-on-primary-light);
@@ -78,7 +78,7 @@
 }
 
 .theme-olive {
-  background-color: #8d9a76;
+  background-color: #6b7d4d;
   color: var(--color-on-primary-light);
   --color-headline-override: var(--color-on-primary-light);
   --color-p-override: var(--color-on-primary-light);
@@ -102,7 +102,7 @@
 }
 
 .theme-slate {
-  background-color: #767f8b;
+  background-color: #6a788a;
   color: var(--color-on-primary-light);
   --color-headline-override: var(--color-on-primary-light);
   --color-p-override: var(--color-on-primary-light);
