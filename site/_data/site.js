@@ -23,7 +23,7 @@ const config = {
           label: 'Community',
           url: '/community',
           subLinks: [
-            { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
+            { label: 'Discord', url: 'https://discord.gg/F6K96yFT', external: true },
             { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientDev?sub_confirmation=1', external: true },
             { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
             { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
@@ -57,7 +57,7 @@ const config = {
         {
           label: 'Discord',
           icon: 'logo-discord',
-          url: 'https://discord.gg/dJbfXV9JnF'
+          url: 'https://discord.com/invite/F6K96yFT'
         },
         {
           label: 'Youtube',
@@ -115,7 +115,7 @@ const config = {
                   label: 'Community',
                   url: '/community',
                   subLinks: [
-                    { label: 'Discord', url: 'https://discord.gg/dJbfXV9JnF', external: true },
+                    { label: 'Discord', url: 'https://discord.com/invite/F6K96yFT', external: true },
                     {
                       label: 'Youtube',
                       url: 'https://www.youtube.com/@inconvenientDev?sub_confirmation=1',
@@ -814,7 +814,7 @@ const config = {
               component: 'card',
               icon: 'logo-discord',
               size: 'xl',
-              url: 'https://discord.gg/dJbfXV9JnF',
+              url: 'https://discord.com/invite/F6K96yFT',
               theme: 'discord',
               body: 'Join the community discussions and get live help.'
             },
@@ -876,7 +876,7 @@ const config = {
                 headline: 'Share Your Experiences',
                 body: 'Your journey through the modpack is unique, and I want to see it! Share your favorite moments, take screenshots, or record gameplay clips. Spread the word on social media or submit your content directly to help inspire others and highlight the impact of your story.',
                 btn: {
-                  url: 'https://discord.gg/dJbfXV9JnF',
+                  url: 'https://discord.com/invite/F6K96yFT',
                   variant: 'secondary',
                   external: true,
                   label: 'Share on Discord'
@@ -887,7 +887,7 @@ const config = {
                 headline: 'Give Feedback and Start Discussions',
                 body: 'The project is constantly evolving, and your feedback plays a key role in shaping the future of the modpack. Share your thoughts on features, gameplay, and story elements. Join discussions on Discord or Reddit to dive deeper into the global issues explored in the modpack and help spark new ideas.',
                 btn: {
-                  url: 'https://discord.gg/dJbfXV9JnF',
+                  url: 'https://discord.com/invite/F6K96yFT',
                   external: true,
                   variant: 'secondary',
                   label: 'Join the Discussion on Discord'
