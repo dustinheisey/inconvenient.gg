@@ -1,11 +1,16 @@
-# Helpful Commands
+# Customizations
 
-:::warning
-This page is under construction. Check back soon because I am actively updating the wiki, I just wanted to get something online in case anyone can get use from what is up so far.
-:::
+## Recommended Resource Packs
 
-## Difficulty
+- altered advancement plaques
+- create immersive aircrafts
+- create style modded compats
+- stay true
+- tissou's zombie pack
+- unlit campfire icons
+- updated engineering
+- xaero's minimap mod icons
 
-## Realism
+## Recommended Shader Pack
 
-## Shaders
+- complementary unbound

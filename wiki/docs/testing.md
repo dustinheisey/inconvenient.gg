@@ -10,7 +10,7 @@ I'm actively working through the chapters, fixing bugs, and making advancements 
 
 ### Statuses of Chapter Play Testing:
 
-- **Chapter 1**: 🟡 Currently Testing
+- **Chapter 1**: 🟡 Finished Testing, Fixing Bugs
 - **Chapter 2**: 🔴 Untested
 - **Chapter 3**: 🔴 Untested
 - **Chapter 4**: 🔴 Untested
