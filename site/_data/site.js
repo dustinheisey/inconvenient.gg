@@ -507,7 +507,7 @@ const config = {
                 'Reflect on your journey through journal entries and personal discoveries.',
                 "Find ancient stories detailing climate change from the victims' perspectives.",
                 'Experience immersive dreams that reveal both harsh truths and hopeful possibilities.',
-                'Choose between joining a Solarpunk community or climbing the ranks of Corpo Corporation.',
+                'Choose between joining a Solarpunk community or adapting to the effects of climate change.',
                 'Face climate catastrophes head-on or restore the environment with public works projects.'
               ]
             },
