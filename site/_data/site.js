@@ -376,7 +376,7 @@ const config = {
               variant: 'flip',
               img: { src: 'nether.webp', alt: 'The Nether', loading: 'lazy' },
               headline: 'The Nether',
-              body: 'Once a thriving industrial hub, The Nether now burns in the aftermath of unchecked greed. With fire and brimstone all around, this place tells a cautionary tale. What role will you play?'
+              body: 'Once a thriving landscape, The Nether now burns from the effects of unchecked climate devastation. Fire and brimstone fill the air, leaving a grim reminder of the cost of ignoring nature\'s limits. What role will you play?'
             },
             {
               component: 'card',
@@ -390,7 +390,7 @@ const config = {
               variant: 'flip',
               img: { src: 'blueleaf.webp', alt: 'Blueleaf', loading: 'lazy' },
               headline: 'Blueleaf',
-              body: 'A paradise of endless resources and wealth, Blueleaf glimmers with opportunity. But behind its beauty lies a world of exploitation and ambition. Will you rise to the top or take a different path?'
+              body: 'A paradise rich in oil-filled oceans and prized rose marble, Blueleaf glimmers with beauty and opportunity. But beneath its alluring surface lies the heavy toll of exploitation and environmental strain. Will you join the rush for resources, or choose a different path?'
             }
           ]
         },
@@ -446,7 +446,7 @@ const config = {
             size: 'hero',
             overline: 'A World at a Crossroads',
             headline: 'Explore, Create, and Transform',
-            body: 'Enjoy a wealth of engaging and immersive gamplay, and connect with the world around you and the choices you make. Every feature of this modpack has been carefully crafted to offer you the tools to uncover stories, build thriving communities, and master survival in a world transformed by climate change. Whether you’re a story seeker, adventurer, engineer, architect, or survivalist, this modpack empowers you to shape the future in your own way.',
+            body: 'Enjoy a wealth of engaging and immersive gameplay, and connect with the world around you and the choices you make. Every feature of this modpack has been carefully crafted to offer you the tools to uncover stories, build thriving communities, and master survival in a world transformed by climate change. Whether you’re a story seeker, adventurer, engineer, architect, or survivalist, this modpack empowers you to shape the future in your own way.',
             btn: {
               label: 'Start Your Journey',
               external: true,
@@ -685,8 +685,8 @@ const config = {
               },
               {
                 component: 'blurb',
-                headline: 'Adapt to Climate Catastrophe & Rise to The Top of Corpo Corporation',
-                body: 'Or will you stay asleep, climbing the corporate ladder in a dystopian world?',
+                headline: 'Adapt to Climate Catastrophe',
+                body: 'Or will you stay asleep and adapt to a dystopian world?',
                 date: 'Coming in 2024',
                 variant: 'stack'
               },
@@ -854,7 +854,7 @@ const config = {
             size: 'region',
             overline: 'Join the Journey',
             headline: 'Help Shape the Future of This Modpack',
-            lead: 'An Inconvenient Modpack is more than just a modpack. It’s an evolving experience that asks players to think critically about global issues like climate change, capitalism, and the path toward a hopeful future. But to bring this vision to life, I need your help.',
+            lead: 'An Inconvenient Modpack is more than just a modpack. It’s an evolving experience that asks players to think critically about global issues like climate change and the path toward a hopeful future. But to bring this vision to life, I need your help.',
             body: 'This project thrives on community collaboration. Your feedback and participation will not only shape the modpack’s journey but also deepen the conversations we need to have about our world today. Together, we can tell a story of resilience, hope, and prove that we have the power to change the course of our future—both in the game and beyond.'
           },
           end: {
