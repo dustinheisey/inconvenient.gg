@@ -25,8 +25,8 @@ const config = {
           subLinks: [
             { label: 'Discord', url: 'https://discord.gg/F6K96yFT', external: true },
             { label: 'Youtube', url: 'https://www.youtube.com/@inconvenientDev?sub_confirmation=1', external: true },
-            { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
-            { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
+            // { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
+            // { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
             { label: 'Mastodon', url: 'https://climatejustice.social/@InconvenientDev', external: true }
           ]
         }
@@ -64,16 +64,16 @@ const config = {
           icon: 'logo-youtube',
           url: 'https://www.youtube.com/@inconvenientDev?sub_confirmation=1'
         },
-        {
-          label: 'TikTok',
-          icon: 'logo-tiktok',
-          url: 'https://www.tiktok.com/@inconvenientdev'
-        },
-        {
-          label: 'Reddit',
-          icon: 'logo-reddit',
-          url: 'https://www.reddit.com/r/InconvenientModpack/'
-        },
+        // {
+        //   label: 'TikTok',
+        //   icon: 'logo-tiktok',
+        //   url: 'https://www.tiktok.com/@inconvenientdev'
+        // },
+        // {
+        //   label: 'Reddit',
+        //   icon: 'logo-reddit',
+        //   url: 'https://www.reddit.com/r/InconvenientModpack/'
+        // },
         {
           label: 'Mastodon',
           icon: 'logo-mastodon',
@@ -121,8 +121,8 @@ const config = {
                       url: 'https://www.youtube.com/@inconvenientDev?sub_confirmation=1',
                       external: true
                     },
-                    { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
-                    { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
+                    // { label: 'Tik Tok', url: 'https://www.tiktok.com/@inconvenientdev', external: true },
+                    // { label: 'Reddit', url: 'https://www.reddit.com/r/InconvenientModpack/', external: true },
                     { label: 'Mastodon', url: 'https://climatejustice.social/@InconvenientDev', external: true }
                   ]
                 }
@@ -826,22 +826,22 @@ const config = {
               theme: 'youtube',
               body: 'Watch tutorials, gameplay videos, and deep dives into the modpack.'
             },
-            {
-              component: 'card',
-              icon: 'logo-tiktok',
-              size: 'xl',
-              url: 'https://www.tiktok.com/@inconvenientdev',
-              theme: 'tiktok',
-              body: 'Discover quick tips, and behind-the-scenes content.'
-            },
-            {
-              component: 'card',
-              icon: 'logo-reddit',
-              size: 'xl',
-              url: 'https://www.reddit.com/r/InconvenientModpack/',
-              theme: 'reddit',
-              body: 'Share your experiences, discuss strategies, and connect with other players.'
-            }
+            // {
+            //   component: 'card',
+            //   icon: 'logo-tiktok',
+            //   size: 'xl',
+            //   url: 'https://www.tiktok.com/@inconvenientdev',
+            //   theme: 'tiktok',
+            //   body: 'Discover quick tips, and behind-the-scenes content.'
+            // },
+            // {
+            //   component: 'card',
+            //   icon: 'logo-reddit',
+            //   size: 'xl',
+            //   url: 'https://www.reddit.com/r/InconvenientModpack/',
+            //   theme: 'reddit',
+            //   body: 'Share your experiences, discuss strategies, and connect with other players.'
+            // }
           ]
         },
         // TODO: add showcase
@@ -885,7 +885,7 @@ const config = {
               {
                 component: 'details',
                 headline: 'Give Feedback and Start Discussions',
-                body: 'The project is constantly evolving, and your feedback plays a key role in shaping the future of the modpack. Share your thoughts on features, gameplay, and story elements. Join discussions on Discord or Reddit to dive deeper into the global issues explored in the modpack and help spark new ideas.',
+                body: 'The project is constantly evolving, and your feedback plays a key role in shaping the future of the modpack. Share your thoughts on features, gameplay, and story elements. Join discussions on Discord to dive deeper into the global issues explored in the modpack and help spark new ideas.',
                 btn: {
                   url: 'https://discord.com/invite/F6K96yFT',
                   external: true,
